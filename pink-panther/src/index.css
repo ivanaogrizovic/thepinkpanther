@@ -15,6 +15,10 @@ h3 {
   font-weight: 400;
 }
 
+.main-title {
+  padding: 1rem 0;
+}
+
 .header {
   margin-top: 1rem;
   margin-bottom: 2rem;

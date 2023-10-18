@@ -3,8 +3,12 @@ import './shop-by-style.css';
 
 function ShopByStyle(){
     return(
-        <p>Shop by style placeholder</p>
-    )
+        <div className='ShopByStyle'>
+            <div>
+                <h3 className='main-title'>Shop by style</h3>
+            </div>
+        </div>
+    );
 }
 
 export default ShopByStyle;
