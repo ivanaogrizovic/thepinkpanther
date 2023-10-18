@@ -11,6 +11,8 @@ import shapeCuscion from './assets/shape-cushion.png';
 import shapeRound from './assets/shape-round.png';
 import shapeMarquise from './assets/shape-marquise.png';
 
+import Slideshow from './components/slideshow/slideshow';
+
 function App() {
   
   // let firstValue: string = "Manny";
@@ -133,6 +135,7 @@ function App() {
       </nav>
       {/*SLIDESHOW COMPOENT*/}
       <section className='slideshow'>
+        <Slideshow></Slideshow>
       </section>
       {/*SHOP BY CUT COMPOENT*/}
       {/*SHOP BY STYLE COMPOENT*/}

@@ -1,0 +1,36 @@
+.Slideshow {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--light-background);
+}
+
+.slide-image {
+    width: 40%;
+    height: 40rem;
+    object-fit: cover;
+}
+
+.slideshow__item {
+    flex: 1 1 auto;
+    width: 50%;
+}
+
+.slide-text {
+    transform: translateY(40%);
+}
+
+.slide-text__title {
+    text-transform: uppercase;
+    font-weight: 400;
+
+}
+
+.slide-text__p {
+    font-size: small;
+    font-weight: 300;
+}
+
+.slide-link {
+    text-decoration: underline;
+    text-transform: uppercase;
+}
