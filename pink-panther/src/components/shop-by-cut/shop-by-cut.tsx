@@ -10,53 +10,79 @@ import cutRound from '../../assets/cut-cushion.png';
 import cutMarquise from '../../assets/cut-marquise.png';
 
 function ShopByCut(){
+
+  interface cuts {
+    id: number
+    src: string
+    alt: string
+    name: string
+    link: string
+ }
+
+  const cutsList: cuts[] = [
+    {
+      id: 0,
+      src: cutOval,
+      alt: "oval cut diamond",
+      name: "oval",
+      link: ""
+    },
+    {
+      id: 0,
+      src: cutPrincess,
+      alt: "princess cut diamond",
+      name: "princess",
+      link: ""
+    },
+    {
+      id: 0,
+      src: cutEmerald,
+      alt: "emerald cut diamond",
+      name: "emerald",
+      link: ""
+    },
+    {
+      id: 0,
+      src: cutPear,
+      alt: "pear cut diamond",
+      name: "pear",
+      link: ""
+    },
+    {
+      id: 0,
+      src: cutCushion,
+      alt: "cushion cut diamond",
+      name: "cushion",
+      link: ""
+    },
+    {
+      id: 0,
+      src: cutRound,
+      alt: "round cut diamond",
+      name: "round",
+      link: ""
+    },
+    {
+      id: 0,
+      src: cutMarquise,
+      alt: "marquise cut diamond",
+      name: "marquise",
+      link: ""
+    },
+  ];
     return(
         <div className='ShopByCut'>
-            <h3 className="main-title">SHOP ENGAGEMENT RINGS BY SHAPE</h3>
+            <h3 className="main-title">Shop engagement rings by shape</h3>
             <div className='shapes-wrapper'>
                <ul className='shapes-list'>
-                <li className='single-shape'>
-                  <a href=''>
-                  <img className='single-shape__image' src={cutOval}></img>
-                  <p>Oval</p>
+                {cutsList.map(cut => (
+                  <li className='single-shape'>
+                  <a href={cut.link}>
+                  <img className='single-shape__image' src={cut.src} alt={cut.alt}></img>
+                  <p>{cut.name}</p>
                   </a>
                 </li>
-                <li className='single-shape'>
-                  <a href=''>
-                  <img className='single-shape__image'src={cutPrincess}></img>
-                  <p>Princess</p>
-                  </a>
-                </li>
-                <li className='single-shape'>
-                  <a href=''>
-                  <img className='single-shape__image'src={cutEmerald}></img>
-                  <p>Emerald</p>
-                  </a>
-                </li>
-                <li className='single-shape'>
-                  <a href=''>
-                  <img className='single-shape__image' src={cutPear}></img>
-                  <p>Pear</p>
-                  </a>
-                </li>
-                <li className='single-shape'>
-                  <a href=''>
-                  <img className='single-shape__image' src={cutCushion}></img>
-                  <p>Cushion</p>
-                  </a>
-                </li>
-                <li className='single-shape'>
-                  <a href=''>
-                  <img className='single-shape__image' src={cutRound}></img>
-                  <p>Round</p>
-                  </a>
-                </li>
-                <li className='single-shape'>
-                  <a href=''>
-                  <img className='single-shape__image' src={cutMarquise}></img>
-                  <p>Marquise</p>
-                  </a>
-                </li>
+                ))}
                </ul>
             </div>
         </div>

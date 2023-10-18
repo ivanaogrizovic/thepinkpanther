@@ -12,9 +12,8 @@
 }
 
 .navigation__item {
-    /* PLAY WITH THIS FOR SUB MENU APPEARANCE */
-    padding: 1rem 0rem;
-    margin: 0 1rem;
+    padding: 1rem;
+    margin: 0;
     border-bottom: 5px solid white;
 }
 

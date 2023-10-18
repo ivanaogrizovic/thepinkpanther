@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import appLogo from './assets/pink-panther-logo.png';
+import engagementRings from './engagement-rings.json';
 
 import Slideshow from './components/slideshow/slideshow';
 import Navigation from './components/navbar/navbar';
@@ -28,6 +29,7 @@ function App() {
   //   console.log("warning");
   // }
 
+  console.log(engagementRings);
   return (
     <div className='App'>
       <header className='header'>
