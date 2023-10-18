@@ -12,7 +12,7 @@ import cutMarquise from '../../assets/cut-marquise.png';
 function ShopByCut(){
     return(
         <div className='ShopByCut'>
-            <h3>SHOP ENGAGEMENT RINGS BY SHAPE</h3>
+            <h3 className="main-title">SHOP ENGAGEMENT RINGS BY SHAPE</h3>
             <div className='shapes-wrapper'>
                <ul className='shapes-list'>
                 <li className='single-shape'>
@@ -21,42 +21,36 @@ function ShopByCut(){
                   <p>Oval</p>
                   </a>
                 </li>
-
                 <li className='single-shape'>
                   <a href=''>
                   <img className='single-shape__image'src={cutPrincess}></img>
                   <p>Princess</p>
                   </a>
                 </li>
-
                 <li className='single-shape'>
                   <a href=''>
                   <img className='single-shape__image'src={cutEmerald}></img>
                   <p>Emerald</p>
                   </a>
                 </li>
-
                 <li className='single-shape'>
                   <a href=''>
                   <img className='single-shape__image' src={cutPear}></img>
                   <p>Pear</p>
                   </a>
                 </li>
-
                 <li className='single-shape'>
                   <a href=''>
                   <img className='single-shape__image' src={cutCushion}></img>
                   <p>Cushion</p>
                   </a>
                 </li>
-
                 <li className='single-shape'>
                   <a href=''>
                   <img className='single-shape__image' src={cutRound}></img>
                   <p>Round</p>
                   </a>
                 </li>
-
                 <li className='single-shape'>
                   <a href=''>
                   <img className='single-shape__image' src={cutMarquise}></img>
