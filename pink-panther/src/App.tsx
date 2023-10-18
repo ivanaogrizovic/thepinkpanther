@@ -11,25 +11,6 @@ import Footer from './components/footer/footer';
 
 function App() {
 
-  // let firstValue: string = "Manny";
-  // let firstValue: number = 34;
-  // let firstValue: boolean = true;
-  // let firstValue: number[] = [2,3,56];
-
-  // //tuple
-  // let aTuple: [string, number] = ["Manny", 34];
-
-  // //enum: like an object 
-  // enum Codes {first = 1, second=2};
-
-  // //any: use it as little as you can because it accepts  any type
-  // let firstName: any = "Manny";
-
-  // //void: functions need to have a return type, and this one doesn't have any return
-  // const warning =():void => {
-  //   console.log("warning");
-  // }
-
   console.log(engagementRings);
   return (
     <div className='App'>
