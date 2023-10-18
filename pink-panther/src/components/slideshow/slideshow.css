@@ -33,16 +33,36 @@
 @media screen and (max-width: 1024px) {
     .Slideshow {
         display: flex;
-        background-color: white;
-        justify-content: center;
+        flex-wrap: wrap;
+        height: auto;
     }
 
     .slideshow__item {
-        box-sizing: inherit;
-        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .slide-image {
+        width: 100%;
     }
 
     .slide-text {
-        position: absolute;
+        padding: 1rem;
+        left: 0;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 480px) {
+    .slide-text {
+        font-size: small;
+        padding: 0;
+    }
+
+    .slide-text__p {
+        font-size: x-small;
     }
 }

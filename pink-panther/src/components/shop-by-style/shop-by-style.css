@@ -35,10 +35,12 @@ a h3 {
 
 @media screen and (max-width: 1024px) {
     .single-style__image {
-        max-width: 22rem;
+        max-width: 21rem;
     }
 }
 
-@media screen and (max-width: 768px) {}
-
-@media screen and (max-width: 480px) {}
+@media screen and (max-width: 363px) {
+    .single-style__image {
+        max-width: 15rem;
+    }
+}
