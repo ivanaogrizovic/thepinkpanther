@@ -22,3 +22,16 @@
 .single-shape__image {
     height: 3rem;
 }
+
+@media screen and (max-width: 768px) {
+    .shapes-list {
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .shapes-list {
+        flex-wrap: wrap;
+        padding: 0 2rem;
+    }
+}

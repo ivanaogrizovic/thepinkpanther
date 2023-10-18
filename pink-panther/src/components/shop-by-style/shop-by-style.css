@@ -20,3 +20,25 @@
 a h3 {
     text-decoration: underline;
 }
+
+@media screen and (max-width: 1366px) {
+
+    .styles-list {
+        padding: 0;
+        gap: 1rem;
+    }
+
+    .single-style__image {
+        max-width: 30rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .single-style__image {
+        max-width: 22rem;
+    }
+}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 480px) {}

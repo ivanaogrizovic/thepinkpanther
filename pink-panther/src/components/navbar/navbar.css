@@ -32,17 +32,17 @@
     display: none;
     position: absolute;
     background-color: var(--light-background);
-    width: 100%;
     z-index: 1;
-    left: 0%;
     box-shadow: 0px 1px 12px 0px rgb(255 255 255);
-    flex-direction: column;
     text-align: left;
-    margin-top: 1rem;
+    margin-top: 1.3rem;
+
+    left: 0;
+    right: 0;
 }
 
 .sub-navigation__item {
-    flex: 1 1 auto;
+    flex: 0 0 auto;
     min-width: 14rem;
 }
 
@@ -52,8 +52,10 @@
 
 .sub-navigation__list {
     display: flex;
-    padding: 2rem 30rem;
+    padding: 2rem 10rem;
     font-size: small;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* LEVEL 2 */
@@ -82,4 +84,10 @@
     width: 25%;
     margin: 0;
     padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .navigation__list {
+        display: none;
+    }
 }

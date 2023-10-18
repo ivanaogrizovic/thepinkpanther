@@ -29,3 +29,20 @@
     text-decoration: underline;
     text-transform: uppercase;
 }
+
+@media screen and (max-width: 1024px) {
+    .Slideshow {
+        display: flex;
+        background-color: white;
+        justify-content: center;
+    }
+
+    .slideshow__item {
+        box-sizing: inherit;
+        overflow: hidden;
+    }
+
+    .slide-text {
+        position: absolute;
+    }
+}
