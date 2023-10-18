@@ -7,9 +7,10 @@ import Slideshow from './components/slideshow/slideshow';
 import Navigation from './components/navbar/navbar';
 import ShopByCut from './components/shop-by-cut/shop-by-cut';
 import ShopByStyle from './components/shop-by-style/shop-by-style';
+import Footer from './components/footer/footer';
 
 function App() {
-  
+
   // let firstValue: string = "Manny";
   // let firstValue: number = 34;
   // let firstValue: boolean = true;
@@ -39,8 +40,7 @@ function App() {
       <Slideshow></Slideshow>
       <ShopByCut></ShopByCut>
       <ShopByStyle></ShopByStyle>
-      {/*INFO ABOUT WARRANTY AND RETURN COMPOENT*/}
-      {/*FOOTER COMPOENT*/}
+      <Footer></Footer>
     </div>
   );
 }

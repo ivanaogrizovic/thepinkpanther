@@ -7,7 +7,6 @@
 .shapes-list {
     display: flex;
     flex-direction: row;
-    list-style: none;
     justify-content: center;
     padding: 0 6rem;
     gap: 2rem;

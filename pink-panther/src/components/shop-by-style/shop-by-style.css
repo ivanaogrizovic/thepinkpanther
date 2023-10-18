@@ -1,0 +1,22 @@
+.styles-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 5rem;
+    flex-direction: row;
+    align-content: center;
+    gap: 2rem;
+}
+
+.single-style {
+    flex: 0 0 auto;
+    opacity: 1;
+}
+
+.single-style__image {
+    max-width: 35rem;
+}
+
+a h3 {
+    text-decoration: underline;
+}

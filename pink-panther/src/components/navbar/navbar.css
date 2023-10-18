@@ -3,7 +3,6 @@
     align-items: center;
     justify-content: center;
     padding: 0;
-    list-style: none;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 300;
@@ -52,7 +51,6 @@
 }
 
 .sub-navigation__list {
-    list-style: none;
     display: flex;
     padding: 2rem 30rem;
     font-size: small;
@@ -61,7 +59,6 @@
 /* LEVEL 2 */
 
 .sub-navigation__item-2 {
-    list-style: none;
     padding: 0 0;
     text-transform: capitalize;
     letter-spacing: 0;

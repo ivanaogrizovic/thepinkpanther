@@ -9,7 +9,7 @@ import cutCushion from '../../assets/cut-cushion.png';
 import cutRound from '../../assets/cut-cushion.png';
 import cutMarquise from '../../assets/cut-marquise.png';
 
-function ShopByCut(){
+function ShopByCut() {
 
   interface cuts {
     id: number
@@ -17,7 +17,7 @@ function ShopByCut(){
     alt: string
     name: string
     link: string
- }
+  }
 
   const cutsList: cuts[] = [
     {
@@ -28,65 +28,65 @@ function ShopByCut(){
       link: ""
     },
     {
-      id: 0,
+      id: 1,
       src: cutPrincess,
       alt: "princess cut diamond",
       name: "princess",
       link: ""
     },
     {
-      id: 0,
+      id: 2,
       src: cutEmerald,
       alt: "emerald cut diamond",
       name: "emerald",
       link: ""
     },
     {
-      id: 0,
+      id: 3,
       src: cutPear,
       alt: "pear cut diamond",
       name: "pear",
       link: ""
     },
     {
-      id: 0,
+      id: 4,
       src: cutCushion,
       alt: "cushion cut diamond",
       name: "cushion",
       link: ""
     },
     {
-      id: 0,
+      id: 5,
       src: cutRound,
       alt: "round cut diamond",
       name: "round",
       link: ""
     },
     {
-      id: 0,
+      id: 6,
       src: cutMarquise,
       alt: "marquise cut diamond",
       name: "marquise",
       link: ""
     },
   ];
-    return(
-        <div className='ShopByCut'>
-            <h3 className="main-title">Shop engagement rings by shape</h3>
-            <div className='shapes-wrapper'>
-               <ul className='shapes-list'>
-                {cutsList.map(cut => (
-                  <li className='single-shape'>
-                  <a href={cut.link}>
-                  <img className='single-shape__image' src={cut.src} alt={cut.alt}></img>
-                  <p>{cut.name}</p>
-                  </a>
-                </li>
-                ))}
-               </ul>
-            </div>
-        </div>
-    );
+  return (
+    <div className='ShopByCut'>
+      <h3 className="main-title">Shop engagement rings by shape</h3>
+      <div className='shapes-wrapper'>
+        <ul className='shapes-list'>
+          {cutsList.map(cut => (
+            <li className='single-shape' key={cut.id}>
+              <a href={cut.link}>
+                <img className='single-shape__image' src={cut.src} alt={cut.alt}></img>
+                <p>{cut.name}</p>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  );
 }
 
 export default ShopByCut;
