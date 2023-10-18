@@ -1,0 +1,24 @@
+.shapes-wrapper {
+    background-color: var(--light-background);
+    margin: 0;
+    padding-top: 0.5rem;
+}
+
+.shapes-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.single-shape {
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: small;
+}
+
+.single-shape__image {
+    object-fit: fill;
+    width: 20%;
+}

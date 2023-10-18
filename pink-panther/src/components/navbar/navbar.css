@@ -1,0 +1,89 @@
+.navigation__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 300;
+    font-size: 14px;
+    margin: 0;
+}
+
+.navigation__item {
+    /* PLAY WITH THIS FOR SUB MENU APPEARANCE */
+    padding: 1rem 0rem;
+    margin: 0 1rem;
+    border-bottom: 5px solid white;
+}
+
+.navigation__item:hover {
+    font-weight: 400;
+}
+
+.navigation__item:hover .sub-navigation {
+    display: block;
+}
+
+.sub-navigation:hover .sub-navigation {
+    display: block;
+}
+
+.sub-navigation {
+    display: none;
+    position: absolute;
+    background-color: var(--light-background);
+    width: 100%;
+    z-index: 1;
+    left: 0%;
+    box-shadow: 0px 1px 12px 0px rgb(255 255 255 / 20%);
+    flex-direction: column;
+    text-align: left;
+    margin-top: 1rem;
+}
+
+.sub-navigation__item {
+    flex: 1 1 auto;
+    min-width: 14rem;
+}
+
+.sub-navigation__filter {
+    font-weight: 600;
+}
+
+.sub-navigation__list {
+    list-style: none;
+    display: flex;
+    padding: 2rem 30rem;
+    font-size: small;
+}
+
+/* LEVEL 2 */
+
+.sub-navigation__item-2 {
+    list-style: none;
+    padding: 0 0;
+    text-transform: capitalize;
+    letter-spacing: 0;
+}
+
+.sub-navigation__list-2 {
+    margin: 0.5rem 0;
+    font-weight: 300;
+}
+
+.sub-navigation__list-2:hover {
+    text-decoration: underline;
+    font-weight: 300;
+}
+
+.sub-navigation__image {
+    width: 18rem;
+}
+
+.sub-navigation__cuts {
+    width: 25%;
+    margin: 0;
+    padding: 0;
+}
