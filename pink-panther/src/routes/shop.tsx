@@ -1,9 +1,18 @@
-import { func } from "prop-types";
-import React from "react";
+import React from 'react';
+import ItemsGrid from '../components/items-grid/items-grid';
+import Filters from '../components/filters/filters';
 
-function Shop() {
+import engagementRings from '../engagement-rings.json';
+
+function Shop(props: any) {
+
+    console.log(props)
+
     return (
-        <p>This is the shop page</p>
+        <div className='shop-wrapper'>
+            <Filters />
+            <ItemsGrid rings={engagementRings} />
+        </div>
     );
 }
 

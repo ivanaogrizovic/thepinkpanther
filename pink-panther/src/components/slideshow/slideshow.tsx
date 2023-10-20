@@ -1,5 +1,7 @@
 import React from 'react';
 import './slideshow.css'
+import { Link } from 'react-router-dom';
+
 import ambassadorHeroTwo from '../../assets/ambassador-hero-2.jpg';
 
 function Slideshow() {
@@ -13,7 +15,7 @@ function Slideshow() {
             <div className='slideshow__item slide-text'>
                 <h3 className='slide-text__title'>A love that will last a lifetime</h3>
                 <p className='slide-text__p'>Only a real diamond holds true timeless beauty and value. <br />Slip on one of our dazzling, high grade diamond rings, guaranteed natural and conflict-free, and let it speak louder than words.</p>
-                <p className='slide-text__p'><a href='' className='slide-link'>Shop engagement rings</a></p>
+                <p className='slide-text__p'><Link to='shop' className='slide-link'>Shop engagement rings</Link></p>
             </div>
         </div>
     );

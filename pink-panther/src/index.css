@@ -27,3 +27,11 @@ h3 {
 ul {
   list-style: none;
 }
+
+.shop-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin: 1rem 4rem;
+}

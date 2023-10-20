@@ -18,8 +18,8 @@ function App() {
       <Header />
       <Navigation />
       <Routes>
-        <Route path='/' element={<Home />}></Route>
-        <Route path='shop' element={<Shop />}></Route>
+        <Route path='/' element={<Home engagementRings={engagementRings} />}></Route>
+        <Route path='shop/' element={<Shop />}></Route>
       </Routes>
       <Outlet></Outlet>
       <Footer />

@@ -1,5 +1,8 @@
 import React from "react";
 import './navbar.css';
+import { Link } from "react-router-dom";
+
+import engagementRings from '../../engagement-rings.json';
 
 import engagementMenu from '../../assets/engagement-ring-menu.webp';
 import weddingMenu from '../../assets/wedding-menu.webp';
@@ -15,53 +18,53 @@ function Navigation() {
   return (
     <nav className='navigation' data-action='navigation'>
       <ul className='navigation__list'>
-        <li className='navigation__item'><a href=''>Engagement Rings</a>
+        <li className='navigation__item'><Link to='shop'>Engagement Rings</Link>
           <div className='sub-navigation' role='menu'>
             <ul className='sub-navigation__list'>
               <li className='sub-navigation__item'>
                 <span className='sub-navigation__filter'>Shape</span>
                 <ul className='sub-navigation__item-2'>
-                  <li className='sub-navigation__list-2'><a href=''>
-                    <img src={shapeOval} className='sub-navigation__cuts' alt='oval shape diamond cut' />Oval</a></li>
-                  <li className='sub-navigation__list-2'><a href=''>
-                    <img src={shapePrincess} className='sub-navigation__cuts' alt='oval shape princess cut' />Princess</a></li>
-                  <li className='sub-navigation__list-2'><a href=''>
-                    <img src={shapeEmerald} className='sub-navigation__cuts' alt='oval shape emerald cut' />Emerald</a></li>
-                  <li className='sub-navigation__list-2'><a href=''>
-                    <img src={shapePear} className='sub-navigation__cuts' alt='oval shape pear cut' />Pear</a></li>
-                  <li className='sub-navigation__list-2'><a href=''>
-                    <img src={shapeCuscion} className='sub-navigation__cuts' alt='oval shape cushion cut' />Cushion</a></li>
-                  <li className='sub-navigation__list-2'><a href=''>
-                    <img src={shapeRound} className='sub-navigation__cuts' alt='oval shape round cut' />Round</a></li>
-                  <li className='sub-navigation__list-2'><a href=''>
-                    <img src={shapeMarquise} className='sub-navigation__cuts' alt='oval shape marquise cut' />Marquise</a></li>
+                  <li className='sub-navigation__list-2'><Link to='shop'>
+                    <img src={shapeOval} className='sub-navigation__cuts' alt='oval shape diamond cut' />Oval</Link></li>
+                  <li className='sub-navigation__list-2'><Link to='shop'>
+                    <img src={shapePrincess} className='sub-navigation__cuts' alt='oval shape princess cut' />Princess</Link></li>
+                  <li className='sub-navigation__list-2'><Link to='shop'>
+                    <img src={shapeEmerald} className='sub-navigation__cuts' alt='oval shape emerald cut' />Emerald</Link></li>
+                  <li className='sub-navigation__list-2'><Link to='shop'>
+                    <img src={shapePear} className='sub-navigation__cuts' alt='oval shape pear cut' />Pear</Link></li>
+                  <li className='sub-navigation__list-2'><Link to='shop'>
+                    <img src={shapeCuscion} className='sub-navigation__cuts' alt='oval shape cushion cut' />Cushion</Link></li>
+                  <li className='sub-navigation__list-2'><Link to='shop'>
+                    <img src={shapeRound} className='sub-navigation__cuts' alt='oval shape round cut' />Round</Link></li>
+                  <li className='sub-navigation__list-2'><Link to='shop'>
+                    <img src={shapeMarquise} className='sub-navigation__cuts' alt='oval shape marquise cut' />Marquise</Link></li>
                 </ul>
               </li>
               <li className='sub-navigation__item'>
                 <span className='sub-navigation__filter'>Style</span>
                 <ul className='sub-navigation__item-2'>
-                  <li className='sub-navigation__list-2'><a href=''>Halo</a></li>
-                  <li className='sub-navigation__list-2'><a href=''>Solitaire</a></li>
-                  <li className='sub-navigation__list-2'><a href=''>Three Stone</a></li>
-                  <li className='sub-navigation__list-2'><a href=''>Double Halo</a></li>
-                  <li className='sub-navigation__list-2'><a href=''>Straight</a></li>
+                  <li className='sub-navigation__list-2'><Link to='shop'>Halo</Link></li>
+                  <li className='sub-navigation__list-2'><Link to='shop'>Solitaire</Link></li>
+                  <li className='sub-navigation__list-2'><Link to='shop'>Three Stone</Link></li>
+                  <li className='sub-navigation__list-2'><Link to='shop'>Double Halo</Link></li>
+                  <li className='sub-navigation__list-2'><Link to='shop'>Straight</Link></li>
                 </ul>
               </li>
               <li className='sub-navigation__item'>
                 <span className='sub-navigation__filter'>Metal</span>
                 <ul className='sub-navigation__item-2'>
-                  <li className='sub-navigation__list-2'><a href=''>White Gold</a></li>
-                  <li className='sub-navigation__list-2'><a href=''>Yellow Gold</a></li>
-                  <li className='sub-navigation__list-2'><a href=''>Platinum</a></li>
+                  <li className='sub-navigation__list-2'><Link to='shop'>White Gold</Link></li>
+                  <li className='sub-navigation__list-2'><Link to='shop'>Yellow Gold</Link></li>
+                  <li className='sub-navigation__list-2'><Link to='shop'>Platinum</Link></li>
                 </ul>
               </li>
               <li className='sub-navigation__item'>
                 <span className='sub-navigation__filter'>Price</span>
                 <ul className='sub-navigation__item-2'>
-                  <li className='sub-navigation__list-2'><a href=''>Less than 500€</a></li>
-                  <li className='sub-navigation__list-2'><a href=''>500€ to 1.000€</a></li>
-                  <li className='sub-navigation__list-2'><a href=''>1000€ to 2.500€</a></li>
-                  <li className='sub-navigation__list-2'><a href=''>2.500€ and more</a></li>
+                  <li className='sub-navigation__list-2'><Link to='shop'>Less than 500€</Link></li>
+                  <li className='sub-navigation__list-2'><Link to='shop'>500€ to 1.000€</Link></li>
+                  <li className='sub-navigation__list-2'><Link to='shop'>1000€ to 2.500€</Link></li>
+                  <li className='sub-navigation__list-2'><Link to='shop'>2.500€ and more</Link></li>
                 </ul>
               </li>
               <li className='sub-navigation__item'>
@@ -70,29 +73,29 @@ function Navigation() {
             </ul>
           </div>
         </li>
-        <li className='navigation__item'><a href=''>Wedding Rings</a>
+        <li className='navigation__item'><Link to='shop'>Wedding Rings</Link>
           <div className='sub-navigation' role='menu'>
             <ul className='sub-navigation__list'>
               <li className='sub-navigation__item'>
                 <span className='sub-navigation__filter'>Women's</span>
                 <ul className='sub-navigation__item-2'>
-                  <li className='sub-navigation__list-2'><a href=''>Wedding bands</a></li>
-                  <li className='sub-navigation__list-2'><a href=''>Eternity</a></li>
-                  <li className='sub-navigation__list-2'><a href=''>Anniversary</a></li>
+                  <li className='sub-navigation__list-2'><Link to='shop'>Wedding bands</Link></li>
+                  <li className='sub-navigation__list-2'><Link to='shop'>Eternity</Link></li>
+                  <li className='sub-navigation__list-2'><Link to='shop'>Anniversary</Link></li>
                 </ul>
               </li>
               <li className='sub-navigation__item'>
                 <span className='sub-navigation__filter'>Men's</span>
                 <ul className='sub-navigation__item-2'>
-                  <li className='sub-navigation__list-2'><a href=''>Wedding bands</a></li>
+                  <li className='sub-navigation__list-2'><Link to='shop'>Wedding bands</Link></li>
                 </ul>
               </li>
               <li className='sub-navigation__item'>
                 <span className='sub-navigation__filter'>Metal</span>
                 <ul className='sub-navigation__item-2'>
-                  <li className='sub-navigation__list-2'><a href=''>White Gold</a></li>
-                  <li className='sub-navigation__list-2'><a href=''>Yellow Gold</a></li>
-                  <li className='sub-navigation__list-2'><a href=''>Platinum</a></li>
+                  <li className='sub-navigation__list-2'><Link to='shop'>White Gold</Link></li>
+                  <li className='sub-navigation__list-2'><Link to='shop'>Yellow Gold</Link></li>
+                  <li className='sub-navigation__list-2'><Link to='shop'>Platinum</Link></li>
                 </ul>
               </li>
               <li className='sub-navigation__item'>
@@ -101,8 +104,8 @@ function Navigation() {
             </ul>
           </div>
         </li>
-        <li className='navigation__item'><a href=''>About</a></li>
-        <li className='navigation__item'><a href=''>Book an appointment</a></li>
+        <li className='navigation__item'><Link to=''>About</Link></li>
+        <li className='navigation__item'><Link to=''>Book an appointment</Link></li>
       </ul>
     </nav>
   );

@@ -1,0 +1,26 @@
+.item-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.item {
+    flex: 0 0 20rem;
+}
+
+.item__img {
+    width: 100%;
+    border: 1px solid var(--light-background);
+}
+
+.item-text {
+    padding: 0 1rem;
+}
+
+.item__name {
+    word-wrap: break-word;
+    font-size: small;
+    height: 2rem;
+}

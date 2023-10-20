@@ -1,5 +1,6 @@
 import React from "react";
 import './shop-by-cut.css';
+import { Link } from "react-router-dom";
 
 import cutOval from '../../assets/cut-oval.png';
 import cutPrincess from '../../assets/cut-princess.png';
@@ -9,14 +10,13 @@ import cutCushion from '../../assets/cut-cushion.png';
 import cutRound from '../../assets/cut-cushion.png';
 import cutMarquise from '../../assets/cut-marquise.png';
 
-function ShopByCut() {
+function ShopByCut(props: any) {
 
   interface cuts {
     id: number
     src: string
     alt: string
     name: string
-    link: string
   }
 
   const cutsList: cuts[] = [
@@ -24,50 +24,43 @@ function ShopByCut() {
       id: 0,
       src: cutOval,
       alt: "oval cut diamond",
-      name: "oval",
-      link: ""
+      name: "oval"
     },
     {
       id: 1,
       src: cutPrincess,
       alt: "princess cut diamond",
-      name: "princess",
-      link: ""
+      name: "princess"
     },
     {
       id: 2,
       src: cutEmerald,
       alt: "emerald cut diamond",
-      name: "emerald",
-      link: ""
+      name: "emerald"
     },
     {
       id: 3,
       src: cutPear,
       alt: "pear cut diamond",
-      name: "pear",
-      link: ""
+      name: "pear"
     },
     {
       id: 4,
       src: cutCushion,
       alt: "cushion cut diamond",
-      name: "cushion",
-      link: ""
+      name: "cushion"
     },
     {
       id: 5,
       src: cutRound,
       alt: "round cut diamond",
-      name: "round",
-      link: ""
+      name: "round"
     },
     {
       id: 6,
       src: cutMarquise,
       alt: "marquise cut diamond",
-      name: "marquise",
-      link: ""
+      name: "marquise"
     },
   ];
   return (
@@ -77,10 +70,10 @@ function ShopByCut() {
         <ul className='shapes-list'>
           {cutsList.map(cut => (
             <li className='single-shape' key={cut.id}>
-              <a href={cut.link}>
+              <Link to={{ pathname: "/shop" }}>
                 <img className='single-shape__image' src={cut.src} alt={cut.alt}></img>
                 <p>{cut.name}</p>
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

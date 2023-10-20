@@ -1,5 +1,6 @@
 import React from "react";
 import './shop-by-style.css';
+import { Link } from "react-router-dom";
 
 import anniversaryStyle from '../../assets/style-anniversary.webp';
 import eternityStyle from '../../assets/style-eternity.webp';
@@ -14,7 +15,6 @@ function ShopByStyle() {
     src: string
     alt: string
     name: string
-    link: string
   }
 
   const stylesList: styles[] = [
@@ -22,36 +22,31 @@ function ShopByStyle() {
       id: 0,
       src: anniversaryStyle,
       alt: "anniversary style rings",
-      name: "anniversary",
-      link: ""
+      name: "anniversary"
     },
     {
       id: 1,
       src: eternityStyle,
       alt: "eternity rings style rings",
-      name: "eternity",
-      link: ""
+      name: "eternity"
     },
     {
       id: 2,
       src: weddingStyle,
       alt: "wedding bands style rings",
-      name: "wedding bands",
-      link: ""
+      name: "wedding bands"
     },
     {
       id: 3,
       src: menStyle,
       alt: "mens wedding bands style rings",
-      name: "men's wedding bands",
-      link: ""
+      name: "men's wedding bands"
     },
     {
       id: 4,
       src: giftStyle,
       alt: "gift ideas for rings",
-      name: "gift",
-      link: ""
+      name: "gift"
     },
   ];
 
@@ -62,10 +57,10 @@ function ShopByStyle() {
         <ul className="styles-list">
           {stylesList.map(style => (
             <li className='single-style' key={style.id}>
-              <a href={style.link}>
+              <Link to='shop'>
                 <img className='single-style__image' src={style.src} alt={style.alt}></img>
                 <h3>{style.name}</h3>
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
