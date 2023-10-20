@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import appLogo from './assets/pink-panther-logo.png';
 import engagementRings from './engagement-rings.json';
 
+import Header from './components/header/header';
 import Slideshow from './components/slideshow/slideshow';
 import Navigation from './components/navbar/navbar';
 import ShopByCut from './components/shop-by-cut/shop-by-cut';
@@ -14,9 +14,7 @@ function App() {
   console.log(engagementRings);
   return (
     <div className='App'>
-      <header className='header'>
-        <img src={appLogo} className='logo' alt='the pink panther logo' />
-      </header>
+      <Header></Header>
       <Navigation></Navigation>
       <Slideshow></Slideshow>
       <ShopByCut></ShopByCut>
