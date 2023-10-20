@@ -11,6 +11,12 @@
 .single-style {
     flex: 0 0 auto;
     opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.single-style:hover {
+    opacity: 0.5;
+    transition: opacity 0.5s;
 }
 
 .single-style__image {

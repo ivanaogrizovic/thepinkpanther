@@ -33,7 +33,7 @@ function ShopByStyle() {
       link: ""
     },
     {
-      id: 3,
+      id: 2,
       src: weddingStyle,
       alt: "wedding bands style rings",
       name: "wedding bands",
