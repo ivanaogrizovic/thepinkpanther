@@ -9,8 +9,8 @@ function Home(props: any) {
     return (
         <div>
             <Slideshow />
-            <ShopByCut engagementRings={props} />
-            <ShopByStyle />
+            <ShopByCut rings={props.inventory.engagementRings} />
+            <ShopByStyle rings={props.inventory} />
         </div>
     );
 }

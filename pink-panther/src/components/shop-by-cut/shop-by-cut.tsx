@@ -12,11 +12,21 @@ import cutMarquise from '../../assets/cut-marquise.png';
 
 function ShopByCut(props: any) {
 
+  var result: [] = [];
+
+  const filterByCut = (cut: string) => {
+    result = props.rings.filter((ring: any) => {
+      return ring.shape === cut;
+    });
+    return result;
+  };
+
   interface cuts {
     id: number
     src: string
     alt: string
     name: string
+    filter: string
   }
 
   const cutsList: cuts[] = [
@@ -24,43 +34,50 @@ function ShopByCut(props: any) {
       id: 0,
       src: cutOval,
       alt: "oval cut diamond",
-      name: "oval"
+      name: "oval",
+      filter: "shape"
     },
     {
       id: 1,
       src: cutPrincess,
       alt: "princess cut diamond",
-      name: "princess"
+      name: "princess",
+      filter: "shape"
     },
     {
       id: 2,
       src: cutEmerald,
       alt: "emerald cut diamond",
-      name: "emerald"
+      name: "emerald",
+      filter: "shape"
     },
     {
       id: 3,
       src: cutPear,
       alt: "pear cut diamond",
-      name: "pear"
+      name: "pear",
+      filter: "shape"
     },
     {
       id: 4,
       src: cutCushion,
       alt: "cushion cut diamond",
-      name: "cushion"
+      name: "cushion",
+      filter: "shape"
     },
     {
       id: 5,
       src: cutRound,
       alt: "round cut diamond",
-      name: "round"
+      name: "round",
+      filter: "shape"
     },
     {
       id: 6,
       src: cutMarquise,
       alt: "marquise cut diamond",
-      name: "marquise"
+      name: "marquise",
+      filter: "shape"
     },
   ];
   return (
@@ -70,7 +87,7 @@ function ShopByCut(props: any) {
         <ul className='shapes-list'>
           {cutsList.map(cut => (
             <li className='single-shape' key={cut.id}>
-              <Link to={{ pathname: "/shop" }}>
+              <Link to="shop/engagement" state={filterByCut(cut.name)}>
                 <img className='single-shape__image' src={cut.src} alt={cut.alt}></img>
                 <p>{cut.name}</p>
               </Link>
@@ -78,7 +95,7 @@ function ShopByCut(props: any) {
           ))}
         </ul>
       </div>
-    </div>
+    </div >
   );
 }
 

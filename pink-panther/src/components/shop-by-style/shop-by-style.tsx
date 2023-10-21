@@ -8,7 +8,7 @@ import weddingStyle from '../../assets/style-wedding-bands.webp';
 import giftStyle from '../../assets/style-gift.jpg';
 import menStyle from '../../assets/style-men.webp';
 
-function ShopByStyle() {
+function ShopByStyle(props: any) {
 
   interface styles {
     id: number

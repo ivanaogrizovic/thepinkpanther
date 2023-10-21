@@ -6,6 +6,8 @@ function ItemsGrid(props: any) {
 
     var frontImage = 0;
 
+    // console.log(props)
+
     return (
         <div className='item-list'>
             {props.rings.map((ring: engagementRing) => (
