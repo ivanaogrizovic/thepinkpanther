@@ -19,7 +19,7 @@ function App() {
   return (
     <div className='App'>
       <Header />
-      <Navigation />
+      <Navigation inventory={inventory} />
       <Routes>
         <Route path='/' element={<Home inventory={inventory} />}></Route>
         <Route path='shop/engagement' element={<Shop rings={engagementRings} />}></Route>

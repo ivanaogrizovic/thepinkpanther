@@ -1,6 +1,7 @@
 import React from "react";
 import './shop-by-cut.css';
 import { Link } from "react-router-dom";
+import { shape } from "../../interfaces/cuts.interface";
 
 import cutOval from '../../assets/cut-oval.png';
 import cutPrincess from '../../assets/cut-princess.png';
@@ -21,65 +22,51 @@ function ShopByCut(props: any) {
     return result;
   };
 
-  interface cuts {
-    id: number
-    src: string
-    alt: string
-    name: string
-    filter: string
-  }
-
-  const cutsList: cuts[] = [
+  const cutsList: shape[] = [
     {
       id: 0,
       src: cutOval,
       alt: "oval cut diamond",
       name: "oval",
-      filter: "shape"
     },
     {
       id: 1,
       src: cutPrincess,
       alt: "princess cut diamond",
       name: "princess",
-      filter: "shape"
     },
     {
       id: 2,
       src: cutEmerald,
       alt: "emerald cut diamond",
       name: "emerald",
-      filter: "shape"
     },
     {
       id: 3,
       src: cutPear,
       alt: "pear cut diamond",
       name: "pear",
-      filter: "shape"
     },
     {
       id: 4,
       src: cutCushion,
       alt: "cushion cut diamond",
       name: "cushion",
-      filter: "shape"
     },
     {
       id: 5,
       src: cutRound,
       alt: "round cut diamond",
       name: "round",
-      filter: "shape"
     },
     {
       id: 6,
       src: cutMarquise,
       alt: "marquise cut diamond",
       name: "marquise",
-      filter: "shape"
     },
   ];
+
   return (
     <div className='ShopByCut'>
       <h3 className="main-title">Shop engagement rings by shape</h3>
