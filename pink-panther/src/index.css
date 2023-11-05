@@ -35,3 +35,10 @@ ul {
   justify-content: center;
   margin: 1rem 4rem;
 }
+
+@media screen and (max-width: 1024px) {
+
+  .shop-wrapper {
+    margin: 0;
+  }
+}

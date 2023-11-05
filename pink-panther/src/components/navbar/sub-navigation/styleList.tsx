@@ -6,7 +6,6 @@ import { style } from "../../../interfaces/styles.interface";
 function StyleList(props: any) {
 
     var result: [] = [];
-    console.log(props);
 
     const filterByStyle = (style: string) => {
         result = props.rings.filter((ring: any) => {

@@ -28,7 +28,7 @@ function PriceList(props: any) {
             name: "1000€ - 2500€",
         },
         {
-            id: 2,
+            id: 3,
             name: "2500€ - more",
         }
     ];

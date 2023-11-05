@@ -1,5 +1,22 @@
-.filter-list {
+.filters {
     white-space: nowrap;
     font-size: small;
     text-align: left;
+    position: relative;
+    right: 0%;
+    left: 0%;
+}
+
+.filter {
+    font-weight: 300;
+    font-size: small;
+}
+
+.filter-list {
+    margin-block-start: 0;
+    padding-inline-start: 0;
+}
+
+label {
+    text-transform: capitalize;
 }

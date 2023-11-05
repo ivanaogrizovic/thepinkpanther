@@ -12,6 +12,7 @@ import Shop from './routes/shop';
 import Header from './components/header/header';
 import Navigation from './components/navbar/navbar';
 import Footer from './components/footer/footer';
+import Product from './routes/product';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
         <Route path='/' element={<Home inventory={inventory} />}></Route>
         <Route path='shop/engagement' element={<Shop rings={engagementRings} />}></Route>
         <Route path='shop/wedding' element={<Shop rings={weddingRings} />}></Route>
+        <Route path='shop/engagement/item-detail' element={<Product />}></Route>
       </Routes>
       <Outlet></Outlet>
       <Footer />
