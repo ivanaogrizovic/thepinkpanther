@@ -6,20 +6,29 @@ import { engagementRing } from '../../interfaces/engagementRing.interface';
 function ItemsGrid(props: any) {
 
     var frontImage = 0;
+    var result: [] = [];
+
+    const filterSelected = (name: string) => {
+        result = props.rings.filter((ring: any) => {
+            return ring.name === name;
+        });
+        return result;
+    };
+
 
     return (
         <div className='item-list'>
-            {props.rings.map((ring: engagementRing) => (
-                <Link to="item-detail">
-                    <div className='item' key={ring.name}>
-                        <img className='item__img' src={ring.images[frontImage]} alt={ring.name}></img>
-                        <div className='item-text'>
-                            <p className='item__name'>{ring.name}</p>
-                            <h3 className='item__price'>{ring.price}€</h3>
-                        </div>
-                    </div>
-                </Link>
-            ))}
+            {/* {props.rings.map((ring: engagementRing) => (
+                // <Link to="item-detail" onClick={filterSelected}>
+                //     <div className='item' key={ring.name}>
+                //         <img className='item__img' src={ring.images[frontImage]} alt={ring.name}></img>
+                //         <div className='item-text'>
+                //             <p className='item__name'>{ring.name}</p>
+                //             <h3 className='item__price'>{ring.price}€</h3>
+                //         </div>
+                //     </div>
+                // </Link>
+            ))} */}
         </div>
     );
 }
