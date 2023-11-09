@@ -1,7 +1,6 @@
-import React from 'react';
 import './App.css';
-import engagementRings from './engagement-rings.json';
-import weddingRings from './wedding-rings.json'
+import { useContext } from 'react';
+import { ProductsContext } from './context/engagementRings.context';
 
 import { Routes, Route } from 'react-router-dom';
 import { Outlet } from 'react-router';
@@ -16,15 +15,15 @@ import Product from './routes/product';
 
 function App() {
 
-  const inventory = { engagementRings: engagementRings, weddingRings: weddingRings };
+  const productList = useContext(ProductsContext);
   return (
     <div className='App'>
       <Header />
-      <Navigation inventory={inventory} />
+      <Navigation productList={productList.products} />
       <Routes>
-        <Route path='/' element={<Home inventory={inventory} />}></Route>
-        <Route path='shop/engagement' element={<Shop rings={engagementRings} />}></Route>
-        <Route path='shop/wedding' element={<Shop rings={weddingRings} />}></Route>
+        <Route path='/' element={<Home productList={productList.products} />}></Route>
+        <Route path='shop/engagement' element={<Shop productList={productList.products} />}></Route>
+        <Route path='shop/wedding' element={<Shop />}></Route>
         <Route path='shop/engagement/item-detail' element={<Product />}></Route>
       </Routes>
       <Outlet></Outlet>

@@ -6,11 +6,12 @@ import ShopByStyle from './../components/shop-by-style/shop-by-style';
 
 function Home(props: any) {
 
+
     return (
         <div>
             <Slideshow />
-            <ShopByCut rings={props.inventory.engagementRings} />
-            <ShopByStyle rings={props.inventory} />
+            <ShopByCut rings={props.productList} />
+            <ShopByStyle rings={props.productList} />
         </div>
     );
 }

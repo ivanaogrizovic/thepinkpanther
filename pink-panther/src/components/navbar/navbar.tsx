@@ -16,10 +16,10 @@ function Navigation(props: any) {
         <li className='navigation__item'><Link to=''>Engagement Rings</Link>
           <div className='sub-navigation' role='menu'>
             <ul className='sub-navigation__list'>
-              <ShapeList rings={props.inventory.engagementRings}></ShapeList>
-              <StyleList rings={props.inventory.engagementRings}></StyleList>
-              <MetalList rings={props.inventory.engagementRings}></MetalList>
-              <PriceList rings={props.inventory.engagementRings}></PriceList>
+              <ShapeList rings={props.productList}></ShapeList>
+              <StyleList rings={props.productList}></StyleList>
+              <MetalList rings={props.productList}></MetalList>
+              <PriceList rings={props.productList}></PriceList>
               <li className='sub-navigation__item'>
                 <img src={engagementMenu} className='sub-navigation__image' alt='the pink panther logo' />
               </li>
@@ -27,7 +27,7 @@ function Navigation(props: any) {
           </div>
         </li>
         <li className='navigation__item'><Link to='shop/wedding'>Wedding Rings</Link>
-          {/* <div className='sub-navigation' role='menu'>
+          <div className='sub-navigation' role='menu'>
             <ul className='sub-navigation__list'>
               <li className='sub-navigation__item'>
                 <span className='sub-navigation__filter'>Women's</span>
@@ -55,7 +55,7 @@ function Navigation(props: any) {
                 <img src={weddingMenu} className='sub-navigation__image' alt='the pink panther logo' />
               </li>
             </ul>
-          </div> */}
+          </div>
         </li>
         <li className='navigation__item'><Link to=''>About</Link></li>
         <li className='navigation__item'><Link to=''>Book an appointment</Link></li>

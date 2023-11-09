@@ -30,7 +30,7 @@ function MetalList(props: any) {
     ];
     return (
         <li className='sub-navigation__item'>
-            <span className='sub-navigation__filter'>Shape</span>
+            <span className='sub-navigation__filter'>Metal</span>
             <ul className='sub-navigation__item-2'>
                 {metalList.map(metal => (
                     <li className='sub-navigation__list-2' key={metal.id}>

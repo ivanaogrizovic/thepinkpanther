@@ -34,7 +34,7 @@ function PriceList(props: any) {
     ];
     return (
         <li className='sub-navigation__item'>
-            <span className='sub-navigation__filter'>Shape</span>
+            <span className='sub-navigation__filter'>Price</span>
             <ul className='sub-navigation__item-2'>
                 {priceList.map(price => (
                     <li className='sub-navigation__list-2' key={price.id}>

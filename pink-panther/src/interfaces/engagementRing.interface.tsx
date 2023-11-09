@@ -7,6 +7,6 @@ export interface engagementRing {
     carats: number,
     category: string,
     womens: boolean,
-    images: [];
+    images: string[];
     origin: string;
 }

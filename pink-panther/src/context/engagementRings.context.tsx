@@ -4,14 +4,17 @@ import { engagementRing } from '../interfaces/engagementRing.interface';
 
 import PRODUCTS from '../engagement-rings.json';
 
-export const ProductsContext = createContext({
+type ProductsContextInterface = {
+  products: engagementRing[];
+};
+
+export const ProductsContext = createContext<ProductsContextInterface>({
   products: []
 });
 
 export const ProductsProvider = ({ children }: { children?: React.ReactNode }) => {
-  const [products, setProducts] = useState(PRODUCTS);
-  const value = { products }
+  const [productList, setProducts] = useState(PRODUCTS);
   return (
-    <ProductsContext.Provider value={value}>{children}</ProductsContext.Provider>
+    <ProductsContext.Provider value={{ 'products': productList }}>{children}</ProductsContext.Provider>
   )
 }
