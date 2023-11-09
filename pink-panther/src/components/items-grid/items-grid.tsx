@@ -6,20 +6,20 @@ import { engagementRing } from '../../interfaces/engagementRing.interface';
 function ItemsGrid(props: any) {
 
   var frontImage = 0;
-  // var result: [] = [];
+  var result: [] = [];
 
-  // const filterSelected = (name: string) => {
-  //     result = props.rings.filter((ring: any) => {
-  //         return ring.name === name;
-  //     });
-  //     return result;
-  // };
+  const filterSelected = (name: string) => {
+    result = props.rings.filter((ring: any) => {
+      return ring.name === name;
+    });
+    return result;
+  };
 
 
   return (
     <div className='item-list'>
       {props.rings.map((ring: engagementRing) => (
-        <Link to="item-detail">
+        <Link to="item-detail" state={filterSelected(ring.name)}>
           <div className='item' key={ring.name}>
             <img className='item__img' src={ring.images[frontImage]} alt={ring.name}></img>
             <div className='item-text'>
