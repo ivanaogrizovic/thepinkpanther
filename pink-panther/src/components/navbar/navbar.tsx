@@ -57,8 +57,8 @@ function Navigation(props: any) {
             </ul>
           </div>
         </li>
-        <li className='navigation__item'><Link to=''>About</Link></li>
-        <li className='navigation__item'><Link to=''>Book an appointment</Link></li>
+        <li className='navigation__item'><Link to='about'>About</Link></li>
+        <li className='navigation__item'><Link to='book-an-appointment'>Book an appointment</Link></li>
       </ul>
     </nav>
   );
