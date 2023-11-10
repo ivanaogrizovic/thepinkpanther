@@ -11,7 +11,7 @@
 }
 
 .slideshow__item {
-    flex: 1 1 auto;
+    flex: 1 1 50%;
 }
 
 .slide-text {
@@ -28,6 +28,10 @@
 .slide-link {
     text-decoration: underline;
     text-transform: uppercase;
+}
+
+.main-text {
+    word-wrap: break-word;
 }
 
 @media screen and (max-width: 1024px) {

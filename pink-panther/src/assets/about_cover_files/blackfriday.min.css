@@ -1,8 +1,0 @@
-body.category .products .card-footer strong {color:#dc3545}
-body.category .products .card-footer strong::before {content: "NOW ";font-size:.875em}
-body.category .products .col-6 .salebadge{position:relative;top:calc(100% - 35px);right:calc(100% - 5px);width:30px;height:30px;}
-body.category ol.breadcrumb{padding-bottom:20px;background:url(/images/icons/black-friday.png) bottom center no-repeat;background-size:100px 19px;border-bottom:solid 2px #fff}
-body.slicategory ol.breadcrumb{margin-bottom:-10px}
-@media (max-width: 991.98px){body{padding-top:189px}.fixed-top.navbar-hide{top:-172px}}
-@media (min-width: 992px){body{padding-top:258px}.fixed-top.navbar-hide{top:-264px}}
-@media (min-width: 1680px){body{padding-top:280px}.fixed-top.navbar-hide{top:-284px}}

@@ -1,0 +1,25 @@
+.main-blurb {
+    padding: 0 17% 3rem 17%;
+}
+
+.explore-link {
+    text-decoration: underline;
+}
+
+.values-wrapper {
+    background-color: var(--light-background);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 8rem;
+    justify-content: center;
+    padding: 2.5rem 0;
+}
+
+.single-value {
+    flex: 0 0 15%;
+}
+
+.quote-wrapper {
+    padding: 2% 15%;
+}
