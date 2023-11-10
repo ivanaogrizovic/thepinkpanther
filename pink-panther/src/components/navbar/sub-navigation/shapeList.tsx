@@ -17,10 +17,11 @@ function ShapeList(props: any) {
     var result: [] = [];
 
     const filterByShape = (shape: string) => {
+        const filter = shape;
         result = props.rings.filter((ring: any) => {
             return ring.shape === shape;
         });
-        return result;
+        return [result, filter];
     };
 
     const shapeList: shape[] = [

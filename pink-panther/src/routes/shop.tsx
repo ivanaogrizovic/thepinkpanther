@@ -6,11 +6,14 @@ import { useLocation } from 'react-router-dom';
 function Shop(props: any) {
 
     const location = useLocation();
-    const filteredRings = location.state;
+    const filteredRings = location.state[0];
+    const selectedFilter: string = location.state[1];
+
+    console.log(selectedFilter);
 
     return (
         <div className='shop-wrapper'>
-            <Filters />
+            <Filters filter={selectedFilter} />
             <ItemsGrid rings={filteredRings} />
         </div>
     );

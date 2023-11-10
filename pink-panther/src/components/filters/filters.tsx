@@ -1,10 +1,107 @@
 import React from 'react';
 import './filters.css';
+import { filters } from '../../interfaces/filters.interface';
 
-function Filters() {
+function Filters(props: any) {
+
+    const preselectedFilter = props.filter;
+
+    const filterList: filters[] = [
+        {
+            name: "oval",
+            isChecked: false
+        },
+        {
+            name: "princess",
+            isChecked: false
+        },
+        {
+            name: "emerald",
+            isChecked: false
+        },
+        {
+            name: "pear",
+            isChecked: false
+        },
+        {
+            name: "cushion",
+            isChecked: false
+        },
+        {
+            name: "round",
+            isChecked: false
+        },
+        {
+            name: "marquise",
+            isChecked: false
+        }, {
+            name: "halo",
+            isChecked: false
+        },
+        {
+            name: "solitaire",
+            isChecked: false
+        },
+        {
+            name: "three stone",
+            isChecked: false
+        },
+        {
+            name: "double halo",
+            isChecked: false
+        },
+        {
+            name: "straight",
+            isChecked: false
+        },
+        {
+            name: "white gold",
+            isChecked: false
+        },
+        {
+            name: "yellow gold",
+            isChecked: false
+        },
+        {
+            name: "platinum",
+            isChecked: false
+        },
+        {
+            name: "less than 600",
+            isChecked: false
+        },
+        {
+            name: "600-1000",
+            isChecked: false
+        },
+        {
+            name: "1000-2500",
+            isChecked: false
+        },
+        {
+            name: "2500",
+            isChecked: false
+        }
+    ];
+
+    const checkSelected = () => {
+        filterList.forEach((filter: filters) => {
+            if (filter.name === preselectedFilter) {
+                filter.isChecked = true;
+            }
+        })
+    }
+    checkSelected();
+
+    const handleChange = () => {
+
+        console.log('The checkbox was toggled');
+
+    };
 
     return (
         <div className='filters'>
+            {/* <div>  <input type="checkbox" onChange={handleChange} /> </div> */}
             <h3 className='filter-title'>Filter by</h3>
             <h3 className='filter'>Shape</h3>
             <ul className='filter-list'>
