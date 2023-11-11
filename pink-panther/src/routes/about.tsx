@@ -3,6 +3,7 @@ import HeroImage from '../components/hero-image/hero-image';
 import AboutSection from '../components/about-section/about-section';
 import Slideshow from '../components/slideshow/slideshow';
 import SlideshowReverse from '../components/slideshow/slideshow-reverse';
+import aboutHeroImage from '../assets/hero-about-cut.jpg';
 import ambassadorImage1 from '../assets/about-ambassador-1.jpg'
 import ambassadorImage2 from '../assets/about-ambassador-2.jpg'
 
@@ -16,9 +17,9 @@ function About() {
 
     return (
         <div>
-            <HeroImage />
+            <HeroImage image={aboutHeroImage} />
             <AboutSection />
-            <Slideshow image={ambassadorImage1} title={ambassadorTitle1} text={ambassadorText1} link={ambassadorLink1} ></Slideshow>
+            <Slideshow image={ambassadorImage1} title={ambassadorTitle1} text={ambassadorText1} link={ambassadorLink1}></Slideshow>
             <SlideshowReverse image={ambassadorImage2} title={ambassadorTitle2} text={ambassadorText2}></SlideshowReverse>
             <div className='bottom-margin'></div>
         </div>

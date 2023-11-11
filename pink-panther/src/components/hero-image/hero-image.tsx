@@ -1,12 +1,13 @@
 import React from "react";
 import './hero-image.css'
-import aboutHeroImage from '../../assets/hero-about.webp';
 
-function HeroImage() {
+function HeroImage(props: any) {
+
+    const heroImage = props.image;
 
     return (
         <div>
-            <img className='hero-image' src={aboutHeroImage} alt="pink diamond ring hero image" />
+            <img className='hero-image' src={heroImage} alt="diamond ring" />
         </div>
     );
 

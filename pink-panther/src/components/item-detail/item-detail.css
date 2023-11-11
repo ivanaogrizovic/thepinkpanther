@@ -4,6 +4,7 @@
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
+    flex-wrap: nowrap;
 }
 
 .product__name {
@@ -11,13 +12,13 @@
 }
 
 .pictures-container {
-    flex: 0 0 65%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* width: 65%; */
     gap: 1rem;
     justify-content: center;
+    align-content: start;
+    flex: 1 1 60%;
 }
 
 .product__text {
@@ -25,9 +26,12 @@
 }
 
 .text-container {
+    display: flex;
     flex: 0 0 30%;
     text-align: left;
     flex-wrap: wrap;
+    flex: 1 1 30%;
+    width: 40%;
 }
 
 .product__img {
@@ -51,44 +55,13 @@ p {
     text-transform: capitalize;
 }
 
-.button {
-    text-align: center;
-    padding: 0.7rem;
-    text-decoration: none;
-}
-
-.button__primary {
-    border: 2px solid black;
-    border-radius: 3px;
-    background-color: black;
-    border-radius: 7px;
-    color: white;
-    transition: 0.5s;
-}
-
-.button__primary:hover {
-    background-color: var(--dark-background);
-    border: 2px solid var(--dark-background);
-    transition: 0.5s;
-}
-
-.button__secondary {
-    border: 2px solid black;
-    border-radius: 3px;
-    background-color: white;
-    border-radius: 7px;
-    color: black;
-    transition: 0.5s;
-}
-
-.button__secondary:hover {
-    color: var(--dark-background);
-    border: 2px solid var(--dark-background);
-    transition: 0.5s;
+.buttons {
+    width: 100%;
 }
 
 .product-details {
     padding: 1rem;
+    width: 100%;
 }
 
 .row {
@@ -105,4 +78,22 @@ p {
 
 .carats {
     text-transform: lowercase;
+}
+
+@media screen and (max-width: 900px) {
+    .product-container {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .text-container {
+        width: auto;
+        padding: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 395px) {
+    .pictures-container {
+        gap: 0.1rem
+    }
 }

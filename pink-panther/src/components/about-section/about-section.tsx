@@ -13,7 +13,7 @@ function AboutSection() {
             </div>
             <div className="values-wrapper">
                 <div className="single-value">
-                    <h3>innovarion</h3>
+                    <h3>innovation</h3>
                     <p>Forward thinking and always innovating to create the diamonds of the future.</p>
                 </div>
                 <div className="single-value">

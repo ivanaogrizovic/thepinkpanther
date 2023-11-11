@@ -1,6 +1,7 @@
 import React from 'react';
 import './item-detail.css'
 import { Link } from "react-router-dom";
+import Button from '../button/button';
 
 function ItemDetail(props: any) {
 
@@ -22,8 +23,8 @@ function ItemDetail(props: any) {
                     <p className='product__descriptors'>Center stone shape:&nbsp;&nbsp;&nbsp;&nbsp;{singleProduct.shape}</p>
                 </div>
                 <div className='buttons'>
-                    <div><Link to="item-detail"><h3 className='button button__primary'>view in store</h3></Link></div>
-                    <div><Link to="item-detail"><h3 className='button button__secondary'>find the nearest store</h3></Link></div>
+                    <Button text="view in store" buttonClass="button button__primary"></Button>
+                    <Button text="find the nearest store" buttonClass="button button__secondary"></Button>
                 </div>
                 <div className='product-details'>
                     <div className='row'><p className='column'>collection</p><p className='column'>classic</p>
