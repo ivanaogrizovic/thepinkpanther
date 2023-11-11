@@ -1,0 +1,22 @@
+[
+    {
+        "value": "halo",
+        "isChecked": false
+    },
+    {
+        "value": "solitaire",
+        "isChecked": false
+    },
+    {
+        "value": "three stone",
+        "isChecked": false
+    },
+    {
+        "value": "double halo",
+        "isChecked": false
+    },
+    {
+        "value": "straight",
+        "isChecked": false
+    }
+]

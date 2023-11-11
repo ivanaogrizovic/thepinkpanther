@@ -9,11 +9,11 @@ type ProductsContextInterface = {
 };
 
 export const ProductsContext = createContext<ProductsContextInterface>({
-  products: []
+  products: [],
 });
 
 export const ProductsProvider = ({ children }: { children?: React.ReactNode }) => {
-  const [productList, setProducts] = useState(PRODUCTS);
+  const [productList] = useState(PRODUCTS);
   return (
     <ProductsContext.Provider value={{ 'products': productList }}>{children}</ProductsContext.Provider>
   )

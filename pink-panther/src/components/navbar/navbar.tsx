@@ -13,7 +13,7 @@ function Navigation(props: any) {
   return (
     <nav className='navigation' data-action='navigation'>
       <ul className='navigation__list'>
-        <li className='navigation__item'><Link to=''>Engagement Rings</Link>
+        <li className='navigation__item'><Link to='shop/engagement'>Engagement Rings</Link>
           <div className='sub-navigation' role='menu'>
             <ul className='sub-navigation__list'>
               <ShapeList rings={props.productList}></ShapeList>

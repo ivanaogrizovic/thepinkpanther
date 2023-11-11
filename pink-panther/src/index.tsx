@@ -4,7 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 import './index.css';
 import App from './App';
-import { ProductsProvider } from './context/engagementRings.context'
+import { ProductsProvider } from './context/engagementRings.context';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(

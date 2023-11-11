@@ -1,4 +1,4 @@
-export interface filters {
-    name: string
+export interface filter {
+    value: string
     isChecked: boolean
 }

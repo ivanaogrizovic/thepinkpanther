@@ -8,19 +8,18 @@ function ItemsGrid(props: any) {
   var frontImage = 0;
   var result: [] = [];
 
-  const filterSelected = (name: string) => {
+  const filterSelectedItem = (name: string) => {
     result = props.rings.filter((ring: any) => {
       return ring.name === name;
     });
     return result;
   };
 
-
   return (
     <div className='item-list'>
-      {props.rings.map((ring: engagementRing) => (
-        <Link to="item-detail" state={filterSelected(ring.name)}>
-          <div className='item' key={ring.name}>
+      {props.rings.map((ring: engagementRing, index: number) => (
+        <Link to="item-detail" state={filterSelectedItem(ring.name)} key={index}>
+          <div className='item'>
             <img className='item__img' src={ring.images[frontImage]} alt={ring.name}></img>
             <div className='item-text'>
               <p className='item__name'>{ring.name}</p>
