@@ -5,7 +5,7 @@ export interface engagementRing {
     metal: string;
     price: number,
     carats: number,
-    category: string[],
+    category: string,
     womens: boolean,
     images: string[];
     origin: string;

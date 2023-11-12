@@ -21,7 +21,7 @@ function ShapeList(props: any) {
         result = props.rings.filter((ring: any) => {
             return ring.shape === shape;
         });
-        return [result, filter];
+        return result;
     };
 
     const shapeList: shape[] = [

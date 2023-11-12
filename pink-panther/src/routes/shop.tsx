@@ -50,7 +50,6 @@ function Shop({ productList }: any) {
 
     }
 
-
     useEffect(() => {
 
         if (selectedShapes.length === 0 && selectedStyles.length === 0 && selectedMetals.length === 0) {
@@ -61,37 +60,16 @@ function Shop({ productList }: any) {
             var filteredStyles: engagementRing[] = [];
             var filteredMetals: engagementRing[] = [];
 
-            if (selectedShapes.length) {
-                filteredShapes = (productList.filter((item: engagementRing) => (selectedShapes.includes(item.shape))));
-                // CHECK STYLES
-            } else if (selectedStyles.length) {
-                if (filteredShapes.length) {
-                    filteredStyles = (filteredShapes.filter((item: engagementRing) => (selectedStyles.includes(item.style))));
-                } else {
-                    filteredStyles = (productList.filter((item: engagementRing) => (selectedStyles.includes(item.style))));
-                }
-                // CHECK METALS
-            } else if (selectedMetals.length) {
+            filteredShapes = (productList.filter((item: engagementRing) => (selectedShapes.includes(item.shape))));
+            filteredStyles = (productList.filter((item: engagementRing) => (selectedStyles.includes(item.style))));
+            filteredMetals = (productList.filter((item: engagementRing) => (selectedMetals.includes(item.metal))));
 
-                if (filteredStyles.length) {
-                    filteredMetals = (filteredStyles.filter((item: engagementRing) => (selectedMetals.includes(item.metal))));
-                } else {
-                    filteredMetals = (productList.filter((item: engagementRing) => (selectedMetals.includes(item.metal))));
-                }
-            }
             var filteredList = filteredShapes.concat(filteredStyles.concat(filteredMetals));
             removeDuplicates(filteredList);
             console.log(filteredList);
 
             setFilteredProductList(filteredList);
         }
-
-        // } else {
-        //     // var filteredShapes = (productList.filter((item: engagementRing) => (selectedShapes.includes(item.shape))));
-        //     // var filteredStyles = (productList.filter((item: engagementRing) => (selectedStyles.includes(item.style))));
-        //     // var filteredMetals = (productList.filter((item: engagementRing) => (selectedMetals.includes(item.metal))));
-        // }
-
     }, [selectedShapes, selectedStyles, selectedMetals, productList])
 
     return (
