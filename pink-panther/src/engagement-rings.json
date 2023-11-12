@@ -1,12 +1,18 @@
 [
   {
-    "name": "Hart - 14K White Gold Hidden Halo Oval Diamond",
+    "name": "hart - 14k white gold hidden halo oval diamond",
     "shape": "oval",
     "style": "halo",
     "metal": "white gold",
     "price": 1825,
     "carats": 1,
-    "category": "engagement",
+    "category": [
+      "oval",
+      "halo",
+      "white gold",
+      "1825",
+      "natural"
+    ],
     "womens": true,
     "images": [
       "https://cdn-images.gabrielny.com/is/image/GabrielCo/defaultwp/Hart---14K-White-Gold-Hidden-Halo-Oval-Diamond-Engagement-Ring~ER14719O4W44JJ-1.jpg?w=700&dpr=1",
@@ -23,7 +29,13 @@
     "metal": "white gold",
     "price": 2300,
     "carats": 1,
-    "category": "engagement",
+    "category": [
+      "oval",
+      "halo",
+      "white gold",
+      "2300",
+      "natural"
+    ],
     "womens": true,
     "images": [
       "https://cdn-images.gabrielny.com/is/image/GabrielCo/defaultwp/Idina---14K-White-Gold-Oval-Halo-Diamond-Engagement-Ring~ER14725O4W44JJ-1.jpg?w=700&dpr=1",
@@ -39,7 +51,13 @@
     "metal": "yellow gold",
     "price": 1050,
     "carats": 1.5,
-    "category": "engagement",
+    "category": [
+      "oval",
+      "solitaire",
+      "yellow gold",
+      "1050",
+      "natural"
+    ],
     "womens": true,
     "images": [
       "https://cdn-images.gabrielny.com/is/image/GabrielCo/defaultwp/Delphi---14K-White-Yellow-Gold-Bypass-Oval-Diamond-Engagement-Ring~ER16277O6M4JJJ-1.jpg?w=700&dpr=1",
@@ -56,7 +74,13 @@
     "metal": "white gold",
     "price": 1500,
     "carats": 2,
-    "category": "engagement",
+    "category": [
+      "oval",
+      "halo",
+      "white gold",
+      "1500",
+      "natural"
+    ],
     "womens": true,
     "images": [
       "https://cdn-images.gabrielny.com/is/image/GabrielCo/defaultwp/Rainah---14K-White-Gold-Hidden-Halo-Oval-Diamond-Engagement-Ring~ER16061O8W44JJ-1.jpg?w=700&dpr=1",
@@ -73,7 +97,13 @@
     "metal": "white gold",
     "price": 1750,
     "carats": 1.5,
-    "category": "engagement",
+    "category": [
+      "oval",
+      "solitaire",
+      "white gold",
+      "1750",
+      "natural"
+    ],
     "womens": true,
     "images": [
       "https://cdn-images.gabrielny.com/is/image/GabrielCo/defaultwp/Aiva---14K-White-Gold-Bypass-Oval-Diamond-Engagement-Ring~ER16278O6W44JJ-1.jpg?w=700&dpr=1",
@@ -90,7 +120,13 @@
     "metal": "white gold",
     "price": 750,
     "carats": 1.5,
-    "category": "engagement",
+    "category": [
+      "oval",
+      "solitaire",
+      "white gold",
+      "750",
+      "lab grown"
+    ],
     "womens": true,
     "images": [
       "https://cdn-images.gabrielny.com/is/image/GabrielCo/defaultwp/Aiva---14K-White-Gold-Bypass-Oval-Diamond-Engagement-Ring~ER16278O6W44JJ-1.jpg?w=700&dpr=1",
@@ -107,7 +143,13 @@
     "metal": "white gold",
     "price": 2050,
     "carats": 2,
-    "category": "engagement",
+    "category": [
+      "oval",
+      "halo",
+      "white gold",
+      "2050",
+      "natural"
+    ],
     "womens": true,
     "images": [
       "https://cdn-images.gabrielny.com/is/image/GabrielCo/defaultwp/Adeena---14K-White-Gold-Oval-Hidden-Halo-Double-Prong-Diamond-Engagement-Ring~ER16414O8W44JJ-1.jpg?w=700&dpr=1",
@@ -123,7 +165,13 @@
     "metal": "white gold",
     "price": 6100,
     "carats": 1.5,
-    "category": "engagement",
+    "category": [
+      "oval",
+      "three stone",
+      "white gold",
+      "6100",
+      "natural"
+    ],
     "womens": true,
     "images": [
       "https://cdn-images.gabrielny.com/is/image/GabrielCo/defaultwp/Briellah---14K-White-Gold-Oval-Three-Stone-Diamond-Engagement-Ring~ER16250O6W44JJ-1.jpg?w=700&dpr=1",
@@ -140,7 +188,13 @@
     "metal": "white gold",
     "price": 9600,
     "carats": 2.5,
-    "category": "engagement",
+    "category": [
+      "oval",
+      "halo",
+      "white gold",
+      "9600",
+      "natural"
+    ],
     "womens": true,
     "images": [
       "https://cdn-images.gabrielny.com/is/image/GabrielCo/defaultwp/Leeda---18K-White-Gold-Oval-Hidden-Halo-Diamond-Engagement-Ring~ER15817O10W83JJ-1.jpg?w=700&dpr=1",
@@ -157,7 +211,13 @@
     "metal": "white gold",
     "price": 6200,
     "carats": 1.5,
-    "category": "engagement",
+    "category": [
+      "oval",
+      "three stone",
+      "white gold",
+      "6200",
+      "natural"
+    ],
     "womens": true,
     "images": [
       "https://cdn-images.gabrielny.com/is/image/GabrielCo/defaultwp/Euphoria---14K-White-Gold-Oval-Three-Stone-Diamond-Engagement-Ring~ER16186O6W44JJ-1.jpg?w=700&dpr=1",
@@ -174,7 +234,13 @@
     "metal": "white gold",
     "price": 1275,
     "carats": 1.5,
-    "category": "engagement",
+    "category": [
+      "oval",
+      "three stone",
+      "white gold",
+      "1275",
+      "natural"
+    ],
     "womens": true,
     "images": [
       "https://cdn-images.gabrielny.com/is/image/GabrielCo/defaultwp/Blaise---14K-White-Gold-Oval-Diamond-Engagement-Ring~ER16200O6W44JJ-1.jpg?w=700&dpr=1",
@@ -191,7 +257,13 @@
     "metal": "white gold",
     "price": 4150,
     "carats": 1.5,
-    "category": "engagement",
+    "category": [
+      "oval",
+      "halo",
+      "white gold",
+      "4150",
+      "natural"
+    ],
     "womens": true,
     "images": [
       "https://cdn-images.gabrielny.com/is/image/GabrielCo/defaultwp/Emarie---14K-White-Gold-Oval-Halo-Diamond-Engagement-Ring~ER16185O6W44JJ-1.jpg?w=700&dpr=1",
@@ -208,7 +280,13 @@
     "metal": "white gold",
     "price": 2150,
     "carats": 1.5,
-    "category": "engagement",
+    "category": [
+      "oval",
+      "halo",
+      "white gold",
+      "2150",
+      "lab grown"
+    ],
     "womens": true,
     "images": [
       "https://cdn-images.gabrielny.com/is/image/GabrielCo/defaultwp/Emarie---14K-White-Gold-Oval-Halo-Diamond-Engagement-Ring~ER16185O6W44JJ-1.jpg?w=700&dpr=1",
@@ -225,7 +303,13 @@
     "metal": "yellow gold",
     "price": 750,
     "carats": 1.5,
-    "category": "engagement",
+    "category": [
+      "round",
+      "solitaire",
+      "yellow gold",
+      "750",
+      "lab grown"
+    ],
     "womens": true,
     "images": [
       "https://cdn-images.gabrielny.com/is/image/GabrielCo/defaultwp/Evelina---14K-White-Yellow-Gold-Diamond-Engagement-Ring~ER15960R6M4JJJ-1.jpg?w=700&dpr=1",
@@ -241,7 +325,13 @@
     "metal": "platinum",
     "price": 2900,
     "carats": 1,
-    "category": "engagement",
+    "category": [
+      "round",
+      "straight",
+      "platinum",
+      "2900",
+      "natural"
+    ],
     "womens": true,
     "images": [
       "https://cdn-images.gabrielny.com/is/image/GabrielCo/defaultwp/Love---Platinum-Diamond-Engagement-Ring~ER15681R4PT4JJ-1.jpg?w=700&dpr=1",
@@ -257,7 +347,13 @@
     "metal": "platinum",
     "price": 1650,
     "carats": 1,
-    "category": "engagement",
+    "category": [
+      "round",
+      "straight",
+      "platinum",
+      "1650",
+      "lab grown"
+    ],
     "womens": true,
     "images": [
       "https://cdn-images.gabrielny.com/is/image/GabrielCo/defaultwp/Love---Platinum-Diamond-Engagement-Ring~ER15681R4PT4JJ-1.jpg?w=700&dpr=1",
@@ -273,7 +369,13 @@
     "metal": "white gold",
     "price": 3550,
     "carats": 1,
-    "category": "engagement",
+    "category": [
+      "round",
+      "three stone",
+      "white gold",
+      "3550",
+      "natural"
+    ],
     "womens": true,
     "images": [
       "https://cdn-images.gabrielny.com/is/image/GabrielCo/defaultwp/Acacia---14K-White-Gold-Round-Three-Stone-Diamond-Engagement-Ring~ER16121R4W43JJ-1.jpg?w=700&dpr=1",
@@ -289,7 +391,13 @@
     "metal": "white gold",
     "price": 2025,
     "carats": 1,
-    "category": "engagement",
+    "category": [
+      "round",
+      "straight",
+      "white gold",
+      "2050",
+      "natural"
+    ],
     "womens": true,
     "images": [
       "https://cdn-images.gabrielny.com/is/image/GabrielCo/defaultwp/Mason---14K-White-Gold-Round-Diamond-Engagement-Ring~ER14427R4W44JJ-1.jpg?w=700&dpr=1",
@@ -306,7 +414,13 @@
     "metal": "white gold",
     "price": 3700,
     "carats": 1.5,
-    "category": "engagement",
+    "category": [
+      "round",
+      "halo",
+      "white gold",
+      "3700",
+      "natural"
+    ],
     "womens": true,
     "images": [
       "https://cdn-images.gabrielny.com/is/image/GabrielCo/defaultwp/Ryland---18k-White-Gold-Octagonal-Halo-Round-Diamond-Engagement-Ring~ER14526R6W83JJ-1.jpg?w=700&dpr=1",
@@ -323,7 +437,13 @@
     "metal": "white gold",
     "price": 2075,
     "carats": 1,
-    "category": "engagement",
+    "category": [
+      "round",
+      "halo",
+      "white gold",
+      "2075",
+      "natural"
+    ],
     "womens": true,
     "images": [
       "https://cdn-images.gabrielny.com/is/image/GabrielCo/defaultwp/Nicia---14K-White-Gold-Round-Halo-Diamond-Engagement-Ring~ER15221R4W44JJ-1.jpg?w=700&dpr=1",
@@ -340,7 +460,13 @@
     "metal": "white gold",
     "price": 1025,
     "carats": 1,
-    "category": "engagement",
+    "category": [
+      "round",
+      "halo",
+      "white gold",
+      "1025",
+      "lab grown"
+    ],
     "womens": true,
     "images": [
       "https://cdn-images.gabrielny.com/is/image/GabrielCo/defaultwp/Nicia---14K-White-Gold-Round-Halo-Diamond-Engagement-Ring~ER15221R4W44JJ-1.jpg?w=700&dpr=1",
@@ -357,7 +483,13 @@
     "metal": "white gold",
     "price": 2350,
     "carats": 1,
-    "category": "engagement",
+    "category": [
+      "cushion",
+      "halo",
+      "white gold",
+      "2350",
+      "natural"
+    ],
     "womens": true,
     "images": [
       "https://cdn-images.gabrielny.com/is/image/GabrielCo/defaultwp/Amaya---14K-White-Gold-Cushion-Halo-Round-Diamond-Engagement-Ring~ER14915R4W44JJ-1.jpg?w=700&dpr=1",
@@ -374,7 +506,13 @@
     "metal": "white gold",
     "price": 3100,
     "carats": 1.5,
-    "category": "engagement",
+    "category": [
+      "princess",
+      "three stone",
+      "white gold",
+      "3100",
+      "natural"
+    ],
     "womens": true,
     "images": [
       "https://cdn-images.gabrielny.com/is/image/GabrielCo/defaultwp/Antonia---14K-White-Gold-Princess-Cut-Three-Stone-Diamond-Engagement-Ring~ER16253S6W44JJ-1.jpg?w=700&dpr=1",
@@ -391,7 +529,13 @@
     "metal": "white gold",
     "price": 2400,
     "carats": 1.25,
-    "category": "engagement",
+    "category": [
+      "princess",
+      "halo",
+      "white gold",
+      "2400",
+      "natural"
+    ],
     "womens": true,
     "images": [
       "https://cdn-images.gabrielny.com/is/image/GabrielCo/defaultwp/Patience---14K-White-Gold-Princess-Halo-Diamond-Engagement-Ring~ER7266W44JJ-1.jpg?w=700&dpr=1",
@@ -408,7 +552,13 @@
     "metal": "white gold",
     "price": 11100,
     "carats": 3,
-    "category": "engagement",
+    "category": [
+      "princess",
+      "three stone",
+      "white gold",
+      "11100",
+      "natural"
+    ],
     "womens": true,
     "images": [
       "https://cdn-images.gabrielny.com/is/image/GabrielCo/defaultwp/Kissena---18K-White-Gold-Princess-Cut-Three-Stone-Diamond-Engagement-Ring~ER15818S12W84JJ-1.jpg?w=700&dpr=1",
@@ -425,7 +575,13 @@
     "metal": "white gold",
     "price": 1975,
     "carats": 1.25,
-    "category": "engagement",
+    "category": [
+      "princess",
+      "straight",
+      "white gold",
+      "1975",
+      "natural"
+    ],
     "womens": true,
     "images": [
       "https://cdn-images.gabrielny.com/is/image/GabrielCo/defaultwp/Merritt---14K-White-Gold-Princess-Cut-Diamond-Engagement-Ring~ER8916W44JJ-1.jpg?w=700&dpr=1",
@@ -442,7 +598,13 @@
     "metal": "white gold",
     "price": 2575,
     "carats": 1.5,
-    "category": "engagement",
+    "category": [
+      "princess",
+      "three stone",
+      "white gold",
+      "2575",
+      "natural"
+    ],
     "womens": true,
     "images": [
       "https://cdn-images.gabrielny.com/is/image/GabrielCo/defaultwp/Tammi---14K-White-Gold-Princess-Cut-Three-Stone-Diamond-Engagement-Ring~ER16473S6W44JJ-1.jpg?w=700&dpr=1",
@@ -459,7 +621,13 @@
     "metal": "white gold",
     "price": 675,
     "carats": 0.5,
-    "category": "engagement",
+    "category": [
+      "princess",
+      "solitaire",
+      "white gold",
+      "675",
+      "natural"
+    ],
     "womens": true,
     "images": [
       "https://cdn-images.gabrielny.com/is/image/GabrielCo/defaultwp/Paula---14K-White-Gold-Princess-Cut-Diamond-Engagement-Ring~ER14982S2W4JJJ-1.jpg?w=700&dpr=1",
@@ -476,7 +644,13 @@
     "metal": "white gold",
     "price": 430,
     "carats": 0.5,
-    "category": "engagement",
+    "category": [
+      "princess",
+      "solitaire",
+      "white gold",
+      "430",
+      "lab grown"
+    ],
     "womens": true,
     "images": [
       "https://cdn-images.gabrielny.com/is/image/GabrielCo/defaultwp/Paula---14K-White-Gold-Princess-Cut-Diamond-Engagement-Ring~ER14982S2W4JJJ-1.jpg?w=700&dpr=1",
@@ -493,7 +667,13 @@
     "metal": "white gold",
     "price": 1250,
     "carats": 1,
-    "category": "engagement",
+    "category": [
+      "princess",
+      "straight",
+      "white gold",
+      "1250",
+      "natural"
+    ],
     "womens": true,
     "images": [
       "https://cdn-images.gabrielny.com/is/image/GabrielCo/defaultwp/Kelly---14K-White-Gold-Princess-Cut-Diamond-Engagement-Ring~ER7973S4W44JJ-1.jpg?w=700&dpr=1",
@@ -509,7 +689,13 @@
     "metal": "white gold",
     "price": 5100,
     "carats": 3,
-    "category": "engagement",
+    "category": [
+      "emerald",
+      "halo",
+      "white gold",
+      "5100",
+      "natural"
+    ],
     "womens": true,
     "images": [
       "https://cdn-images.gabrielny.com/is/image/GabrielCo/defaultwp/Anita---18K-White-Gold-Emerald-Cut-Halo-Five-Stone-Diamond-Engagement-Ring~ER16274E12W83JJ-1.jpg?w=700&dpr=1",
@@ -526,7 +712,13 @@
     "metal": "white gold",
     "price": 6300,
     "carats": 0.75,
-    "category": "engagement",
+    "category": [
+      "emerald",
+      "three stone",
+      "white gold",
+      "6300",
+      "natural"
+    ],
     "womens": true,
     "images": [
       "https://cdn-images.gabrielny.com/is/image/GabrielCo/defaultwp/Everley---18K-White-Gold-Emerald-Cut-Five-Stone-Diamond-Channel-Set-Engagement-Ring~ER15815E11W83JJ-1.jpg?w=700&dpr=1",
@@ -543,7 +735,13 @@
     "metal": "white gold",
     "price": 3100,
     "carats": 1.25,
-    "category": "engagement",
+    "category": [
+      "emerald",
+      "halo",
+      "white gold",
+      "3100",
+      "natural"
+    ],
     "womens": true,
     "images": [
       "https://cdn-images.gabrielny.com/is/image/GabrielCo/defaultwp/Cammie---Art-Deco-14K-White-Gold-Halo-Emerald-Cut-Diamond-Engagement-Ring~ER16190E5W44JJ-1.jpg?w=700&dpr=1",
@@ -560,7 +758,13 @@
     "metal": "white gold",
     "price": 4600,
     "carats": 1.5,
-    "category": "engagement",
+    "category": [
+      "emerald",
+      "three stone",
+      "white gold",
+      "4600",
+      "natural"
+    ],
     "womens": true,
     "images": [
       "https://cdn-images.gabrielny.com/is/image/GabrielCo/defaultwp/Stephi---14K-White-Gold-Emerald-Cut-Three-Stone-Diamond-Engagement-Ring~ER16280E6W43JJ-1.jpg?w=700&dpr=1",
@@ -577,7 +781,13 @@
     "metal": "white gold",
     "price": 2025,
     "carats": 1.5,
-    "category": "engagement",
+    "category": [
+      "emerald",
+      "straight",
+      "white gold",
+      "2025",
+      "natural"
+    ],
     "womens": true,
     "images": [
       "https://cdn-images.gabrielny.com/is/image/GabrielCo/defaultwp/Franka---14K-White-Gold-Emerald-Cut-Diamond-Engagement-Ring~ER16321E6W44JJ-1.jpg?w=700&dpr=1",
@@ -594,7 +804,13 @@
     "metal": "white gold",
     "price": 6200,
     "carats": 1.25,
-    "category": "engagement",
+    "category": [
+      "emerald",
+      "halo",
+      "white gold",
+      "6200",
+      "natural"
+    ],
     "womens": true,
     "images": [
       "https://cdn-images.gabrielny.com/is/image/GabrielCo/defaultwp/Lois---14K-White-Gold-Fancy-Halo-Emerald-Cut-Diamond-Engagement-Ring~ER15632E5W44JJ-1.jpg?w=700&dpr=1",
@@ -611,7 +827,13 @@
     "metal": "white gold",
     "price": 2075,
     "carats": 1.25,
-    "category": "engagement",
+    "category": [
+      "emerald",
+      "halo",
+      "white gold",
+      "2075",
+      "natural"
+    ],
     "womens": true,
     "images": [
       "https://cdn-images.gabrielny.com/is/image/GabrielCo/defaultwp/Kelsey---14K-White-Gold-Emerald-Halo-Diamond-Engagement-Ring~ER5822W44JJ-1.jpg?w=700&dpr=1",
@@ -628,7 +850,13 @@
     "metal": "white gold",
     "price": 2775,
     "carats": 1.25,
-    "category": "engagement",
+    "category": [
+      "emerald",
+      "halo",
+      "white gold",
+      "2775",
+      "natural"
+    ],
     "womens": true,
     "images": [
       "https://cdn-images.gabrielny.com/is/image/GabrielCo/defaultwp/Corinne---Vintage-Inspired-14K-White-Gold-Emerald-Halo-Diamond-Engagement-Ring~ER7528W44JJ-1.jpg?w=700&dpr=1",
@@ -645,7 +873,13 @@
     "metal": "white gold",
     "price": 3100,
     "carats": 1.25,
-    "category": "engagement",
+    "category": [
+      "emerald",
+      "halo",
+      "white gold",
+      "3100",
+      "lab grown"
+    ],
     "womens": true,
     "images": [
       "https://cdn-images.gabrielny.com/is/image/GabrielCo/defaultwp/Lois---14K-White-Gold-Fancy-Halo-Emerald-Cut-Diamond-Engagement-Ring~ER15632E5W44JJ-1.jpg?w=700&dpr=1",
@@ -662,7 +896,13 @@
     "metal": "white gold",
     "price": 1035,
     "carats": 1.25,
-    "category": "engagement",
+    "category": [
+      "emerald",
+      "halo",
+      "white gold",
+      "1035",
+      "lab grown"
+    ],
     "womens": true,
     "images": [
       "https://cdn-images.gabrielny.com/is/image/GabrielCo/defaultwp/Kelsey---14K-White-Gold-Emerald-Halo-Diamond-Engagement-Ring~ER5822W44JJ-1.jpg?w=700&dpr=1",
@@ -679,7 +919,13 @@
     "metal": "white gold",
     "price": 1775,
     "carats": 1.25,
-    "category": "engagement",
+    "category": [
+      "emerald",
+      "halo",
+      "white gold",
+      "1775",
+      "lab grown"
+    ],
     "womens": true,
     "images": [
       "https://cdn-images.gabrielny.com/is/image/GabrielCo/defaultwp/Corinne---Vintage-Inspired-14K-White-Gold-Emerald-Halo-Diamond-Engagement-Ring~ER7528W44JJ-1.jpg?w=700&dpr=1",

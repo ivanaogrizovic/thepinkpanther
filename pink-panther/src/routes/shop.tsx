@@ -1,45 +1,110 @@
 import React from 'react';
+import { useEffect, useState } from 'react';
 import ItemsGrid from '../components/items-grid/items-grid';
 import Filters from '../components/filters/filters';
 import { engagementRing } from '../interfaces/engagementRing.interface';
 import shapeFilters from '../shape-filters.json';
-import { filter } from '../interfaces/filters.interface';
+import styleFilters from '../style-filters.json';
+import metalFilters from '../metal-filters.json';
 
 function Shop({ productList }: any) {
-    var newItemList: any = [];
+    const [selectedShapes, setSelectedShapes] = useState<Array<string>>([]);
+    const [selectedStyles, setSelectedStyles] = useState<Array<string>>([]);
+    const [selectedMetals, setSelectedMetals] = useState<Array<string>>([]);
+    const [fileredProductList, setFilteredProductList] = useState<Array<engagementRing>>([]);
 
-    const updateFilters = (item: any) => {
-        shapeFilters.filter((shape) => {
-            if (shape.value === item.value) {
-                shape.isChecked = item.isChecked;
-            }
-        })
-        updateProducts(item);
+    const getShapes = (category: string) => {
+        if (!selectedShapes.includes(category)) {
+            setSelectedShapes(prev => ([...prev, category]))
+        }
+        if (selectedShapes.includes(category)) {
+            console.log(selectedShapes)
+            const removedList = selectedShapes.filter((item) => (item !== category));
+            setSelectedShapes(removedList);
+        }
+    }
+    const getStyles = (category: string) => {
+        if (!selectedStyles.includes(category)) {
+            setSelectedStyles(prev => ([...prev, category]))
+        }
+        if (selectedStyles.includes(category)) {
+            console.log(selectedStyles)
+            const removedList = selectedStyles.filter((item) => (item !== category));
+            setSelectedStyles(removedList);
+        }
     }
 
-    const updateProducts = (item: filter) => {
-        const findItems = productList.filter((ring: engagementRing) => ring.shape === item.value)
-        console.log(item.value)
-        if (item.isChecked) {
-            newItemList.push.apply(newItemList, findItems);
+    const getMetals = (category: string) => {
+        if (!selectedMetals.includes(category)) {
+            setSelectedMetals(prev => ([...prev, category]))
         }
-        else {
-            for (let index = newItemList.length - 1; index >= 0; index--) {
-                if (newItemList[index].shape === item.value) {
-                    newItemList.splice(index, 1);
+        if (selectedMetals.includes(category)) {
+            console.log(selectedMetals)
+            const removedList = selectedMetals.filter((item) => (item !== category));
+            setSelectedMetals(removedList);
+        }
+    }
+
+    const removeDuplicates = (data: Array<engagementRing>) => {
+        return [...new Set(data)];
+
+    }
+
+
+    useEffect(() => {
+
+        if (selectedShapes.length === 0 && selectedStyles.length === 0 && selectedMetals.length === 0) {
+            setFilteredProductList(productList);
+            // CHECK SHAPES
+        } else {
+            var filteredShapes: engagementRing[] = [];
+            var filteredStyles: engagementRing[] = [];
+            var filteredMetals: engagementRing[] = [];
+
+            if (selectedShapes.length) {
+                filteredShapes = (productList.filter((item: engagementRing) => (selectedShapes.includes(item.shape))));
+                // CHECK STYLES
+            } else if (selectedStyles.length) {
+                if (filteredShapes.length) {
+                    filteredStyles = (filteredShapes.filter((item: engagementRing) => (selectedStyles.includes(item.style))));
+                } else {
+                    filteredStyles = (productList.filter((item: engagementRing) => (selectedStyles.includes(item.style))));
+                }
+                // CHECK METALS
+            } else if (selectedMetals.length) {
+
+                if (filteredStyles.length) {
+                    filteredMetals = (filteredStyles.filter((item: engagementRing) => (selectedMetals.includes(item.metal))));
+                } else {
+                    filteredMetals = (productList.filter((item: engagementRing) => (selectedMetals.includes(item.metal))));
                 }
             }
+            var filteredList = filteredShapes.concat(filteredStyles.concat(filteredMetals));
+            removeDuplicates(filteredList);
+            console.log(filteredList);
 
+            setFilteredProductList(filteredList);
         }
-        console.log(newItemList)
-    }
+
+        // } else {
+        //     // var filteredShapes = (productList.filter((item: engagementRing) => (selectedShapes.includes(item.shape))));
+        //     // var filteredStyles = (productList.filter((item: engagementRing) => (selectedStyles.includes(item.style))));
+        //     // var filteredMetals = (productList.filter((item: engagementRing) => (selectedMetals.includes(item.metal))));
+        // }
+
+    }, [selectedShapes, selectedStyles, selectedMetals, productList])
 
     return (
         <div className='shop-wrapper'>
-            <Filters filterShape={updateFilters}
+            <Filters
+                getShapes={getShapes}
+                getStyles={getStyles}
+                getMetals={getMetals}
                 shapeFilters={shapeFilters}
+                styleFilters={styleFilters}
+                metalFilters={metalFilters}
             />
-            <ItemsGrid rings={productList} />
+            <ItemsGrid rings={fileredProductList} />
         </div>
     );
 }
