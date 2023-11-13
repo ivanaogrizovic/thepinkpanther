@@ -10,6 +10,7 @@
 .item {
     flex: 0 0 20rem;
     transition: transform .5s;
+    max-width: min-content;
 }
 
 .item:hover .item__img {

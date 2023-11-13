@@ -7,7 +7,13 @@ import shapeFilters from '../shape-filters.json';
 import styleFilters from '../style-filters.json';
 import metalFilters from '../metal-filters.json';
 
+import { useLocation } from 'react-router-dom';
+
 function Shop({ productList }: any) {
+
+    const location = useLocation();
+    const productsFromComponent = location.state;
+
     const [selectedShapes, setSelectedShapes] = useState<Array<string>>([]);
     const [selectedStyles, setSelectedStyles] = useState<Array<string>>([]);
     const [selectedMetals, setSelectedMetals] = useState<Array<string>>([]);
@@ -47,13 +53,24 @@ function Shop({ productList }: any) {
 
     const removeDuplicates = (data: Array<engagementRing>) => {
         return [...new Set(data)];
-
+    }
+    const sortOrder = (data: Array<engagementRing>) => {
+        data.sort(function (a, b) {
+            var textA = a.name.toUpperCase();
+            var textB = b.name.toUpperCase();
+            return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+        });
     }
 
     useEffect(() => {
-
         if (selectedShapes.length === 0 && selectedStyles.length === 0 && selectedMetals.length === 0) {
-            setFilteredProductList(productList);
+            if (!productsFromComponent) {
+                sortOrder(productList)
+                setFilteredProductList(productList);
+            } else {
+                sortOrder(productsFromComponent)
+                setFilteredProductList(productsFromComponent);
+            }
             // CHECK SHAPES
         } else {
             var filteredShapes: engagementRing[] = [];
@@ -66,11 +83,10 @@ function Shop({ productList }: any) {
 
             var filteredList = filteredShapes.concat(filteredStyles.concat(filteredMetals));
             removeDuplicates(filteredList);
-            console.log(filteredList);
-
+            sortOrder(filteredList)
             setFilteredProductList(filteredList);
         }
-    }, [selectedShapes, selectedStyles, selectedMetals, productList])
+    }, [selectedShapes, selectedStyles, selectedMetals, productList, productsFromComponent])
 
     return (
         <div className='shop-wrapper'>
