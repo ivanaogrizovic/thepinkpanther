@@ -62,6 +62,13 @@ function Shop({ productList }: any) {
         });
     }
 
+    const filterBy = (filterObject: string[], filterValue: string) => {
+        if (filterObject.length === 0) {
+            return true;
+        }
+        return filterObject.includes(filterValue);
+    }
+
     useEffect(() => {
         if (selectedShapes.length === 0 && selectedStyles.length === 0 && selectedMetals.length === 0) {
             if (!productsFromComponent) {
@@ -73,21 +80,12 @@ function Shop({ productList }: any) {
             }
             // CHECK SHAPES
         } else {
-            var filteredShapes: engagementRing[] = [];
-            var filteredStyles: engagementRing[] = [];
-            var filteredMetals: engagementRing[] = [];
-
-            filteredShapes = (productList.filter((item: engagementRing) => (selectedShapes.includes(item.shape))));
-            filteredStyles = (productList.filter((item: engagementRing) => (selectedStyles.includes(item.style))));
-            filteredMetals = (productList.filter((item: engagementRing) => (selectedMetals.includes(item.metal))));
-
-            var filteredList = filteredShapes.concat(filteredStyles.concat(filteredMetals));
-            removeDuplicates(filteredList);
-            sortOrder(filteredList)
+            const filteredList: engagementRing[] = productList.filter((item: engagementRing) => filterBy(selectedShapes, item.shape) &&
+                filterBy(selectedStyles, item.style) && filterBy(selectedMetals, item.metal));
+            sortOrder(filteredList);
             setFilteredProductList(filteredList);
         }
-    }, [selectedShapes, selectedStyles, selectedMetals, productList, productsFromComponent])
-
+    }, [selectedShapes, selectedStyles, selectedMetals, productList, productsFromComponent]);
     return (
         <div className='shop-wrapper'>
             <Filters
