@@ -3,13 +3,13 @@ import './shop-by-cut.css';
 import { Link } from "react-router-dom";
 import { shape } from "../../interfaces/cuts.interface";
 
-import cutOval from '../../assets/cut-oval.png';
-import cutPrincess from '../../assets/cut-princess.png';
-import cutEmerald from '../../assets/cut-emerald.png';
-import cutPear from '../../assets/cut-pear.png';
-import cutCushion from '../../assets/cut-cushion.png';
-import cutRound from '../../assets/cut-cushion.png';
-import cutMarquise from '../../assets/cut-marquise.png';
+import cutOval from '../../assets/cut-oval.webp';
+import cutPrincess from '../../assets/cut-princess.webp';
+import cutEmerald from '../../assets/cut-emerald.webp';
+import cutPear from '../../assets/cut-pear.webp';
+import cutCushion from '../../assets/cut-cushion.webp';
+import cutRound from '../../assets/cut-round.webp';
+import cutMarquise from '../../assets/cut-marquise.webp';
 
 function ShopByCut(props: any) {
 

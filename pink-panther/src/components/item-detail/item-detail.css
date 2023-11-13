@@ -23,6 +23,7 @@
 
 .product__text {
     margin-bottom: 3rem;
+    text-transform: none;
 }
 
 .text-container {

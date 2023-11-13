@@ -3,7 +3,7 @@ import React from 'react';
 import Slideshow from '../components/slideshow/slideshow'
 import ShopByCut from './../components/shop-by-cut/shop-by-cut';
 import ShopByStyle from './../components/shop-by-style/shop-by-style';
-import homeAmbassadorImg from '../assets/home-ambassador.jpg'
+import homeAmbassadorImg from '../assets/home-ambassador.webp'
 
 function Home(props: any) {
 

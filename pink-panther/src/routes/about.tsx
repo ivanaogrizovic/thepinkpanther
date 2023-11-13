@@ -3,9 +3,9 @@ import HeroImage from '../components/hero-image/hero-image';
 import AboutSection from '../components/about-section/about-section';
 import Slideshow from '../components/slideshow/slideshow';
 import SlideshowReverse from '../components/slideshow/slideshow-reverse';
-import aboutHeroImage from '../assets/hero-about-cut.jpg';
-import ambassadorImage1 from '../assets/about-ambassador-1.jpg'
-import ambassadorImage2 from '../assets/about-ambassador-2.jpg'
+import aboutHeroImage from '../assets/hero-about-cut.webp';
+import ambassadorImage1 from '../assets/about-ambassador-1.webp';
+import ambassadorImage2 from '../assets/about-ambassador-2.webp';
 
 function About() {
 

@@ -71,6 +71,10 @@
     font-weight: 300;
 }
 
+p {
+    text-transform: capitalize;
+}
+
 .sub-navigation__list-2:hover {
     text-decoration: underline;
     font-weight: 300;

@@ -3,6 +3,11 @@
     margin: 4rem 0;
 }
 
+.appointment-section-wrapper p {
+    text-transform: none;
+    margin-bottom: 1.5rem;
+}
+
 .button-container {
     width: 30%;
     margin: auto;

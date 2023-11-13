@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 import '../navbar.css'
 import { shape } from "../../../interfaces/cuts.interface";
 
-import shapeOval from '../../../assets/shape-oval.png';
-import shapePrincess from '../../../assets/shape-princess-cut.png';
-import shapeEmerald from '../../../assets/shape-emerald-cut.png';
-import shapePear from '../../../assets/shape-pear.png';
-import shapeCushion from '../../../assets/shape-cushion.png';
-import shapeRound from '../../../assets/shape-round.png';
-import shapeMarquise from '../../../assets/shape-marquise.png';
+import shapeOval from '../../../assets/shape-oval.webp';
+import shapePrincess from '../../../assets/shape-princess-cut.webp';
+import shapeEmerald from '../../../assets/shape-emerald-cut.webp';
+import shapePear from '../../../assets/shape-pear.webp';
+import shapeCushion from '../../../assets/shape-cushion.webp';
+import shapeRound from '../../../assets/shape-round.webp';
+import shapeMarquise from '../../../assets/shape-marquise.webp';
 
 
 function ShapeList(props: any) {

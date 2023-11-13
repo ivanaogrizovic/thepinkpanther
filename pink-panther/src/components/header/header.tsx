@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import './header.css';
 
-import appLogo from '../../assets/pink-panther-logo.png';
+import appLogo from '../../assets/pink-panther-logo.webp';
 
 function Header() {
     return (

@@ -2,6 +2,12 @@
     padding: 0 17% 3rem 17%;
 }
 
+.main-blurb p,
+.single-value p,
+.quote-wrapper p {
+    text-transform: none;
+}
+
 .explore-link {
     text-decoration: underline;
 }
