@@ -5,8 +5,6 @@ import { engagementRing } from '../../interfaces/engagementRing.interface';
 
 function ItemsGrid({ rings }: any) {
 
-  // console.log(props);
-
   var frontImage = 0;
   var result: [] = [];
 
@@ -30,6 +28,13 @@ function ItemsGrid({ rings }: any) {
           </div>
         </Link>
       ))}
+      {rings.length === 0 &&
+        <div>
+          <h3>
+            Sorry, we don't have what you're looking for
+          </h3>
+        </div>
+      }
     </div>
   );
 }
