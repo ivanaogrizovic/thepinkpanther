@@ -11,7 +11,7 @@ function Home(props: any) {
   const ambassadorText = "Only a real diamond holds true timeless beauty and value.  slip on one of our dazzling, high grade diamond rings, guaranteed natural and conflict-free, and let it speak louder than words."
   const ambassadorLink = "SHOP ENGAGEMENT RINGS"
   return (
-    <div>
+    <div className='fade-in'>
       <Slideshow image={homeAmbassadorImg} title={amassadorTitle} text={ambassadorText} link={ambassadorLink} />
       <ShopByCut rings={props.productList} />
       <ShopByStyle rings={props.productList} />

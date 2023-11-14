@@ -16,7 +16,7 @@ function About() {
     const ambassadorText2 = "In 2019, The Pink Panther were one of the first jewellers to recognise lab grown as the future, and now over half of our collection is available as both natural mined and lab grown diamonds. We are constantly working to improve and increase our lab grown diamond offerings."
 
     return (
-        <div>
+        <div className='fade-in'>
             <HeroImage image={aboutHeroImage} />
             <AboutSection />
             <Slideshow image={ambassadorImage1} title={ambassadorTitle1} text={ambassadorText1} link={ambassadorLink1}></Slideshow>

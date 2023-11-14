@@ -16,7 +16,7 @@ function ItemsGrid({ rings }: any) {
   };
 
   return (
-    <div className='item-list'>
+    <div className='item-list fade-in'>
       {rings?.map((ring: engagementRing, index: number) => (
         <Link to="item-detail" state={filterSelectedItem(ring.name)} key={index}>
           <div className='item'>
@@ -29,7 +29,7 @@ function ItemsGrid({ rings }: any) {
         </Link>
       ))}
       {rings.length === 0 &&
-        <div>
+        <div className='fade-in'>
           <h3>
             Sorry, we don't have what you're looking for
           </h3>
