@@ -12,13 +12,13 @@ import shapeRound from '../../../assets/shape-round.webp';
 import shapeMarquise from '../../../assets/shape-marquise.webp';
 
 
-function ShapeList(props: any) {
+function ShapeList({ rings }: any) {
 
     var result: [] = [];
 
     const filterByShape = (shape: string) => {
         const filter = shape;
-        result = props.rings.filter((ring: any) => {
+        result = rings.filter((ring: any) => {
             return ring.shape === shape;
         });
         return result;

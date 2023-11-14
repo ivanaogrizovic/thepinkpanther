@@ -9,17 +9,17 @@ import StyleList from "./sub-navigation/styleList";
 import MetalList from "./sub-navigation/metalList";
 import PriceList from "./sub-navigation/priceList";
 
-function Navigation(props: any) {
+function Navigation({ productList }: any) {
   return (
     <nav className='navigation' data-action='navigation'>
       <ul className='navigation__list'>
         <li className='navigation__item'><Link to='shop/engagement'>Engagement Rings</Link>
           <div className='sub-navigation' role='menu'>
             <ul className='sub-navigation__list'>
-              <ShapeList rings={props.productList}></ShapeList>
-              <StyleList rings={props.productList}></StyleList>
-              <MetalList rings={props.productList}></MetalList>
-              <PriceList rings={props.productList}></PriceList>
+              <ShapeList rings={productList}></ShapeList>
+              <StyleList rings={productList}></StyleList>
+              <MetalList rings={productList}></MetalList>
+              <PriceList rings={productList}></PriceList>
               <li className='sub-navigation__item'>
                 <img src={engagementMenu} className='sub-navigation__image' alt='the pink panther logo' />
               </li>

@@ -3,7 +3,7 @@ import './items-grid.css'
 import { Link } from "react-router-dom";
 import { engagementRing } from '../../interfaces/engagementRing.interface';
 
-function ItemsGrid(props: any) {
+function ItemsGrid({ rings }: any) {
 
   // console.log(props);
 
@@ -11,7 +11,7 @@ function ItemsGrid(props: any) {
   var result: [] = [];
 
   const filterSelectedItem = (name: string) => {
-    result = props.rings.filter((ring: any) => {
+    result = rings.filter((ring: any) => {
       return ring.name === name;
     });
     return result;
@@ -19,7 +19,7 @@ function ItemsGrid(props: any) {
 
   return (
     <div className='item-list'>
-      {props?.rings?.map((ring: engagementRing, index: number) => (
+      {rings?.map((ring: engagementRing, index: number) => (
         <Link to="item-detail" state={filterSelectedItem(ring.name)} key={index}>
           <div className='item'>
             <img className='item__img' src={ring?.images[frontImage]} alt={ring.name}></img>

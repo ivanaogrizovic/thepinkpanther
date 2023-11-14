@@ -24,17 +24,16 @@ function Shop({ productList }: any) {
             setSelectedShapes(prev => ([...prev, category]))
         }
         if (selectedShapes.includes(category)) {
-            console.log(selectedShapes)
             const removedList = selectedShapes.filter((item) => (item !== category));
             setSelectedShapes(removedList);
         }
     }
+
     const getStyles = (category: string) => {
         if (!selectedStyles.includes(category)) {
             setSelectedStyles(prev => ([...prev, category]))
         }
         if (selectedStyles.includes(category)) {
-            console.log(selectedStyles)
             const removedList = selectedStyles.filter((item) => (item !== category));
             setSelectedStyles(removedList);
         }
@@ -45,7 +44,6 @@ function Shop({ productList }: any) {
             setSelectedMetals(prev => ([...prev, category]))
         }
         if (selectedMetals.includes(category)) {
-            console.log(selectedMetals)
             const removedList = selectedMetals.filter((item) => (item !== category));
             setSelectedMetals(removedList);
         }
@@ -54,6 +52,7 @@ function Shop({ productList }: any) {
     const removeDuplicates = (data: Array<engagementRing>) => {
         return [...new Set(data)];
     }
+
     const sortOrder = (data: Array<engagementRing>) => {
         data.sort(function (a, b) {
             var textA = a.name.toUpperCase();
@@ -78,7 +77,6 @@ function Shop({ productList }: any) {
                 sortOrder(productsFromComponent)
                 setFilteredProductList(productsFromComponent);
             }
-            // CHECK SHAPES
         } else {
             const filteredList: engagementRing[] = productList.filter((item: engagementRing) => filterBy(selectedShapes, item.shape) &&
                 filterBy(selectedStyles, item.style) && filterBy(selectedMetals, item.metal));

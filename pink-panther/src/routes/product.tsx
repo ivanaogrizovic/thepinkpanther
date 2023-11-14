@@ -8,7 +8,7 @@ function Product(props: any) {
     const productDetail = location.state;
 
     return (
-        <ItemDetail product={productDetail[0]}></ItemDetail>
+        <ItemDetail singleProduct={productDetail[0]}></ItemDetail>
     );
 }
 

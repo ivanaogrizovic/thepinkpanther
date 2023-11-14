@@ -10,13 +10,14 @@ import cutPear from '../../assets/cut-pear.webp';
 import cutCushion from '../../assets/cut-cushion.webp';
 import cutRound from '../../assets/cut-round.webp';
 import cutMarquise from '../../assets/cut-marquise.webp';
+import { engagementRing } from "../../interfaces/engagementRing.interface";
 
-function ShopByCut(props: any) {
+function ShopByCut({ rings }: any) {
 
   var result: [] = [];
 
   const filterByCut = (cut: string) => {
-    result = props.rings.filter((ring: any) => {
+    result = rings.filter((ring: engagementRing) => {
       return ring.shape === cut;
     });
     return result;
@@ -74,7 +75,7 @@ function ShopByCut(props: any) {
         <ul className='shapes-list'>
           {cutsList.map(cut => (
             <li className='single-shape' key={cut.id}>
-              <Link to="shop/engagement" state={filterByCut(cut.name)}>
+              <Link to="shop/engagement" state={filterByCut(cut.name)} >
                 <img className='single-shape__image' src={cut.src} alt={cut.alt}></img>
                 <p>{cut.name}</p>
               </Link>

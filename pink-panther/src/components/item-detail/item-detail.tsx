@@ -3,9 +3,7 @@ import './item-detail.css'
 import { Link } from "react-router-dom";
 import Button from '../button/button';
 
-function ItemDetail(props: any) {
-
-    const singleProduct = props.product;
+function ItemDetail({ singleProduct }: any) {
 
     return (
         <div className='product-container shop-wrapper'>

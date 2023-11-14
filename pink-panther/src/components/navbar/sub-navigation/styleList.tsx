@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 import '../navbar.css'
 import { style } from "../../../interfaces/styles.interface";
 
-function StyleList(props: any) {
+function StyleList({ rings }: any) {
 
     var result: [] = [];
 
     const filterByStyle = (style: string) => {
-        result = props.rings.filter((ring: any) => {
+        result = rings.filter((ring: any) => {
             return ring.style === style;
         });
         return result;
