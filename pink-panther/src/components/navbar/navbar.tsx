@@ -59,6 +59,7 @@ function Navigation({ productList }: any) {
         </li>
         <li className='navigation__item'><Link to='about'>About</Link></li>
         <li className='navigation__item'><Link to='book-an-appointment'>Book an appointment</Link></li>
+        <li className='navigation__item'><Link to='contact-us'>Contact us</Link></li>
       </ul>
     </nav>
   );

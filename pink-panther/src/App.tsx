@@ -14,6 +14,7 @@ import Header from './components/header/header';
 import Navigation from './components/navbar/navbar';
 import Footer from './components/footer/footer';
 import Product from './routes/product';
+import Contact from './routes/contact';
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
         <Route path='shop/engagement/item-detail' element={<Product />}></Route>
         <Route path='about' element={<About />}></Route>
         <Route path='book-an-appointment' element={<Book />}></Route>
+        <Route path='contact-us' element={<Contact />}></Route>
       </Routes>
       <Outlet></Outlet>
       <Footer />

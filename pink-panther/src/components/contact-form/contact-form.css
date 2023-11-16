@@ -1,0 +1,23 @@
+.assist-you {
+    margin-top: 3rem;
+}
+
+.assist-you__text {
+    text-transform: none;
+}
+
+.form-container {
+    text-align: left;
+    padding: 0 20%;
+}
+
+.form-field {
+    margin: 1rem 0rem;
+}
+
+input {
+    padding: 0.5rem;
+    width: 90%;
+    border: 2px solid var(--dark-background);
+    border-radius: 5px
+}
