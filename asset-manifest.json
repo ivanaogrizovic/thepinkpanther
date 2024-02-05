@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/pink-panther/static/css/main.8c05eece.css",
+    "main.js": "/pink-panther/static/js/main.dc31d9e9.js",
+    "static/js/787.911f994f.chunk.js": "/pink-panther/static/js/787.911f994f.chunk.js",
+    "static/media/about-ambassador-2.webp": "/pink-panther/static/media/about-ambassador-2.9362f1d0224da006960a.webp",
+    "static/media/style-anniversary.webp": "/pink-panther/static/media/style-anniversary.ba95b002e2ddbce10e69.webp",
+    "static/media/style-eternity.webp": "/pink-panther/static/media/style-eternity.27a7be04f9e31949cc67.webp",
+    "static/media/book-hero.webp": "/pink-panther/static/media/book-hero.21357f50809f0b703249.webp",
+    "static/media/style-men.webp": "/pink-panther/static/media/style-men.9bc071c0a2cb952b39e0.webp",
+    "static/media/diamond-expert.webp": "/pink-panther/static/media/diamond-expert.25324bdc1e78816ef759.webp",
+    "static/media/style-wedding-bands.webp": "/pink-panther/static/media/style-wedding-bands.0218f9269fcc15250cb9.webp",
+    "static/media/wedding-menu.webp": "/pink-panther/static/media/wedding-menu.7343710c6fe94bbf9433.webp",
+    "static/media/style-gift.webp": "/pink-panther/static/media/style-gift.cf74bce5fcb25fece7de.webp",
+    "static/media/hero-about-cut.webp": "/pink-panther/static/media/hero-about-cut.d64c60831a8110662a56.webp",
+    "static/media/about-ambassador-1.webp": "/pink-panther/static/media/about-ambassador-1.7c5e38c6acc3b1f90511.webp",
+    "static/media/home-ambassador.webp": "/pink-panther/static/media/home-ambassador.eecc6fbd2a069625b90e.webp",
+    "static/media/engagement-ring-menu.webp": "/pink-panther/static/media/engagement-ring-menu.a0499635da0ae8fbd271.webp",
+    "static/media/cut-princess.webp": "/pink-panther/static/media/cut-princess.00fbdf935e81e2f292e1.webp",
+    "static/media/cut-cushion.webp": "/pink-panther/static/media/cut-cushion.3367c8305bd6354fc03b.webp",
+    "static/media/cut-oval.webp": "/pink-panther/static/media/cut-oval.013ead0bc59cd87c8d15.webp",
+    "static/media/cut-pear.webp": "/pink-panther/static/media/cut-pear.492e16150e9206cda516.webp",
+    "static/media/cut-marquise.webp": "/pink-panther/static/media/cut-marquise.10449c750fc556806948.webp",
+    "static/media/cut-round.webp": "/pink-panther/static/media/cut-round.d14a23e08daff0e2426d.webp",
+    "static/media/cut-emerald.webp": "/pink-panther/static/media/cut-emerald.af242c87d2e190382457.webp",
+    "static/media/pink-panther-logo.webp": "/pink-panther/static/media/pink-panther-logo.7f38021adc9d19270a9c.webp",
+    "static/media/shape-marquise.webp": "/pink-panther/static/media/shape-marquise.7fc91e6b074c132c6892.webp",
+    "static/media/shape-oval.webp": "/pink-panther/static/media/shape-oval.982d1c3c324671f30b72.webp",
+    "static/media/shape-round.webp": "/pink-panther/static/media/shape-round.c5127da02ab020e740a9.webp",
+    "static/media/shape-princess-cut.webp": "/pink-panther/static/media/shape-princess-cut.a74a999f642f357f7f23.webp",
+    "static/media/shape-emerald-cut.webp": "/pink-panther/static/media/shape-emerald-cut.9e2bf5b5a5540a375272.webp",
+    "static/media/shape-cushion.webp": "/pink-panther/static/media/shape-cushion.9af3db853d022c8ba445.webp",
+    "static/media/shape-pear.webp": "/pink-panther/static/media/shape-pear.2e3af7b8fa2623509cd1.webp",
+    "index.html": "/pink-panther/index.html",
+    "main.8c05eece.css.map": "/pink-panther/static/css/main.8c05eece.css.map",
+    "main.dc31d9e9.js.map": "/pink-panther/static/js/main.dc31d9e9.js.map",
+    "787.911f994f.chunk.js.map": "/pink-panther/static/js/787.911f994f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8c05eece.css",
+    "static/js/main.dc31d9e9.js"
+  ]
+}
