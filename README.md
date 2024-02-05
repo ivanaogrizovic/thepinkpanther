@@ -1,4 +1,15 @@
-# Getting Started with Create React App
+#The Pink Panther
+
+The Pink Panther is a make believe jewelry store based in Dublin.
+It was created for learning purposes. Here are some features:
+
+* Fully responsive
+* Made with reusable modules
+* Every page is fully accessible (WCAG 2.1 AA)
+
+Do not copy or claim as your own. I do not own the rights to the images used in this project as it was made for learning purposes and not for commercial purposes.
+
+# Running The Pink Panther locally
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
