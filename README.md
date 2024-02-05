@@ -1,4 +1,4 @@
-#The Pink Panther
+# The Pink Panther
 
 The Pink Panther is a make believe jewelry store based in Dublin.
 It was created for learning purposes. Here are some features:
