@@ -7,7 +7,7 @@ It was created for learning purposes. Here are some features:
 * Made with reusable modules
 * Every page is fully accessible (WCAG 2.1 AA)
 
-Do not copy or claim as your own. I do not own the rights to the images used in this project as it was made for learning purposes and not for commercial purposes.
+*Do not copy or claim as your own. I do not own the rights to the images used in this project as it was made for learning purposes and not for commercial purposes.*
 
 # Running The Pink Panther locally
 
