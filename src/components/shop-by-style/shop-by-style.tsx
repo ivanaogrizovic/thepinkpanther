@@ -57,7 +57,7 @@ function ShopByStyle(props: any) {
         <ul className="styles-list">
           {stylesList.map(style => (
             <li className='single-style' key={style.id}>
-              <Link to='shop'>
+              <Link to='shop/engagement'>
                 <img className='single-style__image' src={style.src} alt={style.alt}></img>
                 <h3>{style.name}</h3>
               </Link>
