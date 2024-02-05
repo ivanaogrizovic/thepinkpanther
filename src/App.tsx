@@ -15,6 +15,7 @@ import Navigation from './components/navbar/navbar';
 import Footer from './components/footer/footer';
 import Product from './routes/product';
 import Contact from './routes/contact';
+import ComingSoon from './routes/coming-soon';
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home productList={productList.products} />}></Route>
         <Route path='shop/engagement' element={<Shop productList={productList.products} />}></Route>
+        <Route path='shop/coming-soon' element={<ComingSoon />}></Route>
         <Route path='shop/engagement/item-detail' element={<Product />}></Route>
         <Route path='about' element={<About />}></Route>
         <Route path='book-an-appointment' element={<Book />}></Route>

@@ -26,29 +26,29 @@ function Navigation({ productList }: any) {
             </ul>
           </div>
         </li>
-        <li className='navigation__item'><Link to='shop/wedding'>Wedding Rings</Link>
+        <li className='navigation__item'><Link to='shop/coming-soon'>Wedding Rings</Link>
           <div className='sub-navigation' role='menu'>
             <ul className='sub-navigation__list'>
               <li className='sub-navigation__item'>
                 <span className='sub-navigation__filter'>Women's</span>
                 <ul className='sub-navigation__item-2'>
-                  <li className='sub-navigation__list-2'><Link to='shop/wedding'>Wedding bands</Link></li>
-                  <li className='sub-navigation__list-2'><Link to='shop/wedding'>Eternity</Link></li>
-                  <li className='sub-navigation__list-2'><Link to='shop/wedding'>Anniversary</Link></li>
+                  <li className='sub-navigation__list-2'><Link to='shop/coming-soon'>Wedding bands</Link></li>
+                  <li className='sub-navigation__list-2'><Link to='shop/coming-soon'>Eternity</Link></li>
+                  <li className='sub-navigation__list-2'><Link to='shop/coming-soon'>Anniversary</Link></li>
                 </ul>
               </li>
               <li className='sub-navigation__item'>
                 <span className='sub-navigation__filter'>Men's</span>
                 <ul className='sub-navigation__item-2'>
-                  <li className='sub-navigation__list-2'><Link to='shop/wedding'>Wedding bands</Link></li>
+                  <li className='sub-navigation__list-2'><Link to='shop/coming-soon'>Wedding bands</Link></li>
                 </ul>
               </li>
               <li className='sub-navigation__item'>
                 <span className='sub-navigation__filter'>Metal</span>
                 <ul className='sub-navigation__item-2'>
-                  <li className='sub-navigation__list-2'><Link to='shop/wedding'>White Gold</Link></li>
-                  <li className='sub-navigation__list-2'><Link to='shop/wedding'>Yellow Gold</Link></li>
-                  <li className='sub-navigation__list-2'><Link to='shop/wedding'>Platinum</Link></li>
+                  <li className='sub-navigation__list-2'><Link to='shop/coming-soon'>White Gold</Link></li>
+                  <li className='sub-navigation__list-2'><Link to='shop/coming-soon'>Yellow Gold</Link></li>
+                  <li className='sub-navigation__list-2'><Link to='shop/coming-soon'>Platinum</Link></li>
                 </ul>
               </li>
               <li className='sub-navigation__item'>
