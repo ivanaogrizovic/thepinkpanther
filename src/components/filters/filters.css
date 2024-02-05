@@ -2,12 +2,9 @@
     white-space: nowrap;
     font-size: small;
     text-align: left;
-    position: relative;
-    right: 0%;
-    left: 0%;
 }
 
-.filter {
+.filter-name {
     font-weight: 300;
     font-size: small;
 }
@@ -19,4 +16,8 @@
 
 label {
     text-transform: capitalize;
+}
+
+label input {
+    width: 25%;
 }

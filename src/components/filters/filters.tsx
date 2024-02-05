@@ -22,7 +22,7 @@ function Filters({ getShapes, getStyles, getMetals, shapeFilters, styleFilters, 
     return (
         <div className='filters'>
             <h3 className='filter-title'>Filter by</h3>
-            <h3 className='filter'>Shape</h3>
+            <h3 className='filter-name'>Shape</h3>
             <ul className='filter-list'>
                 {shapeFilters?.map((filter: filter, index: number) => (
                     (<li key={index}>
