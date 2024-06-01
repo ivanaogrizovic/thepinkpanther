@@ -15,14 +15,14 @@ function ItemsGrid({ rings }: any) {
   };
 
   return (
-    <div className='item-list fade-in'>
+    <div className='product-list fade-in'>
       {rings?.map((ring: engagementRing, index: number) => (
         <Link to="item-detail" state={filterSelectedItem(ring.name)} key={index}>
-          <div className='item'>
-            <img className='item-image' src={ring?.images[frontImage]} alt={ring.name}></img>
-            <div className='item-text'>
-              <p className='item-name'>{ring.name}</p>
-              <h3 className='item-price'>{ring.price}€</h3>
+          <div className='product'>
+            <img className='product-image' src={ring?.images[frontImage]} alt={ring.name}></img>
+            <div className='product-text'>
+              <p className='product-name'>{ring.name}</p>
+              <h3 className='product-price'>{ring.price}€</h3>
             </div>
           </div>
         </Link>

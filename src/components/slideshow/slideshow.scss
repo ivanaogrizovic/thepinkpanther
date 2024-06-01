@@ -1,6 +1,6 @@
 @import '../../variables.scss';
 
-.Slideshow {
+.slideshow {
     display: flex;
     flex-direction: row;
     background-color: $light-background;
@@ -12,7 +12,7 @@
     object-fit: cover;
 }
 
-.slideshow__item {
+.slideshow-item {
     flex: 1 1 50%;
 }
 
@@ -22,7 +22,7 @@
     vertical-align: middle;
 }
 
-.slide-text__p {
+.slide-p {
     font-size: small;
     font-weight: 300;
 }
@@ -44,7 +44,7 @@
         height: auto;
     }
 
-    .slideshow__item {
+    .slideshow-item {
         display: flex;
         flex-direction: column;
         margin: 0;
@@ -61,15 +61,13 @@
     }
 }
 
-@media screen and (width <=768px) {}
-
 @media screen and (width <=480px) {
     .slide-text {
         font-size: small;
         padding: 0;
     }
 
-    .slide-text__p {
+    .slide-p {
         font-size: x-small;
     }
 }

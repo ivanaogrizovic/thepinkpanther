@@ -17,7 +17,7 @@
     transition: opacity 0.5s;
 }
 
-.single-style__image {
+.single-style-image {
     max-width: 35rem;
 }
 
@@ -25,25 +25,25 @@ a h3 {
     text-decoration: underline;
 }
 
-@media screen and (width <= 1366px) {
+@media screen and (width <=1366px) {
     .styles-list {
         padding: 0;
         gap: 1rem;
     }
 
-    .single-style__image {
+    .single-style-image {
         max-width: 30rem;
     }
 }
 
-@media screen and (width <= 1024px) {
-    .single-style__image {
+@media screen and (width <=1024px) {
+    .single-style-image {
         max-width: 21rem;
     }
 }
 
-@media screen and (width <= 363px) {
-    .single-style__image {
+@media screen and (width <=363px) {
+    .single-style-image {
         max-width: 15rem;
     }
 }

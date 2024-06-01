@@ -1,6 +1,6 @@
 @import '../../variables.scss';
 
-.item-list {
+.product-list {
     display: flex;
     flex-flow: row wrap;
     gap: 1rem;
@@ -8,80 +8,84 @@
     width: 100%;
 }
 
-.item {
+.product {
     flex: 0 0 20rem;
     transition: transform .5s;
     max-width: min-content;
 }
 
-.item:hover .item-image {
-    transform: scale(1.02);
-    transition: transform .5s;
+.product {
+    &:hover {
+        .product-image {
+            transform: scale(1.02);
+            transition: transform .5s;
+        }
+    }
 }
 
-.item-image {
+.product-image {
     width: 20rem;
     border: 1px solid $light-background;
 }
 
-.item-name {
+.product-name {
     word-wrap: break-word;
     font-size: small;
     height: 2rem;
 }
 
 @media screen and (width <=1201px) {
-    .item {
+    .product {
         max-width: 16rem;
     }
 
-    .item-image {
+    .product-image {
         width: 15rem;
     }
 }
 
 @media screen and (width <=772px) {
-    .item {
+    .product {
         max-width: 10.2rem;
     }
 
-    .item-image {
+    .product-image {
         width: 10rem;
     }
 
-    .item-name {
+    .product-name {
         height: 2.5rem;
     }
 
-    .item-price {
+    .product-price {
         margin: 0;
     }
 }
 
 @media screen and (width <=459px) {
-    .item {
+    .product {
         max-width: 8.2rem;
     }
 
-    .item-image {
+    .product-image {
         width: 8rem;
     }
 
-    .item-name {
+    .product-name {
         height: 4rem;
     }
 }
 
 @media screen and (width <=395px) {
-    .item {
+    .product {
         max-width: 6.2rem;
     }
 
-    .item-image {
+    .product-image {
         width: 6rem;
     }
 
-    .item-name {
+    .product-name {
         height: 6.5rem;
     }
 }

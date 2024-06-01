@@ -73,7 +73,7 @@ function ShapeList({ rings }: any) {
                 {shapeList.map(shape => (
                     <li className='sub-navigation-list-2' key={shape.id}>
                         <Link to="shop/engagement" state={filterByShape(shape.name)}>
-                            <img className='sub-navigation__cuts' src={shape.src} alt={shape.alt}></img>
+                            <img className='sub-navigation-cuts' src={shape.src} alt={shape.alt}></img>
                             {shape.name}
                         </Link>
                     </li>

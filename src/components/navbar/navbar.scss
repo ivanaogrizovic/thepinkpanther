@@ -18,16 +18,22 @@
     border-bottom: 5px solid white;
 }
 
-.navigation-item:hover {
-    font-weight: 400;
+.navigation-item {
+    &:hover {
+        font-weight: 400;
+
+        .sub-navigation {
+            display: block;
+        }
+    }
 }
 
-.navigation-item:hover .sub-navigation {
-    display: block;
-}
-
-.sub-navigation:hover .sub-navigation {
-    display: block;
+.sub-navigation {
+    &:hover {
+        .sub-navigation {
+            display: block;
+        }
+    }
 }
 
 .sub-navigation {
@@ -76,16 +82,18 @@ p {
     text-transform: capitalize;
 }
 
-.sub-navigation-list-2:hover {
-    text-decoration: underline;
-    font-weight: 300;
+.sub-navigation-list-2 {
+    &:hover {
+        text-decoration: underline;
+        font-weight: 300;
+    }
 }
 
 .sub-navigation-image {
     width: 18rem;
 }
 
-.sub-navigation__cuts {
+.sub-navigation-cuts {
     width: 25%;
     margin: 0;
     padding: 0;
