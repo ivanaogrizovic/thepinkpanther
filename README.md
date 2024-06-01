@@ -1,5 +1,8 @@
 # [The Pink Panther](https://ivanaogrizovic.github.io/thepinkpanther/)
 
+🚨Refactor in progress🚨
+Please hold tight while I clean this up
+
 The Pink Panther is a make believe jewelry store based in Dublin.
 It was created for learning purposes. Here are some features:
 
