@@ -47,6 +47,8 @@
     ]
   },
   "devDependencies": {
+    "@stylistic/eslint-plugin-jsx": "^2.1.0",
+    "@stylistic/eslint-plugin-ts": "^2.1.0",
     "file-loader": "^6.2.0",
     "gh-pages": "^6.1.1"
   }
