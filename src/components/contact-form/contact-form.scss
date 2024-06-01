@@ -1,10 +1,10 @@
 @import '../../variables.scss';
 
-.assist-you {
+.assist-you-wrapper {
     margin-top: 3rem;
 }
 
-.assist-you__text {
+.assist-you-text {
     text-transform: none;
 }
 
@@ -14,7 +14,7 @@
 }
 
 .form-field {
-    margin: 1rem 0rem;
+    margin: 1rem 0;
 }
 
 input {

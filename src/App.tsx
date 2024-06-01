@@ -18,7 +18,7 @@ function App() {
 
   const productList = useContext(ProductsContext);
   return (
-    <div className='App fade-in'>
+    <div className='pinkpanther-app fade-in'>
       <Header />
       <Navigation productList={productList.products} />
       <Routes>

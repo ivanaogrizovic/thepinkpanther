@@ -32,11 +32,11 @@ function PriceList({ rings }: any) {
         }
     ];
     return (
-        <li className='sub-navigation__item'>
-            <span className='sub-navigation__filter'>Price</span>
-            <ul className='sub-navigation__item-2'>
+        <li className='sub-navigation-item'>
+            <span className='sub-navigation-filter'>Price</span>
+            <ul className='sub-navigation-item-2'>
                 {priceList.map(price => (
-                    <li className='sub-navigation__list-2' key={price.id}>
+                    <li className='sub-navigation-list-2' key={price.id}>
                         <Link to="shop/engagement" state={filterByShape(price.name)}>
                             <p>{price.name}</p>
                         </Link>

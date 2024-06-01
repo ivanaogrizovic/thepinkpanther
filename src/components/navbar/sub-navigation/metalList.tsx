@@ -28,11 +28,11 @@ function MetalList({ rings }: any) {
         }
     ];
     return (
-        <li className='sub-navigation__item'>
-            <span className='sub-navigation__filter'>Metal</span>
-            <ul className='sub-navigation__item-2'>
+        <li className='sub-navigation-item'>
+            <span className='sub-navigation-filter'>Metal</span>
+            <ul className='sub-navigation-item-2'>
                 {metalList.map(metal => (
-                    <li className='sub-navigation__list-2' key={metal.id}>
+                    <li className='sub-navigation-list-2' key={metal.id}>
                         <Link to="shop/engagement" state={filterByMetal(metal.name)}>
                             <p>{metal.name}</p>
                         </Link>

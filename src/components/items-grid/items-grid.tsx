@@ -19,10 +19,10 @@ function ItemsGrid({ rings }: any) {
       {rings?.map((ring: engagementRing, index: number) => (
         <Link to="item-detail" state={filterSelectedItem(ring.name)} key={index}>
           <div className='item'>
-            <img className='item__img' src={ring?.images[frontImage]} alt={ring.name}></img>
+            <img className='item-image' src={ring?.images[frontImage]} alt={ring.name}></img>
             <div className='item-text'>
-              <p className='item__name'>{ring.name}</p>
-              <h3 className='item__price'>{ring.price}€</h3>
+              <p className='item-name'>{ring.name}</p>
+              <h3 className='item-price'>{ring.price}€</h3>
             </div>
           </div>
         </Link>

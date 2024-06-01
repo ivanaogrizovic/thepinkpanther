@@ -67,14 +67,14 @@ function ShopByCut({ rings }: any) {
   ];
 
   return (
-    <div className='ShopByCut'>
+    <div className='shop-by-cut'>
       <h3 className="main-title">Shop engagement rings by shape</h3>
       <div className='shapes-wrapper'>
         <ul className='shapes-list'>
           {cutsList.map(cut => (
             <li className='single-shape' key={cut.id}>
               <Link to="shop/engagement" state={filterByCut(cut.name)} >
-                <img className='single-shape__image' src={cut.src} alt={cut.alt}></img>
+                <img className='single-shape-image' src={cut.src} alt={cut.alt}></img>
                 <p>{cut.name}</p>
               </Link>
             </li>

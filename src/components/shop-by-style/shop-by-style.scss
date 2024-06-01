@@ -1,10 +1,8 @@
 .styles-list {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    place-content: center center;
+    flex-flow: row wrap;
     padding: 0 5rem;
-    flex-direction: row;
-    align-content: center;
     gap: 2rem;
 }
 
@@ -27,8 +25,7 @@ a h3 {
     text-decoration: underline;
 }
 
-@media screen and (max-width: 1366px) {
-
+@media screen and (width <= 1366px) {
     .styles-list {
         padding: 0;
         gap: 1rem;
@@ -39,13 +36,13 @@ a h3 {
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (width <= 1024px) {
     .single-style__image {
         max-width: 21rem;
     }
 }
 
-@media screen and (max-width: 363px) {
+@media screen and (width <= 363px) {
     .single-style__image {
         max-width: 15rem;
     }
