@@ -1,6 +1,5 @@
-import React from "react";
-import './about-section.css'
 import { Link } from "react-router-dom";
+import './about-section.scss';
 
 function AboutSection() {
 

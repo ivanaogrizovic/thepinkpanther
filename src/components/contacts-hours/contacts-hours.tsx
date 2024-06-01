@@ -1,9 +1,7 @@
-import React from "react";
-import './contacts-hours.css';
 import { FaPhone } from "react-icons/fa6";
 import { GrMail } from "react-icons/gr";
 import { FaRegClock } from "react-icons/fa6";
-import { LuClock8 } from "react-icons/lu";
+import './contacts-hours.scss';
 
 function ContactsHours() {
 

@@ -1,7 +1,6 @@
-import React from 'react';
-import './items-grid.css'
 import { Link } from "react-router-dom";
 import { engagementRing } from '../../interfaces/engagementRing.interface';
+import './items-grid.scss';
 
 function ItemsGrid({ rings }: any) {
 

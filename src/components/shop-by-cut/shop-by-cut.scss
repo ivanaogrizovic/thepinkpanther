@@ -1,5 +1,7 @@
+@import '../../variables.scss';
+
 .shapes-wrapper {
-    background-color: var(--light-background);
+    background-color: $light-background;
     margin: 0;
     padding-top: 0.5rem;
 }

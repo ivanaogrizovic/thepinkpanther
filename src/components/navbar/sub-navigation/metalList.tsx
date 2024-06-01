@@ -1,7 +1,6 @@
-import React from "react";
 import { Link } from "react-router-dom";
-import '../navbar.css'
 import { style } from "../../../interfaces/styles.interface";
+import '../navbar.scss'
 
 function MetalList({ rings }: any) {
 

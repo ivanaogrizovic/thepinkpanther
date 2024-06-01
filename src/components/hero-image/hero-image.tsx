@@ -1,5 +1,5 @@
 import React from "react";
-import './hero-image.css'
+import './hero-image.scss'
 
 function HeroImage({ image }: any) {
 

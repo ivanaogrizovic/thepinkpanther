@@ -1,6 +1,5 @@
-import React from 'react';
-import './slideshow.css'
 import { Link } from 'react-router-dom';
+import './slideshow.scss';
 
 
 function Slideshow({ title, text, link, image }: any) {

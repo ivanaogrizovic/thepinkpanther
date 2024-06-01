@@ -1,12 +1,10 @@
-import React from "react";
-import './shop-by-style.css';
 import { Link } from "react-router-dom";
-
 import anniversaryStyle from '../../assets/style-anniversary.webp';
 import eternityStyle from '../../assets/style-eternity.webp';
 import weddingStyle from '../../assets/style-wedding-bands.webp';
 import giftStyle from '../../assets/style-gift.webp';
 import menStyle from '../../assets/style-men.webp';
+import './shop-by-style.scss';
 
 function ShopByStyle(props: any) {
 

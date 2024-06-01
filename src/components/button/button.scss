@@ -1,3 +1,5 @@
+@import '../../variables.scss';
+
 .button-wrapper {
     width: 100%;
 }
@@ -11,16 +13,16 @@
 }
 
 .button__primary {
-    border: 2px solid #ED5E79;
+    border: 2px solid $dark-background;
     border-radius: 3px;
-    background-color: #ED5E79;
+    background-color: $dark-background;
     border-radius: 7px;
     color: white;
     transition: 0.5s;
 }
 
 .button__primary:hover {
-    background-color: var(--dark-background);
+    background-color: $dark-background;
     border: 2px solid white;
     transition: 0.5s;
 }
@@ -35,8 +37,8 @@
 }
 
 .button__secondary:hover {
-    color: var(--dark-background);
-    border: 2px solid var(--dark-background);
+    color: $dark-background;
+    border: 2px solid $dark-background;
     transition: 0.5s;
 }
 

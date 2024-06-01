@@ -1,7 +1,9 @@
+@import '../../variables.scss';
+
 .Slideshow {
     display: flex;
     flex-direction: row;
-    background-color: var(--light-background);
+    background-color: $light-background;
 }
 
 .slide-image {

@@ -1,8 +1,5 @@
-import React from "react";
 import { Link } from "react-router-dom";
-import '../navbar.css'
 import { shape } from "../../../interfaces/cuts.interface";
-
 import shapeOval from '../../../assets/shape-oval.webp';
 import shapePrincess from '../../../assets/shape-princess-cut.webp';
 import shapeEmerald from '../../../assets/shape-emerald-cut.webp';
@@ -10,6 +7,7 @@ import shapePear from '../../../assets/shape-pear.webp';
 import shapeCushion from '../../../assets/shape-cushion.webp';
 import shapeRound from '../../../assets/shape-round.webp';
 import shapeMarquise from '../../../assets/shape-marquise.webp';
+import '../navbar.scss';
 
 
 function ShapeList({ rings }: any) {

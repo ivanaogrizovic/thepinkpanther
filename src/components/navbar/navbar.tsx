@@ -1,13 +1,11 @@
-import React from "react";
-import './navbar.css';
 import { Link } from "react-router-dom";
 import ShapeList from "./sub-navigation/shapeList";
-
 import engagementMenu from '../../assets/engagement-ring-menu.webp';
 import weddingMenu from '../../assets/wedding-menu.webp';
 import StyleList from "./sub-navigation/styleList";
 import MetalList from "./sub-navigation/metalList";
 import PriceList from "./sub-navigation/priceList";
+import './navbar.scss';
 
 function Navigation({ productList }: any) {
   return (

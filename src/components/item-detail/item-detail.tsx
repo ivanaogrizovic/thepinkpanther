@@ -1,7 +1,5 @@
-import React from 'react';
-import './item-detail.css'
-import { Link } from "react-router-dom";
 import Button from '../button/button';
+import './item-detail.scss'
 
 function ItemDetail({ singleProduct }: any) {
 

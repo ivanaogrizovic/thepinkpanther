@@ -1,9 +1,8 @@
-import React from "react";
-import './footer.css';
+import './footer.scss';
 
 function Footer() {
     return (
-        <div className="Footer">
+        <div className="footer">
             <hr />
             <h3>The Pink Panther ©</h3>
             <p className="footer-p">This website was made with React, Typescript and CSS.</p>

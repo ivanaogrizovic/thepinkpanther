@@ -1,3 +1,5 @@
+@import '../../variables.scss';
+
 .main-blurb {
     padding: 0 17% 3rem 17%;
 }
@@ -13,7 +15,7 @@
 }
 
 .values-wrapper {
-    background-color: var(--light-background);
+    background-color: $light-background;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;

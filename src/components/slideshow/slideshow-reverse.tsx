@@ -1,6 +1,5 @@
-import React from 'react';
-import '../slideshow/slideshow.css'
 import { Link } from 'react-router-dom';
+import '../slideshow/slideshow.scss';
 
 
 function SlideshowReverse({ title, text, link, image }: any) {

@@ -1,3 +1,5 @@
+@import '../../variables.scss';
+
 .product-container {
     display: flex;
     flex-direction: row;
@@ -37,7 +39,7 @@
 
 .product__img {
     width: 47%;
-    border: 1px solid var(--light-background);
+    border: 1px solid $light-background;
     transition: transform .5s;
 }
 

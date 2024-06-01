@@ -1,6 +1,5 @@
-import React from 'react';
-import './filters.css';
 import { filter } from '../../interfaces/filters.interface';
+import './filters.scss';
 
 function Filters({ getShapes, getStyles, getMetals, shapeFilters, styleFilters, metalFilters }: any) {
 

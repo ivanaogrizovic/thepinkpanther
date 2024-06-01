@@ -1,6 +1,5 @@
-import React from "react";
 import { Link } from "react-router-dom";
-import './header.css';
+import './header.scss';
 
 import appLogo from '../../assets/pink-panther-logo.webp';
 

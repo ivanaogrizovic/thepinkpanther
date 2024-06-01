@@ -1,6 +1,5 @@
-import React from 'react';
-import './appointmnet-section.css';
 import Button from '../../components/button/button';
+import './appointmnet-section.scss';
 
 
 function AppointmentSection() {

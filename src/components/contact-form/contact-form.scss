@@ -1,3 +1,5 @@
+@import '../../variables.scss';
+
 .assist-you {
     margin-top: 3rem;
 }
@@ -18,6 +20,6 @@
 input {
     padding: 0.5rem;
     width: 90%;
-    border: 2px solid var(--dark-background);
+    border: 2px solid $dark-background;
     border-radius: 5px
 }
