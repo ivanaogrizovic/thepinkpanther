@@ -8,24 +8,22 @@
     width: 100%;
 }
 
+.product-image {
+    width: 20rem;
+    border: 1px solid $light-background;
+}
+
 .product {
     flex: 0 0 20rem;
     transition: transform .5s;
     max-width: min-content;
-}
 
-.product {
     &:hover {
         .product-image {
             transform: scale(1.02);
             transition: transform .5s;
         }
     }
-}
-
-.product-image {
-    width: 20rem;
-    border: 1px solid $light-background;
 }
 
 .product-name {
