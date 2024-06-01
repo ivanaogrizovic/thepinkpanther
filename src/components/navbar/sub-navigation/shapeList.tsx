@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { shape } from "../../../interfaces/cuts.interface";
+import { engagementRing } from "../../../interfaces/engagementRing.interface";
 import shapeOval from '../../../assets/shape-oval.webp';
 import shapePrincess from '../../../assets/shape-princess-cut.webp';
 import shapeEmerald from '../../../assets/shape-emerald-cut.webp';
@@ -15,8 +16,7 @@ function ShapeList({ rings }: any) {
     var result: [] = [];
 
     const filterByShape = (shape: string) => {
-        const filter = shape;
-        result = rings.filter((ring: any) => {
+        result = rings.filter((ring: engagementRing) => {
             return ring.shape === shape;
         });
         return result;

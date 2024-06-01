@@ -12,7 +12,7 @@ import './shop-by-cut.scss';
 
 function ShopByCut({ rings }: any) {
 
-  var result: [] = [];
+  let result: [] = [];
 
   const filterByCut = (cut: string) => {
     result = rings.filter((ring: engagementRing) => {

@@ -14,7 +14,7 @@ function Home(props: any) {
     <div className='fade-in'>
       <Slideshow image={homeAmbassadorImg} title={amassadorTitle} text={ambassadorText} link={ambassadorLink} />
       <ShopByCut rings={props.productList} />
-      <ShopByStyle rings={props.productList} />
+      <ShopByStyle />
     </div>
   );
 }

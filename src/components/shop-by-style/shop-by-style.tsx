@@ -6,7 +6,7 @@ import giftStyle from '../../assets/style-gift.webp';
 import menStyle from '../../assets/style-men.webp';
 import './shop-by-style.scss';
 
-function ShopByStyle(props: any) {
+function ShopByStyle() {
 
   interface styles {
     id: number

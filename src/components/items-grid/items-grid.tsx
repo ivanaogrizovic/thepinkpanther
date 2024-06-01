@@ -4,8 +4,8 @@ import './items-grid.scss';
 
 function ItemsGrid({ rings }: any) {
 
-  var frontImage = 0;
-  var result: [] = [];
+  let frontImage = 0;
+  let result: [] = [];
 
   const filterSelectedItem = (name: string) => {
     result = rings.filter((ring: any) => {
