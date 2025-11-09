@@ -17,8 +17,24 @@ function Footer() {
             <Link to='book-an-appointment'>Book an appointment</Link>
             <Link to='contact-us'>Contact us</Link>
             <div className='pinkpanther-footer-icons'>
-              <a className='pinkpanther-footer-icon' href='https://github.com/ivanaogrizovic' target='blank' rel="noreferrer"><FaGithub /></a>
-              <a className='pinkpanther-footer-icon' href='https://www.linkedin.com/in/ivana-ogrizovic/' target='blank' rel="noreferrer"><FaLinkedin /></a>
+              <a
+                className='pinkpanther-footer-icon'
+                href='https://github.com/ivanaogrizovic'
+                target='blank'
+                rel="noreferrer"
+                aria-label="GitHub profile"
+              >
+                <FaGithub />
+              </a>
+              <a
+                className='pinkpanther-footer-icon'
+                href='https://www.linkedin.com/in/ivana-ogrizovic/'
+                target='blank'
+                rel="noreferrer"
+                aria-label="LinkedIn profile"
+              >
+                <FaLinkedin />
+              </a>
             </div>
           </div>
           <div className="pinkpanther-footer-blurb">
