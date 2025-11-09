@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
-import { shape } from "../../interfaces/cuts.interface";
+import { useContext } from 'react';
+import { ProductsContext } from '../../context/engagementRings.context';
 import { engagementRing } from "../../interfaces/engagementRing.interface";
+import { shape } from "../../interfaces/cuts.interface";
 import cutOval from '../../assets/cut-oval.webp';
 import cutPrincess from '../../assets/cut-princess.webp';
 import cutEmerald from '../../assets/cut-emerald.webp';
@@ -10,12 +12,13 @@ import cutRound from '../../assets/cut-round.webp';
 import cutMarquise from '../../assets/cut-marquise.webp';
 import './shop-by-cut.scss';
 
-function ShopByCut({ rings }: any) {
+function ShopByCut() {
 
-  let result: [] = [];
+  let result: engagementRing[] = [];
+  const rings = useContext(ProductsContext);
 
   const filterByCut = (cut: string) => {
-    result = rings.filter((ring: engagementRing) => {
+    result = rings.products.filter((ring: engagementRing) => {
       return ring.shape === cut;
     });
     return result;
@@ -67,19 +70,15 @@ function ShopByCut({ rings }: any) {
   ];
 
   return (
-    <div className='shop-by-cut'>
-      <h3 className="main-title">Shop engagement rings by shape</h3>
-      <div className='shapes-wrapper'>
-        <ul className='shapes-list'>
-          {cutsList.map(cut => (
-            <li className='single-shape' key={cut.id}>
-              <Link to="shop/engagement" state={filterByCut(cut.name)} >
-                <img className='single-shape-image' src={cut.src} alt={cut.alt}></img>
-                <p>{cut.name}</p>
-              </Link>
-            </li>
-          ))}
-        </ul>
+    <div className='pinkpanther-shop-by-cut'>
+      <h2 className="pinkpanther-main-title">Shop engagement rings by shape</h2>
+      <div className='pinkpanther-shapes-list'>
+        {cutsList.map(cut => (
+          <Link className='pinkpanther-single-shape' to="shop/engagement" state={filterByCut(cut.name)} key={cut.id}>
+            <img className='pinkpanther-single-shape-image' src={cut.src} alt={cut.alt}></img>
+            <p className='pinkpanther-shape-name'>{cut.name}</p>
+          </Link>
+        ))}
       </div>
     </div >
   );

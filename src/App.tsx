@@ -22,7 +22,7 @@ function App() {
       <Header />
       <Navigation productList={productList.products} />
       <Routes>
-        <Route path='/' element={<Home productList={productList.products} />}></Route>
+        <Route path='/' element={<Home />}></Route>
         <Route path='shop/engagement' element={<Shop productList={productList.products} />}></Route>
         <Route path='shop/coming-soon' element={<ComingSoon />}></Route>
         <Route path='shop/engagement/item-detail' element={<Product />}></Route>
