@@ -1,5 +1,82 @@
-.footer-p {
+@import '../../variables.scss';
+
+.pinkpanther-footer {
+    background-color: $light-background;
+    text-align: left;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    @media (min-width: 900px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.pinkpanther-footer-p {
     font-size: small;
     font-weight: 300;
     text-transform: none;
+
+    &.-list {
+        list-style: disc;
+    }
+}
+
+.pinkpanther-footer-techstack {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    &>* {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+svg {
+    width: 2rem;
+    height: 2rem;
+}
+
+#react {
+    color: deepskyblue;
+}
+
+#typescript {
+    color: #1976D2;
+}
+
+#sass {
+    color: #C76495;
+}
+
+.pinkpanther-footer-blurb,
+.pinkpanther-footer-links,
+.pinkpanther-footer-project-info {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.pinkpanther-footer-links {
+    gap: 1.5rem;
+
+    @media (min-width: 900px) {
+        padding-left: 3rem;
+    }
+}
+
+.pinkpanther-footer-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.pinkpanther-footer-icon {
+   &>* { 
+        width: 2rem;
+        height: 2rem;
+    }
 }
