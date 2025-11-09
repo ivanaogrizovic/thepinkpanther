@@ -50,7 +50,7 @@ function ShopByStyle() {
 
   return (
     <div className='ShopByStyle'>
-      <h3 className='main-title'>Shop rings by style</h3>
+      <h2 className='main-title'>Shop rings by style</h2>
       <div className='styles-wrapper'>
         <ul className="styles-list">
           {stylesList.map(style => (
