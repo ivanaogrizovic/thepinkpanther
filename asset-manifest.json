@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/thepinkpanther/static/css/main.4f6fb0f2.css",
-    "main.js": "/thepinkpanther/static/js/main.0c3d01e2.js",
+    "main.css": "/thepinkpanther/static/css/main.d98e94a6.css",
+    "main.js": "/thepinkpanther/static/js/main.a37c33a0.js",
     "static/js/787.7e5a1bb5.chunk.js": "/thepinkpanther/static/js/787.7e5a1bb5.chunk.js",
     "static/media/about-ambassador-2.webp": "/thepinkpanther/static/media/about-ambassador-2.9362f1d0224da006960a.webp",
     "static/media/style-anniversary.webp": "/thepinkpanther/static/media/style-anniversary.ba95b002e2ddbce10e69.webp",
@@ -22,8 +22,8 @@
     "static/media/cut-pear.webp": "/thepinkpanther/static/media/cut-pear.492e16150e9206cda516.webp",
     "static/media/cut-marquise.webp": "/thepinkpanther/static/media/cut-marquise.10449c750fc556806948.webp",
     "static/media/cut-round.webp": "/thepinkpanther/static/media/cut-round.d14a23e08daff0e2426d.webp",
+    "static/media/pink-panther-logo.webp": "/thepinkpanther/static/media/pink-panther-logo.50b15bc56987ef7e44d2.webp",
     "static/media/cut-emerald.webp": "/thepinkpanther/static/media/cut-emerald.af242c87d2e190382457.webp",
-    "static/media/pink-panther-logo.webp": "/thepinkpanther/static/media/pink-panther-logo.7f38021adc9d19270a9c.webp",
     "static/media/shape-marquise.webp": "/thepinkpanther/static/media/shape-marquise.7fc91e6b074c132c6892.webp",
     "static/media/shape-oval.webp": "/thepinkpanther/static/media/shape-oval.982d1c3c324671f30b72.webp",
     "static/media/shape-round.webp": "/thepinkpanther/static/media/shape-round.c5127da02ab020e740a9.webp",
@@ -32,12 +32,12 @@
     "static/media/shape-cushion.webp": "/thepinkpanther/static/media/shape-cushion.9af3db853d022c8ba445.webp",
     "static/media/shape-pear.webp": "/thepinkpanther/static/media/shape-pear.2e3af7b8fa2623509cd1.webp",
     "index.html": "/thepinkpanther/index.html",
-    "main.4f6fb0f2.css.map": "/thepinkpanther/static/css/main.4f6fb0f2.css.map",
-    "main.0c3d01e2.js.map": "/thepinkpanther/static/js/main.0c3d01e2.js.map",
+    "main.d98e94a6.css.map": "/thepinkpanther/static/css/main.d98e94a6.css.map",
+    "main.a37c33a0.js.map": "/thepinkpanther/static/js/main.a37c33a0.js.map",
     "787.7e5a1bb5.chunk.js.map": "/thepinkpanther/static/js/787.7e5a1bb5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f6fb0f2.css",
-    "static/js/main.0c3d01e2.js"
+    "static/css/main.d98e94a6.css",
+    "static/js/main.a37c33a0.js"
   ]
 }
