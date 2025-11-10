@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/thepinkpanther/static/css/main.d98e94a6.css",
-    "main.js": "/thepinkpanther/static/js/main.a37c33a0.js",
-    "static/js/787.7e5a1bb5.chunk.js": "/thepinkpanther/static/js/787.7e5a1bb5.chunk.js",
+    "main.css": "/thepinkpanther/static/css/main.05a4813a.css",
+    "main.js": "/thepinkpanther/static/js/main.90a4b86d.js",
+    "static/js/787.529ddf02.chunk.js": "/thepinkpanther/static/js/787.529ddf02.chunk.js",
     "static/media/about-ambassador-2.webp": "/thepinkpanther/static/media/about-ambassador-2.9362f1d0224da006960a.webp",
     "static/media/style-anniversary.webp": "/thepinkpanther/static/media/style-anniversary.ba95b002e2ddbce10e69.webp",
     "static/media/style-eternity.webp": "/thepinkpanther/static/media/style-eternity.27a7be04f9e31949cc67.webp",
@@ -32,12 +32,12 @@
     "static/media/shape-cushion.webp": "/thepinkpanther/static/media/shape-cushion.9af3db853d022c8ba445.webp",
     "static/media/shape-pear.webp": "/thepinkpanther/static/media/shape-pear.2e3af7b8fa2623509cd1.webp",
     "index.html": "/thepinkpanther/index.html",
-    "main.d98e94a6.css.map": "/thepinkpanther/static/css/main.d98e94a6.css.map",
-    "main.a37c33a0.js.map": "/thepinkpanther/static/js/main.a37c33a0.js.map",
-    "787.7e5a1bb5.chunk.js.map": "/thepinkpanther/static/js/787.7e5a1bb5.chunk.js.map"
+    "main.05a4813a.css.map": "/thepinkpanther/static/css/main.05a4813a.css.map",
+    "main.90a4b86d.js.map": "/thepinkpanther/static/js/main.90a4b86d.js.map",
+    "787.529ddf02.chunk.js.map": "/thepinkpanther/static/js/787.529ddf02.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d98e94a6.css",
-    "static/js/main.a37c33a0.js"
+    "static/css/main.05a4813a.css",
+    "static/js/main.90a4b86d.js"
   ]
 }
