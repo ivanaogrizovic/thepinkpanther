@@ -1,6 +1,6 @@
 {
   "name": "thepinkpanther",
-  "version": "0.1.0",
+  "version": "2.0.0",
   "homepage": "https://ivanaogrizovic.github.io/thepinkpanther",
   "private": true,
   "dependencies": {
@@ -43,7 +43,7 @@
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
     "file-loader": "^6.2.0",
-    "gh-pages": "^6.1.1",
+    "gh-pages": "^6.3.0",
     "globals": "^15.3.0",
     "stylelint": "^16.6.1",
     "stylelint-config-standard": "^36.0.0"
