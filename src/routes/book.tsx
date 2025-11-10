@@ -1,7 +1,7 @@
 import React from 'react';
 import HeroImage from '../components/hero-image/hero-image';
 import bookImage from '../assets/book-hero.webp';
-import Slideshow from '../components/slideshow/slideshow';
+import Slideshow from '../components/split-content/split-content';
 import bookExpert from '../assets/diamond-expert.webp';
 import AppointmentSection from '../components/appointment-section/appointment-section';
 

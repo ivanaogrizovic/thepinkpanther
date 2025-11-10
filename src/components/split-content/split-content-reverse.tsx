@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
-import '../slideshow/slideshow.scss';
+import './split-content.scss';
 
 
-function SlideshowReverse({ title, text, link, image }: any) {
+function SplitContentReverse({ title, text, link, image }: any) {
     return (
         <div className='Slideshow'>
             <div className='slideshow-item slide-text'>
@@ -15,4 +15,4 @@ function SlideshowReverse({ title, text, link, image }: any) {
     );
 }
 
-export default SlideshowReverse;
+export default SplitContentReverse;
