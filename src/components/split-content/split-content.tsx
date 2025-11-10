@@ -9,7 +9,7 @@ function SplitContent({ title, text, link, image }: any) {
             <div className='pinkpanther-split-content-text'>
                 <h1>{title}</h1>
                 <p>{text}</p>
-                <p><Link to='shop' className='slide-link'>{link}</Link></p>
+                <p><Link to='shop' className='slide-link'>{link} →</Link></p>
             </div>
         </div>
     );

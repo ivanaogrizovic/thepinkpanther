@@ -39,9 +39,3 @@
     border: 2px solid $dark-background;
     transition: 0.5s;
 }
-
-@media screen and (width <=395px) {
-    .button {
-        font-size: small;
-    }
-}

@@ -7,8 +7,6 @@
     padding: 0;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-weight: 300;
-    font-size: 14px;
     margin: 0;
 }
 
@@ -36,8 +34,6 @@
     border-bottom: 5px solid white;
 
     &:hover {
-        font-weight: 400;
-
         .sub-navigation {
             display: block;
         }
@@ -56,7 +52,6 @@
 .sub-navigation-list {
     display: flex;
     padding: 2rem 10rem;
-    font-size: small;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -75,11 +70,9 @@ p {
 
 .sub-navigation-list-2 {
     margin: 0.5rem 0;
-    font-weight: 300;
 
     &:hover {
         text-decoration: underline;
-        font-weight: 300;
     }
 }
 
