@@ -70,17 +70,21 @@ function ShopByCut() {
   ];
 
   return (
-    <div className='pinkpanther-shop-by-cut'>
-      <h2 className="pinkpanther-main-title">Shop engagement rings by shape</h2>
-      <div className='pinkpanther-shapes-list'>
-        {cutsList.map(cut => (
-          <Link className='pinkpanther-single-shape' to="shop/engagement" state={filterByCut(cut.name)} key={cut.id}>
-            <img className='pinkpanther-single-shape-image' src={cut.src} alt={cut.alt}></img>
-            <p className='pinkpanther-shape-name'>{cut.name}</p>
-          </Link>
-        ))}
-      </div>
-    </div >
+    <div className="pinkpanther-shop-by-cut-wrapper">
+      <div className='pinkpanther-shop-by-cut'>
+        <h2>Shop engagement rings by shape</h2>
+        <p>From timeless classics to modern icons, explore diamond cuts that tell your love story. Whether you’re drawn to a dazzling round, a bold emerald, or a romantic heart, find the diamond that cuts straight to your style.</p>
+        <div className='pinkpanther-shop-by-cut-list'>
+          {cutsList.map(cut => (
+            <Link className='pinkpanther-shop-by-cut-item' to="shop/engagement" state={filterByCut(cut.name)} key={cut.id}>
+              <img className='pinkpanther-shop-by-cut-item-image' src={cut.src} alt={cut.alt}></img>
+              <p className='-microcopy'>{cut.name}</p>
+            </Link>
+          ))}
+        </div>
+        <p>Not sure what you’re looking for? <Link to='shop' className='pinkpanther-cta-link'>Speak to an expert.</Link> We’ll help you find <i>the one</i>.</p>
+      </div >
+    </div>
   );
 }
 

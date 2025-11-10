@@ -1,9 +1,16 @@
+@import '../../variables.scss';
+
+.pinkpanther-shop-by-cut-wrapper{
+    background-color: $tertiary-color;
+    padding: 1rem 0;
+}
+
 .pinkpanther-shop-by-cut {
     max-width: 1440px;
     margin: 0 auto;
 }
 
-.pinkpanther-shapes-list {
+.pinkpanther-shop-by-cut-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -12,21 +19,16 @@
     gap: 3rem;
 }
 
-.pinkpanther-single-shape {
+.pinkpanther-shop-by-cut-item {
     flex: 1;
 
-    &:hover .pinkpanther-single-shape-image {
+    &:hover .pinkpanther-shop-by-cut-item-image {
         transition: .5s;
         transform: scale(1.2);
     }
 }
 
-.pinkpanther-single-shape-image {
+.pinkpanther-shop-by-cut-item-image {
     height: 3rem;
     transition: .5s;
-}
-
-.pinkpanther-shape-name {
-    text-transform: capitalize;
-    text-decoration: none;
 }

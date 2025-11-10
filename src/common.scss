@@ -3,10 +3,13 @@
 @import './variables.scss';
 
 :root {
-  text-transform: none;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 300;
+  $primary-color: #FFECF3;
+  $secondary-color: #ED5E79;
+  $tertiary-color: #f0eee4;;
+  $accent-color: #9C4066;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -52,8 +55,8 @@ p {
 }
 
 .-microcopy {
-  font-weight: 400;
-  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 a {
@@ -61,10 +64,6 @@ a {
   color: black;
 }
 
-h3 {
-  text-transform: uppercase;
-  font-weight: 400;
-}
 
 .main-title {
   padding: 1rem 0;
@@ -112,4 +111,33 @@ ul {
   .shop-wrapper {
     margin: 0;
   }
+}
+
+.pinkpanther-cta-link {
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+}
+
+
+.pinkpanther-cta-link::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: $secondary-color;
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease-out;
+}
+
+.pinkpanther-cta-link::before {
+  bottom: -5px;
+  transform-origin: left;
+}
+
+.pinkpanther-cta-link:hover::before {
+  transform: scaleX(1);
 }
