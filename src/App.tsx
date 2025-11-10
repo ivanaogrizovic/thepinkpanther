@@ -21,16 +21,18 @@ function App() {
     <div className='pinkpanther-app fade-in'>
       <Header />
       <Navigation productList={productList.products} />
-      <Routes>
-        <Route path='/' element={<Home />}></Route>
-        <Route path='shop/engagement' element={<Shop productList={productList.products} />}></Route>
-        <Route path='shop/coming-soon' element={<ComingSoon />}></Route>
-        <Route path='shop/engagement/item-detail' element={<Product />}></Route>
-        <Route path='about' element={<About />}></Route>
-        <Route path='book-an-appointment' element={<Book />}></Route>
-        <Route path='contact-us' element={<Contact />}></Route>
-      </Routes>
-      <Outlet></Outlet>
+      <main>
+        <Routes>
+          <Route path='/' element={<Home />}></Route>
+          <Route path='shop/engagement' element={<Shop productList={productList.products} />}></Route>
+          <Route path='shop/coming-soon' element={<ComingSoon />}></Route>
+          <Route path='shop/engagement/item-detail' element={<Product />}></Route>
+          <Route path='about' element={<About />}></Route>
+          <Route path='book-an-appointment' element={<Book />}></Route>
+          <Route path='contact-us' element={<Contact />}></Route>
+        </Routes>
+        <Outlet></Outlet>
+      </main>
       <Footer />
     </div>
   );

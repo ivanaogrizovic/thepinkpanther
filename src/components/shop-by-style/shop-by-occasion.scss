@@ -1,0 +1,49 @@
+@import '../../variables.scss';
+
+.pinkpanther-shop-by-occasion {
+    padding: 1rem 2rem;
+}
+
+.pinkpanther-shop-by-occasion-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 1440px;
+
+    @media (min-width: 900px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 auto;
+    }
+}
+
+.pinkpanther-shop-by-occasion-image {
+    width: 100%;
+    max-width: 30rem;
+    transition: opacity 0.5s;
+    opacity: 1;
+}
+
+.pinkpanther-shop-by-occasion-blurb {
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pinkpanther-shop-by-occasion-item {
+    flex: 0 0 auto;
+    background-color: $primary-color;
+    position: relative;
+
+    &:hover {
+        img {
+            opacity: 0.2;
+        }
+
+        .pinkpanther-shop-by-occasion-blurb {
+            display: block;
+        }
+    }
+}

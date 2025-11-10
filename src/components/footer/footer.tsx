@@ -8,7 +8,7 @@ import './footer.scss';
 
 function Footer() {
     return (
-        <div className="pinkpanther-footer">
+        <footer className="pinkpanther-footer">
           <div className="pinkpanther-footer-links">
             <h2>The Pink Panther©</h2>
             <Link to='shop/about'>About</Link>
@@ -58,7 +58,7 @@ function Footer() {
             </ul>
             <p className="pinkpanther-footer-p">Thank you for your time.</p>
           </div>
-        </div>
+        </footer>
     );
 }
 

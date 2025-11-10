@@ -2,7 +2,7 @@ import React from 'react';
 
 import SplitContent from '../components/split-content/split-content'
 import ShopByCut from './../components/shop-by-cut/shop-by-cut';
-import ShopByStyle from './../components/shop-by-style/shop-by-style';
+import ShopByOccasion from '../components/shop-by-style/shop-by-occasion';
 import homeAmbassadorImg from '../assets/home-ambassador.webp'
 
 function Home() {
@@ -14,7 +14,7 @@ const ambassadorText = "Only a real diamond holds true timeless beauty and value
     <div className='fade-in'>
       <SplitContent image={homeAmbassadorImg} title={amassadorTitle} text={ambassadorText} link={ambassadorLink} />
       <ShopByCut />
-      <ShopByStyle />
+      <ShopByOccasion />
     </div>
   );
 }

@@ -73,7 +73,7 @@ function ShopByCut() {
     <div className="pinkpanther-shop-by-cut-wrapper">
       <div className='pinkpanther-shop-by-cut'>
         <h2>Shop engagement rings by shape</h2>
-        <p>From timeless classics to modern icons, explore diamond cuts that tell your love story. Whether you’re drawn to a dazzling round, a bold emerald, or a romantic heart, find the diamond that cuts straight to your style.</p>
+        <p>From timeless classics to modern icons, explore diamond cuts that tell your love story. Whether you’re drawn to a dazzling round, a bold emerald, or a romantic princess, find the diamond that cuts straight to your style.</p>
         <div className='pinkpanther-shop-by-cut-list'>
           {cutsList.map(cut => (
             <Link className='pinkpanther-shop-by-cut-item' to="shop/engagement" state={filterByCut(cut.name)} key={cut.id}>
