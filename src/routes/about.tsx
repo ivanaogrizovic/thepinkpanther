@@ -4,7 +4,6 @@ import AboutSection from '../components/about-section/about-section';
 import SplitContent from '../components/split-content/split-content';
 import aboutHeroImage from '../assets/hero-about-cut.webp';
 import ambassadorImage1 from '../assets/about-ambassador-1.webp';
-import ambassadorImage2 from '../assets/about-ambassador-2.webp';
 
 function About() {
 
