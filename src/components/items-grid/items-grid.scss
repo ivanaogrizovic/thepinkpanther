@@ -1,6 +1,6 @@
 @import '../../variables.scss';
 
-.product-list {
+.pinkpanther-product-list {
     display: flex;
     flex-flow: row wrap;
     gap: 1rem;
@@ -8,81 +8,81 @@
     width: 100%;
 }
 
-.product-image {
+.pinkpanther-product-image {
     width: 20rem;
     border: 1px solid $primary-color;
 }
 
-.product {
+.pinkpanther-product {
     flex: 0 0 20rem;
     transition: transform .5s;
     max-width: min-content;
 
     &:hover {
-        .product-image {
+        .pinkpanther-product-image {
             transform: scale(1.02);
             transition: transform .5s;
         }
     }
 }
 
-.product-name {
+.pinkpanther-product-name {
     word-wrap: break-word;
     height: 2rem;
 }
 
 @media screen and (width <=1201px) {
-    .product {
+    .pinkpanther-product {
         max-width: 16rem;
     }
 
-    .product-image {
+    .pinkpanther-product-image {
         width: 15rem;
     }
 }
 
 @media screen and (width <=772px) {
-    .product {
+    .pinkpanther-product {
         max-width: 10.2rem;
     }
 
-    .product-image {
+    .pinkpanther-product-image {
         width: 10rem;
     }
 
-    .product-name {
+    .pinkpanther-product-name {
         height: 2.5rem;
     }
 
-    .product-price {
+    .pinkpanther-product-price {
         margin: 0;
     }
 }
 
 @media screen and (width <=459px) {
-    .product {
+    .pinkpanther-product {
         max-width: 8.2rem;
     }
 
-    .product-image {
+    .pinkpanther-product-image {
         width: 8rem;
     }
 
-    .product-name {
+    .pinkpanther-product-name {
         height: 4rem;
     }
 }
 
 @media screen and (width <=395px) {
-    .product {
+    .pinkpanther-product {
         max-width: 6.2rem;
     }
 
-    .product-image {
+    .pinkpanther-product-image {
         width: 6rem;
     }
 
-    .product-name {
+    .pinkpanther-product-name {
         height: 6.5rem;
     }
 }

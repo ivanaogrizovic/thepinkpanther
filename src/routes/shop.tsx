@@ -84,14 +84,14 @@ function Shop({ productList }: any) {
     }, [selectedShapes, selectedStyles, selectedMetals, productList, productsFromComponent]);
     return (
         <div className='pinkpanther-shop -fade-in'>
-            <Filters
+            {/* <Filters
                 getShapes={getShapes}
                 getStyles={getStyles}
                 getMetals={getMetals}
                 shapeFilters={shapeFilters}
                 styleFilters={styleFilters}
                 metalFilters={metalFilters}
-            />
+            /> */}
             <ItemsGrid rings={fileredProductList} />
         </div>
     );
