@@ -29,7 +29,7 @@ function AboutSection() {
                 </div>
             </div>
             <div className="pinkpanther-quote">
-                <p><i>‘At The Diamond Store, our heritage reflects a unique blend of sustainability efforts, exceptional craftsmanship, and innovative design. Celebrated with numerous accolades, we continually set the bar high, crafting jewellery that symbolises our dedication and rich legacy.’</i></p>
+                <p><i>‘Every glittering image on this site is a glamorous freeloader from the internet. Just some celebrities I temporarily convinced to appear in my front-end showcase. No ownership, no profit, no paparazzi rights claimed. No diamonds were purchased, sold, or harmed in the process — they’re basically on an unpaid modeling gig.’</i></p>
                 <p><b>— Jane Doe, CEO & Co-Founder</b></p>
             </div>
         </div>

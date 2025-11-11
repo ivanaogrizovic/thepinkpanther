@@ -1,25 +1,23 @@
 import React from 'react';
 import Hero from '../components/hero/hero';
 import AboutSection from '../components/about-section/about-section';
-import Slideshow from '../components/split-content/split-content';
-import SlideshowReverse from '../components/split-content/split-content-reverse';
+import SplitContent from '../components/split-content/split-content';
 import aboutHeroImage from '../assets/hero-about-cut.webp';
 import ambassadorImage1 from '../assets/about-ambassador-1.webp';
 import ambassadorImage2 from '../assets/about-ambassador-2.webp';
 
 function About() {
 
-    const ambassadorTitle1 = "innovation, always";
-    const ambassadorText1 = "Innovation is at the heart of what we do. The Pink Panther creates wear-forever, high quality and affordable jewellery, using conflict-free and ethically sourced natural mined diamonds as well as sustainable, lab grown diamonds. Our unique, innovative technology means that we can offer rare and beautiful lab grown stones - such as coloured diamonds - at an affordable price point.";
-    const ambassadorLink1 = "SHOP ENGAGEMENT RINGS";
-    const ambassadorTitle2 = "the future of diamonds";
-    const ambassadorText2 = "In 2019, The Pink Panther were one of the first jewellers to recognise lab grown as the future, and now over half of our collection is available as both natural mined and lab grown diamonds. We are constantly working to improve and increase our lab grown diamond offerings."
-
     return (
         <div className='-fade-in'>
             <Hero image={aboutHeroImage} />
             <AboutSection />
-            <Slideshow image={ambassadorImage1} title={ambassadorTitle1} text={ambassadorText1} link={ambassadorLink1}></Slideshow>
+            <SplitContent 
+                image={ambassadorImage1} 
+                title="Where Code Meets Sparkle" 
+                text="Behind every ring is a little bit of magic… and a lot of React logic. The Pink Panther’s interactive filters let users mix and match shapes, styles, and metals in real time. Styled with modular SCSS and optimized for performance, this project lives on GitHub Pages." 
+                link="EXPLORE THE FILTER FUN" 
+            />
         </div>
     );
 }
