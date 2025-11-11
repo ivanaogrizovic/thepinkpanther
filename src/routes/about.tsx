@@ -5,17 +5,19 @@ import AboutSection from '../components/about-section/about-section';
 import SplitContent from '../components/split-content/split-content';
 import aboutHeroImage from '../assets/hero-about-cut.webp';
 import ambassadorImage1 from '../assets/about-ambassador-1.webp';
+import PageBlurb from '../components/page-blurb/page-blurb';
 
 function About() {
 
     return (
         <div className='-fade-in'>
             <Hero image={aboutHeroImage} />
-            <div className="pinkpanther-about-us-blurb">
-                <h2>Our diamond story</h2>
-                <p>The Pink Panther is a fictional fine-jewellery brand created as a showcase project to demonstrate the author’s front-end development skills. Inspired by timeless elegance and playful luxury, the brand serves as a creative canvas for experimenting with modern web technologies, polished UI design, and responsive e-commerce experiences.</p>
-                <Link className="pinkpanther-cta-link" to="/shop/engagement">Explore diamonds →</Link>
-            </div>
+            <PageBlurb 
+            title="Our diamond story"
+            paragraph="The Pink Panther is a fictional fine-jewellery brand created as a showcase project to demonstrate the author’s front-end development skills. Inspired by timeless elegance and playful luxury, the brand serves as a creative canvas for experimenting with modern web technologies, polished UI design, and responsive e-commerce experiences."
+            link="Explore diamonds"
+            url="/shop/engagement"
+            />
             <AboutSection />
             <SplitContent 
                 image={ambassadorImage1} 

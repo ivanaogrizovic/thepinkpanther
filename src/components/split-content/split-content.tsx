@@ -9,7 +9,7 @@ function SplitContent({ title, text, link, image }: any) {
             <div className='pinkpanther-split-content-text -fade-in-up'>
                 <h1>{title}</h1>
                 <p>{text}</p>
-                <p><Link to='shop' className='pinkpanther-cta-link'>{link} →</Link></p>
+                {link && <p><Link to='shop' className='pinkpanther-cta-link'>{link} →</Link></p>}
             </div>
         </div>
     );
