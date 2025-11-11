@@ -1,15 +1,9 @@
-import { Link } from "react-router-dom";
 import './about-section.scss';
 
 function AboutSection() {
 
     return (
-        <div>
-            <div className="pinkpanther-about-us-blurb">
-                <h3>Our diamon story</h3>
-                <p>The Pink Panther is a fictional fine-jewellery brand created as a showcase project to demonstrate the author’s front-end development skills. Inspired by timeless elegance and playful luxury, the brand serves as a creative canvas for experimenting with modern web technologies, polished UI design, and responsive e-commerce experiences.</p>
-                <Link className="pinkpanther-cta-link" to="/shop/engagement">Explore diamonds →</Link>
-            </div>
+        <>
             <div className="pinkpanther-our-values">
                 <div className="pinkpanther-value">
                     <h3>React based</h3>
@@ -32,7 +26,7 @@ function AboutSection() {
                 <p><i>‘Every glittering image on this site is a glamorous freeloader from the internet. Just some celebrities I temporarily convinced to appear in my front-end showcase. No ownership, no profit, no paparazzi rights claimed. No diamonds were purchased, sold, or harmed in the process — they’re basically on an unpaid modeling gig.’</i></p>
                 <p><b>— Jane Doe, CEO & Co-Founder</b></p>
             </div>
-        </div>
+        </>
     );
 
 }
