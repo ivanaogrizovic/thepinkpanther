@@ -12,30 +12,28 @@ function Navigation({ productList }: any) {
   const metalList = ["white gold", "yellow gold", "platinum"];
 
   return (
-    <nav data-action='navigation'>
+    <nav>
       <ul className='pinkpanther-navigation-list -microcopy'>
         <li className='pinkpanther-navigation-item'><Link to='shop/engagement'>Engagement Rings</Link>
           <div className='pinkpanther-sub-navigation' role='menu'>
-            <ul className='pinkpanther-sub-navigation-list'>
-              <SubNavigation 
-                filter="shape" 
-                list={shapeListTemp}
-              />
-              <SubNavigation 
-                filter="style" 
-                list={styleList}
-              />
-              <SubNavigation 
-                filter="metal" 
-                list={metalList}
-              />
-              <li className='pinkpanther-sub-navigation-item'>
-                <img src={engagementMenu} className='pinkpanther-sub-navigation-image' alt='' />
-              </li>
-            </ul>
+            <SubNavigation 
+              filter="shape" 
+              list={shapeListTemp}
+            />
+            <SubNavigation 
+              filter="style" 
+              list={styleList}
+            />
+            <SubNavigation 
+              filter="metal" 
+              list={metalList}
+            />
+            <li className='pinkpanther-sub-navigation-item'>
+              <img src={engagementMenu} className='pinkpanther-sub-navigation-image' alt='' />
+            </li>
           </div>
         </li>
-        <Link className='pinkpanther-navigation-item' to='shop/coming-soon'>Wedding Rings</Link>
+        <li className='pinkpanther-navigation-item'><Link to='shop/coming-soon'>Wedding Rings</Link></li>
         <li className='pinkpanther-navigation-item'><Link to='about'>About</Link></li>
         <li className='pinkpanther-navigation-item'><Link to='book-an-appointment'>Book an appointment</Link></li>
         <li className='pinkpanther-navigation-item'><Link to='contact-us'>Contact us</Link></li>

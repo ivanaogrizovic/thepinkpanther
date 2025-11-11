@@ -10,18 +10,14 @@ function SubNavigation({ filter, list }: SubNavigationProps) {
 
     return (
         <ul className='pinkpanther-sub-navigation-list'>
-            <li className='pinkpanther-sub-navigation-column'>
-                <span className='-microcopy'><b>{filter}</b></span>
-                <ul className='pinkpanther-sub-navigation-list'>
-                    {list.map((filter, index) => (
-                        <li className='pinkpanther-sub-navigation-list-item' key={index}>
-                            <Link to={`shop/engagement?shape=${filter}`}>
-                                {filter}
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
-            </li>
+            <span className='-microcopy -bold'>{filter}</span>
+            {list.map((filter, index) => (
+                <li className='pinkpanther-sub-navigation-list-item' key={index}>
+                    <Link to={`shop/engagement?shape=${filter}`}>
+                        {filter}
+                    </Link>
+                </li>
+            ))}
         </ul>
     );
 }
