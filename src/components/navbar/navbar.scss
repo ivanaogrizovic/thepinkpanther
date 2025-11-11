@@ -25,6 +25,14 @@
     margin-top: 1.3rem;
     left: 0;
     right: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    text-transform: capitalize;
+    gap: 4rem;
+    padding: 1.5rem 0;
+    top: 12rem;
 
     &:hover {
         .pinkpanther-sub-navigation {
@@ -40,18 +48,6 @@
             display: flex;
         }
     }
-}
-
-/* LEVEL 2 */
-.pinkpanther-sub-navigation {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 auto;
-    text-transform: capitalize;
-    gap: 4rem;
-    padding: 1.5rem 0;
-    top: 12rem;
 }
 
 .pinkpanther-sub-navigation-list {
