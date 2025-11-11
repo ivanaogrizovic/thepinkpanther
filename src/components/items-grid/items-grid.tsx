@@ -15,10 +15,10 @@ function ItemsGrid({ rings }: any) {
   };
 
   return (
-    <div className='pinkpanther-product-list fade-in'>
+    <div className='pinkpanther-product-list -fade-in'>
       {rings?.map((ring: engagementRing, index: number) => (
         <Link to="item-detail" state={filterSelectedItem(ring.name)} key={index}>
-          <div className='pinkpanther-product'>
+          <div className='pinkpanther-product -fade-in'>
             <img className='pinkpanther-product-image' src={ring?.images[frontImage]} alt={ring.name}></img>
             <div className='pinkpanther-product-text'>
               <p>{ring.name}</p>
