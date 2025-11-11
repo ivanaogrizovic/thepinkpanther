@@ -5,7 +5,7 @@ function FullWdithCta({ image, title, text, buttonText, link }: any) {
 
     return (
         <div className="pinkpanther-full-width-cta">
-            {image && <img src={image} />}
+            {image && <img src={image} alt=""/>}
             <div className="pinkpanther-full-width-cta-content -dark-theme">
                 <h2 className="pinkpanther-full-width-cta-title">{title}</h2>
                 <p className="pinkpanther-full-width-cta-text">{text}</p>

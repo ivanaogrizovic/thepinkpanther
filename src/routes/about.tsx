@@ -12,7 +12,7 @@ function About() {
         <div className='-fade-in'>
             <Hero image={aboutHeroImage} />
             <div className="pinkpanther-about-us-blurb">
-                <h3>Our diamon story</h3>
+                <h2>Our diamond story</h2>
                 <p>The Pink Panther is a fictional fine-jewellery brand created as a showcase project to demonstrate the author’s front-end development skills. Inspired by timeless elegance and playful luxury, the brand serves as a creative canvas for experimenting with modern web technologies, polished UI design, and responsive e-commerce experiences.</p>
                 <Link className="pinkpanther-cta-link" to="/shop/engagement">Explore diamonds →</Link>
             </div>

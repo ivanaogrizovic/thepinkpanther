@@ -6,7 +6,7 @@ function AboutSection() {
         <>
             <div className="pinkpanther-our-values">
                 <div className="pinkpanther-value">
-                    <h3>React based</h3>
+                    <h3 >React based</h3>
                     <p>Built with React 18.3.1, this website showcases a modular structure with reusable, scalable components.</p>
                 </div>
                 <div className="pinkpanther-value">
