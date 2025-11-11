@@ -1,13 +1,11 @@
-import React from 'react';
 import { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
+import { engagementRing } from '../interfaces/engagementRing.interface';
 import ItemsGrid from '../components/items-grid/items-grid';
 import Filters from '../components/filters/filters';
-import { engagementRing } from '../interfaces/engagementRing.interface';
 import shapeFilters from '../shape-filters.json';
 import styleFilters from '../style-filters.json';
 import metalFilters from '../metal-filters.json';
-
-import { useLocation } from 'react-router-dom';
 
 function Shop({ productList }: any) {
 
@@ -85,7 +83,7 @@ function Shop({ productList }: any) {
         }
     }, [selectedShapes, selectedStyles, selectedMetals, productList, productsFromComponent]);
     return (
-        <div className='shop-wrapper -fade-in'>
+        <div className='pinkpanther-shop -fade-in'>
             <Filters
                 getShapes={getShapes}
                 getStyles={getStyles}

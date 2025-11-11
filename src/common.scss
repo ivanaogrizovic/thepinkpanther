@@ -79,14 +79,17 @@ ul {
   padding-inline-start: 0;
 }
 
-.shop-wrapper {
+.pinkpanther-shop {
   display: flex;
-  flex-flow: row nowrap;
+  flex-direction: column;
   justify-content: center;
-  margin: 1rem 4rem;
+  padding: 2rem;
 
-  @media screen and (width <=1024px) {
-    margin: 0;
+  @media (min-width: 900px) {
+    flex-flow: row nowrap;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 2rem 0;
   }
 }
 

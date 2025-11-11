@@ -4,7 +4,7 @@ import './item-detail.scss'
 function ItemDetail({ singleProduct }: any) {
 
     return (
-        <div className='item-detail shop-wrapper'>
+        <div className='item-detail pinkpanther-shop'>
             <div className='item-pictures-container'>
                 {singleProduct.images.map((image: string, index: number) => (
                     <img className='item-image' src={image} alt={singleProduct.name} key={index}></img>
