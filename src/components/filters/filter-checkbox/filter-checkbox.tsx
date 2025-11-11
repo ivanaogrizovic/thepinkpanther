@@ -1,23 +1,34 @@
-import {filter } from '../../../interfaces/filters.interface';
+import React from 'react';
+import { filter as FilterItem } from '../../../interfaces/filters.interface';
 import '../filters';
 
-function FilterCheckboxList ({filterName, filterList, handleChange} : any) {
-    
-    return (
-        <>
-            <p className='-microcopy -bold'>{filterName}</p>
-            <ul className='pinkpanther-filter-list'>
-                {filterList?.map((filter: filter, index: number) => (
-                    (<li key={index}>
-                        <label>
-                            <input type="checkbox" onChange={() => handleChange(filter)} />
-                            {filter.value}
-                        </label>
-                    </li>)
-                ))}
-            </ul >
-        </>
-    )
+interface FilterCheckboxListProps {
+  filterName: string;
+  filterList: FilterItem[];
+  isChecked: (value: string) => boolean;
+  onToggle: (value: string) => void;
+}
+
+function FilterCheckboxList({ filterName, filterList, isChecked, onToggle }: FilterCheckboxListProps) {
+  return (
+    <>
+      <p className='-microcopy -bold'>{filterName}</p>
+      <ul className='pinkpanther-filter-list'>
+        {filterList?.map((filter, index) => (
+          <li key={index}>
+            <label>
+              <input
+                type="checkbox"
+                checked={isChecked(filter)}
+                onChange={() => onToggle(filter)}
+              />
+              {filter}
+            </label>
+          </li>
+        ))}
+      </ul>
+    </>
+  );
 }
 
 export default FilterCheckboxList;

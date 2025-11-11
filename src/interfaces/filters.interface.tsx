@@ -1,4 +1,1 @@
-export interface filter {
-    value: string
-    isChecked: boolean
-}
+export type filter = string;

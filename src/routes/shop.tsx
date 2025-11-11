@@ -1,94 +1,66 @@
-import { useEffect, useState } from 'react';
+import React from 'react';
+import { useMemo, useCallback } from 'react';
 import { useLocation } from 'react-router-dom';
 import { engagementRing } from '../interfaces/engagementRing.interface';
 import ItemsGrid from '../components/items-grid/items-grid';
 import Filters from '../components/filters/filters';
 
-function Shop({ productList }: any) {
+type FilterCategory = 'shape' | 'style' | 'metal';
+type FiltersState = Record<FilterCategory, Set<string>>;
 
-    const location = useLocation();
-    const productsFromComponent = location.state;
+function makeEmptyFilters(): FiltersState {
+  return { shape: new Set(), style: new Set(), metal: new Set() };
+}
 
-    const [selectedShapes, setSelectedShapes] = useState<Array<string>>([]);
-    const [selectedStyles, setSelectedStyles] = useState<Array<string>>([]);
-    const [selectedMetals, setSelectedMetals] = useState<Array<string>>([]);
-    const [fileredProductList, setFilteredProductList] = useState<Array<engagementRing>>([]);
+function Shop({ productList }: { productList: engagementRing[] }) {
+  const location = useLocation();
+  const productsFromComponent = location.state as engagementRing[] | undefined;
 
-    const getShapes = (category: string) => {
-        if (!selectedShapes.includes(category)) {
-            setSelectedShapes(prev => ([...prev, category]))
-        }
-        if (selectedShapes.includes(category)) {
-            const removedList = selectedShapes.filter((item) => (item !== category));
-            setSelectedShapes(removedList);
-        }
-    }
+  const [filters, setFilters] = React.useState<FiltersState>(() => makeEmptyFilters());
 
-    const getStyles = (category: string) => {
-        if (!selectedStyles.includes(category)) {
-            setSelectedStyles(prev => ([...prev, category]))
-        }
-        if (selectedStyles.includes(category)) {
-            const removedList = selectedStyles.filter((item) => (item !== category));
-            setSelectedStyles(removedList);
-        }
-    }
+  const toggleFilter = useCallback((category: FilterCategory, value: string) => {
+    setFilters(prev => {
+      const next = {
+        shape: new Set(prev.shape),
+        style: new Set(prev.style),
+        metal: new Set(prev.metal),
+      };
+      const setForCategory = next[category];
+      if (setForCategory.has(value)) setForCategory.delete(value);
+      else setForCategory.add(value);
+      return next;
+    });
+  }, []);
 
-    const getMetals = (category: string) => {
-        if (!selectedMetals.includes(category)) {
-            setSelectedMetals(prev => ([...prev, category]))
-        }
-        if (selectedMetals.includes(category)) {
-            const removedList = selectedMetals.filter((item) => (item !== category));
-            setSelectedMetals(removedList);
-        }
-    }
+  const sortByName = (data: engagementRing[]) =>
+    [...data].sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: 'base' }));
 
-    const removeDuplicates = (data: Array<engagementRing>) => {
-        return [...new Set(data)];
-    }
+  const baseList = productsFromComponent ?? productList ?? [];
 
-    const sortOrder = (data: Array<engagementRing>) => {
-        data.sort(function (a, b) {
-            var textA = a.name.toUpperCase();
-            var textB = b.name.toUpperCase();
-            return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
-        });
-    }
+  const filteredProductList = useMemo(() => {
+    const hasAnyFilter = filters.shape.size > 0 || filters.style.size > 0 || filters.metal.size > 0;
 
-    const filterBy = (filterObject: string[], filterValue: string) => {
-        if (filterObject.length === 0) {
-            return true;
-        }
-        return filterObject.includes(filterValue);
-    }
+    if (!hasAnyFilter) return sortByName(baseList);
 
-    useEffect(() => {
-        if (selectedShapes.length === 0 && selectedStyles.length === 0 && selectedMetals.length === 0) {
-            if (!productsFromComponent) {
-                sortOrder(productList)
-                setFilteredProductList(productList);
-            } else {
-                sortOrder(productsFromComponent)
-                setFilteredProductList(productsFromComponent);
-            }
-        } else {
-            const filteredList: engagementRing[] = productList.filter((item: engagementRing) => filterBy(selectedShapes, item.shape) &&
-                filterBy(selectedStyles, item.style) && filterBy(selectedMetals, item.metal));
-            sortOrder(filteredList);
-            setFilteredProductList(filteredList);
-        }
-    }, [selectedShapes, selectedStyles, selectedMetals, productList, productsFromComponent]);
-    return (
-        <div className='pinkpanther-shop -fade-in'>
-            <Filters
-                getShapes={getShapes}
-                getStyles={getStyles}
-                getMetals={getMetals}
-            />
-            <ItemsGrid rings={fileredProductList} />
-        </div>
+    return sortByName(
+      baseList.filter(item => {
+        const shapeOk = filters.shape.size === 0 || filters.shape.has(item.shape);
+        const styleOk = filters.style.size === 0 || filters.style.has(item.style);
+        const metalOk = filters.metal.size === 0 || filters.metal.has(item.metal);
+        return shapeOk && styleOk && metalOk;
+      })
     );
+  }, [baseList, filters]);
+
+  return (
+    <div className='pinkpanther-shop -fade-in'>
+      <Filters
+        selectedFilters={filters}
+        onToggle={toggleFilter}
+      />
+      <ItemsGrid rings={filteredProductList} />
+    </div>
+  );
 }
 
 export default Shop;

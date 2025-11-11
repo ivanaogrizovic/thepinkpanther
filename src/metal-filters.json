@@ -1,14 +1,6 @@
 [
-    {
-        "value": "white gold",
-        "isChecked": false
-    },
-    {
-        "value": "yellow gold",
-        "isChecked": false
-    },
-    {
-        "value": "platinum",
-        "isChecked": false
-    }
+  "white gold",
+  "yellow gold",
+  "rose gold",
+  "platinum"
 ]

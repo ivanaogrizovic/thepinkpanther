@@ -1,4 +1,1 @@
-export interface style {
-    id: number
-    name: string
-}
+export type filter = string;
