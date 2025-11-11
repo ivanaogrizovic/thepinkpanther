@@ -1,7 +1,11 @@
 import { filter } from '../../interfaces/filters.interface';
+import shapeFilters from '../../shape-filters.json';
+import styleFilters from '../../style-filters.json';
+import metalFilters from '../../metal-filters.json';
 import './filters.scss';
+import FilterCheckboxList from './filter-checkbox/filter-checkbox';
 
-function Filters({ getShapes, getStyles, getMetals, shapeFilters, styleFilters, metalFilters }: any) {
+function Filters({ getShapes, getStyles, getMetals }: any) {
 
     const handleChangeShape = (selectedFilter: filter) => {
         selectedFilter.isChecked = !selectedFilter.isChecked;
@@ -19,54 +23,23 @@ function Filters({ getShapes, getStyles, getMetals, shapeFilters, styleFilters, 
     };
 
     return (
-        <div className='filters'>
-            <h3 className='filter-title'>Filter by</h3>
-            <h3 className='filter-name'>Shape</h3>
-            <ul className='filter-list'>
-                {shapeFilters?.map((filter: filter, index: number) => (
-                    (<li key={index}>
-                        <label>
-                            <input type="checkbox" onChange={() => handleChangeShape(filter)} />
-                            {filter.value}
-                        </label>
-                    </li>)
-                ))}
-            </ul >
-            <h3 className='filter'>Style</h3>
-            <ul className='filter-list'>
-                {styleFilters?.map((filter: filter, index: number) => (
-                    (<li key={index}>
-                        <label>
-                            <input type="checkbox" onChange={() => handleChangeStyle(filter)} />
-                            {filter.value}
-                        </label>
-                    </li>)
-                ))}
-            </ul >
-            <h3 className='filter'>Metal</h3>
-            <ul className='filter-list'>
-                {metalFilters?.map((filter: filter, index: number) => (
-                    (<li key={index}>
-                        <label>
-                            <input type="checkbox" onChange={() => handleChangeMetal(filter)} />
-                            {filter.value}
-                        </label>
-                    </li>)
-                ))}
-            </ul >
-            {/* 
-            <h3 className='filter'>Price</h3>
-            <ul className='filter-list'>
-                {filtersList.filters.map((filter: filter) => (
-                    filter.name === "price"
-                        ? (<li>
-                            <label>
-                                <input type="checkbox" id={filter.name} name={filter.name} value={filter.name} onChange={() => handleChange(filter)} />{filter.value}€
-                            </label>
-                        </li>)
-                        : null
-                ))}
-            </ul > */}
+        <div className='pinkpanther-filters'>
+            <h4>Filter by</h4>
+            <FilterCheckboxList 
+                filterName="shape"
+                filterList={shapeFilters}
+                handleChange={handleChangeShape}
+            />
+            <FilterCheckboxList 
+                filterName="style"
+                filterList={styleFilters}
+                handleChange={handleChangeStyle}
+            />
+            <FilterCheckboxList 
+                filterName="metal"
+                filterList={metalFilters}
+                handleChange={handleChangeMetal}
+            />
         </div>
     );
 }
