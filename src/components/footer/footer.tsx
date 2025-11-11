@@ -10,7 +10,7 @@ function Footer() {
     return (
         <footer className="pinkpanther-footer">
           <div className="pinkpanther-footer-links">
-            <h2>The Pink Panther©</h2>
+            <h4>The Pink Panther©</h4>
             <Link to='shop/about'>About</Link>
             <Link to='shop/engagement'>Engagement Rings</Link>
             <Link to='shop/coming-soon'>Wedding Rings</Link>
@@ -38,7 +38,7 @@ function Footer() {
             </div>
           </div>
           <div className="pinkpanther-footer-blurb">
-            <h2>Tech Stack</h2>
+            <h4>Tech Stack</h4>
             <p className="pinkpanther-footer-p">This website was made with:</p>
             <div className='pinkpanther-footer-techstack'>
               <div><FaReact id='react'/> React</div>
@@ -47,7 +47,7 @@ function Footer() {
             </div>
           </div>
           <div className='pinkpanther-footer-project-info'> 
-            <h2>About this project</h2>
+            <h4>About this project</h4>
             <p className="pinkpanther-footer-p">Currently undergoing some refactoring, including but not limited to:</p>
             <ul className="pinkpanther-footer-p -list">
               <li>Replacing React Router with NextJS</li>
