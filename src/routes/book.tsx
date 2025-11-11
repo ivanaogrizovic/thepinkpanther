@@ -1,9 +1,9 @@
-import React from 'react';
 import Hero from '../components/hero/hero';
 import bookImage from '../assets/book-hero.webp';
 import SplitContent from '../components/split-content/split-content';
 import bookExpert from '../assets/diamond-expert.jpg';
 import PageBlurb from '../components/page-blurb/page-blurb';
+import BookingProcess from '../components/booking-process/booking-process';
 
 function Book() {
 
@@ -16,11 +16,7 @@ function Book() {
             link=""
             url=""
             />
-            <SplitContent 
-                image={bookExpert} 
-                title="ask a diamond expert"
-                text= "Our Diamond Experts can help you choose a diamond engagement ring or diamond jewellery. Building upon our legacy of showcasing the world’s most beautiful gemstones, they can share the origin of select The Pink Panther diamonds and the details that make a The Pink Panther diamond shine above all others."
-            />
+            <BookingProcess/>
         </div>
     );
 }
