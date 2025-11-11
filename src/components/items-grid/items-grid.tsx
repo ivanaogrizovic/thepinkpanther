@@ -21,8 +21,8 @@ function ItemsGrid({ rings }: any) {
           <div className='pinkpanther-product'>
             <img className='pinkpanther-product-image' src={ring?.images[frontImage]} alt={ring.name}></img>
             <div className='pinkpanther-product-text'>
-              <p className='pinkpanther-product-name'>{ring.name}</p>
-              <h3 className='pinkpanther-product-price'>{ring.price}€</h3>
+              <p>{ring.name}</p>
+              <p className='-microcopy -bold'>{ring.price}€</p>
             </div>
           </div>
         </Link>
