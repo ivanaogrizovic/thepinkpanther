@@ -5,7 +5,7 @@ import ContactForm from '../components/contact-form/contact-form';
 function Contact() {
 
     return (
-        <div className='fade-in contacts-wrapper'>
+        <div className='contacts-wrapper -fade-in'>
             <div className='bottom-margin'></div>
             <ContactsHours />
             <ContactForm />

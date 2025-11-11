@@ -84,34 +84,18 @@ ul {
   flex-flow: row nowrap;
   justify-content: center;
   margin: 1rem 4rem;
+
+  @media screen and (width <=1024px) {
+    margin: 0;
+  }
 }
 
 .bottom-margin {
   height: 2rem;
 }
 
-.fade-in {
-  animation: fade-in 1s;
-}
-
 .contacts-wrapper {
   padding: 0 15%;
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@media screen and (width <=1024px) {
-  .shop-wrapper {
-    margin: 0;
-  }
 }
 
 .pinkpanther-cta-link {
@@ -149,4 +133,49 @@ ul {
 
 .-bold {
   font-weight: 500;
+}
+
+// ANIMATIONS
+
+.-fade-in {
+  animation: fade-in 1s;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.-fade-in-up {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
 }

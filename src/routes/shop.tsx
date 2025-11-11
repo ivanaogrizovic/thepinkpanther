@@ -85,7 +85,7 @@ function Shop({ productList }: any) {
         }
     }, [selectedShapes, selectedStyles, selectedMetals, productList, productsFromComponent]);
     return (
-        <div className='shop-wrapper fade-in'>
+        <div className='shop-wrapper -fade-in'>
             <Filters
                 getShapes={getShapes}
                 getStyles={getStyles}

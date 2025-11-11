@@ -12,7 +12,7 @@ function Book() {
 
 
     return (
-        <div className='fade-in'>
+        <div className='-fade-in'>
             <HeroImage image={bookImage}></HeroImage>
             <AppointmentSection />
             <Slideshow image={bookExpert} title={slideTitle} text={slideText} />

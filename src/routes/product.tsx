@@ -8,7 +8,7 @@ function Product() {
     const productDetail = location.state;
 
     return (
-        <div className='fade-in'>
+        <div>
             <ItemDetail singleProduct={productDetail[0]}></ItemDetail>
         </div>
     );
