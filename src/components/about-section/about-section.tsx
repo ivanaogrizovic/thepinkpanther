@@ -4,33 +4,33 @@ import './about-section.scss';
 function AboutSection() {
 
     return (
-        <div className="about-wrapper">
-            <div className="main-blurb">
-                <h3>our diamond story</h3>
-                <p>The Pink Panther's heritage stretches back to 1956, when our family-run business first began making beautiful fine jewellery in Dublin. As a Dublin-based, Irish brand, we fully embrace our roots in craftsmanship, but always have our focus on the future, and in 2006, we launched our online store, offering beautiful fine jewellery direct to our customers.</p>
-                <Link className="explore-link" to="shop">EXPLORE DIAMONDS</Link>
+        <div>
+            <div className="pinkpanther-about-us-blurb">
+                <h3>Our diamon story</h3>
+                <p>The Pink Panther is a fictional fine-jewellery brand created as a showcase project to demonstrate the author’s front-end development skills. Inspired by timeless elegance and playful luxury, the brand serves as a creative canvas for experimenting with modern web technologies, polished UI design, and responsive e-commerce experiences.</p>
+                <Link className="pinkpanther-cta-link" to="/shop/engagement">Explore diamonds →</Link>
             </div>
-            <div className="values-wrapper">
-                <div className="single-value">
-                    <h3>innovation</h3>
-                    <p>Forward thinking and always innovating to create the diamonds of the future.</p>
+            <div className="pinkpanther-our-values">
+                <div className="pinkpanther-value">
+                    <h3>React based</h3>
+                    <p>Built with React 18.3.1, this website showcases a modular structure with reusable, scalable components.</p>
                 </div>
-                <div className="single-value">
-                    <h3>craftmanship</h3>
-                    <p>Harnessing over 60 years of Irish heritage and expertise with every design.</p>
+                <div className="pinkpanther-value">
+                    <h3>Responsive</h3>
+                    <p>Designed to adapt seamlessly, the layout performs beautifully across phones, tablets, and desktops.</p>
                 </div>
-                <div className="single-value">
-                    <h3>conscious</h3>
-                    <p>Actively working towards creating jewellery with a positive impact on the world.</p>
+                <div className="pinkpanther-value">
+                    <h3>Mobile-first</h3>
+                    <p>Over 70% of the internets traffic comes from mobile devices. Catering towards the majority of users is vital.</p>
                 </div>
-                <div className="single-value">
-                    <h3>attainable</h3>
-                    <p>Committed to offering everyone beauty, quality and choice for all of life’s moments.</p>
+                <div className="pinkpanther-value">
+                    <h3>Next.js router</h3>
+                    <p>As part of an ongoing refactor, Next.js will replace React Router to enhance performance and scalability.</p>
                 </div>
             </div>
-            <div className="quote-wrapper">
+            <div className="pinkpanther-quote">
                 <p><i>‘At The Diamond Store, our heritage reflects a unique blend of sustainability efforts, exceptional craftsmanship, and innovative design. Celebrated with numerous accolades, we continually set the bar high, crafting jewellery that symbolises our dedication and rich legacy.’</i></p>
-                <p><b>— John Doe, CEO & Co-Founder</b></p>
+                <p><b>— Jane Doe, CEO & Co-Founder</b></p>
             </div>
         </div>
     );

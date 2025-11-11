@@ -1,5 +1,5 @@
 import React from 'react';
-import HeroImage from '../components/hero-image/hero-image';
+import Hero from '../components/hero/hero';
 import bookImage from '../assets/book-hero.webp';
 import Slideshow from '../components/split-content/split-content';
 import bookExpert from '../assets/diamond-expert.webp';
@@ -13,7 +13,7 @@ function Book() {
 
     return (
         <div className='-fade-in'>
-            <HeroImage image={bookImage}></HeroImage>
+            <Hero image={bookImage}></Hero>
             <AppointmentSection />
             <Slideshow image={bookExpert} title={slideTitle} text={slideText} />
             <div className='bottom-margin'></div>
