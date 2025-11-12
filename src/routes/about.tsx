@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Hero from '../components/hero/hero';
 import AboutSection from '../components/about-section/about-section';
 import SplitContent from '../components/split-content/split-content';
-import aboutHeroImage from '../assets/hero-about-cut.webp';
+import aboutHeroImage from '../assets/hero-about.webp';
 import ambassadorImage1 from '../assets/about-ambassador-1.webp';
 import PageBlurb from '../components/page-blurb/page-blurb';
 

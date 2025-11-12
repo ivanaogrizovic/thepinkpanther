@@ -18,8 +18,8 @@ function AboutSection() {
                     <p>Over 70% of the internets traffic comes from mobile devices. Catering towards the majority of users is vital.</p>
                 </div>
                 <div className="pinkpanther-value">
-                    <h3>Next.js router</h3>
-                    <p>As part of an ongoing refactor, Next.js will replace React Router to enhance performance and scalability.</p>
+                    <h3>WCAG 2.2 AA</h3>
+                    <p>Fully accessible, allowing everyone to navigate your services. Real or not.</p>
                 </div>
             </div>
             <div className="pinkpanther-quote">
