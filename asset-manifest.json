@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/thepinkpanther/static/css/main.6ac6a673.css",
-    "main.js": "/thepinkpanther/static/js/main.c8d0650b.js",
+    "main.css": "/thepinkpanther/static/css/main.4dbdb6ec.css",
+    "main.js": "/thepinkpanther/static/js/main.8b20a57a.js",
     "static/js/787.529ddf02.chunk.js": "/thepinkpanther/static/js/787.529ddf02.chunk.js",
     "static/media/wedding-bands.webp": "/thepinkpanther/static/media/wedding-bands.e51d599fb025c1fe4dd1.webp",
     "static/media/rainforest.webp": "/thepinkpanther/static/media/rainforest.89a8de1038bdefbc632f.webp",
@@ -32,12 +32,12 @@
     "static/media/pink-panther-logo.webp": "/thepinkpanther/static/media/pink-panther-logo.50b15bc56987ef7e44d2.webp",
     "static/media/cut-emerald.webp": "/thepinkpanther/static/media/cut-emerald.af242c87d2e190382457.webp",
     "index.html": "/thepinkpanther/index.html",
-    "main.6ac6a673.css.map": "/thepinkpanther/static/css/main.6ac6a673.css.map",
-    "main.c8d0650b.js.map": "/thepinkpanther/static/js/main.c8d0650b.js.map",
+    "main.4dbdb6ec.css.map": "/thepinkpanther/static/css/main.4dbdb6ec.css.map",
+    "main.8b20a57a.js.map": "/thepinkpanther/static/js/main.8b20a57a.js.map",
     "787.529ddf02.chunk.js.map": "/thepinkpanther/static/js/787.529ddf02.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ac6a673.css",
-    "static/js/main.c8d0650b.js"
+    "static/css/main.4dbdb6ec.css",
+    "static/js/main.8b20a57a.js"
   ]
 }
