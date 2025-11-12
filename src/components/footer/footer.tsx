@@ -15,7 +15,6 @@ function Footer() {
             <Link to='shop/engagement'>Engagement Rings</Link>
             <Link to='shop/coming-soon'>Wedding Rings</Link>
             <Link to='book-an-appointment'>Book an appointment</Link>
-            <Link to='our-stores'>Our stores</Link>
             <div className='pinkpanther-footer-icons'>
               <a
                 className='pinkpanther-footer-icon'
