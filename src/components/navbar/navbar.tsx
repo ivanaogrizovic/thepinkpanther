@@ -14,6 +14,7 @@ function Navigation({ productList }: any) {
   return (
     <nav>
       <ul className='pinkpanther-navigation-list -microcopy'>
+        <li className='pinkpanther-navigation-item'><Link to='/'>home</Link></li>
         <li className='pinkpanther-navigation-item'><Link to='shop/engagement'>Engagement Rings</Link>
           <div className='pinkpanther-sub-navigation' role='menu'>
             <SubNavigation 
