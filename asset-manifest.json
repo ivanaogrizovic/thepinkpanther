@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/thepinkpanther/static/css/main.f00e9a59.css",
-    "main.js": "/thepinkpanther/static/js/main.07dac96e.js",
+    "main.css": "/thepinkpanther/static/css/main.b44fe8a3.css",
+    "main.js": "/thepinkpanther/static/js/main.c2f0c0db.js",
     "static/js/787.529ddf02.chunk.js": "/thepinkpanther/static/js/787.529ddf02.chunk.js",
     "static/media/rainforest.webp": "/thepinkpanther/static/media/rainforest.89a8de1038bdefbc632f.webp",
     "static/media/style-eternity.webp": "/thepinkpanther/static/media/style-eternity.27a7be04f9e31949cc67.webp",
+    "static/media/customise.webp": "/thepinkpanther/static/media/customise.36b41b2537049dd44dfc.webp",
     "static/media/cocktail-rings.webp": "/thepinkpanther/static/media/cocktail-rings.00b7cdf3352ea44620c5.webp",
     "static/media/style-men.webp": "/thepinkpanther/static/media/style-men.9bc071c0a2cb952b39e0.webp",
     "static/media/style-wedding-bands.webp": "/thepinkpanther/static/media/style-wedding-bands.0218f9269fcc15250cb9.webp",
@@ -12,10 +13,13 @@
     "static/media/diamond-expert.jpg": "/thepinkpanther/static/media/diamond-expert.d21b299bdd3a78fa1925.jpg",
     "static/media/occasion-engagement.webp": "/thepinkpanther/static/media/occasion-engagement.74937c063a7eb3ad0787.webp",
     "static/media/style-gift.webp": "/thepinkpanther/static/media/style-gift.cf74bce5fcb25fece7de.webp",
+    "static/media/choose-metal.webp": "/thepinkpanther/static/media/choose-metal.5be9fe5fc6d04818f5cf.webp",
     "static/media/hero-about-cut.webp": "/thepinkpanther/static/media/hero-about-cut.d64c60831a8110662a56.webp",
     "static/media/about-ambassador-1.webp": "/thepinkpanther/static/media/about-ambassador-1.7c5e38c6acc3b1f90511.webp",
     "static/media/home-ambassador.webp": "/thepinkpanther/static/media/home-ambassador.eecc6fbd2a069625b90e.webp",
+    "static/media/choose-gem.webp": "/thepinkpanther/static/media/choose-gem.5309fff0b11dae0dc0ae.webp",
     "static/media/engagement-ring-menu.webp": "/thepinkpanther/static/media/engagement-ring-menu.a0499635da0ae8fbd271.webp",
+    "static/media/findFit.webp": "/thepinkpanther/static/media/findFit.7fc14dc92eebcc61b53a.webp",
     "static/media/cut-princess.webp": "/thepinkpanther/static/media/cut-princess.00fbdf935e81e2f292e1.webp",
     "static/media/cut-cushion.webp": "/thepinkpanther/static/media/cut-cushion.3367c8305bd6354fc03b.webp",
     "static/media/cut-oval.webp": "/thepinkpanther/static/media/cut-oval.013ead0bc59cd87c8d15.webp",
@@ -25,12 +29,12 @@
     "static/media/pink-panther-logo.webp": "/thepinkpanther/static/media/pink-panther-logo.50b15bc56987ef7e44d2.webp",
     "static/media/cut-emerald.webp": "/thepinkpanther/static/media/cut-emerald.af242c87d2e190382457.webp",
     "index.html": "/thepinkpanther/index.html",
-    "main.f00e9a59.css.map": "/thepinkpanther/static/css/main.f00e9a59.css.map",
-    "main.07dac96e.js.map": "/thepinkpanther/static/js/main.07dac96e.js.map",
+    "main.b44fe8a3.css.map": "/thepinkpanther/static/css/main.b44fe8a3.css.map",
+    "main.c2f0c0db.js.map": "/thepinkpanther/static/js/main.c2f0c0db.js.map",
     "787.529ddf02.chunk.js.map": "/thepinkpanther/static/js/787.529ddf02.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f00e9a59.css",
-    "static/js/main.07dac96e.js"
+    "static/css/main.b44fe8a3.css",
+    "static/js/main.c2f0c0db.js"
   ]
 }
