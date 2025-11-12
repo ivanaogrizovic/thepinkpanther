@@ -36,7 +36,7 @@ function Navigation({ productList }: any) {
         <li className='pinkpanther-navigation-item'><Link to='shop/coming-soon'>Wedding Rings</Link></li>
         <li className='pinkpanther-navigation-item'><Link to='about'>About</Link></li>
         <li className='pinkpanther-navigation-item'><Link to='book-an-appointment'>Book an appointment</Link></li>
-        <li className='pinkpanther-navigation-item'><Link to='our-stores'>Our stores</Link></li>
+        {/* <li className='pinkpanther-navigation-item'><Link to='our-stores'>Our stores</Link></li> */}
       </ul>
     </nav>
   );
