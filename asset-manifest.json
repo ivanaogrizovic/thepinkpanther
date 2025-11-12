@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/thepinkpanther/static/css/main.b44fe8a3.css",
-    "main.js": "/thepinkpanther/static/js/main.c2f0c0db.js",
+    "main.js": "/thepinkpanther/static/js/main.2e7656f1.js",
     "static/js/787.529ddf02.chunk.js": "/thepinkpanther/static/js/787.529ddf02.chunk.js",
     "static/media/rainforest.webp": "/thepinkpanther/static/media/rainforest.89a8de1038bdefbc632f.webp",
     "static/media/style-eternity.webp": "/thepinkpanther/static/media/style-eternity.27a7be04f9e31949cc67.webp",
@@ -13,8 +13,8 @@
     "static/media/diamond-expert.jpg": "/thepinkpanther/static/media/diamond-expert.d21b299bdd3a78fa1925.jpg",
     "static/media/occasion-engagement.webp": "/thepinkpanther/static/media/occasion-engagement.74937c063a7eb3ad0787.webp",
     "static/media/style-gift.webp": "/thepinkpanther/static/media/style-gift.cf74bce5fcb25fece7de.webp",
+    "static/media/hero-about.webp": "/thepinkpanther/static/media/hero-about.e1daf0de2a8e0beba47e.webp",
     "static/media/choose-metal.webp": "/thepinkpanther/static/media/choose-metal.5be9fe5fc6d04818f5cf.webp",
-    "static/media/hero-about-cut.webp": "/thepinkpanther/static/media/hero-about-cut.d64c60831a8110662a56.webp",
     "static/media/about-ambassador-1.webp": "/thepinkpanther/static/media/about-ambassador-1.7c5e38c6acc3b1f90511.webp",
     "static/media/home-ambassador.webp": "/thepinkpanther/static/media/home-ambassador.eecc6fbd2a069625b90e.webp",
     "static/media/choose-gem.webp": "/thepinkpanther/static/media/choose-gem.5309fff0b11dae0dc0ae.webp",
@@ -30,11 +30,11 @@
     "static/media/cut-emerald.webp": "/thepinkpanther/static/media/cut-emerald.af242c87d2e190382457.webp",
     "index.html": "/thepinkpanther/index.html",
     "main.b44fe8a3.css.map": "/thepinkpanther/static/css/main.b44fe8a3.css.map",
-    "main.c2f0c0db.js.map": "/thepinkpanther/static/js/main.c2f0c0db.js.map",
+    "main.2e7656f1.js.map": "/thepinkpanther/static/js/main.2e7656f1.js.map",
     "787.529ddf02.chunk.js.map": "/thepinkpanther/static/js/787.529ddf02.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b44fe8a3.css",
-    "static/js/main.c2f0c0db.js"
+    "static/js/main.2e7656f1.js"
   ]
 }
