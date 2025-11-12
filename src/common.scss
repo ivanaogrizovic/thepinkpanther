@@ -83,6 +83,7 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-bottom: 2rem;
 
   @media (min-width: 900px) {
     flex-direction: row;

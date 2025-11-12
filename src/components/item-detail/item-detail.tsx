@@ -3,41 +3,34 @@ import './item-detail.scss'
 
 function ItemDetail({ singleProduct }: any) {
 
+    const descriptors = ['collection', 'product type', 'style', 'metal type', 'center stone shape', 'halo', 'center stone carat weight', 'gemstone'];
+
     return (
-        <div className='item-detail pinkpanther-shop'>
-            <div className='item-pictures-container'>
+        <div className='pinkpanther-product-detail'>
+            <div className='pinkpanther-product-pictures'>
                 {singleProduct.images.map((image: string, index: number) => (
-                    <img className='item-image' src={image} alt={singleProduct.name} key={index}></img>
+                    <img className='pinkpanther-product-image' src={image} alt={singleProduct.name} key={index}></img>
                 ))}
             </div>
-            <div className='item-text-container'>
+            <div className='pinkpanther-product-detail-content'>
                 <div>
-                    <h3 className='item-name'>{singleProduct.name} Engagement Ring</h3>
-                    <h3 className='item-price'>{singleProduct.price}€</h3>
-                    <p className='item-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <p className='item-descriptor'>Metal type:&nbsp;&nbsp;&nbsp;&nbsp;{singleProduct.metal}</p>
-                    <p className='item-descriptor'>Center stone shape:&nbsp;&nbsp;&nbsp;&nbsp;{singleProduct.shape}</p>
+                    <h3 className='item-name'>{singleProduct.name}</h3>
+                    <p className='-microcopy -bold'>{singleProduct.price}€</p>
+                    <p className='-microcopy'><b>Metal type:</b> {singleProduct.metal}</p>
+                    <p className='-microcopy'><b>Center stone shape:</b> {singleProduct.shape}</p>
                 </div>
-                <div className='buttons'>
-                    <Button text="view in store" buttonClass="button button-primary"></Button>
-                    <Button text="find the nearest store" buttonClass="button button-secondary"></Button>
-                </div>
-                <div className='item-details'>
-                    <div className='row'><p className='column'>collection</p><p className='column'>classic</p>
+                {/* <div className='pinkpanther-product-detail-content'>
+                    <div className='pinkpanther-product-detail-content'>
+                        <ul>
+                            {Object.entries(singleProduct).map(([key, value]) => (
+                                
+                            <li key={key}>
+                                <p>{key}: {value as any}</p>
+                            </li>
+                            ))}
+                        </ul>
                     </div>
-                    <div className='row'><p className='column'>product type</p><p className='column'>engagement ring</p>
-                    </div>
-                    <div className='row'><p className='column'>style</p><p className='column'>{singleProduct.style}</p>
-                    </div>
-                    <div className='row'><p className='column'>metal type</p><p className='column'>{singleProduct.metal}</p>
-                    </div>
-                    <div className='row'><p className='column'>center stone shape</p><p className='column'>{singleProduct.shape}</p>
-                    </div>
-                    <div className='row'><p className='column'>center stone carat weight</p><p className='column carats'>{singleProduct.carats} ct</p>
-                    </div>
-                    <div className='row'><p className='column'>gemstone</p><p className='column'>{singleProduct.origin} diamond</p>
-                    </div>
-                </div>
+                </div> */}
             </div>
         </div>
     );
