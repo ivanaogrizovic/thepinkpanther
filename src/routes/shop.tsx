@@ -4,6 +4,8 @@ import { useLocation } from 'react-router-dom';
 import { engagementRing } from '../interfaces/engagementRing.interface';
 import ItemsGrid from '../components/items-grid/items-grid';
 import Filters from '../components/filters/filters';
+import engagementHero2 from '.././assets/engagement-set.webp';
+import Hero from '../components/hero/hero';
 
 type FilterCategory = 'shape' | 'style' | 'metal';
 type FiltersState = Record<FilterCategory, Set<string>>;
@@ -53,12 +55,15 @@ function Shop({ productList }: { productList: engagementRing[] }) {
   }, [baseList, filters]);
 
   return (
-    <div className='pinkpanther-shop -fade-in'>
-      <Filters
-        selectedFilters={filters}
-        onToggle={toggleFilter}
-      />
-      <ItemsGrid rings={filteredProductList} />
+    <div className='-fade-in'>
+      <Hero image ={engagementHero2}/>
+      <div className='pinkpanther-shop-content'>
+        <Filters
+          selectedFilters={filters}
+          onToggle={toggleFilter}
+        />
+        <ItemsGrid rings={filteredProductList} />
+      </div>
     </div>
   );
 }
