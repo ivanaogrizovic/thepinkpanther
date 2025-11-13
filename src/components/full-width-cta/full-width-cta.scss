@@ -1,35 +1,14 @@
 @import '../../variables.scss';
 
 .pinkpanther-full-width-cta {
-    position: relative;
-    background-color: black;
-    max-height: 60rem;
-    overflow: hidden;
-
-    & > img {
-        height: 100%;
-        object-fit: cover;
-        opacity: 0.6;
-    }
-
-    @media (min-width: 900px) {
-        & > img {
-            max-height: 35rem;
-            width: 100%;
-        }
-    }
-}
-
-.pinkpanther-full-width-cta-content {
-    position: absolute;
-    top: 50%;
-    bottom: 50%;
+    max-width: 1440px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 1440px;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    padding: 2rem;
+    padding: 1rem 2rem;
+
+    @media (min-width: 1440px) {
+        padding: 1rem 0;
+    }
 }

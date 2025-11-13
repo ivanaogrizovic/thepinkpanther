@@ -1,7 +1,7 @@
 @import '../../variables.scss';
 
 .pinkpanther-shop-by-occasion {
-    padding: 1rem 2rem 4rem 2rem;
+    padding: 1rem 2rem;
 }
 
 .pinkpanther-shop-by-occasion-list {
@@ -10,8 +10,13 @@
     gap: 2rem;
     max-width: 1440px;
 
-    @media (min-width: 900px) {
+    @media (min-width: 600px) {
         display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+    }
+
+    @media (min-width: 900px) {
         grid-template-columns: 1fr 1fr 1fr;
         margin: 0 auto;
     }
@@ -19,7 +24,7 @@
 
 .pinkpanther-shop-by-occasion-image {
     width: 100%;
-    max-width: 30rem;
+    max-width: 35rem;
     transition: opacity 0.5s;
     opacity: 1;
 }

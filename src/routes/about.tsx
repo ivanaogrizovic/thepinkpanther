@@ -6,17 +6,18 @@ import SplitContent from '../components/split-content/split-content';
 import aboutHeroImage from '../assets/hero-about.webp';
 import ambassadorImage1 from '../assets/about-ambassador-1.webp';
 import PageBlurb from '../components/page-blurb/page-blurb';
+import FullWdithCta from '../components/full-width-cta/full-width-cta';
 
 function About() {
 
     return (
         <div className='-fade-in'>
             <Hero image={aboutHeroImage} />
-            <PageBlurb 
-            title="Our diamond story"
-            paragraph="The Pink Panther is a fictional fine-jewellery brand created as a showcase project to demonstrate the author’s front-end development skills. Inspired by timeless elegance and playful luxury, the brand serves as a creative canvas for experimenting with modern web technologies, polished UI design, and responsive e-commerce experiences."
-            link="Explore diamonds"
-            url="/shop/engagement"
+            <FullWdithCta 
+                title="Our diamond story"
+                text="The Pink Panther is a fictional fine-jewellery brand created as a showcase project to demonstrate the author’s front-end development skills. Inspired by timeless elegance and playful luxury, the brand serves as a creative canvas for experimenting with modern web technologies, polished UI design, and responsive e-commerce experiences."
+                linkText="Explore diamonds"
+                link="/shop/engagement"
             />
             <AboutSection />
             <SplitContent 
@@ -25,11 +26,12 @@ function About() {
                 text="Behind every ring is a little bit of magic… and a lot of React logic. The Pink Panther’s interactive filters let users mix and match shapes, styles, and metals in real time. Styled with modular SCSS and optimized for performance, this project lives on GitHub Pages." 
                 link="Explore" 
             />
-            <div className="pinkpanther-about-us-blurb">
-                <h3>Thank you for reading this far</h3>
-                <p>You can find more info about this project in the future. Feel free to contact me for any further inquiry.</p>
-                <a href="https://www.linkedin.com/in/ivana-ogrizovic/" target="blank" rel="noreferrer" className="pinkpanther-cta-link" >Get in touch →</a>
-            </div>
+            <FullWdithCta 
+                title="Thank you for reading this far"
+                text="You can find more info about this project in the future. Feel free to contact me for any further inquiry."
+                linkText="Get in touch"
+                link="https://www.linkedin.com/in/ivana-ogrizovic/"
+            />
         </div>
     );
 }
