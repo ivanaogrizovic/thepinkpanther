@@ -1,0 +1,17 @@
+import './modal.scss';
+
+function Modal ({closeModal, selectedImage} :any) {
+
+    return(
+        <div className='pinkpanther-modal-overlay' onClick={closeModal}>
+            <div className='pinkpanther-modal-content' onClick={(e) => e.stopPropagation()}>
+                <img src={selectedImage} alt='' className='pinkpanther-modal-image' />
+                <button className='pinkpanther-modal-close' onClick={closeModal}>
+                ✕
+                </button>
+            </div>
+        </div>
+    )
+}
+
+export default Modal;

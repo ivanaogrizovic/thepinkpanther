@@ -1,37 +1,58 @@
-import Button from '../button/button';
+import { useState } from 'react';
 import './item-detail.scss'
+import Modal from '../modal/modal';
 
 function ItemDetail({ singleProduct }: any) {
 
-    const descriptors = ['collection', 'product type', 'style', 'metal type', 'center stone shape', 'halo', 'center stone carat weight', 'gemstone'];
+    const [isModalOpen, setModalOpen] = useState(false);
+    const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+    const openModal = (image: string) => {
+        setSelectedImage(image);
+        setModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setModalOpen(false);
+        setSelectedImage(null);
+    };
 
     return (
         <div className='pinkpanther-product-detail'>
             <div className='pinkpanther-product-pictures'>
                 {singleProduct.images.map((image: string, index: number) => (
-                    <img className='pinkpanther-product-image' src={image} alt={singleProduct.name} key={index}></img>
+                    <img 
+                        className='pinkpanther-product-image' 
+                        src={image} 
+                        alt="" 
+                        key={index} 
+                        onClick={() => openModal(image)}>
+                    </img>
                 ))}
             </div>
             <div className='pinkpanther-product-detail-content'>
-                <div>
-                    <h3 className='item-name'>{singleProduct.name}</h3>
-                    <p className='-microcopy -bold'>{singleProduct.price}€</p>
-                    <p className='-microcopy'><b>Metal type:</b> {singleProduct.metal}</p>
-                    <p className='-microcopy'><b>Center stone shape:</b> {singleProduct.shape}</p>
-                </div>
-                {/* <div className='pinkpanther-product-detail-content'>
-                    <div className='pinkpanther-product-detail-content'>
-                        <ul>
-                            {Object.entries(singleProduct).map(([key, value]) => (
-                                
-                            <li key={key}>
-                                <p>{key}: {value as any}</p>
-                            </li>
-                            ))}
-                        </ul>
-                    </div>
-                </div> */}
+                <h3>{singleProduct.name}</h3>
+                <p className='-microcopy -bold'>£{singleProduct.price}</p>
+                <ul>
+                    {Object.entries(singleProduct)
+                    .filter(([key, value]) => key !== 'images' && key !== 'name' && key !== 'price' && key !== 'womens')
+                    .map(([key, value]) => (
+                    <li
+                        className='pinkpanther-product-detail-list-item'
+                        key={key}
+                    >
+                        <p className='-microcopy -bold'>{key}:</p>
+                        <p className='-microcopy'>{String(value)}</p>
+                    </li>
+                ))}
+                </ul>
             </div>
+            {/* Modal */}
+            {isModalOpen && selectedImage && 
+            <Modal 
+                closeModal={closeModal}
+                selectedImage={selectedImage}
+            />}
         </div>
     );
 }
