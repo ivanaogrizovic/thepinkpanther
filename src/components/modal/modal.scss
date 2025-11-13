@@ -12,7 +12,6 @@
   position: relative;
   background: #fff;
   padding: 1rem;
-  border-radius: 12px;
   max-width: 80%;
   max-height: 80%;
   display: flex;
@@ -23,7 +22,6 @@
 .pinkpanther-modal-image {
   max-width: 100%;
   max-height: 80vh;
-  border-radius: 8px;
   object-fit: contain;
 }
 
@@ -38,12 +36,10 @@
   cursor: pointer;
 }
 
-/* Fade overlay */
 .pinkpanther-modal-overlay {
   animation: fadeIn 0.25s ease both;
 }
 
-/* Zoom + fade for modal */
 .-zoom-fade-in {
   animation: zoomFadeIn 0.3s cubic-bezier(.2, .9, .3, 1) both;
 }
