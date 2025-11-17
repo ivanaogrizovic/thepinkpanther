@@ -62,10 +62,10 @@
   top: 12rem;
 
   @media (min-width: 900px) {
-  .pinkpanther-navigation-item:hover .pinkpanther-sub-navigation {
-    display: flex;
+    .pinkpanther-navigation-item:hover > & {
+      display: flex;
+    }
   }
-}
 }
 
 .pinkpanther-navigation-item {
