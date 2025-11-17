@@ -1,14 +1,15 @@
 # [The Pink Panther](https://ivanaogrizovic.github.io/thepinkpanther/)
 
 🚨Refactor in progress🚨
-Please hold tight while I clean this up
 
-The Pink Panther is a make believe jewelry store based in Dublin.
+The Pink Panther is a make believe jewelry store front.
 It was created for learning purposes. Here are some features:
 
+* React, TypeScript, and SCSS based
+* Mobile-first design
 * Fully responsive
-* Made with reusable modules
-* Every page is fully accessible (WCAG 2.1 AA)
+* Made with reusable components
+* Every page is fully accessible (WCAG 2.2 AA)
   
 You can run it locally (see instructions below) or visit the [GitHub Page](https://ivanaogrizovic.github.io/thepinkpanther/).
 
