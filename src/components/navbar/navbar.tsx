@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import SubNavigation from "./sub-navigation/sub-navigation";
 import engagementMenu from '../../assets/engagement-ring-menu.webp';
@@ -16,6 +16,18 @@ function Navigation({}: any) {
   const metalList = ["white gold", "yellow gold", "platinum"];
   const [menuOpen, setMenuOpen] = useState(false);
 
+  useEffect(() => {
+  if (menuOpen) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "";
+  }
+
+  return () => {
+    document.body.style.overflow = "";
+  };
+}, [menuOpen]);
+
   return (
     <nav>
       <button
@@ -27,6 +39,14 @@ function Navigation({}: any) {
         {menuOpen ? <IoCloseOutline /> : <RxHamburgerMenu />}
       </button>
       <ul className={`pinkpanther-navigation-list -microcopy ${menuOpen ? '-visible' : '-hidden'}`}>
+        <button
+          className="pinkpanther-mobile-nav-toggle"
+          aria-expanded={menuOpen}
+          aria-label="Toggle navigation"
+          onClick={() => setMenuOpen((prev) => !prev)}
+      >
+        {menuOpen ? <IoCloseOutline /> : <RxHamburgerMenu />}
+      </button>
         <li className='pinkpanther-navigation-item'><Link to='/'>home</Link></li>
         <li className='pinkpanther-navigation-item'>
           <Link to='shop/engagement'>
