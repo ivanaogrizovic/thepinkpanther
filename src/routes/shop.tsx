@@ -1,5 +1,5 @@
 import React from 'react';
-import { useMemo, useCallback } from 'react';
+import { useMemo, useCallback, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { engagementRing } from '../interfaces/engagementRing.interface';
 import ItemsGrid from '../components/items-grid/items-grid';
@@ -53,6 +53,19 @@ function Shop({ productList }: { productList: engagementRing[] }) {
       })
     );
   }, [baseList, filters]);
+
+useEffect(() => {
+  const params = new URLSearchParams(location.search);
+
+  const nextFilters: FiltersState = { shape: new Set(), style: new Set(), metal: new Set() };
+
+  ['shape', 'style', 'metal'].forEach(category => {
+    const value = params.get(category);
+    if (value) value.split(',').forEach(v => nextFilters[category as FilterCategory].add(v));
+  });
+
+  setFilters(nextFilters);
+}, [location.search]);
 
   return (
     <div className='-fade-in'>

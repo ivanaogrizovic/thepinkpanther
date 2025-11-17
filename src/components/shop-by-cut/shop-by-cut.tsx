@@ -62,7 +62,7 @@ function ShopByCut() {
         <p>From timeless classics to modern icons, explore diamond cuts that tell your love story. Whether you’re drawn to a dazzling round, a bold emerald, or a romantic princess, find the diamond that cuts straight to your style.</p>
         <div className='pinkpanther-shop-by-cut-list'>
           {cutsList.map((cut, index) => (
-            <Link className='pinkpanther-shop-by-cut-item' to="shop/engagement" state={filterByCut(cut.name)} key={index}>
+            <Link className='pinkpanther-shop-by-cut-item' to={`shop/engagement?shape=${cut.name}`} state={filterByCut(cut.name)} key={index}>
               <img className='pinkpanther-shop-by-cut-item-image' src={cut.src} alt=""></img>
               <p className='-microcopy'>{cut.name}</p>
             </Link>
