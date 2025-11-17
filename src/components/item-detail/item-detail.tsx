@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './item-detail.scss'
 import Modal from '../modal/modal';
 
@@ -16,6 +16,10 @@ function ItemDetail({ singleProduct }: any) {
         setModalOpen(false);
         setSelectedImage(null);
     };
+
+    useEffect(() => {
+      window.scrollTo(0, 0)
+    }, []);
 
     return (
         <div className='pinkpanther-product-detail'>

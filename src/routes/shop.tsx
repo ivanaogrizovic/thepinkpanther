@@ -67,6 +67,10 @@ useEffect(() => {
   setFilters(nextFilters);
 }, [location.search]);
 
+useEffect(() => {
+  window.scrollTo(0, 0)
+}, []);
+
   return (
     <div className='-fade-in'>
       <Hero image ={engagementHero2}/>
