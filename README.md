@@ -14,7 +14,6 @@ It was created for learning purposes. Here are some features:
 You can run it locally (see instructions below) or visit the [GitHub Page](https://ivanaogrizovic.github.io/thepinkpanther/).
 
 <img src="/public/preview.gif">
-![me](https://github.com/ivanaogrizovic/thepinkpanther/blob/main/public/preview.gif)
 
 *Do not copy or claim as your own. I do not own the rights to the images used in this project as it was made for learning purposes and not for commercial purposes.*
 
