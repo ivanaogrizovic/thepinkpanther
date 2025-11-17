@@ -17,16 +17,16 @@ function Navigation({}: any) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
-  if (menuOpen) {
-    document.body.style.overflow = "hidden";
-  } else {
-    document.body.style.overflow = "";
-  }
+    if (menuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
 
-  return () => {
-    document.body.style.overflow = "";
-  };
-}, [menuOpen]);
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [menuOpen]);
 
   return (
     <nav>

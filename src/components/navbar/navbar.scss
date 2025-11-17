@@ -4,11 +4,14 @@
   display: flex;
   background-color: transparent;
   border: none;
-  justify-content: right;
 
   @media (min-width: 900px) {
     display: none;
   }
+}
+
+nav>button.pinkpanther-mobile-nav-toggle {
+  justify-self: center;
 }
 
 .pinkpanther-navigation-list {
@@ -26,6 +29,10 @@
 
   &>li {
     padding: 1rem 0;
+  }
+
+  &>button{
+    justify-content: right;
   }
 
   @media (min-width: 900px) {
