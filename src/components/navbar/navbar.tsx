@@ -47,8 +47,8 @@ function Navigation({}: any) {
       >
         {menuOpen ? <IoCloseOutline /> : <RxHamburgerMenu />}
       </button>
-        <li className='pinkpanther-navigation-item'><Link to='/'>home</Link></li>
-        <li className='pinkpanther-navigation-item'>
+        <li className='pinkpanther-navigation-item' onClick={() => setMenuOpen(false)}><Link to='/'>home</Link></li>
+        <li className='pinkpanther-navigation-item' onClick={() => setMenuOpen(false)}>
           <Link to='shop/engagement'>
             Engagement Rings
           </Link>
@@ -70,9 +70,9 @@ function Navigation({}: any) {
             </li>
           </div>
         </li>
-        <li className='pinkpanther-navigation-item'><Link to='shop/coming-soon'>Wedding Rings</Link></li>
-        <li className='pinkpanther-navigation-item'><Link to='about'>About</Link></li>
-        <li className='pinkpanther-navigation-item'><Link to='book-an-appointment'>Book an appointment</Link></li>
+        <li className='pinkpanther-navigation-item' onClick={() => setMenuOpen(false)}><Link to='shop/coming-soon'>Wedding Rings</Link></li>
+        <li className='pinkpanther-navigation-item' onClick={() => setMenuOpen(false)}><Link to='about'>About</Link></li>
+        <li className='pinkpanther-navigation-item' onClick={() => setMenuOpen(false)}><Link to='book-an-appointment'>Book an appointment</Link></li>
       </ul>
     </nav>
   );

@@ -61,22 +61,14 @@
   padding: 1.5rem 0;
   top: 12rem;
 
-  @media (min-width:900px) {
-    &:hover {
-      .pinkpanther-sub-navigation {
-        display: block;
-      }
-    }
+  @media (min-width: 900px) {
+  .pinkpanther-navigation-item:hover .pinkpanther-sub-navigation {
+    display: flex;
   }
+}
 }
 
 .pinkpanther-navigation-item {
-  &:hover {
-    .pinkpanther-sub-navigation {
-      display: flex;
-    }
-  }
-
   &>a {
     display: flex;
     flex-direction: row;
