@@ -1,17 +1,38 @@
 @import '../../variables.scss';
 
-.pinkpanther-navigation-list {
+.pinkpanther-mobile-nav-toggle {
     display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin: 0;
+    background-color: transparent;
+    border: none;
+    justify-content: flex-end;
+
+    @media (min-width: 900px) {
+        display: none;
+    }
+}
+
+.pinkpanther-navigation-list {
+    display: none;
+    flex-direction: column;
+    overflow-y: auto;
+    z-index: 999;
+    background-color: #fff;
 
     &>li {
         padding: 1rem 0;
     }
 
-    @media screen and (width <=768px) {
-        display: none;
+    @media (min-width: 900px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+        margin: 0;
+        position: static;
+        background-color: transparent;
+        width: auto;
+        height: auto;
+        max-height: none;
     }
 }
 
@@ -48,6 +69,13 @@
             display: flex;
         }
     }
+
+    &>a{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .pinkpanther-sub-navigation-list {
@@ -66,5 +94,21 @@
 
 .pinkpanther-sub-navigation-image {
     width: 18rem;
+}
+
+.pinkpanther-navigation-list.-hidden {
+    display: none;
+
+    @media (min-width: 900px) {
+        display: flex;
+    }
+}
+
+.pinkpanther-navigation-list.-visible{
+    display: flex;
+
+    @media (min-width: 900px) {
+        display: flex;
+    }
 }
 

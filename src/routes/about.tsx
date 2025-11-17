@@ -5,7 +5,6 @@ import AboutSection from '../components/about-section/about-section';
 import SplitContent from '../components/split-content/split-content';
 import aboutHeroImage from '../assets/hero-about.webp';
 import ambassadorImage1 from '../assets/about-ambassador-1.webp';
-import PageBlurb from '../components/page-blurb/page-blurb';
 import FullWdithCta from '../components/full-width-cta/full-width-cta';
 
 function About() {

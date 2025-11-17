@@ -1,8 +1,5 @@
 import Hero from '../components/hero/hero';
 import bookImage from '../assets/book-hero.webp';
-import SplitContent from '../components/split-content/split-content';
-import bookExpert from '../assets/diamond-expert.jpg';
-import PageBlurb from '../components/page-blurb/page-blurb';
 import BookingProcess from '../components/booking-process/booking-process';
 import FullWdithCta from '../components/full-width-cta/full-width-cta';
 

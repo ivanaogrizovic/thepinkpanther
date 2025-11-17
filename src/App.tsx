@@ -10,7 +10,6 @@ import Header from './components/header/header';
 import Navigation from './components/navbar/navbar';
 import Footer from './components/footer/footer';
 import Product from './routes/product';
-import OurStores from './routes/our-stores';
 import ComingSoon from './routes/coming-soon';
 import './App.scss';
 
@@ -29,7 +28,6 @@ function App() {
           <Route path='shop/engagement/item-detail' element={<Product />}></Route>
           <Route path='about' element={<About />}></Route>
           <Route path='book-an-appointment' element={<Book />}></Route>
-          <Route path='our-stores' element={<OurStores />}></Route>
         </Routes>
         <Outlet></Outlet>
       </main>
