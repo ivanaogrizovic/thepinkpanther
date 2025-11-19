@@ -1,8 +1,14 @@
 import { Link } from 'react-router-dom';
 import './split-content.scss';
 
+type SplitContentProps = {
+    title: string;
+    text: string;
+    link: string;
+    image: string;
+}
 
-function SplitContent({ title, text, link, image }: any) {
+function SplitContent({ title, text, link, image }: SplitContentProps) {
     return (
         <div className='pinkpanther-split-content'>
             <img src={image} className='pinkpanther-split-content-image slide-left' alt='' />

@@ -1,6 +1,6 @@
 import './hero.scss';
 
-function Hero({ text, image }: any) {
+function Hero({ text, image }: { text: string; image: string }) {
 
     return (
         <div className="pinkpanther-hero">

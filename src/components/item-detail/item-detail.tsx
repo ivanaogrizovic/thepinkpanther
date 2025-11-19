@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
-import './item-detail.scss'
+import { engagementRing } from '../../interfaces/engagementRing.interface';
 import Modal from '../modal/modal';
+import './item-detail.scss'
 
-function ItemDetail({ singleProduct }: any) {
+function ItemDetail({ singleProduct }: { singleProduct: engagementRing }) {
 
     const [isModalOpen, setModalOpen] = useState(false);
     const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -51,7 +52,6 @@ function ItemDetail({ singleProduct }: any) {
                 ))}
                 </ul>
             </div>
-            {/* Modal */}
             {isModalOpen && selectedImage && 
             <Modal 
                 closeModal={closeModal}

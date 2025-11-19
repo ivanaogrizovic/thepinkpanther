@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 import { engagementRing } from '../../interfaces/engagementRing.interface';
 import './items-grid.scss';
 
-function ItemsGrid({ rings }: any) {
+function ItemsGrid({ rings }: {rings : engagementRing[]}) {
 
   let frontImage = 0;
-  let result: [] = [];
+  let result: engagementRing[] = [];
 
   const filterSelectedItem = (name: string) => {
     result = rings.filter((ring: any) => {

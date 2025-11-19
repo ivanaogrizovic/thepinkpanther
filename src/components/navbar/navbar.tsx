@@ -4,11 +4,9 @@ import SubNavigation from "./sub-navigation/sub-navigation";
 import engagementMenu from '../../assets/engagement-ring-menu.webp';
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoCloseOutline } from "react-icons/io5";
-
-
 import './navbar.scss';
 
-function Navigation({}: any) {
+function Navigation() {
 
   //TO-DO: EXTRACT LIST FROM CONTEXT
   const shapeListTemp = ["oval", "princess", "emerald", "pear", "cushion", "round", "marquise"];

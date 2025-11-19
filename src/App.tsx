@@ -19,7 +19,7 @@ function App() {
   return (
     <div className='pinkpanther-app fade-in'>
       <Header />
-      <Navigation productList={productList.products} />
+      <Navigation />
       <main>
         <Routes>
           <Route path='/' element={<Home />}></Route>

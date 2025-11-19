@@ -1,6 +1,11 @@
 import './modal.scss';
 
-function Modal ({closeModal, selectedImage} :any) {
+type ModalProps = {
+    closeModal: () => void;
+    selectedImage: string;
+}
+
+function Modal ({closeModal, selectedImage} :ModalProps) {
 
     return(
         <div className='pinkpanther-modal-overlay' onClick={closeModal}>
