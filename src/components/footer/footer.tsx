@@ -10,7 +10,7 @@ function Footer() {
     return (
         <footer className="pinkpanther-footer">
           <div className="pinkpanther-footer-links">
-            <h4>The Pink Panther©</h4>
+            <h3>The Pink Panther©</h3>
             <Link to='shop/about'>About</Link>
             <Link to='shop/engagement'>Engagement Rings</Link>
             <Link to='shop/coming-soon'>Wedding Rings</Link>
@@ -23,7 +23,7 @@ function Footer() {
                 rel="noreferrer"
                 aria-label="GitHub profile"
               >
-                <FaGithub />
+                <FaGithub role="img" aria-label="GitHub logo"/>
               </a>
               <a
                 className='pinkpanther-footer-icon'
@@ -32,7 +32,7 @@ function Footer() {
                 rel="noreferrer"
                 aria-label="LinkedIn profile"
               >
-                <FaLinkedin />
+                <FaLinkedin role="img" aria-label="LinkedIn logo"/>
               </a>
             </div>
           </div>
@@ -40,9 +40,9 @@ function Footer() {
             <h4>Tech Stack</h4>
             <p className="pinkpanther-footer-p">This website was made with:</p>
             <div className='pinkpanther-footer-techstack'>
-              <div><FaReact id='react'/> React</div>
-              <span><SiTypescript id='typescript'/> Typescript</span>
-              <span><FaSass id='sass'/> SCSS</span>
+              <div><FaReact id='react'role="img" aria-label="React logo"/> React</div>
+              <span><SiTypescript id='typescript'role="img" aria-label="TypseScript logo"/> Typescript</span>
+              <span><FaSass id='sass' role="img" aria-label="Sass logo"/> SCSS</span>
             </div>
           </div>
           <div className='pinkpanther-footer-project-info'> 
