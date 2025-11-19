@@ -15,7 +15,7 @@ interface FiltersProps {
 function Filters({ selectedFilters, onToggle }: FiltersProps) {
   return (
     <div className='pinkpanther-filters'>
-      <h4>Filter by</h4>
+      <p className='h4'>Filter by</p>
 
       <FilterCheckboxList
         filterName="shape"

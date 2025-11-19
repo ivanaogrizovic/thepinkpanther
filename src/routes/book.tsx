@@ -7,7 +7,10 @@ function Book() {
 
     return (
         <div className='-fade-in'>
-            <Hero image={bookImage}></Hero>
+            <Hero 
+            text="Book an appointment"
+            image={bookImage}
+            />
             <FullWdithCta 
                 title="we are here to help you"
                 text="Whether you’re searching for the perfect engagement ring, personalising a wedding band, or celebrating a milestone with an unforgettable gift, The Pink Panther’s Diamond Experts are here to guide you. Every consultation is tailored to your needs."

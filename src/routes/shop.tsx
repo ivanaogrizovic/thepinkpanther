@@ -73,7 +73,10 @@ useEffect(() => {
 
   return (
     <div className='-fade-in'>
-      <Hero image ={engagementHero2}/>
+      <Hero 
+      text="Engagement Rings"
+      image={engagementHero2}
+      />
       <div className='pinkpanther-shop-content'>
         <Filters
           selectedFilters={filters}

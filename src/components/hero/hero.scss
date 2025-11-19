@@ -4,5 +4,12 @@
         height: 100%;
         max-height: 20rem;
         object-fit: cover;
+        position: relative;
+    }
+
+    & h1 {
+        position: absolute;
+        left: 0;
+        right: 0;
     }
 }

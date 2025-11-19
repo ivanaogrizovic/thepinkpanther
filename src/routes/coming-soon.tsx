@@ -7,7 +7,10 @@ function ComingSoon() {
 
     return (
         <>
-            <Hero image={weddingBands} />
+            <Hero 
+            text="Coming soon"
+            image={weddingBands} 
+            />
             <div className='pinkpanther-coming-soon -fade-in'>
                 <h3>This section is coming soon, stay tuned</h3>
                 <p>In the meantime, enjoy this picture of a cat, and a link to the <Link to='shop' className='pinkpanther-cta-link'>Homepage →</Link></p>
