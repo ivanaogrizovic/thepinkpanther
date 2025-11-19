@@ -72,8 +72,14 @@ svg {
 }
 
 .pinkpanther-footer-icon {
-   &>* { 
-        width: 2rem;
-        height: 2rem;
+    transition: .5s;
+    &>* { 
+            width: 2rem;
+            height: 2rem;
+        }
+
+    &:hover {
+        transition: .5s;
+        transform: scale(1.2);
     }
 }
