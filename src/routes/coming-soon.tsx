@@ -12,7 +12,7 @@ function ComingSoon() {
             image={weddingBands} 
             />
             <div className='pinkpanther-coming-soon -fade-in'>
-                <h3>This section is coming soon, stay tuned</h3>
+                <h2>This section is coming soon, stay tuned</h2>
                 <p>In the meantime, enjoy this picture of a cat, and a link to the <Link to='shop' className='pinkpanther-cta-link'>Homepage →</Link></p>
                 <img className='pinkpanther-placeholder -fade-in' src={fatCat} alt=""></img>
             </div>
