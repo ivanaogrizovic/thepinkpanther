@@ -51,6 +51,7 @@ function ItemDetail({ singleProduct }: { singleProduct: engagementRing }) {
                     </li>
                 ))}
                 </ul>
+                <button className='pinkpanther-button -microcopy'>Add to cart</button>
             </div>
             {isModalOpen && selectedImage && 
             <Modal 
