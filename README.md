@@ -10,6 +10,11 @@ It was created for learning purposes. Here are some features:
 * Fully responsive
 * Made with reusable components
 * Every page is fully accessible (WCAG 2.2 AA)
+
+Features to come:
+* Cart functionality
+* Framer Motion intergration for more interesting animations
+* Google Map on contact page with randomised address each refresh
   
 You can run it locally (see instructions below) or visit the [GitHub Page](https://ivanaogrizovic.github.io/thepinkpanther/).
 
