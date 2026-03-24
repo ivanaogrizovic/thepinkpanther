@@ -6,7 +6,7 @@ import { SiTypescript } from "react-icons/si";
 import { FaSass } from "react-icons/fa";
 import "./footer.scss";
 
-function Footer() {
+export default function Footer() {
   return (
     <footer className="pinkpanther-footer">
       <div className="pinkpanther-footer-links">
@@ -72,5 +72,3 @@ function Footer() {
     </footer>
   );
 }
-
-export default Footer;

@@ -1,16 +1,29 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import SubNavigation from "./sub-navigation/sub-navigation";
-import engagementMenu from '../../assets/engagement-ring-menu.webp';
+import engagementMenu from "../../assets/engagement-ring-menu.webp";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoCloseOutline } from "react-icons/io5";
-import './navbar.scss';
+import "./navbar.scss";
 
-function Navigation() {
-
+export default function Navigation() {
   //TO-DO: EXTRACT LIST FROM CONTEXT
-  const shapeListTemp = ["oval", "princess", "emerald", "pear", "cushion", "round", "marquise"];
-  const styleList = ["halo","solitaire", "three stone", "double halo", "straigh" ];
+  const shapeListTemp = [
+    "oval",
+    "princess",
+    "emerald",
+    "pear",
+    "cushion",
+    "round",
+    "marquise",
+  ];
+  const styleList = [
+    "halo",
+    "solitaire",
+    "three stone",
+    "double halo",
+    "straigh",
+  ];
   const metalList = ["white gold", "yellow gold", "platinum"];
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -29,51 +42,67 @@ function Navigation() {
   return (
     <nav>
       <button
-          className="pinkpanther-mobile-nav-toggle"
-          aria-expanded={menuOpen}
-          aria-label="Toggle navigation"
-          onClick={() => setMenuOpen((prev) => !prev)}
+        className="pinkpanther-mobile-nav-toggle"
+        aria-expanded={menuOpen}
+        aria-label="Toggle navigation"
+        onClick={() => setMenuOpen((prev) => !prev)}
       >
         {menuOpen ? <IoCloseOutline /> : <RxHamburgerMenu />}
       </button>
-      <ul className={`pinkpanther-navigation-list -microcopy ${menuOpen ? '-visible' : '-hidden'}`}>
+      <ul
+        className={`pinkpanther-navigation-list -microcopy ${menuOpen ? "-visible" : "-hidden"}`}
+      >
         <button
           className="pinkpanther-mobile-nav-toggle"
           aria-expanded={menuOpen}
           aria-label="Toggle navigation"
           onClick={() => setMenuOpen((prev) => !prev)}
-      >
-        {menuOpen ? <IoCloseOutline /> : <RxHamburgerMenu />}
-      </button>
-        <li className='pinkpanther-navigation-item' onClick={() => setMenuOpen(false)}><Link to='/'>home</Link></li>
-        <li className='pinkpanther-navigation-item' onClick={() => setMenuOpen(false)}>
-          <Link to='shop/engagement'>
-            Engagement Rings
-          </Link>
-          <div className='pinkpanther-sub-navigation' role='menu'>
-            <SubNavigation 
-              filter="shape" 
-              list={shapeListTemp}
-            />
-            <SubNavigation 
-              filter="style" 
-              list={styleList}
-            />
-            <SubNavigation 
-              filter="metal" 
-              list={metalList}
-            />
-            <li className='pinkpanther-sub-navigation-item'>
-              <img src={engagementMenu} className='pinkpanther-sub-navigation-image' alt='' />
+        >
+          {menuOpen ? <IoCloseOutline /> : <RxHamburgerMenu />}
+        </button>
+        <li
+          className="pinkpanther-navigation-item"
+          onClick={() => setMenuOpen(false)}
+        >
+          <Link to="/">home</Link>
+        </li>
+        <li
+          className="pinkpanther-navigation-item"
+          onClick={() => setMenuOpen(false)}
+        >
+          <Link to="shop/engagement">Engagement Rings</Link>
+          <div className="pinkpanther-sub-navigation" role="menu">
+            <SubNavigation filter="shape" list={shapeListTemp} />
+            <SubNavigation filter="style" list={styleList} />
+            <SubNavigation filter="metal" list={metalList} />
+            <li className="pinkpanther-sub-navigation-item">
+              <img
+                src={engagementMenu}
+                className="pinkpanther-sub-navigation-image"
+                alt=""
+              />
             </li>
           </div>
         </li>
-        <li className='pinkpanther-navigation-item' onClick={() => setMenuOpen(false)}><Link to='shop/coming-soon'>Wedding Rings</Link></li>
-        <li className='pinkpanther-navigation-item' onClick={() => setMenuOpen(false)}><Link to='about'>About</Link></li>
-        <li className='pinkpanther-navigation-item' onClick={() => setMenuOpen(false)}><Link to='book-an-appointment'>Book an appointment</Link></li>
+        <li
+          className="pinkpanther-navigation-item"
+          onClick={() => setMenuOpen(false)}
+        >
+          <Link to="shop/coming-soon">Wedding Rings</Link>
+        </li>
+        <li
+          className="pinkpanther-navigation-item"
+          onClick={() => setMenuOpen(false)}
+        >
+          <Link to="about">About</Link>
+        </li>
+        <li
+          className="pinkpanther-navigation-item"
+          onClick={() => setMenuOpen(false)}
+        >
+          <Link to="book-an-appointment">Book an appointment</Link>
+        </li>
       </ul>
     </nav>
   );
 }
-
-export default Navigation;

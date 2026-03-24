@@ -1,10 +1,10 @@
-import shapeFilters from '../../shape-filters.json';
-import styleFilters from '../../style-filters.json';
-import metalFilters from '../../metal-filters.json';
-import FilterCheckboxList from './filter-checkbox/filter-checkbox';
-import './filters.scss';
+import shapeFilters from "../../shape-filters.json";
+import styleFilters from "../../style-filters.json";
+import metalFilters from "../../metal-filters.json";
+import FilterCheckboxList from "./filter-checkbox/filter-checkbox";
+import "./filters.scss";
 
-type FilterCategory = 'shape' | 'style' | 'metal';
+type FilterCategory = "shape" | "style" | "metal";
 type FiltersState = Record<FilterCategory, Set<string>>;
 
 interface FiltersProps {
@@ -12,33 +12,31 @@ interface FiltersProps {
   onToggle: (category: FilterCategory, value: string) => void;
 }
 
-function Filters({ selectedFilters, onToggle }: FiltersProps) {
+export default function Filters({ selectedFilters, onToggle }: FiltersProps) {
   return (
-    <div className='pinkpanther-filters'>
-      <p className='h4'>Filter by</p>
+    <div className="pinkpanther-filters">
+      <p className="h4">Filter by</p>
 
       <FilterCheckboxList
         filterName="shape"
         filterList={shapeFilters}
         isChecked={(value: string) => selectedFilters.shape.has(value)}
-        onToggle={(value: string) => onToggle('shape', value)}
+        onToggle={(value: string) => onToggle("shape", value)}
       />
 
       <FilterCheckboxList
         filterName="style"
         filterList={styleFilters}
         isChecked={(value: string) => selectedFilters.style.has(value)}
-        onToggle={(value: string) => onToggle('style', value)}
+        onToggle={(value: string) => onToggle("style", value)}
       />
 
       <FilterCheckboxList
         filterName="metal"
         filterList={metalFilters}
         isChecked={(value: string) => selectedFilters.metal.has(value)}
-        onToggle={(value: string) => onToggle('metal', value)}
+        onToggle={(value: string) => onToggle("metal", value)}
       />
     </div>
   );
 }
-
-export default Filters;
