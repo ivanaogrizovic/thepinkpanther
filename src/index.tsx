@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router } from "react-router-dom";
-
+import { ProductsProvider } from "./context/products.context";
+import ErrorBoundary from "./components/error-boundary/error-boundary";
 import App from "./App";
-import { ProductsProvider } from "./context/engagementRings.context";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(
@@ -13,7 +13,9 @@ root.render(
   <React.StrictMode>
     <Router basename="/thepinkpanther">
       <ProductsProvider>
-        <App />
+        <ErrorBoundary>
+          <App />
+        </ErrorBoundary>
       </ProductsProvider>
     </Router>
   </React.StrictMode>,
