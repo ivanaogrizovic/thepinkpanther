@@ -9,6 +9,7 @@ import cushion from "../../assets/cut-cushion.webp";
 import round from "../../assets/cut-round.webp";
 import marquise from "../../assets/cut-marquise.webp";
 import "./shop-by-cut.scss";
+import { ROUTES } from "../../routes/routes.config";
 
 const cutImages: Record<string, string> = {
   oval,
@@ -66,7 +67,7 @@ export default function ShopByCut() {
         </div>
         <p>
           Not sure what you’re looking for?{" "}
-          <Link to="/shop" className="pinkpanther-cta-link">
+          <Link to={ROUTES.SHOP.ENGAGEMENT} className="pinkpanther-cta-link">
             Speak to an expert.
           </Link>{" "}
           We’ll help you find <i>the one</i>.

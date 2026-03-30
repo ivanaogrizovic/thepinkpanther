@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { ROUTES } from "../../routes/routes.config";
 import "./split-content.scss";
 
 type SplitContentProps = {
@@ -26,7 +27,7 @@ export default function SplitContent({
         <p>{text}</p>
         {link && (
           <p>
-            <Link to="shop" className="pinkpanther-cta-link">
+            <Link to={ROUTES.SHOP.ENGAGEMENT} className="pinkpanther-cta-link">
               {link} →
             </Link>
           </p>

@@ -1,5 +1,6 @@
 import { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
+import { ROUTES } from "../../routes/routes.config";
 import { ProductsContext } from "../../context/products.context";
 import SubNavigation from "./sub-navigation/sub-navigation";
 import engagementMenu from "../../assets/engagement-ring-menu.webp";
@@ -55,11 +56,11 @@ export default function Navigation() {
           onClick={closeMenu}
           role="listitem"
         >
-          <Link to="/">home</Link>
+          <Link to={ROUTES.HOME}>home</Link>
         </li>
 
         <li className="pinkpanther-navigation-item" role="listitem">
-          <Link to="shop/engagement" onClick={closeMenu}>
+          <Link to={ROUTES.SHOP.ENGAGEMENT} onClick={closeMenu}>
             Engagement Rings
           </Link>
           <div className="pinkpanther-sub-navigation" role="menu">
@@ -83,7 +84,7 @@ export default function Navigation() {
           onClick={closeMenu}
           role="listitem"
         >
-          <Link to="shop/coming-soon">Wedding Rings</Link>
+          <Link to={ROUTES.SHOP.COMING_SOON}>Wedding Rings</Link>
         </li>
 
         <li
@@ -91,7 +92,7 @@ export default function Navigation() {
           onClick={closeMenu}
           role="listitem"
         >
-          <Link to="about">About</Link>
+          <Link to={ROUTES.ABOUT}>About</Link>
         </li>
 
         <li
@@ -99,7 +100,7 @@ export default function Navigation() {
           onClick={closeMenu}
           role="listitem"
         >
-          <Link to="book-an-appointment">Book an appointment</Link>
+          <Link to={ROUTES.BOOK}>Book an appointment</Link>
         </li>
       </ul>
     </nav>

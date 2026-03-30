@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { ROUTES } from "../../routes/routes.config";
 import { useMemo } from "react";
 import { engagementRing } from "../../interfaces/engagementRing.interface";
 import "./items-grid.scss";
@@ -23,7 +24,7 @@ export default function ItemsGrid({ rings }: { rings: engagementRing[] }) {
       <ul role="list" style={{ display: "contents" }}>
         {rings?.map((ring, index) => (
           <li key={index} role="listitem" style={{ display: "contents" }}>
-            <Link to="item-detail" state={ringsByName[ring.name]}>
+            <Link to={ROUTES.SHOP.ITEM_DETAIL} state={ringsByName[ring.name]}>
               <div className="pinkpanther-product -fade-in">
                 <img
                   className="pinkpanther-product-image"

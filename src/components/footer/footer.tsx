@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { ROUTES } from "../../routes/routes.config";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
@@ -11,10 +12,10 @@ export default function Footer() {
     <footer className="pinkpanther-footer" role="contentinfo">
       <div className="pinkpanther-footer-links">
         <p className="-microcopy">The Pink Panther©</p>
-        <Link to="shop/about">About</Link>
-        <Link to="shop/engagement">Engagement Rings</Link>
-        <Link to="shop/coming-soon">Wedding Rings</Link>
-        <Link to="book-an-appointment">Book an appointment</Link>
+        <Link to={ROUTES.ABOUT}>About</Link>
+        <Link to={ROUTES.SHOP.ENGAGEMENT}>Engagement Rings</Link>
+        <Link to={ROUTES.SHOP.COMING_SOON}>Wedding Rings</Link>
+        <Link to={ROUTES.BOOK}>Book an appointment</Link>
         <div className="pinkpanther-footer-icons">
           <a
             className="pinkpanther-footer-icon"
