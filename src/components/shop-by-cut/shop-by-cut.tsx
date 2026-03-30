@@ -3,56 +3,33 @@ import { useContext } from "react";
 import { ProductsContext } from "../../context/engagementRings.context";
 import { engagementRing } from "../../interfaces/engagementRing.interface";
 import { shape } from "../../interfaces/cuts.interface";
-import cutOval from "../../assets/cut-oval.webp";
-import cutPrincess from "../../assets/cut-princess.webp";
-import cutEmerald from "../../assets/cut-emerald.webp";
-import cutPear from "../../assets/cut-pear.webp";
-import cutCushion from "../../assets/cut-cushion.webp";
-import cutRound from "../../assets/cut-round.webp";
-import cutMarquise from "../../assets/cut-marquise.webp";
+import oval from "../../assets/cut-oval.webp";
+import princess from "../../assets/cut-princess.webp";
+import emerald from "../../assets/cut-emerald.webp";
+import pear from "../../assets/cut-pear.webp";
+import cushion from "../../assets/cut-cushion.webp";
+import round from "../../assets/cut-round.webp";
+import marquise from "../../assets/cut-marquise.webp";
 import "./shop-by-cut.scss";
 
 export default function ShopByCut() {
-  let result: engagementRing[] = [];
   const rings = useContext(ProductsContext);
+  const { getUniqueValues } = useContext(ProductsContext);
 
-  const filterByCut = (cut: string) => {
-    result = rings.products.filter((ring: engagementRing) => {
-      return ring.shape === cut;
-    });
-    return result;
+  const filterByCut = (cut: string) =>
+    rings.products.filter((ring) => ring.shape === cut);
+
+  const cutsList = getUniqueValues("shape");
+
+  const cutImages: Record<string, string> = {
+    oval: oval,
+    princess: princess,
+    emerald: emerald,
+    pear: pear,
+    cushion: cushion,
+    round: round,
+    marquise: marquise,
   };
-
-  const cutsList: shape[] = [
-    {
-      src: cutOval,
-      name: "oval",
-    },
-    {
-      src: cutPrincess,
-      name: "princess",
-    },
-    {
-      src: cutEmerald,
-      name: "emerald",
-    },
-    {
-      src: cutPear,
-      name: "pear",
-    },
-    {
-      src: cutCushion,
-      name: "cushion",
-    },
-    {
-      src: cutRound,
-      name: "round",
-    },
-    {
-      src: cutMarquise,
-      name: "marquise",
-    },
-  ];
 
   return (
     <div className="pinkpanther-shop-by-cut-wrapper">
@@ -68,16 +45,16 @@ export default function ShopByCut() {
           {cutsList.map((cut, index) => (
             <Link
               className="pinkpanther-shop-by-cut-item"
-              to={`shop/engagement?shape=${cut.name}`}
-              state={filterByCut(cut.name)}
+              to={`shop/engagement?shape=${cut}`}
+              state={filterByCut(cut)}
               key={index}
             >
               <img
                 className="pinkpanther-shop-by-cut-item-image"
-                src={cut.src}
-                alt=""
+                src={cutImages[cut]}
+                alt={cut}
               ></img>
-              <p className="-microcopy">{cut.name}</p>
+              <p className="-microcopy">{cut}</p>
             </Link>
           ))}
         </div>

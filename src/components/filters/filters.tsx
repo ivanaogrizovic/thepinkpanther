@@ -1,6 +1,5 @@
-import shapeFilters from "../../shape-filters.json";
-import styleFilters from "../../style-filters.json";
-import metalFilters from "../../metal-filters.json";
+import { useContext } from "react";
+import { ProductsContext } from "../../context/engagementRings.context";
 import FilterCheckboxList from "./filter-checkbox/filter-checkbox";
 import "./filters.scss";
 
@@ -13,6 +12,11 @@ interface FiltersProps {
 }
 
 export default function Filters({ selectedFilters, onToggle }: FiltersProps) {
+  const { getUniqueValues } = useContext(ProductsContext);
+  const shapeFilters = getUniqueValues("shape");
+  const metalFilters = getUniqueValues("metal");
+  const styleFilters = getUniqueValues("style");
+
   return (
     <div className="pinkpanther-filters">
       <p className="h4">Filter by</p>

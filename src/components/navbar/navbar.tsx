@@ -1,5 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
+import { ProductsContext } from "../../context/engagementRings.context";
 import SubNavigation from "./sub-navigation/sub-navigation";
 import engagementMenu from "../../assets/engagement-ring-menu.webp";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -7,24 +8,12 @@ import { IoCloseOutline } from "react-icons/io5";
 import "./navbar.scss";
 
 export default function Navigation() {
-  //TO-DO: EXTRACT LIST FROM CONTEXT
-  const shapeListTemp = [
-    "oval",
-    "princess",
-    "emerald",
-    "pear",
-    "cushion",
-    "round",
-    "marquise",
-  ];
-  const styleList = [
-    "halo",
-    "solitaire",
-    "three stone",
-    "double halo",
-    "straigh",
-  ];
-  const metalList = ["white gold", "yellow gold", "platinum"];
+  const { getUniqueValues } = useContext(ProductsContext);
+
+  const shapeList = getUniqueValues("shape");
+  const styleList = getUniqueValues("style");
+  const metalList = getUniqueValues("metal");
+
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -72,7 +61,7 @@ export default function Navigation() {
         >
           <Link to="shop/engagement">Engagement Rings</Link>
           <div className="pinkpanther-sub-navigation" role="menu">
-            <SubNavigation filter="shape" list={shapeListTemp} />
+            <SubNavigation filter="shape" list={shapeList} />
             <SubNavigation filter="style" list={styleList} />
             <SubNavigation filter="metal" list={metalList} />
             <li className="pinkpanther-sub-navigation-item">
