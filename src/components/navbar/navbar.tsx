@@ -17,16 +17,13 @@ export default function Navigation() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
-    if (menuOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
-
+    document.body.style.overflow = menuOpen ? "hidden" : "";
     return () => {
       document.body.style.overflow = "";
     };
   }, [menuOpen]);
+
+  const closeMenu = () => setMenuOpen(false);
 
   return (
     <nav>
@@ -36,30 +33,30 @@ export default function Navigation() {
         aria-label="Toggle navigation"
         onClick={() => setMenuOpen((prev) => !prev)}
       >
-        {menuOpen ? <IoCloseOutline /> : <RxHamburgerMenu />}
+        <RxHamburgerMenu />
       </button>
+
       <ul
-        className={`pinkpanther-navigation-list -microcopy ${menuOpen ? "-visible" : "-hidden"}`}
+        className={`pinkpanther-navigation-list -microcopy ${
+          menuOpen ? "-visible" : "-hidden"
+        }`}
       >
-        <button
-          className="pinkpanther-mobile-nav-toggle"
-          aria-expanded={menuOpen}
-          aria-label="Toggle navigation"
-          onClick={() => setMenuOpen((prev) => !prev)}
-        >
-          {menuOpen ? <IoCloseOutline /> : <RxHamburgerMenu />}
-        </button>
-        <li
-          className="pinkpanther-navigation-item"
-          onClick={() => setMenuOpen(false)}
-        >
+        {menuOpen && (
+          <li className="pinkpanther-mobile-close">
+            <button onClick={closeMenu} aria-label="Close menu">
+              <IoCloseOutline size={32} />
+            </button>
+          </li>
+        )}
+
+        <li className="pinkpanther-navigation-item" onClick={closeMenu}>
           <Link to="/">home</Link>
         </li>
-        <li
-          className="pinkpanther-navigation-item"
-          onClick={() => setMenuOpen(false)}
-        >
-          <Link to="shop/engagement">Engagement Rings</Link>
+
+        <li className="pinkpanther-navigation-item">
+          <Link to="shop/engagement" onClick={closeMenu}>
+            Engagement Rings
+          </Link>
           <div className="pinkpanther-sub-navigation" role="menu">
             <SubNavigation filter="shape" list={shapeList} />
             <SubNavigation filter="style" list={styleList} />
@@ -73,22 +70,16 @@ export default function Navigation() {
             </li>
           </div>
         </li>
-        <li
-          className="pinkpanther-navigation-item"
-          onClick={() => setMenuOpen(false)}
-        >
+
+        <li className="pinkpanther-navigation-item" onClick={closeMenu}>
           <Link to="shop/coming-soon">Wedding Rings</Link>
         </li>
-        <li
-          className="pinkpanther-navigation-item"
-          onClick={() => setMenuOpen(false)}
-        >
+
+        <li className="pinkpanther-navigation-item" onClick={closeMenu}>
           <Link to="about">About</Link>
         </li>
-        <li
-          className="pinkpanther-navigation-item"
-          onClick={() => setMenuOpen(false)}
-        >
+
+        <li className="pinkpanther-navigation-item" onClick={closeMenu}>
           <Link to="book-an-appointment">Book an appointment</Link>
         </li>
       </ul>

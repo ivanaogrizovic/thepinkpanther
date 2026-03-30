@@ -1,4 +1,4 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
 
 .pinkpanther-mobile-nav-toggle {
   display: flex;
@@ -10,8 +10,27 @@
   }
 }
 
-nav>button.pinkpanther-mobile-nav-toggle {
+nav > button.pinkpanther-mobile-nav-toggle {
   justify-self: center;
+}
+
+.pinkpanther-mobile-close {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem 2rem;
+
+  button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #000;
+  }
+}
+
+@media (min-width: 900px) {
+  .pinkpanther-mobile-close {
+    display: none;
+  }
 }
 
 .pinkpanther-navigation-list {
@@ -27,11 +46,11 @@ nav>button.pinkpanther-mobile-nav-toggle {
   right: 0;
   margin: 0;
 
-  &>li {
+  & > li {
     padding: 1rem 0;
   }
 
-  &>button{
+  & > button {
     justify-content: right;
   }
 
@@ -76,7 +95,7 @@ nav>button.pinkpanther-mobile-nav-toggle {
 }
 
 .pinkpanther-navigation-item {
-  &>a {
+  & > a {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -100,7 +119,7 @@ nav>button.pinkpanther-mobile-nav-toggle {
 
 .pinkpanther-sub-navigation-image {
   width: 18rem;
-  border-radius: 0.5rem
+  border-radius: 0.5rem;
 }
 
 .pinkpanther-navigation-list.-hidden {
