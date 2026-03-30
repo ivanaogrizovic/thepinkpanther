@@ -1,4 +1,4 @@
-import { createContext } from "react";
+import { createContext, useContext } from "react";
 import { engagementRing } from "../interfaces/engagementRing.interface";
 import PRODUCTS from "../engagement-rings.json";
 
@@ -30,4 +30,13 @@ export const ProductsProvider = ({
       {children}
     </ProductsContext.Provider>
   );
+};
+
+export const useProductsContext = () => {
+  const context = useContext(ProductsContext);
+  if (!context)
+    throw new Error(
+      "useProductsContext must be used within a ProductsProvider",
+    );
+  return context;
 };
