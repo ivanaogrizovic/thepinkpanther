@@ -61,13 +61,15 @@ export default function Navigation() {
             <SubNavigation filter="shape" list={shapeList} />
             <SubNavigation filter="style" list={styleList} />
             <SubNavigation filter="metal" list={metalList} />
-            <li className="pinkpanther-sub-navigation-item">
-              <img
-                src={engagementMenu}
-                className="pinkpanther-sub-navigation-image"
-                alt=""
-              />
-            </li>
+            <ul>
+              <li className="pinkpanther-sub-navigation-item">
+                <img
+                  src={engagementMenu}
+                  className="pinkpanther-sub-navigation-image"
+                  alt=""
+                />
+              </li>
+            </ul>
           </div>
         </li>
 
