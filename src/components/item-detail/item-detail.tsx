@@ -1,64 +1,91 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback, memo } from "react";
 import { engagementRing } from "../../interfaces/engagementRing.interface";
 import Modal from "../modal/modal";
 import "./item-detail.scss";
 
-export default function ItemDetail({
-  singleProduct,
-}: {
+interface ItemDetailProps {
   singleProduct: engagementRing;
-}) {
+}
+
+const IGNORED_KEYS = ["images", "name", "price", "womens"] as const;
+type ProductDetailKey = Exclude<
+  keyof engagementRing,
+  (typeof IGNORED_KEYS)[number]
+>;
+
+// Extracted Image Gallery as memoized component
+const ProductGallery = memo(
+  ({
+    images,
+    onImageClick,
+  }: {
+    images: string[];
+    onImageClick: (image: string) => void;
+  }) => (
+    <div className="pinkpanther-product-pictures">
+      {images.map((image, index) => (
+        <img
+          key={index}
+          src={image}
+          alt={`Product image ${index + 1}`}
+          className="pinkpanther-product-image"
+          onClick={() => onImageClick(image)}
+          role="button"
+          tabIndex={0}
+          onKeyDown={(e) => {
+            if (e.key === "Enter") onImageClick(image);
+          }}
+        />
+      ))}
+    </div>
+  ),
+);
+
+export default function ItemDetail({ singleProduct }: ItemDetailProps) {
   const [isModalOpen, setModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
-  const openModal = (image: string) => {
+  const openModal = useCallback((image: string) => {
     setSelectedImage(image);
     setModalOpen(true);
-  };
+  }, []);
 
-  const closeModal = () => {
+  const closeModal = useCallback(() => {
     setModalOpen(false);
     setSelectedImage(null);
-  };
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
   }, []);
+
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
+  const productDetails: [ProductDetailKey, any][] = Object.entries(
+    singleProduct,
+  ).filter(
+    ([key]) => !IGNORED_KEYS.includes(key as (typeof IGNORED_KEYS)[number]),
+  ) as [ProductDetailKey, any][];
 
   return (
     <div className="pinkpanther-product-detail">
-      <div className="pinkpanther-product-pictures">
-        {singleProduct.images.map((image: string, index: number) => (
-          <img
-            className="pinkpanther-product-image"
-            src={image}
-            alt=""
-            key={index}
-            onClick={() => openModal(image)}
-          ></img>
-        ))}
-      </div>
+      <ProductGallery images={singleProduct.images} onImageClick={openModal} />
+
       <div className="pinkpanther-product-detail-content">
         <h3>{singleProduct.name}</h3>
         <p className="-microcopy -bold">£{singleProduct.price}</p>
-        <ul>
-          {Object.entries(singleProduct)
-            .filter(
-              ([key, value]) =>
-                key !== "images" &&
-                key !== "name" &&
-                key !== "price" &&
-                key !== "womens",
-            )
-            .map(([key, value]) => (
-              <li className="pinkpanther-product-detail-list-item" key={key}>
-                <p className="-microcopy -bold">{key}:</p>
-                <p className="-microcopy">{String(value)}</p>
-              </li>
-            ))}
+
+        <ul className="pinkpanther-product-detail-list">
+          {productDetails.map(([key, value]) => (
+            <li className="pinkpanther-product-detail-list-item" key={key}>
+              <p className="-microcopy -bold">{key}:</p>
+              <p className="-microcopy">{String(value)}</p>
+            </li>
+          ))}
         </ul>
+
         <button className="pinkpanther-button -microcopy">Add to cart</button>
       </div>
+
       {isModalOpen && selectedImage && (
         <Modal closeModal={closeModal} selectedImage={selectedImage} />
       )}
