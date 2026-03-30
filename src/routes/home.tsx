@@ -1,6 +1,6 @@
 import SplitContent from "../components/split-content/split-content";
 import ShopByCut from "./../components/shop-by-cut/shop-by-cut";
-import ShopByOccasion from "../components/shop-by-style/shop-by-occasion";
+import ShopByOccasion from "../components/shop-by-occasion/shop-by-occasion";
 import homeAmbassadorImg from "../assets/home-ambassador.webp";
 import FullWdithCta from "../components/full-width-cta/full-width-cta";
 
