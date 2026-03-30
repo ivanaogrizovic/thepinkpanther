@@ -1,4 +1,3 @@
-import React from "react";
 import { useLocation } from "react-router-dom";
 import ItemDetail from "../components/item-detail/item-detail";
 import { engagementRing } from "../interfaces/engagementRing.interface";

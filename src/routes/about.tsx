@@ -1,5 +1,3 @@
-import React from "react";
-import { Link } from "react-router-dom";
 import Hero from "../components/hero/hero";
 import AboutSection from "../components/about-section/about-section";
 import SplitContent from "../components/split-content/split-content";
