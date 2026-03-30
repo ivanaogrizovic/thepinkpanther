@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import diamondExpert from "../../assets/diamond-expert.jpg";
 import chooseGem from "../../assets/choose-gem.webp";
 import chooseMetal from "../../assets/choose-metal.webp";
@@ -10,6 +11,14 @@ export default function BookingProcess() {
   const [activeStep, setActiveStep] = useState<number | null>(null);
 
   const images = [chooseGem, chooseMetal, findFit, personalDetails];
+
+  useEffect(() => {
+    images.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, []);
+
   const processSteps = [
     {
       title: "1. Choose the Gem",
@@ -29,6 +38,11 @@ export default function BookingProcess() {
     },
   ];
 
+  const fadeVariants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 },
+  };
+
   return (
     <div className="pinkpanther-booking-process-wrapper">
       <div className="pinkpanther-booking-process">
@@ -39,20 +53,30 @@ export default function BookingProcess() {
           meaningful as the moment it represents.
         </p>
         <div className="pinkpanther-booking-process-content">
-          <img
+          <motion.img
+            key={activeStep ?? "default"}
             src={activeStep !== null ? images[activeStep] : diamondExpert}
             alt=""
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            style={{ objectFit: "cover" }}
           />
           <ul className="pinkpanther-booking-process-list">
             {processSteps.map((item, index) => (
-              <li
+              <motion.li
                 key={index}
                 className="pinkpanther-booking-process-card"
                 onMouseEnter={() => setActiveStep(index)}
+                initial="hidden"
+                animate="visible"
+                exit="hidden"
+                variants={fadeVariants}
+                transition={{ duration: 0.5 }}
               >
                 <p className="-microcopy -bold">{item.title}</p>
                 <p>{item.text}</p>
-              </li>
+              </motion.li>
             ))}
           </ul>
         </div>
