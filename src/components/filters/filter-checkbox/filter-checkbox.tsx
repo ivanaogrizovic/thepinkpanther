@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, memo } from "react";
 import { filter as FilterItem } from "../../../interfaces/filters.interface";
-import { FaChevronRight } from "react-icons/fa";
-import { FaChevronDown } from "react-icons/fa";
+import { FaChevronRight, FaChevronDown } from "react-icons/fa";
 import "../filters";
 
 interface FilterCheckboxListProps {
@@ -11,7 +10,7 @@ interface FilterCheckboxListProps {
   onToggle: (value: string) => void;
 }
 
-export default function FilterCheckboxList({
+function FilterCheckboxListComponent({
   filterName,
   filterList,
   isChecked,
@@ -48,3 +47,5 @@ export default function FilterCheckboxList({
     </div>
   );
 }
+
+export default memo(FilterCheckboxListComponent);
