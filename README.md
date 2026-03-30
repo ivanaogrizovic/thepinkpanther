@@ -15,7 +15,7 @@
     <br />
     <img src="./public/preview.gif">
     <br />
-    <a href="https://github.com/ivanaogrizovic/thepinkpanther">View Demo</a>
+    <a href="https://ivanaogrizovic.github.io/thepinkpanther/">View Demo</a>
     <!-- &middot;
     <a href="https://github.com/ivanaogrizovic/thepinkpanther/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     &middot;
