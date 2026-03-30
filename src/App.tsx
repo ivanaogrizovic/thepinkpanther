@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { ProductsContext } from "./context/engagementRings.context";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import { Outlet } from "react-router";
 import Home from "./routes/home";
 import Shop from "./routes/shop";
@@ -21,20 +21,21 @@ export default function App() {
       <Navigation />
       <main>
         <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route
-            path="shop/engagement"
-            element={<Shop productList={productList.products} />}
-          ></Route>
-          <Route path="shop/coming-soon" element={<ComingSoon />}></Route>
-          <Route
-            path="shop/engagement/item-detail"
-            element={<Product />}
-          ></Route>
-          <Route path="about" element={<About />}></Route>
-          <Route path="book-an-appointment" element={<Book />}></Route>
+          <Route path="/" element={<Home />} />
+
+          <Route path="/shop">
+            <Route index element={<Navigate to="/shop/engagement" replace />} />
+            <Route
+              path="engagement"
+              element={<Shop productList={productList.products} />}
+            />
+            <Route path="engagement/item-detail" element={<Product />} />
+            <Route path="coming-soon" element={<ComingSoon />} />
+          </Route>
+          <Route path="/about" element={<About />} />
+          <Route path="/book-an-appointment" element={<Book />} />
         </Routes>
-        <Outlet></Outlet>
+        <Outlet />
       </main>
       <Footer />
     </div>
