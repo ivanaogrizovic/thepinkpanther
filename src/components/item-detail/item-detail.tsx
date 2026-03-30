@@ -22,7 +22,11 @@ const ProductGallery = memo(
     images: string[];
     onImageClick: (image: string) => void;
   }) => (
-    <div className="pinkpanther-product-pictures">
+    <div
+      className="pinkpanther-product-pictures"
+      role="region"
+      aria-label="Product image gallery"
+    >
       {images.map((image, index) => (
         <img
           key={index}
@@ -70,13 +74,21 @@ export default function ItemDetail({ singleProduct }: ItemDetailProps) {
     <div className="pinkpanther-product-detail">
       <ProductGallery images={singleProduct.images} onImageClick={openModal} />
 
-      <div className="pinkpanther-product-detail-content">
+      <div
+        className="pinkpanther-product-detail-content"
+        role="region"
+        aria-label="Product details"
+      >
         <h3>{singleProduct.name}</h3>
         <p className="-microcopy -bold">£{singleProduct.price}</p>
 
-        <ul className="pinkpanther-product-detail-list">
+        <ul className="pinkpanther-product-detail-list" role="list">
           {productDetails.map(([key, value]) => (
-            <li className="pinkpanther-product-detail-list-item" key={key}>
+            <li
+              className="pinkpanther-product-detail-list-item"
+              key={key}
+              role="listitem"
+            >
               <p className="-microcopy -bold">{key}:</p>
               <p className="-microcopy">{String(value)}</p>
             </li>

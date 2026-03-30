@@ -28,7 +28,7 @@ export default function Filters({ selectedFilters, onToggle }: FiltersProps) {
   );
 
   return (
-    <div className="pinkpanther-filters">
+    <div className="pinkpanther-filters" role="region" aria-label="Filters">
       <p className="h4">Filter by</p>
 
       <FilterCheckboxList

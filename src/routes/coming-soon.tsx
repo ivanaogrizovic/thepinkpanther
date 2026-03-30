@@ -7,7 +7,11 @@ export default function ComingSoon() {
   return (
     <>
       <Hero text="Coming soon" image={weddingBands} />
-      <div className="pinkpanther-coming-soon -fade-in">
+      <div
+        className="pinkpanther-coming-soon -fade-in"
+        role="region"
+        aria-label="Coming soon"
+      >
         <h2>This section is coming soon, stay tuned</h2>
         <p>
           In the meantime, enjoy this picture of a cat, and a link to the{" "}
@@ -18,7 +22,7 @@ export default function ComingSoon() {
         <img
           className="pinkpanther-placeholder -fade-in"
           src={fatCat}
-          alt=""
+          alt="Decorative cat image"
         ></img>
       </div>
     </>

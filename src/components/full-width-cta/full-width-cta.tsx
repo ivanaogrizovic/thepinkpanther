@@ -15,7 +15,11 @@ export default function FullWdithCta({
   link,
 }: FullWidthCtaProps) {
   return (
-    <div className="pinkpanther-full-width-cta">
+    <div
+      className="pinkpanther-full-width-cta"
+      role="region"
+      aria-label={title}
+    >
       <h2 className="pinkpanther-full-width-cta-title">{title}</h2>
       <p className="pinkpanther-full-width-cta-text">{text}</p>
       {link && linkText && (

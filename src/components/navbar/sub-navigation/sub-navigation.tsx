@@ -13,12 +13,19 @@ export default function SubNavigation({
   onClose,
 }: SubNavigationProps) {
   return (
-    <ul className="pinkpanther-sub-navigation-list">
-      <li className="-microcopy -bold pinkpanther-sub-navigation-title">
+    <ul className="pinkpanther-sub-navigation-list" role="list">
+      <li
+        className="-microcopy -bold pinkpanther-sub-navigation-title"
+        role="listitem"
+      >
         {filter}
       </li>
       {list.map((filterName, index) => (
-        <li className="pinkpanther-sub-navigation-list-item" key={index}>
+        <li
+          className="pinkpanther-sub-navigation-list-item"
+          key={index}
+          role="listitem"
+        >
           <Link
             to={`shop/engagement?${filter}=${filterName}`}
             onClick={onClose}

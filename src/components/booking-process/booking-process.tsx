@@ -45,7 +45,11 @@ export default function BookingProcess() {
 
   return (
     <div className="pinkpanther-booking-process-wrapper">
-      <div className="pinkpanther-booking-process">
+      <div
+        className="pinkpanther-booking-process"
+        role="region"
+        aria-label="Booking process"
+      >
         <h3>How we help you find the perfect ring</h3>
         <p>
           We know this moment can be stressful. Our experts will guide you
@@ -56,13 +60,13 @@ export default function BookingProcess() {
           <motion.img
             key={activeStep ?? "default"}
             src={activeStep !== null ? images[activeStep] : diamondExpert}
-            alt=""
+            alt="Current booking process step"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
             style={{ objectFit: "cover" }}
           />
-          <ul className="pinkpanther-booking-process-list">
+          <ul className="pinkpanther-booking-process-list" role="list">
             {processSteps.map((item, index) => (
               <motion.li
                 key={index}
@@ -73,6 +77,8 @@ export default function BookingProcess() {
                 exit="hidden"
                 variants={fadeVariants}
                 transition={{ duration: 0.5 }}
+                role="listitem"
+                aria-label={`Step ${index + 1}: ${item.title}`}
               >
                 <p className="-microcopy -bold">{item.title}</p>
                 <p>{item.text}</p>

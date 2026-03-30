@@ -8,7 +8,7 @@ import "./footer.scss";
 
 export default function Footer() {
   return (
-    <footer className="pinkpanther-footer">
+    <footer className="pinkpanther-footer" role="contentinfo">
       <div className="pinkpanther-footer-links">
         <p className="-microcopy">The Pink Panther©</p>
         <Link to="shop/about">About</Link>

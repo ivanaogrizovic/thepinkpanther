@@ -20,7 +20,7 @@ export default function App() {
     <div className="pinkpanther-app fade-in">
       <Header />
       <Navigation />
-      <main>
+      <main role="main">
         <Routes>
           <Route path={ROUTES.HOME} element={<Home />} />
           <Route path={ROUTES.SHOP.ROOT}>

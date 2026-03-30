@@ -36,6 +36,9 @@ export default class ErrorBoundary extends Component<Props, State> {
             textAlign: "center",
             padding: "2rem",
           }}
+          role="alert"
+          aria-live="assertive"
+          aria-label="Error message"
         >
           <div>
             <h1 style={{ fontSize: "2rem", marginBottom: "1rem" }}>

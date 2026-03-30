@@ -26,7 +26,7 @@ export default function Navigation() {
   const closeMenu = () => setMenuOpen(false);
 
   return (
-    <nav>
+    <nav role="navigation" aria-label="Main navigation">
       <button
         className="pinkpanther-mobile-nav-toggle"
         aria-expanded={menuOpen}
@@ -40,6 +40,7 @@ export default function Navigation() {
         className={`pinkpanther-navigation-list -microcopy ${
           menuOpen ? "-visible" : "-hidden"
         }`}
+        role="list"
       >
         {menuOpen && (
           <li className="pinkpanther-mobile-close">
@@ -49,11 +50,15 @@ export default function Navigation() {
           </li>
         )}
 
-        <li className="pinkpanther-navigation-item" onClick={closeMenu}>
+        <li
+          className="pinkpanther-navigation-item"
+          onClick={closeMenu}
+          role="listitem"
+        >
           <Link to="/">home</Link>
         </li>
 
-        <li className="pinkpanther-navigation-item">
+        <li className="pinkpanther-navigation-item" role="listitem">
           <Link to="shop/engagement" onClick={closeMenu}>
             Engagement Rings
           </Link>
@@ -73,15 +78,27 @@ export default function Navigation() {
           </div>
         </li>
 
-        <li className="pinkpanther-navigation-item" onClick={closeMenu}>
+        <li
+          className="pinkpanther-navigation-item"
+          onClick={closeMenu}
+          role="listitem"
+        >
           <Link to="shop/coming-soon">Wedding Rings</Link>
         </li>
 
-        <li className="pinkpanther-navigation-item" onClick={closeMenu}>
+        <li
+          className="pinkpanther-navigation-item"
+          onClick={closeMenu}
+          role="listitem"
+        >
           <Link to="about">About</Link>
         </li>
 
-        <li className="pinkpanther-navigation-item" onClick={closeMenu}>
+        <li
+          className="pinkpanther-navigation-item"
+          onClick={closeMenu}
+          role="listitem"
+        >
           <Link to="book-an-appointment">Book an appointment</Link>
         </li>
       </ul>

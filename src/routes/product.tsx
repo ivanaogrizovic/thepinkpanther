@@ -9,7 +9,7 @@ export default function Product() {
   console.log(productDetail);
 
   return (
-    <div>
+    <div role="article" aria-label="Product details">
       <ItemDetail singleProduct={productDetail}></ItemDetail>
     </div>
   );

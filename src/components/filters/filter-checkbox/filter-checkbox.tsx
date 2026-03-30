@@ -19,19 +19,29 @@ function FilterCheckboxListComponent({
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="pinkpanther-filter-container">
+    <div
+      className="pinkpanther-filter-container"
+      role="region"
+      aria-label={`Filter by ${filterName}`}
+    >
       <button
         className="pinkpanther-filter-accordion -microcopy -bold"
         onClick={() => setIsOpen(!isOpen)}
+        aria-expanded={isOpen}
+        aria-controls={`filter-${filterName}-list`}
       >
         {filterName}
         {isOpen ? <FaChevronRight /> : <FaChevronDown />}
       </button>
 
       {isOpen && (
-        <ul className="pinkpanther-filter-list -fade-in">
+        <ul
+          className="pinkpanther-filter-list -fade-in"
+          id={`filter-${filterName}-list`}
+          role="list"
+        >
           {filterList?.map((filter, index) => (
-            <li key={index}>
+            <li key={index} role="listitem">
               <label>
                 <input
                   type="checkbox"

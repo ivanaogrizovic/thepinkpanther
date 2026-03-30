@@ -15,25 +15,37 @@ export default function ItemsGrid({ rings }: { rings: engagementRing[] }) {
   }, [rings]);
 
   return (
-    <div className="pinkpanther-product-list -fade-in">
-      {rings?.map((ring, index) => (
-        <Link to="item-detail" state={ringsByName[ring.name]} key={index}>
-          <div className="pinkpanther-product -fade-in">
-            <img
-              className="pinkpanther-product-image"
-              src={ring?.images[frontImage]}
-              alt={ring.name}
-            />
-            <div className="pinkpanther-product-text">
-              <p>{ring.name}</p>
-              <p className="-microcopy -bold">{ring.price}€</p>
-            </div>
-          </div>
-        </Link>
-      ))}
+    <div
+      className="pinkpanther-product-list -fade-in"
+      role="region"
+      aria-label="Product grid"
+    >
+      <ul role="list" style={{ display: "contents" }}>
+        {rings?.map((ring, index) => (
+          <li key={index} role="listitem" style={{ display: "contents" }}>
+            <Link to="item-detail" state={ringsByName[ring.name]}>
+              <div className="pinkpanther-product -fade-in">
+                <img
+                  className="pinkpanther-product-image"
+                  src={ring?.images[frontImage]}
+                  alt={ring.name}
+                />
+                <div className="pinkpanther-product-text">
+                  <p>{ring.name}</p>
+                  <p className="-microcopy -bold">{ring.price}€</p>
+                </div>
+              </div>
+            </Link>
+          </li>
+        ))}
+      </ul>
 
       {rings.length === 0 && (
-        <div className="-fade-in">
+        <div
+          className="-fade-in"
+          role="region"
+          aria-label="No products message"
+        >
           <h3>Sorry, we don't have what you're looking for</h3>
         </div>
       )}

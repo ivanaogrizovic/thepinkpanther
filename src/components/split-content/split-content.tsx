@@ -15,11 +15,11 @@ export default function SplitContent({
   image,
 }: SplitContentProps) {
   return (
-    <div className="pinkpanther-split-content">
+    <div className="pinkpanther-split-content" role="region" aria-label={title}>
       <img
         src={image}
         className="pinkpanther-split-content-image slide-left"
-        alt=""
+        alt={title}
       />
       <div className="pinkpanther-split-content-text -fade-in-up">
         <h1>{title}</h1>

@@ -34,7 +34,11 @@ export default function ShopByCut() {
 
   return (
     <div className="pinkpanther-shop-by-cut-wrapper">
-      <div className="pinkpanther-shop-by-cut">
+      <div
+        className="pinkpanther-shop-by-cut"
+        role="region"
+        aria-label="Shop engagement rings by shape"
+      >
         <h2>Shop engagement rings by shape</h2>
         <p>
           From timeless classics to modern icons, explore diamond cuts that tell
@@ -42,13 +46,14 @@ export default function ShopByCut() {
           emerald, or a romantic princess, find the diamond that cuts straight
           to your style.
         </p>
-        <div className="pinkpanther-shop-by-cut-list">
+        <div className="pinkpanther-shop-by-cut-list" role="list">
           {cutsList.map((cut) => (
             <Link
               className="pinkpanther-shop-by-cut-item"
               to={`/shop/engagement?shape=${cut}`}
               state={ringsByCut[cut]}
               key={cut}
+              role="listitem"
             >
               <img
                 className="pinkpanther-shop-by-cut-item-image"

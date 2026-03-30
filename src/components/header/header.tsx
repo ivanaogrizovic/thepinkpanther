@@ -4,7 +4,7 @@ import "./header.scss";
 
 export default function Header() {
   return (
-    <header>
+    <header role="banner">
       <Link to="/" aria-label="Home">
         <img
           className="pinkpanther-header-image"

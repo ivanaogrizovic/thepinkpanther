@@ -63,15 +63,23 @@ export default function ShopByOccasion() {
   ];
 
   return (
-    <div className="pinkpanther-shop-by-occasion">
+    <div
+      className="pinkpanther-shop-by-occasion"
+      role="region"
+      aria-label="Shop rings by occasion"
+    >
       <h2>Shop rings by occasion</h2>
       <p>
         Big moments, small moments, or just feeling fabulous.<br></br>There’s a
         ring for that.
       </p>
-      <div className="pinkpanther-shop-by-occasion-list">
+      <div className="pinkpanther-shop-by-occasion-list" role="list">
         {occasionList.map((occasion, index) => (
-          <div className="pinkpanther-shop-by-occasion-item" key={index}>
+          <div
+            className="pinkpanther-shop-by-occasion-item"
+            key={index}
+            role="listitem"
+          >
             <Link to={`shop/${occasion.link}`}>
               <p className="pinkpanther-shop-by-occasion-blurb -microcopy">
                 {occasion.blurb}
