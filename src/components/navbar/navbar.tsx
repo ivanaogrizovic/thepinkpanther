@@ -1,6 +1,6 @@
 import { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
-import { ProductsContext } from "../../context/engagementRings.context";
+import { ProductsContext } from "../../context/products.context";
 import SubNavigation from "./sub-navigation/sub-navigation";
 import engagementMenu from "../../assets/engagement-ring-menu.webp";
 import { RxHamburgerMenu } from "react-icons/rx";

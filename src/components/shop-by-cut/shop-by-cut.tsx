@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useContext } from "react";
-import { ProductsContext } from "../../context/engagementRings.context";
+import { ProductsContext } from "../../context/products.context";
 import { engagementRing } from "../../interfaces/engagementRing.interface";
 import { shape } from "../../interfaces/cuts.interface";
 import oval from "../../assets/cut-oval.webp";

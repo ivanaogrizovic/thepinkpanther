@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ProductsContext } from "../../context/engagementRings.context";
+import { ProductsContext } from "../../context/products.context";
 import FilterCheckboxList from "./filter-checkbox/filter-checkbox";
 import "./filters.scss";
 

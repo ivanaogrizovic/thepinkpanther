@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ProductsContext } from "./context/engagementRings.context";
+import { ProductsContext } from "./context/products.context";
 import { Routes, Route, Navigate } from "react-router-dom";
 import { Outlet } from "react-router";
 import Home from "./routes/home";
