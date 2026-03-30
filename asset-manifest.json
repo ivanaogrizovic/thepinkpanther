@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/thepinkpanther/static/css/main.b161bda3.css",
-    "main.js": "/thepinkpanther/static/js/main.3d47b140.js",
+    "main.js": "/thepinkpanther/static/js/main.f30cf2b4.js",
     "static/js/787.529ddf02.chunk.js": "/thepinkpanther/static/js/787.529ddf02.chunk.js",
     "static/media/wedding-bands.webp": "/thepinkpanther/static/media/wedding-bands.e51d599fb025c1fe4dd1.webp",
     "static/media/style-eternity.webp": "/thepinkpanther/static/media/style-eternity.27a7be04f9e31949cc67.webp",
@@ -32,11 +32,11 @@
     "static/media/cut-emerald.webp": "/thepinkpanther/static/media/cut-emerald.af242c87d2e190382457.webp",
     "index.html": "/thepinkpanther/index.html",
     "main.b161bda3.css.map": "/thepinkpanther/static/css/main.b161bda3.css.map",
-    "main.3d47b140.js.map": "/thepinkpanther/static/js/main.3d47b140.js.map",
+    "main.f30cf2b4.js.map": "/thepinkpanther/static/js/main.f30cf2b4.js.map",
     "787.529ddf02.chunk.js.map": "/thepinkpanther/static/js/787.529ddf02.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b161bda3.css",
-    "static/js/main.3d47b140.js"
+    "static/js/main.f30cf2b4.js"
   ]
 }
