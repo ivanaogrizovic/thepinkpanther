@@ -1,8 +1,21 @@
 {
   "files": {
-    "main.css": "/thepinkpanther/static/css/main.b161bda3.css",
-    "main.js": "/thepinkpanther/static/js/main.f30cf2b4.js",
+    "main.css": "/thepinkpanther/static/css/main.d0f40218.css",
+    "main.js": "/thepinkpanther/static/js/main.6227717c.js",
+    "static/css/9.64c7b883.chunk.css": "/thepinkpanther/static/css/9.64c7b883.chunk.css",
+    "static/js/9.1dca2cff.chunk.js": "/thepinkpanther/static/js/9.1dca2cff.chunk.js",
+    "static/css/739.239983df.chunk.css": "/thepinkpanther/static/css/739.239983df.chunk.css",
+    "static/js/739.e54db4a0.chunk.js": "/thepinkpanther/static/js/739.e54db4a0.chunk.js",
+    "static/css/50.ac64a260.chunk.css": "/thepinkpanther/static/css/50.ac64a260.chunk.css",
+    "static/js/50.86fddf48.chunk.js": "/thepinkpanther/static/js/50.86fddf48.chunk.js",
+    "static/css/636.72739b23.chunk.css": "/thepinkpanther/static/css/636.72739b23.chunk.css",
+    "static/js/636.3e327874.chunk.js": "/thepinkpanther/static/js/636.3e327874.chunk.js",
+    "static/css/565.28eb8657.chunk.css": "/thepinkpanther/static/css/565.28eb8657.chunk.css",
+    "static/js/565.dc8fb6d5.chunk.js": "/thepinkpanther/static/js/565.dc8fb6d5.chunk.js",
+    "static/css/130.60f9bb21.chunk.css": "/thepinkpanther/static/css/130.60f9bb21.chunk.css",
+    "static/js/130.ea5639d7.chunk.js": "/thepinkpanther/static/js/130.ea5639d7.chunk.js",
     "static/js/787.529ddf02.chunk.js": "/thepinkpanther/static/js/787.529ddf02.chunk.js",
+    "static/js/798.15390762.chunk.js": "/thepinkpanther/static/js/798.15390762.chunk.js",
     "static/media/wedding-bands.webp": "/thepinkpanther/static/media/wedding-bands.e51d599fb025c1fe4dd1.webp",
     "static/media/style-eternity.webp": "/thepinkpanther/static/media/style-eternity.27a7be04f9e31949cc67.webp",
     "static/media/customise.webp": "/thepinkpanther/static/media/customise.36b41b2537049dd44dfc.webp",
@@ -20,7 +33,6 @@
     "static/media/home-ambassador.webp": "/thepinkpanther/static/media/home-ambassador.eecc6fbd2a069625b90e.webp",
     "static/media/engagement-set.webp": "/thepinkpanther/static/media/engagement-set.18238285e4f4d2140623.webp",
     "static/media/choose-gem.webp": "/thepinkpanther/static/media/choose-gem.5309fff0b11dae0dc0ae.webp",
-    "static/media/engagement-ring-menu.webp": "/thepinkpanther/static/media/engagement-ring-menu.a0499635da0ae8fbd271.webp",
     "static/media/findFit.webp": "/thepinkpanther/static/media/findFit.7fc14dc92eebcc61b53a.webp",
     "static/media/cut-princess.webp": "/thepinkpanther/static/media/cut-princess.00fbdf935e81e2f292e1.webp",
     "static/media/cut-cushion.webp": "/thepinkpanther/static/media/cut-cushion.3367c8305bd6354fc03b.webp",
@@ -31,12 +43,25 @@
     "static/media/pink-panther-logo.webp": "/thepinkpanther/static/media/pink-panther-logo.50b15bc56987ef7e44d2.webp",
     "static/media/cut-emerald.webp": "/thepinkpanther/static/media/cut-emerald.af242c87d2e190382457.webp",
     "index.html": "/thepinkpanther/index.html",
-    "main.b161bda3.css.map": "/thepinkpanther/static/css/main.b161bda3.css.map",
-    "main.f30cf2b4.js.map": "/thepinkpanther/static/js/main.f30cf2b4.js.map",
-    "787.529ddf02.chunk.js.map": "/thepinkpanther/static/js/787.529ddf02.chunk.js.map"
+    "main.d0f40218.css.map": "/thepinkpanther/static/css/main.d0f40218.css.map",
+    "main.6227717c.js.map": "/thepinkpanther/static/js/main.6227717c.js.map",
+    "9.64c7b883.chunk.css.map": "/thepinkpanther/static/css/9.64c7b883.chunk.css.map",
+    "9.1dca2cff.chunk.js.map": "/thepinkpanther/static/js/9.1dca2cff.chunk.js.map",
+    "739.239983df.chunk.css.map": "/thepinkpanther/static/css/739.239983df.chunk.css.map",
+    "739.e54db4a0.chunk.js.map": "/thepinkpanther/static/js/739.e54db4a0.chunk.js.map",
+    "50.ac64a260.chunk.css.map": "/thepinkpanther/static/css/50.ac64a260.chunk.css.map",
+    "50.86fddf48.chunk.js.map": "/thepinkpanther/static/js/50.86fddf48.chunk.js.map",
+    "636.72739b23.chunk.css.map": "/thepinkpanther/static/css/636.72739b23.chunk.css.map",
+    "636.3e327874.chunk.js.map": "/thepinkpanther/static/js/636.3e327874.chunk.js.map",
+    "565.28eb8657.chunk.css.map": "/thepinkpanther/static/css/565.28eb8657.chunk.css.map",
+    "565.dc8fb6d5.chunk.js.map": "/thepinkpanther/static/js/565.dc8fb6d5.chunk.js.map",
+    "130.60f9bb21.chunk.css.map": "/thepinkpanther/static/css/130.60f9bb21.chunk.css.map",
+    "130.ea5639d7.chunk.js.map": "/thepinkpanther/static/js/130.ea5639d7.chunk.js.map",
+    "787.529ddf02.chunk.js.map": "/thepinkpanther/static/js/787.529ddf02.chunk.js.map",
+    "798.15390762.chunk.js.map": "/thepinkpanther/static/js/798.15390762.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b161bda3.css",
-    "static/js/main.f30cf2b4.js"
+    "static/css/main.d0f40218.css",
+    "static/js/main.6227717c.js"
   ]
 }
