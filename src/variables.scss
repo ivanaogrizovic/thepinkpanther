@@ -1,4 +1,14 @@
-$primary-color: #FFECF3;
-$secondary-color: #ED5E79;
-$tertiary-color: #f0eee4;;
-$accent-color: #9C4066;
+// Colours
+$primary-color: #ffecf3;
+$secondary-color: #ed5e79;
+$tertiary-color: #f0eee4;
+$accent-color: #9c4066;
+
+// Typography
+$font-body: "Poppins", sans-serif;
+$font-heading: "Playfair Display", serif;
+
+// Breakpoints
+$mobile-up: 600px;
+$tablet-up: 900px;
+$desktop-up: 1200px;

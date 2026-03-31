@@ -1,36 +1,35 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
 
 .pinkpanther-split-content {
-    display: flex;
-    flex-direction: column;
-    background-color: $primary-color;
+  display: flex;
+  flex-direction: column;
+  background-color: $primary-color;
 
-    &>* {
-        flex: 1 1 50%;
-        min-width: 0;
-        min-height: 0;
-    }
+  & > * {
+    flex: 1 1 50%;
+    min-width: 0;
+    min-height: 0;
+  }
 
-    @media (min-width: 900px) {
-        flex-direction: row;
-    }
+  @media (min-width: $desktop-up) {
+    flex-direction: row;
+  }
 }
 
 .pinkpanther-split-content-image {
-    height: auto;
-    object-fit: cover;
-    aspect-ratio: auto;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: auto;
 
-    @media (min-width: 900px) {
-        
-    }
+  @media (min-width: $desktop-up) {
+  }
 }
 
 .pinkpanther-split-content-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
 }
 
 .slide-left {
@@ -44,11 +43,19 @@
 }
 
 @keyframes slide-left {
-  from { transform: translateX(100%); }
-  to { transform: translateX(0); }
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 @keyframes fade-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

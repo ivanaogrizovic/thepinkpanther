@@ -1,57 +1,57 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
 
 .pinkpanther-product-detail {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 2rem 2rem 2rem;
 
-    @media (min-width: 900px) {
-        display: grid;
-        grid-template-columns: 65% 35%;
-    }
+  @media (min-width: $desktop-up) {
+    display: grid;
+    grid-template-columns: 65% 35%;
+  }
 
-    @media (min-width: 1000px) {
-        display: grid;
-        grid-template-columns: 70% 30%;
-    }
+  @media (min-width: 1000px) {
+    display: grid;
+    grid-template-columns: 70% 30%;
+  }
 }
 
 .pinkpanther-product-pictures {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 1rem;
-    align-content: center;
-    flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-content: center;
+  flex: 1 1;
 
-    @media (min-width: 600px) {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-content: flex-start;
-    }
+  @media (min-width: $mobile-up) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: flex-start;
+  }
 }
 
 .pinkpanther-product-image {
-    width: 100%;
-    max-width: 35rem;
-    &:hover {
-        cursor: pointer;
-    }
+  width: 100%;
+  max-width: 35rem;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .pinkpanther-product-detail-content {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    background-color: $tertiary-color;
-    padding: 2rem;    
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background-color: $tertiary-color;
+  padding: 2rem;
 }
 
 .pinkpanther-product-detail-list-item {
-    display: flex;
-    flex-direction: row;
-    gap: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
 }
