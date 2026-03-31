@@ -68,32 +68,6 @@ nav > button.pinkpanther-mobile-nav-toggle {
   }
 }
 
-.pinkpanther-sub-navigation {
-  display: none;
-  position: absolute;
-  background-color: $primary-color;
-  z-index: 1;
-  box-shadow: 0 1px 12px 0 rgb(255 255 255);
-  text-align: left;
-  margin-top: 1.3rem;
-  left: 0;
-  right: 0;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 auto;
-  text-transform: capitalize;
-  gap: 4rem;
-  padding: 1.5rem 0;
-  top: 12rem;
-
-  @media (min-width: 900px) {
-    .pinkpanther-navigation-item:hover > & {
-      display: flex;
-    }
-  }
-}
-
 .pinkpanther-navigation-item {
   & > a {
     display: flex;
@@ -101,25 +75,6 @@ nav > button.pinkpanther-mobile-nav-toggle {
     align-items: center;
     justify-content: center;
   }
-}
-
-.pinkpanther-sub-navigation-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  letter-spacing: 0;
-  min-width: 14rem;
-}
-
-.pinkpanther-sub-navigation-list-item {
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-.pinkpanther-sub-navigation-image {
-  width: 18rem;
-  border-radius: 0.5rem;
 }
 
 .pinkpanther-navigation-list.-hidden {

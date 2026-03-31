@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { ROUTES } from "../../routes/routes.config";
 import { ProductsContext } from "../../context/products.context";
 import useLockBodyScroll from "../../hooks/useLockBodyScroll";
-import SubNavigation from "./sub-navigation/sub-navigation";
 import engagementMenu from "../../assets/engagement-ring-menu.webp";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoCloseOutline } from "react-icons/io5";
@@ -59,20 +58,6 @@ export default function Navigation() {
           <Link to={ROUTES.SHOP.ENGAGEMENT} onClick={closeMenu}>
             Engagement Rings
           </Link>
-          <div className="pinkpanther-sub-navigation" role="menu">
-            <SubNavigation filter="shape" list={shapeList} />
-            <SubNavigation filter="style" list={styleList} />
-            <SubNavigation filter="metal" list={metalList} />
-            <ul>
-              <li className="pinkpanther-sub-navigation-item">
-                <img
-                  src={engagementMenu}
-                  className="pinkpanther-sub-navigation-image"
-                  alt=""
-                />
-              </li>
-            </ul>
-          </div>
         </li>
 
         <li
