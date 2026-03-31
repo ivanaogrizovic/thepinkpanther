@@ -1,20 +1,12 @@
-import { useState, useContext, useMemo } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ROUTES } from "../../routes/routes.config";
-import { ProductsContext } from "../../context/products.context";
 import useLockBodyScroll from "../../hooks/useLockBodyScroll";
-import engagementMenu from "../../assets/engagement-ring-menu.webp";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoCloseOutline } from "react-icons/io5";
 import "./navbar.scss";
 
 export default function Navigation() {
-  const { getUniqueValues } = useContext(ProductsContext);
-
-  const shapeList = useMemo(() => getUniqueValues("shape"), [getUniqueValues]);
-  const styleList = useMemo(() => getUniqueValues("style"), [getUniqueValues]);
-  const metalList = useMemo(() => getUniqueValues("metal"), [getUniqueValues]);
-
   const [menuOpen, setMenuOpen] = useState(false);
 
   useLockBodyScroll(menuOpen);
