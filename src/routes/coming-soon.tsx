@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 import { ROUTES } from "../routes/routes.config";
 import Hero from "../components/hero/hero";
 import weddingBands from "../assets/wedding-bands.webp";

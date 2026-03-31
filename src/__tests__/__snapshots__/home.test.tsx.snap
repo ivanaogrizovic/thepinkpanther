@@ -26,6 +26,7 @@ exports[`matches snapshot 1`] = `
         <p>
           <a
             class="pinkpanther-cta-link"
+            data-discover="true"
             href="/shop/engagement"
           >
             SHOP ENGAGEMENT RINGS
@@ -56,6 +57,7 @@ exports[`matches snapshot 1`] = `
            
           <a
             class="pinkpanther-cta-link"
+            data-discover="true"
             href="/shop/engagement"
           >
             Speak to an expert.
@@ -90,6 +92,7 @@ exports[`matches snapshot 1`] = `
           role="listitem"
         >
           <a
+            data-discover="true"
             href="/shop/engagement"
           >
             <p
@@ -112,6 +115,7 @@ exports[`matches snapshot 1`] = `
           role="listitem"
         >
           <a
+            data-discover="true"
             href="/shop/coming-soon"
           >
             <p
@@ -134,6 +138,7 @@ exports[`matches snapshot 1`] = `
           role="listitem"
         >
           <a
+            data-discover="true"
             href="/shop/coming-soon"
           >
             <p
@@ -156,6 +161,7 @@ exports[`matches snapshot 1`] = `
           role="listitem"
         >
           <a
+            data-discover="true"
             href="/shop/coming-soon"
           >
             <p
@@ -178,6 +184,7 @@ exports[`matches snapshot 1`] = `
           role="listitem"
         >
           <a
+            data-discover="true"
             href="/shop/coming-soon"
           >
             <p
@@ -200,6 +207,7 @@ exports[`matches snapshot 1`] = `
           role="listitem"
         >
           <a
+            data-discover="true"
             href="/shop/coming-soon"
           >
             <p
@@ -235,6 +243,7 @@ exports[`matches snapshot 1`] = `
       <p>
         <a
           class="pinkpanther-cta-link"
+          data-discover="true"
           href="/about"
           rel="noopener noreferrer"
           target="_blank"

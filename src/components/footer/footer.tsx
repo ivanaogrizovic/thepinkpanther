@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 import { ROUTES } from "../../routes/routes.config";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";

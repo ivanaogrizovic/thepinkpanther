@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 import { ROUTES } from "../../routes/routes.config";
 import useLockBodyScroll from "../../hooks/useLockBodyScroll";
 import { RxHamburgerMenu } from "react-icons/rx";
