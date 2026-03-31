@@ -21,7 +21,6 @@ export default function App() {
 
   return (
     <div className="pinkpanther-app fade-in">
-      <p>This is a test</p>
       <Header />
       <Navigation />
 
