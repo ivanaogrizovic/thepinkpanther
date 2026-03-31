@@ -60,6 +60,8 @@ It was created for learning purposes.<br>Here are some features:
 - Fully responsive
 - Made with reusable components
 - Every page is fully accessible (WCAG 2.2 AA)
+- Jest tests (in progress)
+- CI pipeline to run tests on every pull request.
 
 ### Component Architecture & Data Flow
 
