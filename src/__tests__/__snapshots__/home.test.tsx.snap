@@ -8,10 +8,9 @@ exports[`matches snapshot 1`] = `
     <div
       aria-label="A love that will last a lifetime"
       class="pinkpanther-split-content"
-      role="region"
     >
       <img
-        alt="A love that will last a lifetime"
+        alt=""
         class="pinkpanther-split-content-image slide-left"
         src="home-ambassador.webp"
       />
@@ -49,9 +48,8 @@ exports[`matches snapshot 1`] = `
         <p>
           From timeless classics to modern icons, explore diamond cuts that tell your love story. Whether you’re drawn to a dazzling round, a bold emerald, or a romantic princess, find the diamond that cuts straight to your style.
         </p>
-        <div
+        <ul
           class="pinkpanther-shop-by-cut-list"
-          role="list"
         />
         <p>
           Not sure what you’re looking for?
@@ -84,11 +82,10 @@ exports[`matches snapshot 1`] = `
         <br />
         There’s a ring for that.
       </p>
-      <div
+      <ul
         class="pinkpanther-shop-by-occasion-list"
-        role="list"
       >
-        <div
+        <li
           class="pinkpanther-shop-by-occasion-item"
           role="listitem"
         >
@@ -109,8 +106,8 @@ exports[`matches snapshot 1`] = `
               engagement
             </h3>
           </a>
-        </div>
-        <div
+        </li>
+        <li
           class="pinkpanther-shop-by-occasion-item"
           role="listitem"
         >
@@ -131,8 +128,8 @@ exports[`matches snapshot 1`] = `
               anniversary
             </h3>
           </a>
-        </div>
-        <div
+        </li>
+        <li
           class="pinkpanther-shop-by-occasion-item"
           role="listitem"
         >
@@ -153,8 +150,8 @@ exports[`matches snapshot 1`] = `
               wedding bands
             </h3>
           </a>
-        </div>
-        <div
+        </li>
+        <li
           class="pinkpanther-shop-by-occasion-item"
           role="listitem"
         >
@@ -175,8 +172,8 @@ exports[`matches snapshot 1`] = `
               gifts for her
             </h3>
           </a>
-        </div>
-        <div
+        </li>
+        <li
           class="pinkpanther-shop-by-occasion-item"
           role="listitem"
         >
@@ -197,8 +194,8 @@ exports[`matches snapshot 1`] = `
               gifts for him
             </h3>
           </a>
-        </div>
-        <div
+        </li>
+        <li
           class="pinkpanther-shop-by-occasion-item"
           role="listitem"
         >
@@ -219,13 +216,11 @@ exports[`matches snapshot 1`] = `
               Cocktail rings
             </h3>
           </a>
-        </div>
-      </div>
+        </li>
+      </ul>
     </div>
     <div
-      aria-label="Our committment to a brither future"
       class="pinkpanther-full-width-cta"
-      role="region"
     >
       <h2
         class="pinkpanther-full-width-cta-title"
@@ -241,7 +236,7 @@ exports[`matches snapshot 1`] = `
         <a
           class="pinkpanther-cta-link"
           href="/about"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           target="_blank"
         >
           Learn more
