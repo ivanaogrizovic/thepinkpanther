@@ -79,7 +79,7 @@ export default function ItemDetail({ singleProduct }: ItemDetailProps) {
         role="region"
         aria-label="Product details"
       >
-        <h3>{singleProduct.name}</h3>
+        <h1 className="h3">{singleProduct.name}</h1>
         <p className="-microcopy -bold">£{singleProduct.price}</p>
 
         <ul className="pinkpanther-product-detail-list" role="list">
