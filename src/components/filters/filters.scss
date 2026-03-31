@@ -16,7 +16,7 @@
 .pinkpanther-filter-list {
   margin-block-start: 0;
   padding-inline-start: 0;
-  background-color: white;
+  background-color: #fff;
   padding: 0.5rem;
 
   & > li {
@@ -33,7 +33,7 @@ label {
 }
 
 .pinkpanther-filter-accordion {
-  background-color: white;
+  background-color: #fff;
   border: none;
   border-bottom: 2px solid $tertiary-color;
   width: 100%;
