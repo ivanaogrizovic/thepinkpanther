@@ -58,7 +58,7 @@ export default function ShopByCut() {
                 <img
                   className="pinkpanther-shop-by-cut-item-image"
                   src={cutImages[cut]}
-                  alt={cut}
+                  alt=""
                 />
                 <p className="-microcopy">{cut}</p>
               </Link>
