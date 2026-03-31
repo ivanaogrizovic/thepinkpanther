@@ -1,7 +1,8 @@
-import { useState, useEffect, useContext } from "react";
+import { useState, useContext, useMemo } from "react";
 import { Link } from "react-router-dom";
 import { ROUTES } from "../../routes/routes.config";
 import { ProductsContext } from "../../context/products.context";
+import useLockBodyScroll from "../../hooks/useLockBodyScroll";
 import SubNavigation from "./sub-navigation/sub-navigation";
 import engagementMenu from "../../assets/engagement-ring-menu.webp";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -11,18 +12,13 @@ import "./navbar.scss";
 export default function Navigation() {
   const { getUniqueValues } = useContext(ProductsContext);
 
-  const shapeList = getUniqueValues("shape");
-  const styleList = getUniqueValues("style");
-  const metalList = getUniqueValues("metal");
+  const shapeList = useMemo(() => getUniqueValues("shape"), [getUniqueValues]);
+  const styleList = useMemo(() => getUniqueValues("style"), [getUniqueValues]);
+  const metalList = useMemo(() => getUniqueValues("metal"), [getUniqueValues]);
 
   const [menuOpen, setMenuOpen] = useState(false);
 
-  useEffect(() => {
-    document.body.style.overflow = menuOpen ? "hidden" : "";
-    return () => {
-      document.body.style.overflow = "";
-    };
-  }, [menuOpen]);
+  useLockBodyScroll(menuOpen);
 
   const closeMenu = () => setMenuOpen(false);
 

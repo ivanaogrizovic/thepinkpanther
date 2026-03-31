@@ -1,4 +1,4 @@
-import { createContext, useContext } from "react";
+import { createContext, useContext, useCallback } from "react";
 import { engagementRing } from "../interfaces/engagementRing.interface";
 import PRODUCTS from "../engagement-rings.json";
 
@@ -21,9 +21,12 @@ export const ProductsProvider = ({
 }: {
   children?: React.ReactNode;
 }) => {
-  const getUniqueValues = <K extends StringKeys<engagementRing>>(key: K) => {
-    return [...new Set(PRODUCTS.map((product) => product[key]))];
-  };
+  const getUniqueValues = useCallback(
+    <K extends StringKeys<engagementRing>>(key: K) => {
+      return [...new Set(PRODUCTS.map((product) => product[key]))];
+    },
+    [],
+  );
 
   return (
     <ProductsContext.Provider value={{ products: PRODUCTS, getUniqueValues }}>
