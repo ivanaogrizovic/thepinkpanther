@@ -1,10 +1,10 @@
 import { useContext, useMemo } from "react";
 import { ProductsContext } from "../../context/products.context";
+import { FiltersState } from "../../hooks/useFilters";
 import FilterCheckboxList from "./filter-checkbox/filter-checkbox";
 import "./filters.scss";
 
 type FilterCategory = "shape" | "style" | "metal";
-type FiltersState = Record<FilterCategory, Set<string>>;
 
 interface FiltersProps {
   selectedFilters: FiltersState;
