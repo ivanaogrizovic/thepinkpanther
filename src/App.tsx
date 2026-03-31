@@ -5,6 +5,7 @@ import { ROUTES } from "./routes/routes.config";
 import Header from "./components/header/header";
 import Navigation from "./components/navbar/navbar";
 import Footer from "./components/footer/footer";
+import LoadingFallback from "./components/loading-fallback/loading-fallback";
 import "./App.scss";
 
 // Route-level lazy-loaded components
@@ -23,7 +24,7 @@ export default function App() {
       <Header />
       <Navigation />
       <main role="main">
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<LoadingFallback />}>
           <Routes>
             <Route path={ROUTES.HOME} element={<Home />} />
 
