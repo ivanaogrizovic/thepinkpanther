@@ -41,9 +41,9 @@ export default function Footer() {
         <p className="-microcopy">Tech Stack</p>
         <p className="pinkpanther-footer-p">This website was made with:</p>
         <div className="pinkpanther-footer-techstack">
-          <div>
+          <span>
             <FaReact id="react" /> React
-          </div>
+          </span>
           <span>
             <SiTypescript id="typescript" /> Typescript
           </span>
@@ -58,10 +58,18 @@ export default function Footer() {
           Currently undergoing some refactoring, including but not limited to:
         </p>
         <ul className="pinkpanther-footer-p -list">
-          <li>Adding more engaging animations via Framer Motion</li>
-          <li>Standardising often-recurring styles</li>
-          <li>Improving choice of images</li>
-          <li>Codebase cleanup</li>
+          <li>
+            <p>Adding more engaging animations via Framer Motion</p>
+          </li>
+          <li>
+            <p>Standardising often-recurring styles</p>
+          </li>
+          <li>
+            <p>Improving choice of images</p>
+          </li>
+          <li>
+            <p>Codebase cleanup</p>
+          </li>
         </ul>
         <p className="pinkpanther-footer-p">Thank you for your time.</p>
       </div>
