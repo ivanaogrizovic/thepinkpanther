@@ -17,6 +17,7 @@ import Book from "./routes/book";
 import "./App.scss";
 
 export default function App() {
+  let a = 10;
   const { products } = useContext(ProductsContext);
 
   return (
