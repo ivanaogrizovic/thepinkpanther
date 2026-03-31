@@ -61,6 +61,22 @@ It was created for learning purposes.<br>Here are some features:
 - Made with reusable components
 - Every page is fully accessible (WCAG 2.2 AA)
 
+### Component Architecture & Data Flow
+
+The app follows a simple, maintainable architecture:
+
+**Data Flow:**  
+Products JSON → `ProductsContext` → Custom hooks → Components
+
+**Key Points:**
+
+- `ProductsContext` provides product data and helper functions to components
+- Components consume context directly or via custom hooks (e.g., `useLockBodyScroll`) to separate UI logic from side effects
+- The navigation bar, sub-navigation, and pages are modular and focused on rendering, with derived data memoized where appropriate
+- Route-based structure allows easy code-splitting and scalability
+
+This structure keeps the app readable, maintainable, and performant while demonstrating thoughtful React patterns.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
