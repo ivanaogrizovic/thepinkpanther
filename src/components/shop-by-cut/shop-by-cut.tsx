@@ -47,24 +47,25 @@ export default function ShopByCut() {
           emerald, or a romantic princess, find the diamond that cuts straight
           to your style.
         </p>
-        <div className="pinkpanther-shop-by-cut-list" role="list">
+
+        <ul className="pinkpanther-shop-by-cut-list">
           {cutsList.map((cut) => (
-            <Link
-              className="pinkpanther-shop-by-cut-item"
-              to={`/shop/engagement?shape=${cut}`}
-              state={ringsByCut[cut]}
-              key={cut}
-              role="listitem"
-            >
-              <img
-                className="pinkpanther-shop-by-cut-item-image"
-                src={cutImages[cut]}
-                alt={cut}
-              />
-              <p className="-microcopy">{cut}</p>
-            </Link>
+            <li key={cut} className="pinkpanther-shop-by-cut-item">
+              <Link
+                to={`/shop/engagement?shape=${cut}`}
+                state={ringsByCut[cut]}
+              >
+                <img
+                  className="pinkpanther-shop-by-cut-item-image"
+                  src={cutImages[cut]}
+                  alt={cut}
+                />
+                <p className="-microcopy">{cut}</p>
+              </Link>
+            </li>
           ))}
-        </div>
+        </ul>
+
         <p>
           Not sure what you’re looking for?{" "}
           <Link to={ROUTES.SHOP.ENGAGEMENT} className="pinkpanther-cta-link">
