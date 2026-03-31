@@ -9,7 +9,7 @@ import "./footer.scss";
 
 export default function Footer() {
   return (
-    <footer className="pinkpanther-footer" role="contentinfo">
+    <footer className="pinkpanther-footer">
       <div className="pinkpanther-footer-links">
         <p className="-microcopy">The Pink Panther©</p>
         <Link to={ROUTES.ABOUT}>About</Link>
@@ -24,7 +24,7 @@ export default function Footer() {
             rel="noreferrer"
             aria-label="GitHub profile"
           >
-            <FaGithub role="img" aria-label="GitHub logo" />
+            <FaGithub />
           </a>
           <a
             className="pinkpanther-footer-icon"
@@ -33,7 +33,7 @@ export default function Footer() {
             rel="noreferrer"
             aria-label="LinkedIn profile"
           >
-            <FaLinkedin role="img" aria-label="LinkedIn logo" />
+            <FaLinkedin />
           </a>
         </div>
       </div>
@@ -42,18 +42,13 @@ export default function Footer() {
         <p className="pinkpanther-footer-p">This website was made with:</p>
         <div className="pinkpanther-footer-techstack">
           <div>
-            <FaReact id="react" role="img" aria-label="React logo" /> React
+            <FaReact id="react" /> React
           </div>
           <span>
-            <SiTypescript
-              id="typescript"
-              role="img"
-              aria-label="TypseScript logo"
-            />{" "}
-            Typescript
+            <SiTypescript id="typescript" /> Typescript
           </span>
           <span>
-            <FaSass id="sass" role="img" aria-label="Sass logo" /> SCSS
+            <FaSass id="sass" /> SCSS
           </span>
         </div>
       </div>
