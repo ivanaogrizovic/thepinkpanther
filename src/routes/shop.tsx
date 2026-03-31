@@ -5,7 +5,7 @@ import Filters from "../components/filters/filters";
 import engagementHero2 from ".././assets/engagement-set.webp";
 import Hero from "../components/hero/hero";
 import { useFilters } from "../hooks/useFilters";
-import { useLocation } from "react-router-dom";
+import { useLocation } from "react-router";
 
 export default function Shop({
   productList,

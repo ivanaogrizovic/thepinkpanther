@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 import { useMemo } from "react";
 import { useProductsContext } from "../../context/products.context";
 import oval from "../../assets/cut-oval.webp";

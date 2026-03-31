@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation } from "react-router";
 import { engagementRing } from "../interfaces/engagementRing.interface";
 
 type FilterCategory = "shape" | "style" | "metal";

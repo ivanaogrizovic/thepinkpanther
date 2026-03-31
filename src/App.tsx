@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { ProductsContext } from "./context/products.context";
-import { Routes, Route, Navigate, Outlet } from "react-router-dom";
+import { Routes, Route, Navigate, Outlet } from "react-router";
 import { ROUTES } from "./routes/routes.config";
 
 import Header from "./components/header/header";
@@ -17,6 +17,7 @@ import Book from "./routes/book";
 import "./App.scss";
 
 export default function App() {
+  let a = 10;
   const { products } = useContext(ProductsContext);
 
   return (

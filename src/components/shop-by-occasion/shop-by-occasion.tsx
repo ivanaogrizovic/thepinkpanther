@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 import engagement from "../../assets/occasion-engagement.webp";
 import anniversary from "../../assets/style-eternity.webp";
 import weddingBands from "../../assets/style-wedding-bands.webp";
