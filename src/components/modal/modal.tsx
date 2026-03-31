@@ -56,7 +56,7 @@ export default function Modal({ closeModal, selectedImage }: ModalProps) {
         onClick={(e) => e.stopPropagation()}
         role="dialog"
         aria-modal="true"
-        aria-label="Product image preview"
+        aria-labelledby="modal-title"
         ref={modalRef}
       >
         <img

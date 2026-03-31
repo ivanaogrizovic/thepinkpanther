@@ -74,28 +74,20 @@ export default function ItemDetail({ singleProduct }: ItemDetailProps) {
     <div className="pinkpanther-product-detail">
       <ProductGallery images={singleProduct.images} onImageClick={openModal} />
 
-      <div
-        className="pinkpanther-product-detail-content"
-        role="region"
-        aria-label="Product details"
-      >
-        <h3>{singleProduct.name}</h3>
+      <div className="pinkpanther-product-detail-content">
+        <h1 className="h3">{singleProduct.name}</h1>
         <p className="-microcopy -bold">£{singleProduct.price}</p>
 
-        <ul className="pinkpanther-product-detail-list" role="list">
+        <ul className="pinkpanther-product-detail-list">
           {productDetails.map(([key, value]) => (
-            <li
-              className="pinkpanther-product-detail-list-item"
-              key={key}
-              role="listitem"
-            >
+            <li className="pinkpanther-product-detail-list-item" key={key}>
               <p className="-microcopy -bold">{key}:</p>
               <p className="-microcopy">{String(value)}</p>
             </li>
           ))}
         </ul>
 
-        <button className="pinkpanther-button -microcopy">Add to cart</button>
+        {/* <button className="pinkpanther-button -microcopy">Add to cart</button> */}
       </div>
 
       {isModalOpen && selectedImage && (

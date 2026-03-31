@@ -5,13 +5,9 @@ import "./header.scss";
 
 export default function Header() {
   return (
-    <header role="banner">
+    <header>
       <Link to={ROUTES.HOME} aria-label="Home">
-        <img
-          className="pinkpanther-header-image"
-          src={appLogo}
-          alt="The Pink Panther"
-        />
+        <img className="pinkpanther-header-image" src={appLogo} alt="" />
       </Link>
     </header>
   );

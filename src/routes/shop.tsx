@@ -25,11 +25,7 @@ export default function Shop({
   return (
     <div className="-fade-in">
       <Hero text="Engagement Rings" image={engagementHero2} />
-      <div
-        className="pinkpanther-shop-content"
-        role="complementary"
-        aria-label="Shop filters and products"
-      >
+      <div className="pinkpanther-shop-content" role="complementary">
         <Filters selectedFilters={filters} onToggle={toggleFilter} />
         <ItemsGrid rings={filteredProductList} />
       </div>

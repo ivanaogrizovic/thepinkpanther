@@ -73,9 +73,9 @@ export default function ShopByOccasion() {
         Big moments, small moments, or just feeling fabulous.<br></br>There’s a
         ring for that.
       </p>
-      <div className="pinkpanther-shop-by-occasion-list" role="list">
+      <ul className="pinkpanther-shop-by-occasion-list">
         {occasionList.map((occasion, index) => (
-          <div
+          <li
             className="pinkpanther-shop-by-occasion-item"
             key={index}
             role="listitem"
@@ -87,13 +87,13 @@ export default function ShopByOccasion() {
               <img
                 className="pinkpanther-shop-by-occasion-image"
                 src={occasion.src}
-                alt={occasion.alt}
+                alt=""
               ></img>
               <h3>{occasion.name}</h3>
             </Link>
-          </div>
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   );
 }

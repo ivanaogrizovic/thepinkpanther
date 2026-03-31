@@ -15,11 +15,7 @@ export default function FullWdithCta({
   link,
 }: FullWidthCtaProps) {
   return (
-    <div
-      className="pinkpanther-full-width-cta"
-      role="region"
-      aria-label={title}
-    >
+    <div className="pinkpanther-full-width-cta">
       <h2 className="pinkpanther-full-width-cta-title">{title}</h2>
       <p className="pinkpanther-full-width-cta-text">{text}</p>
       {link && linkText && (
@@ -27,7 +23,7 @@ export default function FullWdithCta({
           <Link
             to={link}
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             className="pinkpanther-cta-link"
           >
             {linkText} →

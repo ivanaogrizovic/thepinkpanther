@@ -1,4 +1,5 @@
-import React, { Component, ReactNode } from "react";
+import { Component, ReactNode } from "react";
+import "./error-boundary.scss";
 
 type Props = {
   children: ReactNode;
@@ -25,36 +26,15 @@ export default class ErrorBoundary extends Component<Props, State> {
   render() {
     if (this.state.hasError) {
       return (
-        <div
-          style={{
-            minHeight: "100vh",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            background: "#fff",
-            color: "#111",
-            textAlign: "center",
-            padding: "2rem",
-          }}
-          role="alert"
-          aria-live="assertive"
-          aria-label="Error message"
-        >
+        <div className="pinkpanther-error-boundary" role="alert">
           <div>
-            <h1 style={{ fontSize: "2rem", marginBottom: "1rem" }}>
-              Something went wrong
-            </h1>
-            <p style={{ marginBottom: "1.5rem", opacity: 0.7 }}>
+            <h1 className="pinkpanther-error-title">Something went wrong</h1>
+            <p className="pinkpanther-error-text">
               Please refresh the page to continue.
             </p>
             <button
               onClick={this.handleReload}
-              style={{
-                padding: "0.75rem 1.5rem",
-                border: "1px solid #111",
-                background: "transparent",
-                cursor: "pointer",
-              }}
+              className="pinkpanther-error-button"
             >
               Refresh
             </button>

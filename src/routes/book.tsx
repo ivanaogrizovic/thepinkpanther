@@ -6,6 +6,7 @@ import FullWdithCta from "../components/full-width-cta/full-width-cta";
 export default function Book() {
   return (
     <div className="-fade-in">
+      {/* TODO: NOT READABLE, FIX IMAGE */}
       <Hero text="Book an appointment" image={bookImage} />
       <FullWdithCta
         title="we are here to help you"

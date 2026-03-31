@@ -18,6 +18,7 @@ export default function Navigation() {
       <button
         className="pinkpanther-mobile-nav-toggle"
         aria-expanded={menuOpen}
+        aria-controls="main-navigation-list"
         aria-label="Toggle navigation"
         onClick={() => setMenuOpen((prev) => !prev)}
       >
@@ -25,10 +26,10 @@ export default function Navigation() {
       </button>
 
       <ul
+        id="main-navigation-list"
         className={`pinkpanther-navigation-list -microcopy ${
           menuOpen ? "-visible" : "-hidden"
         }`}
-        role="list"
       >
         {menuOpen && (
           <li className="pinkpanther-mobile-close">

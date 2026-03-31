@@ -23,7 +23,7 @@ export default function ComingSoon() {
         <img
           className="pinkpanther-placeholder -fade-in"
           src={fatCat}
-          alt="Decorative cat image"
+          alt=""
         ></img>
       </div>
     </>
