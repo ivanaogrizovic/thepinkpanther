@@ -16,7 +16,7 @@ export default function SplitContent({
   image,
 }: SplitContentProps) {
   return (
-    <div className="pinkpanther-split-content" aria-label={title}>
+    <div className="pinkpanther-split-content" data-testid="hero-section">
       <img
         src={image}
         className="pinkpanther-split-content-image slide-left"

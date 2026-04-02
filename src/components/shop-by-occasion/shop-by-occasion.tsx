@@ -65,8 +65,8 @@ export default function ShopByOccasion() {
   return (
     <div
       className="pinkpanther-shop-by-occasion"
-      role="region"
       aria-label="Shop rings by occasion"
+      data-testid="shop-by-occasion-section"
     >
       <h2>Shop rings by occasion</h2>
       <p>

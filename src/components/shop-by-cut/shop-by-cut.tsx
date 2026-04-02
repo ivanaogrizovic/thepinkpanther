@@ -34,7 +34,10 @@ export default function ShopByCut() {
   }, [products, cutsList]);
 
   return (
-    <div className="pinkpanther-shop-by-cut-wrapper">
+    <div
+      className="pinkpanther-shop-by-cut-wrapper"
+      data-testid="shop-by-cut-section"
+    >
       <div
         className="pinkpanther-shop-by-cut"
         role="region"
@@ -68,7 +71,7 @@ export default function ShopByCut() {
 
         <p>
           Not sure what you’re looking for?{" "}
-          <Link to={ROUTES.SHOP.ENGAGEMENT} className="pinkpanther-cta-link">
+          <Link to={ROUTES.BOOK} className="pinkpanther-cta-link">
             Speak to an expert.
           </Link>{" "}
           We’ll help you find <i>the one</i>.

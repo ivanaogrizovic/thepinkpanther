@@ -1,12 +1,24 @@
 import { render, screen } from "@testing-library/react";
 import Home from "../routes/home";
-import { BrowserRouter } from "react-router";
+import { MemoryRouter } from "react-router";
 
-test("matches snapshot", () => {
-  const { container } = render(
-    <BrowserRouter>
-      <Home />
-    </BrowserRouter>,
-  );
-  expect(container).toMatchSnapshot();
+describe("Homepage", () => {
+  test("Renders all key sections", () => {
+    render(
+      <MemoryRouter>
+        <Home />
+      </MemoryRouter>,
+    );
+
+    const keySections = [
+      "hero-section",
+      "shop-by-cut-section",
+      "shop-by-occasion-section",
+      "full-width-cta",
+    ];
+
+    keySections.forEach((section) => {
+      expect(screen.getByTestId(section)).toBeInTheDocument();
+    });
+  });
 });
