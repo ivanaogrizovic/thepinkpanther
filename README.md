@@ -117,10 +117,9 @@ To get a local copy up and running follow these simple example steps.
 
 ## Roadmap
 
+- Adding tests, using Jest (currently in progress)
 - Cart functionality
-- Framer Motion intergration for more interesting animations
-- Adding tests, using Jest and Cypress
-- Custom backend with ExpressJS to allow log in
+- Mock backend with json-server
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
