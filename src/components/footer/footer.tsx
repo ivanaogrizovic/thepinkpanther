@@ -59,16 +59,16 @@ export default function Footer() {
         </p>
         <ul className="pinkpanther-footer-p -list">
           <li>
-            <p>Adding more engaging animations via Framer Motion</p>
+            <p>Adding tests, using Jest (currently in progress)</p>
           </li>
           <li>
-            <p>Standardising often-recurring styles</p>
+            <p>Cart functionality</p>
           </li>
           <li>
             <p>Improving choice of images</p>
           </li>
           <li>
-            <p>Codebase cleanup</p>
+            <p>Mock backend with json-server</p>
           </li>
         </ul>
         <p className="pinkpanther-footer-p">Thank you for your time.</p>
