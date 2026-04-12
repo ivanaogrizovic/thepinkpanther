@@ -1,4 +1,5 @@
 <a id="readme-top"></a>
+[![Icoziv-icons](https://i.icoziv.workers.dev/icons?i=framermotion-dark,reactjs-dark,reactrouter,scss,typescript)]()
 
 <!-- PROJECT LOGO -->
 <br />
@@ -145,6 +146,8 @@ Don't forget to give the project a star! Thanks again!
 ## License
 
 Do not copy or claim as your own.<br>I do not own the rights to the images used in this project as it was made for learning purposes and not for commercial purposes.
+
+[![SAFE-HAND MADE CODE](https://img.shields.io/badge/SAFE-HAND%20MADE%20CODE-32CD32)](https://github.com/40ants/ai-badges)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
