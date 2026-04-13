@@ -21,12 +21,12 @@ function FilterCheckboxListComponent({
   return (
     <div className="pinkpanther-filter-container">
       <button
-        className="pinkpanther-filter-accordion -microcopy -bold"
+        className="pinkpanther-filter-accordion"
         onClick={() => setIsOpen(!isOpen)}
         aria-expanded={isOpen}
         aria-controls={`filter-${filterName}-list`}
       >
-        {filterName}
+        <p>{filterName}</p>
         {isOpen ? <FaChevronRight /> : <FaChevronDown />}
       </button>
 
@@ -37,7 +37,7 @@ function FilterCheckboxListComponent({
         >
           {filterList?.map((filter, index) => (
             <li key={index}>
-              <label>
+              <label className="pinkpanther-filter-input-label">
                 <input
                   type="checkbox"
                   checked={isChecked(filter)}

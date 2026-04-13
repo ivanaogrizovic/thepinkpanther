@@ -29,7 +29,7 @@ export default function Filters({ selectedFilters, onToggle }: FiltersProps) {
 
   return (
     <div className="pinkpanther-filters">
-      <h2 className="h4">Filter by</h2>
+      <h4 className="h4">Filter by</h4>
 
       <FilterCheckboxList
         filterName="shape"
