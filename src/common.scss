@@ -23,24 +23,20 @@ body {
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 44px;
   font-weight: 300;
-
-  @media (min-width: 400px) {
-    font-size: 52px;
-  }
 }
 
 h2 {
-  font-weight: 400;
-  font-size: 38px;
+  font-weight: 300;
+  font-size: 34px;
 }
 h3 {
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 300;
 }
 h4 {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 24px;
 }
 h5 {
@@ -65,6 +61,11 @@ a {
 ul {
   list-style: none;
   padding-inline-start: 0;
+}
+
+.microcopy {
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 // Content wrappers

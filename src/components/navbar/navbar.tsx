@@ -51,18 +51,28 @@ export default function Navigation() {
           </button>
         </li>
         <li className="pinkpanther-navigation-item" onClick={closeMenu}>
-          <Link to={ROUTES.HOME}>Home</Link>
+          <Link to={ROUTES.HOME} className="microcopy">
+            Home
+          </Link>
         </li>
         <li className="pinkpanther-navigation-item">
-          <Link to={ROUTES.SHOP.ENGAGEMENT} onClick={closeMenu}>
+          <Link
+            to={ROUTES.SHOP.ENGAGEMENT}
+            onClick={closeMenu}
+            className="microcopy"
+          >
             Engagement Rings
           </Link>
         </li>
         <li className="pinkpanther-navigation-item" onClick={closeMenu}>
-          <Link to={ROUTES.ABOUT}>About</Link>
+          <Link to={ROUTES.ABOUT} className="microcopy">
+            About
+          </Link>
         </li>
         <li className="pinkpanther-navigation-item" onClick={closeMenu}>
-          <Link to={ROUTES.BOOK}>Book an appointment</Link>
+          <Link to={ROUTES.BOOK} className="microcopy">
+            Book an appointment
+          </Link>
         </li>
       </ul>
     </nav>

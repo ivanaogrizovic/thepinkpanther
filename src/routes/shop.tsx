@@ -6,6 +6,7 @@ import engagementHero2 from ".././assets/engagement-set.webp";
 import Hero from "../components/hero/hero";
 import { useFilters } from "../hooks/useFilters";
 import { useLocation } from "react-router";
+import Header from "../components/header/header";
 
 export default function Shop({
   productList,
@@ -24,6 +25,7 @@ export default function Shop({
 
   return (
     <div className="-fade-in">
+      <Header />
       <div className="pinkpanther-shop-content" role="complementary">
         <Filters selectedFilters={filters} onToggle={toggleFilter} />
         <ItemsGrid rings={filteredProductList} />

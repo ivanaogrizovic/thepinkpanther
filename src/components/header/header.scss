@@ -1,4 +1,21 @@
-.pinkpanther-header-image {
-    width: 100%;
-    max-width: 25rem;
+@import "../../variables.scss";
+
+.pinkpanther-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 6rem 1rem;
+}
+
+.pinkpanther-header-p {
+  margin: 0;
+}
+
+.pinkpanther-header-title {
+  margin: 0;
+}
+
+.pinkpanther-header-hr {
+  width: 3rem;
+  border: 1px solid $primary-color;
 }

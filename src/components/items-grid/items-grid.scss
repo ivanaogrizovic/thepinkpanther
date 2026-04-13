@@ -1,4 +1,5 @@
 @import "../../variables.scss";
+
 .pinkpanther-product-list {
   display: flex;
   flex-direction: column;
@@ -6,7 +7,7 @@
   gap: 1rem;
   align-content: center;
 
-  @media (min-width: $desktop-up) {
+  @media (min-width: $mobile-up) {
     flex-direction: row;
     justify-content: space-evenly;
     flex: 1;
@@ -15,6 +16,7 @@
 
 .pinkpanther-product-image {
   max-width: 16rem;
+  border-radius: 15px;
 }
 
 .pinkpanther-product-text > * {

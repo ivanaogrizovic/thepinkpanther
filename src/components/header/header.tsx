@@ -1,14 +1,11 @@
-import { Link } from "react-router";
-import { ROUTES } from "../../routes/routes.config";
-import appLogo from "../../assets/pink-panther-logo.webp";
 import "./header.scss";
 
 export default function Header() {
   return (
-    <header>
-      <Link to={ROUTES.HOME} aria-label="Home">
-        <img className="pinkpanther-header-image" src={appLogo} alt="" />
-      </Link>
+    <header className="pinkpanther-header">
+      <p className="pinkpanther-header-p microcopy">THE BRIDAL EDIT</p>
+      <h1 className="pinkpanther-header-title">Engagement Ring Collection</h1>
+      <hr className="pinkpanther-header-hr" />
     </header>
   );
 }

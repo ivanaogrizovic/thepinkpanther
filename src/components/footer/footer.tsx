@@ -9,10 +9,18 @@ export default function Footer() {
     <footer className="pinkpanther-footer">
       <h5>The Pink Panther</h5>
       <div className="pinkpanther-footer-links">
-        <Link to={ROUTES.HOME}>Home</Link>
-        <Link to={ROUTES.ABOUT}>About</Link>
-        <Link to={ROUTES.SHOP.ENGAGEMENT}>Engagement Rings</Link>
-        <Link to={ROUTES.BOOK}>Book an appointment</Link>
+        <Link to={ROUTES.HOME} className="microcopy">
+          Home
+        </Link>
+        <Link to={ROUTES.ABOUT} className="microcopy">
+          About
+        </Link>
+        <Link to={ROUTES.SHOP.ENGAGEMENT} className="microcopy">
+          Engagement Rings
+        </Link>
+        <Link to={ROUTES.BOOK} className="microcopy">
+          Book an appointment
+        </Link>
       </div>
       <hr />
       <div className="pinkpanther-footer-end">

@@ -29,8 +29,6 @@ export default function Filters({ selectedFilters, onToggle }: FiltersProps) {
 
   return (
     <div className="pinkpanther-filters">
-      <h4 className="h4">Filter by</h4>
-
       <FilterCheckboxList
         filterName="shape"
         filterList={shapeFilters}
