@@ -1,6 +1,7 @@
-import { Link } from "react-router";
 import { useMemo } from "react";
 import { useProductsContext } from "../../context/products.context";
+import { Link } from "react-router";
+import { ROUTES } from "../../routes/routes.config";
 import oval from "../../assets/cut-oval.webp";
 import princess from "../../assets/cut-princess.webp";
 import emerald from "../../assets/cut-emerald.webp";
@@ -9,7 +10,6 @@ import cushion from "../../assets/cut-cushion.webp";
 import round from "../../assets/cut-round.webp";
 import marquise from "../../assets/cut-marquise.webp";
 import "./shop-by-cut.scss";
-import { ROUTES } from "../../routes/routes.config";
 
 const cutImages: Record<string, string> = {
   oval,
@@ -63,7 +63,7 @@ export default function ShopByCut() {
                   src={cutImages[cut]}
                   alt=""
                 />
-                <p className="-microcopy">{cut}</p>
+                <h5>{cut}</h5>
               </Link>
             </li>
           ))}
