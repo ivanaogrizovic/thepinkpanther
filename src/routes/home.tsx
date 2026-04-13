@@ -1,8 +1,8 @@
 import SplitContent from "../components/split-content/split-content";
 import ShopByCut from "./../components/shop-by-cut/shop-by-cut";
 import ShopByOccasion from "../components/shop-by-occasion/shop-by-occasion";
-import homeAmbassadorImg from "../assets/home-ambassador.webp";
 import FullWdithCta from "../components/full-width-cta/full-width-cta";
+import Hero from "../components/hero/hero";
 
 export default function Home() {
   const amassadorTitle = "A love that will last a lifetime";
@@ -11,6 +11,7 @@ export default function Home() {
   const ambassadorLink = "SHOP ENGAGEMENT RINGS";
   return (
     <div className="-fade-in">
+      <Hero />
       <ShopByCut />
       <ShopByOccasion />
       <FullWdithCta

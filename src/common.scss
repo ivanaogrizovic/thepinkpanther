@@ -12,19 +12,17 @@ h6 {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
   font-style: normal;
+  text-transform: uppercase;
 }
 
-p,
-a,
-label,
-span {
+body {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 300;
+  background-color: $background-color;
 }
 
-h1,
-.-display {
+h1 {
   font-size: 32px;
   font-weight: 300;
 
@@ -33,28 +31,23 @@ h1,
   }
 }
 
-h2,
-.h2 {
+h2 {
   font-weight: 400;
   font-size: 38px;
 }
-h3,
-.h3 {
+h3 {
   font-size: 30px;
   font-weight: 400;
 }
-h4,
-.h4 {
+h4 {
   font-weight: 400;
   font-size: 24px;
 }
-h5,
-.h5 {
+h5 {
   font-weight: 500;
   font-size: 20px;
 }
-h6,
-.h6 {
+h6 {
   font-weight: 600;
   font-size: 17px;
 }
@@ -62,11 +55,6 @@ h6,
 p {
   font-weight: 300;
   font-size: 16px;
-}
-
-.-microcopy {
-  text-transform: uppercase;
-  letter-spacing: 2px;
 }
 
 a {
