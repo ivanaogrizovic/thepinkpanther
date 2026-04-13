@@ -34,7 +34,6 @@ export default function Navigation() {
         <Link to="/">
           <h5>The Pink Panther</h5>
         </Link>
-
         <button className="pinkpanther-nav-icon">
           <MdOutlineShoppingBag />
         </button>
@@ -51,25 +50,17 @@ export default function Navigation() {
             <IoCloseOutline />
           </button>
         </li>
-
         <li className="pinkpanther-navigation-item" onClick={closeMenu}>
           <Link to={ROUTES.HOME}>Home</Link>
         </li>
-
         <li className="pinkpanther-navigation-item">
           <Link to={ROUTES.SHOP.ENGAGEMENT} onClick={closeMenu}>
             Engagement Rings
           </Link>
         </li>
-
-        <li className="pinkpanther-navigation-item" onClick={closeMenu}>
-          <Link to={ROUTES.SHOP.COMING_SOON}>Wedding Rings</Link>
-        </li>
-
         <li className="pinkpanther-navigation-item" onClick={closeMenu}>
           <Link to={ROUTES.ABOUT}>About</Link>
         </li>
-
         <li className="pinkpanther-navigation-item" onClick={closeMenu}>
           <Link to={ROUTES.BOOK}>Book an appointment</Link>
         </li>

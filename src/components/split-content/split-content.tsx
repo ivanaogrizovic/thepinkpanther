@@ -23,7 +23,7 @@ export default function SplitContent({
         alt=""
       />
       <div className="pinkpanther-split-content-text -fade-in-up">
-        <h1>{title}</h1>
+        <h2>{title}</h2>
         <p>{text}</p>
         {link && (
           <p>
