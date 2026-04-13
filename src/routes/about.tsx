@@ -8,7 +8,6 @@ import FullWdithCta from "../components/full-width-cta/full-width-cta";
 export default function About() {
   return (
     <div className="-fade-in">
-      <Hero text="About us" image={aboutHeroImage} />
       <FullWdithCta
         title="Our diamond story"
         text="The Pink Panther is a fictional fine-jewellery brand created as a showcase project to demonstrate the author’s front-end development skills. Inspired by timeless elegance and playful luxury, the brand serves as a creative canvas for experimenting with modern web technologies, polished UI design, and responsive e-commerce experiences."

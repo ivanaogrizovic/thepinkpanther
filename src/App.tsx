@@ -22,7 +22,6 @@ export default function App() {
 
   return (
     <div className="pinkpanther-app fade-in">
-      <Header />
       <Navigation />
 
       <main role="main">

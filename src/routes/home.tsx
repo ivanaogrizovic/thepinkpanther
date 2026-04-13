@@ -11,12 +11,6 @@ export default function Home() {
   const ambassadorLink = "SHOP ENGAGEMENT RINGS";
   return (
     <div className="-fade-in">
-      <SplitContent
-        image={homeAmbassadorImg}
-        title={amassadorTitle}
-        text={ambassadorText}
-        link={ambassadorLink}
-      />
       <ShopByCut />
       <ShopByOccasion />
       <FullWdithCta

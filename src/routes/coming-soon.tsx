@@ -7,7 +7,6 @@ import fatCat from "../assets/fat-cat.webp";
 export default function ComingSoon() {
   return (
     <>
-      <Hero text="Coming soon" image={weddingBands} />
       <div
         className="pinkpanther-coming-soon -fade-in"
         role="region"
