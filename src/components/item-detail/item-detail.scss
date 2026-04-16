@@ -6,7 +6,8 @@
   justify-content: center;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 2rem 2rem 2rem;
+  padding: 2rem 1rem;
+  gap: 2rem;
 
   @media (min-width: $desktop-up) {
     display: grid;
@@ -48,10 +49,13 @@
   text-align: left;
   background-color: $tertiary-color;
   padding: 2rem;
+  border-radius: 15px;
 }
 
 .pinkpanther-product-detail-list-item {
-  display: flex;
-  flex-direction: row;
-  gap: 0.5rem;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  text-transform: capitalize;
 }

@@ -13,7 +13,6 @@ type ProductDetailKey = Exclude<
   (typeof IGNORED_KEYS)[number]
 >;
 
-// Extracted Image Gallery as memoized component
 const ProductGallery = memo(
   ({
     images,
@@ -59,7 +58,6 @@ export default function ItemDetail({ singleProduct }: ItemDetailProps) {
     setSelectedImage(null);
   }, []);
 
-  // Scroll to top when component mounts
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
@@ -75,7 +73,7 @@ export default function ItemDetail({ singleProduct }: ItemDetailProps) {
       <ProductGallery images={singleProduct.images} onImageClick={openModal} />
 
       <div className="pinkpanther-product-detail-content">
-        <h1 className="h3">{singleProduct.name}</h1>
+        <h1>{singleProduct.name}</h1>
         <p className="-microcopy -bold">£{singleProduct.price}</p>
 
         <ul className="pinkpanther-product-detail-list">

@@ -1,6 +1,5 @@
 import React, { useState, memo } from "react";
 import { filter as FilterItem } from "../../../interfaces/filters.interface";
-import { FaChevronRight, FaChevronDown } from "react-icons/fa";
 import "../filters";
 
 interface FilterCheckboxListProps {
@@ -19,36 +18,36 @@ function FilterCheckboxListComponent({
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="pinkpanther-filter-container">
+    <div className="pinkpanther-filter">
       <button
         className="pinkpanther-filter-accordion"
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={() => setIsOpen((prev) => !prev)}
         aria-expanded={isOpen}
         aria-controls={`filter-${filterName}-list`}
+        aria-haspopup="true"
       >
-        <p>{filterName}</p>
-        {isOpen ? <FaChevronRight /> : <FaChevronDown />}
+        {filterName}
       </button>
 
-      {isOpen && (
-        <ul
-          className="pinkpanther-filter-list -fade-in"
-          id={`filter-${filterName}-list`}
-        >
-          {filterList?.map((filter, index) => (
-            <li key={index}>
-              <label className="pinkpanther-filter-input-label">
-                <input
-                  type="checkbox"
-                  checked={isChecked(filter)}
-                  onChange={() => onToggle(filter)}
-                />
-                {filter}
-              </label>
-            </li>
-          ))}
-        </ul>
-      )}
+      <ul
+        className="pinkpanther-filter-list"
+        id={`filter-${filterName}-list`}
+        role="menu"
+        hidden={!isOpen}
+      >
+        {filterList?.map((filter, index) => (
+          <li key={index} role="menuitemcheckbox">
+            <label className="pinkpanther-filter-input-label">
+              <input
+                type="checkbox"
+                checked={isChecked(filter)}
+                onChange={() => onToggle(filter)}
+              />
+              {filter}
+            </label>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }

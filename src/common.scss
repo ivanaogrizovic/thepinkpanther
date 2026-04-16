@@ -22,10 +22,14 @@ body {
 }
 
 h1 {
-  font-size: 44px;
+  font-size: 38px;
   font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
+
+  @media (min-width: $mobile-up) {
+    font-size: 44px;
+  }
 }
 
 h2 {
@@ -75,10 +79,10 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 2rem;
+  padding: 2rem 1rem;
+  gap: 2rem;
 
   @media (min-width: $desktop-up) {
-    flex-direction: row;
     max-width: 1440px;
     margin: 0 auto;
     flex-wrap: wrap;
@@ -142,6 +146,10 @@ ul {
 
 .-tertiary {
   background-color: $tertiary-color;
+}
+
+.-accent {
+  background-color: $accent-color;
 }
 
 // Animations
