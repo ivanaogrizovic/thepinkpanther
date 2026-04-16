@@ -44,19 +44,17 @@ export default function ShopByCut({ mainRef }: ShopByCutProps) {
       ref={mainRef}
       id="shop-section"
     >
-      <div
-        className="pinkpanther-shop-by-cut"
-        role="region"
-        aria-label="Shop engagement rings by shape"
-      >
-        <h2>Shop engagement rings by shape</h2>
+      <div className="pinkpanther-shop-by-cut">
+        <h2>Find Your Shape</h2>
         <p>
-          From timeless classics to modern icons, explore diamond cuts that tell
-          your love story. Whether you’re drawn to a dazzling round, a bold
-          emerald, or a romantic princess, find the diamond that cuts straight
-          to your style.
+          Explore our collection through the artistry of diamond cuts: each one
+          a distinct expression of style and character.
         </p>
-
+        <p>
+          Select a shape to begin your journey, from the timeless brilliance of
+          round to the refined elegance of emerald or the romantic allure of
+          princess.
+        </p>
         <ul className="pinkpanther-shop-by-cut-list">
           {cutsList.map((cut) => (
             <li key={cut} className="pinkpanther-shop-by-cut-item">

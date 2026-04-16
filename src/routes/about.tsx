@@ -15,12 +15,12 @@ export default function About() {
         link="/shop/engagement"
       />
       <AboutSection />
-      <SplitContent
+      {/* <SplitContent
         image={ambassadorImage1}
         title="Where Code Meets Sparkle"
         text="Behind every ring is a little bit of magic… and a lot of React logic. The Pink Panther’s interactive filters let users mix and match shapes, styles, and metals in real time. Styled with modular SCSS and optimized for performance, this project lives on GitHub Pages."
         link="Explore"
-      />
+      /> */}
       <FullWdithCta
         title="Thank you for reading this far"
         text="You can find more info about this project in the future. Feel free to contact me for any further inquiry."
