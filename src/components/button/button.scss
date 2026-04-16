@@ -1,0 +1,27 @@
+@import "../../variables.scss";
+
+.pinkpanther-button {
+  border-radius: 50px;
+  font-size: 15px;
+  border: none;
+  padding: 1.1rem;
+  transition: 0.5s;
+  letter-spacing: 0.5px;
+}
+
+.pinkpanther-button.-primary {
+  background-color: #ffffff2b;
+  color: $background-color;
+  backdrop-filter: blur(10px);
+  font-weight: 500;
+}
+
+.pinkpanther-button.-primary:hover {
+  box-shadow: $background-color 0px 0px 5px;
+  cursor: pointer;
+}
+
+.pinkpanther-button.-primary:active {
+  box-shadow: none;
+  transform: scale(0.96);
+}

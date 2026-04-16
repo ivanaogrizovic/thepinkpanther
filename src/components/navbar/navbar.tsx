@@ -42,7 +42,6 @@ export default function Navigation() {
       <ul
         id="main-navigation-list"
         aria-hidden={!menuOpen}
-        inert={!menuOpen}
         className={`pinkpanther-navigation-list ${menuOpen ? "-visible" : "-hidden"}`}
       >
         <li className="pinkpanther-mobile-close">

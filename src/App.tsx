@@ -3,7 +3,6 @@ import { ProductsContext } from "./context/products.context";
 import { Routes, Route, Navigate, Outlet } from "react-router";
 import { ROUTES } from "./routes/routes.config";
 
-import Header from "./components/header/header";
 import Navigation from "./components/navbar/navbar";
 import Footer from "./components/footer/footer";
 
