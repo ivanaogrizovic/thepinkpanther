@@ -3,7 +3,7 @@
 .pinkpanther-split-content {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto auto;
   padding: 2rem;
   max-width: 1440px;
   margin: auto;
@@ -16,12 +16,14 @@
 
 .pinkpanther-split-content-image {
   height: auto;
-  object-fit: cover;
+  object-fit: scale-down;
   aspect-ratio: auto;
   width: 100%;
   height: 100%;
 
-  @media (min-width: $desktop-up) {
+  @media (min-width: $mobile-up) {
+    max-width: 30rem;
+    margin: auto;
   }
 }
 
