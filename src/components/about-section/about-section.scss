@@ -1,23 +1,19 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
 
 .pinkpanther-our-values {
-    background-color: $tertiary-color;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    justify-content: center;
-    padding: 2.5rem 2rem;
+  background-color: $tertiary-color;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2.5rem 2rem;
 
-    @media (min-width: 700px) {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+  @media (min-width: 700px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .pinkpanther-value {
-    flex: 1;
-}
-
-.pinkpanther-quote {
-    padding: 2% 15%;
+  flex: 1;
 }

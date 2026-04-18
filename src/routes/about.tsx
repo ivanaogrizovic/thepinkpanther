@@ -1,10 +1,9 @@
-import Hero from "../components/hero/hero";
 import AboutSection from "../components/about-section/about-section";
-import SplitContent from "../components/split-content/split-content";
-import aboutHeroImage from "../assets/hero-about.webp";
-import ambassadorImage1 from "../assets/about-ambassador-1.webp";
+import Quote from "../components/quote/quote";
 import FullWdithCta from "../components/full-width-cta/full-width-cta";
 
+const founderQuote: string =
+  "Every glittering image on this site is a glamorous freeloader from the internet. Just some celebrities I temporarily convinced to appear in my front-end showcase. No ownership, no profit, no paparazzi rights claimed. No diamonds were purchased, sold, or harmed in the process — they’re basically on an unpaid modeling gig.";
 export default function About() {
   return (
     <div className="-fade-in">
@@ -15,18 +14,7 @@ export default function About() {
         link="/shop/engagement"
       />
       <AboutSection />
-      {/* <SplitContent
-        image={ambassadorImage1}
-        title="Where Code Meets Sparkle"
-        text="Behind every ring is a little bit of magic… and a lot of React logic. The Pink Panther’s interactive filters let users mix and match shapes, styles, and metals in real time. Styled with modular SCSS and optimized for performance, this project lives on GitHub Pages."
-        link="Explore"
-      /> */}
-      <FullWdithCta
-        title="Thank you for reading this far"
-        text="You can find more info about this project in the future. Feel free to contact me for any further inquiry."
-        linkText="Get in touch"
-        link="https://www.linkedin.com/in/ivana-ogrizovic/"
-      />
+      <Quote quote={founderQuote} author="Jane Doe, CEO & Co-Founder" />
     </div>
   );
 }

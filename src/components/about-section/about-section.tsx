@@ -37,25 +37,6 @@ export default function AboutSection() {
           </p>
         </div>
       </div>
-      <div
-        className="pinkpanther-quote"
-        role="region"
-        aria-label="Quote section"
-      >
-        <p>
-          <i>
-            ‘Every glittering image on this site is a glamorous freeloader from
-            the internet. Just some celebrities I temporarily convinced to
-            appear in my front-end showcase. No ownership, no profit, no
-            paparazzi rights claimed. No diamonds were purchased, sold, or
-            harmed in the process — they’re basically on an unpaid modeling
-            gig.’
-          </i>
-        </p>
-        <p>
-          <b>— Jane Doe, CEO & Co-Founder</b>
-        </p>
-      </div>
     </>
   );
 }
