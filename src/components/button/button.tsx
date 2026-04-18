@@ -5,15 +5,24 @@ type ButtonProps = {
   theme?: string;
   onClick: () => void;
   children: string;
+  type?: "submit" | "reset" | "button" | undefined;
+  disabled?: boolean;
 };
 
 export default function Button({
   theme = "primary",
   onClick,
   children,
+  type,
+  disabled = false,
 }: ButtonProps) {
   return (
-    <button className={`pinkpanther-button -${theme}`} onClick={onClick}>
+    <button
+      type={type}
+      className={`pinkpanther-button -${theme}`}
+      onClick={onClick}
+      disabled={disabled}
+    >
       {children}
     </button>
   );
