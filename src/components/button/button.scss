@@ -29,7 +29,7 @@
 }
 
 .pinkpanther-button.-tertiary {
-  background-color: #ffffff;
+  background-color: $background-color;
   border: 1px solid rgba($secondary-color, 0.15);
   box-shadow: 0 1px 6px rgb(255 255 255 / 39%);
   transition: 0.25s ease;
@@ -37,7 +37,7 @@
 
 .pinkpanther-button.-tertiary:hover {
   border-color: rgba($primary-color, 0.35);
-  box-shadow: 0 3px 10px rgb(255 255 255 / 39%);
+  box-shadow: 0 5px 10px rgb(255 255 255 / 39%);
 }
 
 .pinkpanther-button.-tertiary:active {

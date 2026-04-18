@@ -3,7 +3,7 @@ import Button from "../button/button";
 import "./booking-form.scss";
 
 interface BookingFormProps {
-  selectedDate: Date;
+  selectedDate?: Date;
   setBooked: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
@@ -26,8 +26,8 @@ export default function BookingForm({
   return (
     <form className="pinkpanther-booking-form" onSubmit={handleSubmit}>
       <h3>
-        Book for{" "}
-        {selectedDate.toLocaleDateString("en-GB", {
+        {selectedDate ? "Book an appointment for " : "Book an appointment"}
+        {selectedDate?.toLocaleDateString("en-GB", {
           weekday: "long",
           day: "numeric",
           month: "long",

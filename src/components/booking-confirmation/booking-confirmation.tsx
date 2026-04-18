@@ -6,10 +6,10 @@ interface BookingConfirmation {
 
 export default function BookingConfirmation({ date }: BookingConfirmation) {
   return (
-    <div>
-      <h2>Thanks for booking</h2>
+    <div className="pinkpanther-booking-confirmation">
+      <h2>Booking Confirmed</h2>
       <p>
-        We'll be waiting for you on{" "}
+        Thank you for booking with us. We'll be waiting for you on{" "}
         {date?.toLocaleDateString("en-GB", {
           weekday: "long",
           day: "numeric",
