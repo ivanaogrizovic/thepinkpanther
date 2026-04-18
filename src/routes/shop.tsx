@@ -23,7 +23,7 @@ export default function Shop({
 
   return (
     <div className="-fade-in">
-      <Header />
+      <Header text="The bridal edit" title="Engagement ring collection" />
       <div className="-accent">
         <div className="pinkpanther-shop-content" role="complementary">
           <Filters selectedFilters={filters} onToggle={toggleFilter} />

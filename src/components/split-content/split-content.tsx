@@ -5,7 +5,7 @@ import "./split-content.scss";
 type SplitContentProps = {
   title: string;
   text: string;
-  link: string;
+  link?: string;
   image: string;
   theme?: string;
 };

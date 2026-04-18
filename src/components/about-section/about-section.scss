@@ -1,19 +1,21 @@
 @import "../../variables.scss";
 
-.pinkpanther-our-values {
-  background-color: $tertiary-color;
-  display: flex;
-  flex-direction: column;
+.pinkpanther-features {
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 2rem;
   justify-content: center;
   padding: 2.5rem 2rem;
+  max-width: 1440px;
+  margin: auto;
 
   @media (min-width: 700px) {
-    flex-direction: row;
-    flex-wrap: wrap;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
-}
 
-.pinkpanther-value {
-  flex: 1;
+  @media (min-width: 1000px) {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }

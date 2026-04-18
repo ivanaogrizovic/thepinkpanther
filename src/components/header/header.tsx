@@ -1,10 +1,14 @@
 import "./header.scss";
 
-export default function Header() {
+type HeaderProps = {
+  text: string;
+  title: string;
+};
+export default function Header({ text, title }: HeaderProps) {
   return (
     <header className="pinkpanther-header">
-      <p className="pinkpanther-header-p microcopy">THE BRIDAL EDIT</p>
-      <h1 className="pinkpanther-header-title">Engagement Ring Collection</h1>
+      <p className="pinkpanther-header-p microcopy">{text}</p>
+      <h1 className="pinkpanther-header-title">{title}</h1>
       <hr className="pinkpanther-header-hr" />
     </header>
   );
