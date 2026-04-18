@@ -1,49 +1,33 @@
 import React, { useState, memo } from "react";
-import { filter as FilterItem } from "../../../interfaces/filters.interface";
-import "../filters";
 
 interface FilterCheckboxListProps {
+  key: string;
   filterName: string;
-  filterList: FilterItem[];
+  filterList: string[];
   isChecked: (value: string) => boolean;
   onToggle: (value: string) => void;
 }
 
 function FilterCheckboxListComponent({
+  key,
   filterName,
   filterList,
   isChecked,
   onToggle,
 }: FilterCheckboxListProps) {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
-    <div className="pinkpanther-filter">
-      <button
-        className="pinkpanther-filter-accordion"
-        onClick={() => setIsOpen((prev) => !prev)}
-        aria-expanded={isOpen}
-        aria-controls={`filter-${filterName}-list`}
-        aria-haspopup="true"
-      >
-        {filterName}
-      </button>
-
-      <ul
-        className="pinkpanther-filter-list"
-        id={`filter-${filterName}-list`}
-        role="menu"
-        hidden={!isOpen}
-      >
-        {filterList?.map((filter, index) => (
-          <li key={index} role="menuitemcheckbox">
+    <div className="pinkpanther-filter" key={key}>
+      <h6>{filterName}</h6>
+      <ul className="pinkpanther-filter-list">
+        {filterList.map((value) => (
+          <li key={value}>
             <label className="pinkpanther-filter-input-label">
               <input
                 type="checkbox"
-                checked={isChecked(filter)}
-                onChange={() => onToggle(filter)}
+                checked={isChecked(value)}
+                onChange={() => onToggle(value)}
               />
-              {filter}
+              {value}
             </label>
           </li>
         ))}

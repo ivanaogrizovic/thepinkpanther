@@ -1,7 +1,11 @@
-import { useContext, useMemo } from "react";
+import { useContext, useMemo, useState } from "react";
 import { ProductsContext } from "../../context/products.context";
 import { FiltersState } from "../../hooks/useFilters";
 import FilterCheckboxList from "./filter-checkbox/filter-checkbox";
+import {
+  MdOutlineKeyboardArrowRight,
+  MdOutlineKeyboardArrowDown,
+} from "react-icons/md";
 import "./filters.scss";
 
 type FilterCategory = "shape" | "style" | "metal";
@@ -11,44 +15,50 @@ interface FiltersProps {
   onToggle: (category: FilterCategory, value: string) => void;
 }
 
+const FILTER_CATEGORIES: FilterCategory[] = ["shape", "style", "metal"];
+
 export default function Filters({ selectedFilters, onToggle }: FiltersProps) {
   const { getUniqueValues } = useContext(ProductsContext);
+  const [isOpen, setIsOpen] = useState(false);
 
-  const shapeFilters = useMemo(
-    () => getUniqueValues("shape"),
-    [getUniqueValues],
-  );
-  const metalFilters = useMemo(
-    () => getUniqueValues("metal"),
-    [getUniqueValues],
-  );
-  const styleFilters = useMemo(
-    () => getUniqueValues("style"),
-    [getUniqueValues],
-  );
+  const filtersMap = useMemo(() => {
+    return FILTER_CATEGORIES.reduce<Record<FilterCategory, string[]>>(
+      (acc, category) => {
+        acc[category] = getUniqueValues(category);
+        return acc;
+      },
+      {} as Record<FilterCategory, string[]>,
+    );
+  }, [getUniqueValues]);
 
   return (
     <div className="pinkpanther-filters">
-      <FilterCheckboxList
-        filterName="shape"
-        filterList={shapeFilters}
-        isChecked={(value) => selectedFilters.shape.has(value)}
-        onToggle={(value) => onToggle("shape", value)}
-      />
+      <button
+        className="pinkpanther-filter-trigger"
+        onClick={() => setIsOpen((prev) => !prev)}
+        aria-expanded={isOpen}
+      >
+        Filter by{" "}
+        {isOpen ? (
+          <MdOutlineKeyboardArrowDown />
+        ) : (
+          <MdOutlineKeyboardArrowRight />
+        )}
+      </button>
 
-      <FilterCheckboxList
-        filterName="style"
-        filterList={styleFilters}
-        isChecked={(value) => selectedFilters.style.has(value)}
-        onToggle={(value) => onToggle("style", value)}
-      />
-
-      <FilterCheckboxList
-        filterName="metal"
-        filterList={metalFilters}
-        isChecked={(value) => selectedFilters.metal.has(value)}
-        onToggle={(value) => onToggle("metal", value)}
-      />
+      {isOpen && (
+        <div className="pinkpanther-filter-panel">
+          {FILTER_CATEGORIES.map((category) => (
+            <FilterCheckboxList
+              key={category}
+              filterName={category}
+              filterList={filtersMap[category]}
+              isChecked={(value) => selectedFilters[category].has(value)}
+              onToggle={(value) => onToggle(category, value)}
+            />
+          ))}
+        </div>
+      )}
     </div>
   );
 }
