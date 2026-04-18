@@ -69,28 +69,32 @@ export default function ItemDetail({ singleProduct }: ItemDetailProps) {
   ) as [ProductDetailKey, any][];
 
   return (
-    <div className="pinkpanther-product-detail">
-      <ProductGallery images={singleProduct.images} onImageClick={openModal} />
+    <div className="pinkpanther-product-wrapper">
+      <div className="pinkpanther-product-detail">
+        <ProductGallery
+          images={singleProduct.images}
+          onImageClick={openModal}
+        />
 
-      <div className="pinkpanther-product-detail-content">
-        <h1>{singleProduct.name}</h1>
-        <p className="-microcopy -bold">£{singleProduct.price}</p>
+        <div className="pinkpanther-product-detail-content">
+          <p className="pinkpanther-product-detail-price -microcopy -bold">
+            £ {singleProduct.price}
+          </p>
+          <ul className="pinkpanther-product-detail-list">
+            {productDetails.map(([key, value]) => (
+              <li className="pinkpanther-product-detail-list-item" key={key}>
+                <p className="-microcopy -bold">{key}:</p>
+                <p className="-microcopy">{String(value)}</p>
+              </li>
+            ))}
+          </ul>
+          {/* <button className="pinkpanther-button -microcopy">Add to cart</button> */}
+        </div>
 
-        <ul className="pinkpanther-product-detail-list">
-          {productDetails.map(([key, value]) => (
-            <li className="pinkpanther-product-detail-list-item" key={key}>
-              <p className="-microcopy -bold">{key}:</p>
-              <p className="-microcopy">{String(value)}</p>
-            </li>
-          ))}
-        </ul>
-
-        {/* <button className="pinkpanther-button -microcopy">Add to cart</button> */}
+        {isModalOpen && selectedImage && (
+          <Modal closeModal={closeModal} selectedImage={selectedImage} />
+        )}
       </div>
-
-      {isModalOpen && selectedImage && (
-        <Modal closeModal={closeModal} selectedImage={selectedImage} />
-      )}
     </div>
   );
 }
