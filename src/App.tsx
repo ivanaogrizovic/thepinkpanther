@@ -1,12 +1,10 @@
 import { useContext } from "react";
 import { ProductsContext } from "./context/products.context";
-import { Routes, Route, Navigate, Outlet } from "react-router";
+import { Routes, Route, Navigate, Outlet, useLocation } from "react-router";
 import { ROUTES } from "./routes/routes.config";
 import { motion } from "framer-motion";
-
 import Navigation from "./components/navbar/navbar";
 import Footer from "./components/footer/footer";
-
 import Home from "./routes/home";
 import Shop from "./routes/shop";
 import Product from "./routes/product";
@@ -17,14 +15,15 @@ import Book from "./routes/book";
 import "./App.scss";
 
 export default function App() {
-  let a = 10;
   const { products } = useContext(ProductsContext);
+  const location = useLocation();
 
   return (
     <motion.section
+      key={location.pathname}
       initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 1, ease: "easeOut" }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
     >
       <div className="pinkpanther-app fade-in">
         <Navigation />

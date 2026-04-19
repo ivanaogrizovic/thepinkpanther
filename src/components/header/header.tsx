@@ -6,7 +6,7 @@ type HeaderProps = {
 };
 export default function Header({ text, title }: HeaderProps) {
   return (
-    <header className="pinkpanther-header">
+    <header className="pinkpanther-header" data-testid="header">
       <p className="pinkpanther-header-p microcopy">{text}</p>
       <h1 className="pinkpanther-header-title">{title}</h1>
       <hr className="pinkpanther-header-hr" />
