@@ -1,6 +1,7 @@
 import { useContext, useMemo, useState } from "react";
 import { ProductsContext } from "../../context/products.context";
 import { FiltersState } from "../../hooks/useFilters";
+import { motion, AnimatePresence, Variants } from "framer-motion";
 import FilterCheckboxList from "./filter-checkbox/filter-checkbox";
 import {
   MdOutlineKeyboardArrowRight,
@@ -16,6 +17,29 @@ interface FiltersProps {
 }
 
 const FILTER_CATEGORIES: FilterCategory[] = ["shape", "style", "metal"];
+
+const panel: Variants = {
+  hidden: {
+    opacity: 0,
+    y: -10,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.35,
+      ease: [0.25, 0.1, 0.25, 1],
+    },
+  },
+  exit: {
+    opacity: 0,
+    y: -10,
+    transition: {
+      duration: 0.25,
+      ease: [0.25, 0.1, 0.25, 1],
+    },
+  },
+};
 
 export default function Filters({ selectedFilters, onToggle }: FiltersProps) {
   const { getUniqueValues } = useContext(ProductsContext);
@@ -46,19 +70,29 @@ export default function Filters({ selectedFilters, onToggle }: FiltersProps) {
         )}
       </button>
 
-      {isOpen && (
-        <div className="pinkpanther-filter-panel">
-          {FILTER_CATEGORIES.map((category) => (
-            <FilterCheckboxList
-              key={category}
-              filterName={category}
-              filterList={filtersMap[category]}
-              isChecked={(value) => selectedFilters[category].has(value)}
-              onToggle={(value) => onToggle(category, value)}
-            />
-          ))}
-        </div>
-      )}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            className="pinkpanther-filter-panel"
+            variants={panel}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+          >
+            <div className="pinkpanther-filter-panel">
+              {FILTER_CATEGORIES.map((category) => (
+                <FilterCheckboxList
+                  key={category}
+                  filterName={category}
+                  filterList={filtersMap[category]}
+                  isChecked={(value) => selectedFilters[category].has(value)}
+                  onToggle={(value) => onToggle(category, value)}
+                />
+              ))}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
