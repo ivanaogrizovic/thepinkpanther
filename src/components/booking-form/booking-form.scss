@@ -1,0 +1,44 @@
+@import "../../variables.scss";
+
+.pinkpanther-booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  & > p {
+    margin: 0;
+  }
+}
+
+.pinkpanther-booking-time-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.pinkpanther-booking-time-label {
+  margin: 0;
+}
+
+.pinkpanther-booking-form-times {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.pinkpanther-booking-form-fields {
+  & > input,
+  textarea {
+    padding: 1rem;
+    width: stretch;
+    border-radius: 15px;
+    border: none;
+    background-color: $background-color;
+  }
+
+  & > input:focus-visible,
+  textarea:focus-visible {
+    outline: none;
+  }
+}

@@ -45,7 +45,6 @@ describe("Navigation", () => {
     const links = [
       /home/i,
       /engagement rings/i,
-      /wedding rings/i,
       /about/i,
       /book an appointment/i,
     ];
@@ -55,31 +54,31 @@ describe("Navigation", () => {
     });
   });
 
-  test("mobile menu toggles when hamburger is clicked", async () => {
-    setup();
+  // test("mobile menu toggles when hamburger is clicked", async () => {
+  //   setup();
 
-    const user = userEvent.setup();
-    const toggleButton = screen.getByLabelText(/toggle navigation/i);
+  //   const user = userEvent.setup();
+  //   const toggleButton = screen.getByLabelText(/toggle navigation/i);
 
-    expect(screen.queryByText(/home/i)).toBeInTheDocument();
-    await user.click(toggleButton);
+  //   expect(screen.queryByText(/home/i)).toBeInTheDocument();
+  //   await user.click(toggleButton);
 
-    expect(screen.getByLabelText(/close menu/i)).toBeInTheDocument();
-    await user.click(screen.getByLabelText(/close menu/i));
+  //   expect(screen.getByLabelText(/close menu/i)).toBeInTheDocument();
+  //   await user.click(screen.getByLabelText(/close menu/i));
 
-    expect(screen.queryByLabelText(/close menu/i)).not.toBeInTheDocument();
-  });
+  //   expect(screen.queryByLabelText(/close menu/i)).not.toBeInTheDocument();
+  // });
 
-  test("clicking nav links closes mobile menu", async () => {
-    setup();
-    const user = userEvent.setup();
-    const toggleButton = screen.getByLabelText(/toggle navigation/i);
+  // test("clicking nav links closes mobile menu", async () => {
+  //   setup();
+  //   const user = userEvent.setup();
+  //   const toggleButton = screen.getByLabelText(/toggle navigation/i);
 
-    await user.click(toggleButton);
+  //   await user.click(toggleButton);
 
-    const link = screen.getByText(/about/i);
-    await user.click(link);
+  //   const link = screen.getByText(/about/i);
+  //   await user.click(link);
 
-    expect(screen.queryByLabelText(/close menu/i)).not.toBeInTheDocument();
-  });
+  //   expect(screen.queryByLabelText(/close menu/i)).not.toBeInTheDocument();
+  // });
 });

@@ -1,54 +1,37 @@
 import React, { useState, memo } from "react";
-import { filter as FilterItem } from "../../../interfaces/filters.interface";
-import { FaChevronRight, FaChevronDown } from "react-icons/fa";
-import "../filters";
 
 interface FilterCheckboxListProps {
+  key: string;
   filterName: string;
-  filterList: FilterItem[];
+  filterList: string[];
   isChecked: (value: string) => boolean;
   onToggle: (value: string) => void;
 }
 
 function FilterCheckboxListComponent({
+  key,
   filterName,
   filterList,
   isChecked,
   onToggle,
 }: FilterCheckboxListProps) {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
-    <div className="pinkpanther-filter-container">
-      <button
-        className="pinkpanther-filter-accordion -microcopy -bold"
-        onClick={() => setIsOpen(!isOpen)}
-        aria-expanded={isOpen}
-        aria-controls={`filter-${filterName}-list`}
-      >
-        {filterName}
-        {isOpen ? <FaChevronRight /> : <FaChevronDown />}
-      </button>
-
-      {isOpen && (
-        <ul
-          className="pinkpanther-filter-list -fade-in"
-          id={`filter-${filterName}-list`}
-        >
-          {filterList?.map((filter, index) => (
-            <li key={index}>
-              <label>
-                <input
-                  type="checkbox"
-                  checked={isChecked(filter)}
-                  onChange={() => onToggle(filter)}
-                />
-                {filter}
-              </label>
-            </li>
-          ))}
-        </ul>
-      )}
+    <div className="pinkpanther-filter" key={key}>
+      <h6>{filterName}</h6>
+      <ul className="pinkpanther-filter-list">
+        {filterList.map((value) => (
+          <li key={value}>
+            <label className="pinkpanther-filter-input-label">
+              <input
+                type="checkbox"
+                checked={isChecked(value)}
+                onChange={() => onToggle(value)}
+              />
+              {value}
+            </label>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }

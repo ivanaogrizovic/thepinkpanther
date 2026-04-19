@@ -1,13 +1,10 @@
 import { Link } from "react-router";
 import { ROUTES } from "../routes/routes.config";
-import Hero from "../components/hero/hero";
-import weddingBands from "../assets/wedding-bands.webp";
 import fatCat from "../assets/fat-cat.webp";
 
 export default function ComingSoon() {
   return (
     <>
-      <Hero text="Coming soon" image={weddingBands} />
       <div
         className="pinkpanther-coming-soon -fade-in"
         role="region"

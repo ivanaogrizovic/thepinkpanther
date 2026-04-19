@@ -53,15 +53,27 @@ export default function BookingProcess() {
           meaningful as the moment it represents.
         </p>
         <div className="pinkpanther-booking-process-content">
-          <motion.img
-            key={activeStep ?? "default"}
-            src={activeStep !== null ? images[activeStep] : diamondExpert}
-            alt=""
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5 }}
-            style={{ objectFit: "cover" }}
-          />
+          <div className="pinkpanther-image-stack">
+            {[diamondExpert, ...images].map((src, index) => {
+              const isActive =
+                activeStep === null ? index === 0 : index === activeStep + 1;
+
+              return (
+                <motion.img
+                  key={src}
+                  src={src}
+                  className="pinkpanther-stacked-image"
+                  animate={{
+                    opacity: isActive ? 1 : 0,
+                  }}
+                  transition={{
+                    duration: 0.6,
+                    ease: "easeInOut",
+                  }}
+                />
+              );
+            })}
+          </div>
           <ul className="pinkpanther-booking-process-list">
             {processSteps.map((item, index) => (
               <motion.li

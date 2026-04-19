@@ -1,12 +1,17 @@
 @import "../../variables.scss";
 
+.pinkpanther-product-wrapper {
+  background-color: $accent-color;
+}
+
 .pinkpanther-product-detail {
   display: flex;
   flex-direction: column;
   justify-content: center;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 2rem 2rem 2rem;
+  padding: 2rem 1rem;
+  gap: 2rem;
 
   @media (min-width: $desktop-up) {
     display: grid;
@@ -17,6 +22,11 @@
     display: grid;
     grid-template-columns: 70% 30%;
   }
+}
+
+.pinkpanther-product-detail-price {
+  font-size: 1.5rem;
+  margin: 0;
 }
 
 .pinkpanther-product-pictures {
@@ -46,12 +56,15 @@
   display: flex;
   flex-direction: column;
   text-align: left;
-  background-color: $tertiary-color;
+  background-color: $background-color;
   padding: 2rem;
+  border-radius: 15px;
 }
 
 .pinkpanther-product-detail-list-item {
-  display: flex;
-  flex-direction: row;
-  gap: 0.5rem;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  text-transform: capitalize;
 }
