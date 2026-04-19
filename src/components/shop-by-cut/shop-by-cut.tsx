@@ -67,7 +67,7 @@ export default function ShopByCut() {
                   viewport={{ once: true, amount: 0.3 }}
                   transition={{
                     duration: 0.7,
-                    delay: index * 0.1, // 👈 subtle stagger
+                    delay: index * 0.1,
                     ease: "linear",
                   }}
                 />
