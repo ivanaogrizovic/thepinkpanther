@@ -18,7 +18,7 @@ export default function SplitContent({
   theme,
 }: SplitContentProps) {
   return (
-    <div className={`-${theme}`}>
+    <div className={`-${theme}`} data-testid="split-content">
       <div className="pinkpanther-split-content" data-testid="hero-section">
         <div className="pinkpanther-split-content-text">
           <h2>{title}</h2>
