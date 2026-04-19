@@ -14,7 +14,7 @@
     The Pink Panther is a make believe jewelry store front. It was created for learning purposes
     <br />
     <br />
-    <img src="./public/screenshop.png">
+    <img src="./public/screenshot.png">
     <br />
     <a href="https://ivanaogrizovic.github.io/thepinkpanther/">View Demo</a>
     <!-- &middot;
