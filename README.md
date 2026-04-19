@@ -5,7 +5,7 @@
 <br />
 <div align="center">
   <a href="https://ivanaogrizovic.github.io/thepinkpanther/">
-    <img src="./public/logo-icon.webp" alt="Logo" width="80" height="80">
+    <img src="./public/icon.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">The Pink Panther</h3>
@@ -14,7 +14,7 @@
     The Pink Panther is a make believe jewelry store front. It was created for learning purposes
     <br />
     <br />
-    <img src="./public/preview.gif">
+    <img src="./public/screenshop.png">
     <br />
     <a href="https://ivanaogrizovic.github.io/thepinkpanther/">View Demo</a>
     <!-- &middot;
@@ -51,7 +51,7 @@
 
 ## About The Project
 
-🚨Refactor in progress🚨
+🚨Refactor about to be finished🚨
 
 The Pink Panther is a make believe jewelry store front.
 It was created for learning purposes.<br>Here are some features:
