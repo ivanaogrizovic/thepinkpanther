@@ -2,7 +2,7 @@ import AboutSection from "../components/about-section/about-section";
 import Quote from "../components/quote/quote";
 import FullWdithCta from "../components/full-width-cta/full-width-cta";
 import SplitContent from "../components/split-content/split-content";
-import ringsImage from "../assets/temp-rings.webp";
+import ringsImage from "../assets/gold-rings.webp";
 import Header from "../components/header/header";
 
 const aboutInfo: { title: string; paragraph: string }[] = [

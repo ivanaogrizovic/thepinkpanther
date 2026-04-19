@@ -3,7 +3,7 @@ import ShopByCut from "./../components/shop-by-cut/shop-by-cut";
 import FullWdithCta from "../components/full-width-cta/full-width-cta";
 import Hero from "../components/hero/hero";
 import SplitContent from "../components/split-content/split-content";
-import customiseRing from "../assets/temp-11.webp";
+import customiseRing from "../assets/ring-design.webp";
 
 export default function Home() {
   const mainContentRef = useRef<HTMLDivElement | null>(null);

@@ -1,4 +1,4 @@
-import ambassador from "../../assets/temp-amb.jpg";
+import ambassador from "../../assets/hero-ambassador.webp";
 import Button from "../button/button";
 import "./hero.scss";
 
