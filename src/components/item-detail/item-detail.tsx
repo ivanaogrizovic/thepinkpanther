@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback, memo } from "react";
+import { AnimatePresence } from "framer-motion";
 import { engagementRing } from "../../interfaces/engagementRing.interface";
 import Modal from "../modal/modal";
 import "./item-detail.scss";
@@ -91,9 +92,11 @@ export default function ItemDetail({ singleProduct }: ItemDetailProps) {
           {/* <button className="pinkpanther-button -microcopy">Add to cart</button> */}
         </div>
 
-        {isModalOpen && selectedImage && (
-          <Modal closeModal={closeModal} selectedImage={selectedImage} />
-        )}
+        <AnimatePresence>
+          {isModalOpen && selectedImage && (
+            <Modal closeModal={closeModal} selectedImage={selectedImage} />
+          )}
+        </AnimatePresence>
       </div>
     </div>
   );

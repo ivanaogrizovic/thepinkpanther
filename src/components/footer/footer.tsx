@@ -6,7 +6,7 @@ import "./footer.scss";
 
 export default function Footer() {
   return (
-    <footer className="pinkpanther-footer">
+    <footer className="pinkpanther-footer" data-testid="footer-section">
       <h5>The Pink Panther</h5>
       <div className="pinkpanther-footer-links">
         <Link to={ROUTES.HOME} className="microcopy">

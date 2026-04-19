@@ -49,12 +49,16 @@ export default function Navigation() {
         {menuOpen && (
           <motion.ul
             id="main-navigation-list"
+            data-testid="mobile-menu"
             aria-hidden={!menuOpen}
             className="pinkpanther-navigation-list"
-            initial={{ x: "-100%" }}
-            animate={{ x: 0 }}
-            exit={{ x: "-100%" }}
-            transition={{ duration: 0.3, ease: "easeInOut" }}
+            initial={{ x: "-100%", opacity: 0.6, scale: 0.98 }}
+            animate={{ x: 0, opacity: 1, scale: 1 }}
+            exit={{ x: "-100%", opacity: 0.6, scale: 0.98 }}
+            transition={{
+              duration: 0.6,
+              ease: [0.25, 0.1, 0.25, 1],
+            }}
           >
             <li className="pinkpanther-mobile-close">
               <button onClick={closeMenu} aria-label="Close menu">

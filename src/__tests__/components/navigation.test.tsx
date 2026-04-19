@@ -1,6 +1,7 @@
-import { render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
+import { render, screen, within } from "@testing-library/react";
+import { waitForElementToBeRemoved } from "@testing-library/react";
 import { MemoryRouter, Routes, Route } from "react-router";
+import userEvent from "@testing-library/user-event";
 import { ROUTES } from "../../routes/routes.config";
 import Navigation from "../../components/navbar/navbar";
 
@@ -12,26 +13,10 @@ describe("Navigation", () => {
       <MemoryRouter initialEntries={[ROUTES.HOME]}>
         <Navigation />
         <Routes>
-          <Route
-            path={ROUTES.HOME}
-            element={<div data-testid="home-route" />}
-          />
-          <Route
-            path={ROUTES.SHOP.ENGAGEMENT}
-            element={<div data-testid="engagement-route" />}
-          />
-          <Route
-            path={ROUTES.SHOP.ROOT}
-            element={<div data-testid="shop-route" />}
-          />
-          <Route
-            path={ROUTES.ABOUT}
-            element={<div data-testid="about-route" />}
-          />
-          <Route
-            path={ROUTES.BOOK}
-            element={<div data-testid="book-route" />}
-          />
+          <Route path={ROUTES.HOME} element={<div />} />
+          <Route path={ROUTES.SHOP.ENGAGEMENT} element={<div />} />
+          <Route path={ROUTES.ABOUT} element={<div />} />
+          <Route path={ROUTES.BOOK} element={<div />} />
         </Routes>
       </MemoryRouter>,
     );
@@ -39,46 +24,57 @@ describe("Navigation", () => {
     return { user };
   }
 
-  test("renders all main nav links", () => {
+  test("renders desktop navigation links", () => {
     setup();
 
-    const links = [
-      /home/i,
-      /engagement rings/i,
-      /about/i,
-      /book an appointment/i,
-    ];
-
-    links.forEach((link) => {
-      expect(screen.getByRole("link", { name: link })).toBeInTheDocument();
-    });
+    expect(screen.getByRole("link", { name: /home/i })).toBeInTheDocument();
+    expect(
+      screen.getByRole("link", { name: /engagement rings/i }),
+    ).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: /about/i })).toBeInTheDocument();
+    expect(
+      screen.getByRole("link", { name: /book an appointment/i }),
+    ).toBeInTheDocument();
   });
 
-  // test("mobile menu toggles when hamburger is clicked", async () => {
-  //   setup();
+  test("mobile menu toggles when hamburger is clicked", async () => {
+    const { user } = setup();
 
-  //   const user = userEvent.setup();
-  //   const toggleButton = screen.getByLabelText(/toggle navigation/i);
+    const toggleButton = screen.getByLabelText(/toggle navigation/i);
 
-  //   expect(screen.queryByText(/home/i)).toBeInTheDocument();
-  //   await user.click(toggleButton);
+    await user.click(toggleButton);
 
-  //   expect(screen.getByLabelText(/close menu/i)).toBeInTheDocument();
-  //   await user.click(screen.getByLabelText(/close menu/i));
+    const menu = screen.getByTestId("mobile-menu");
 
-  //   expect(screen.queryByLabelText(/close menu/i)).not.toBeInTheDocument();
-  // });
+    const closeButton = within(menu).getByLabelText(/close menu/i);
 
-  // test("clicking nav links closes mobile menu", async () => {
-  //   setup();
-  //   const user = userEvent.setup();
-  //   const toggleButton = screen.getByLabelText(/toggle navigation/i);
+    expect(closeButton).toBeInTheDocument();
 
-  //   await user.click(toggleButton);
+    await user.click(closeButton);
 
-  //   const link = screen.getByText(/about/i);
-  //   await user.click(link);
+    expect(screen.getByLabelText(/toggle navigation/i)).toHaveAttribute(
+      "aria-expanded",
+      "false",
+    );
+  });
 
-  //   expect(screen.queryByLabelText(/close menu/i)).not.toBeInTheDocument();
-  // });
+  test("clicking nav links closes mobile menu", async () => {
+    const { user } = setup();
+
+    const toggleButton = screen.getByLabelText(/toggle navigation/i);
+    await user.click(toggleButton);
+
+    const menu = screen.getByTestId("mobile-menu");
+
+    const link = within(menu).getByRole("link", {
+      name: /about/i,
+    });
+
+    await user.click(link);
+
+    expect(screen.getByLabelText(/toggle navigation/i)).toHaveAttribute(
+      "aria-expanded",
+      "false",
+    );
+  });
 });
