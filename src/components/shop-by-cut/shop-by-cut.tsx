@@ -21,11 +21,7 @@ const cutImages: Record<string, string> = {
   marquise,
 };
 
-type ShopByCutProps = {
-  mainRef: React.RefObject<HTMLDivElement | null>;
-};
-
-export default function ShopByCut({ mainRef }: ShopByCutProps) {
+export default function ShopByCut() {
   const { products, getUniqueValues } = useProductsContext();
   const cutsList = getUniqueValues("shape");
 
@@ -41,7 +37,6 @@ export default function ShopByCut({ mainRef }: ShopByCutProps) {
     <div
       className="pinkpanther-shop-by-cut-wrapper"
       data-testid="shop-by-cut-section"
-      ref={mainRef}
       id="shop-section"
     >
       <div className="pinkpanther-shop-by-cut">

@@ -3,9 +3,9 @@ import ambassador from "../../assets/hero-ambassador.webp";
 import Button from "../button/button";
 import "./hero.scss";
 
-type HeroProps = {
+interface HeroProps {
   mainRef: React.RefObject<HTMLDivElement | null>;
-};
+}
 
 const containerVariants = {
   hidden: {},

@@ -2,13 +2,14 @@ import { Link } from "react-router";
 import { ROUTES } from "../../routes/routes.config";
 import "./split-content.scss";
 
-type SplitContentProps = {
+interface SplitContentProps {
   title: string;
   text: string;
   link?: string;
   image: string;
   theme?: string;
-};
+  mainRef?: React.RefObject<HTMLDivElement | null>;
+}
 
 export default function SplitContent({
   title,
@@ -16,9 +17,10 @@ export default function SplitContent({
   link,
   image,
   theme,
+  mainRef,
 }: SplitContentProps) {
   return (
-    <div className={`-${theme}`} data-testid="split-content">
+    <div className={`-${theme}`} data-testid="split-content" ref={mainRef}>
       <div className="pinkpanther-split-content" data-testid="hero-section">
         <div className="pinkpanther-split-content-text">
           <h2>{title}</h2>
