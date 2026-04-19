@@ -12,8 +12,8 @@ describe("Homepage", () => {
 
     const keySections = [
       "hero-section",
+      "split-content",
       "shop-by-cut-section",
-      "shop-by-occasion-section",
       "full-width-cta",
     ];
 

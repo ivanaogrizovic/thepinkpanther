@@ -1,6 +1,7 @@
-import { Link } from "react-router";
 import { useMemo } from "react";
 import { useProductsContext } from "../../context/products.context";
+import { Link } from "react-router";
+import { ROUTES } from "../../routes/routes.config";
 import oval from "../../assets/cut-oval.webp";
 import princess from "../../assets/cut-princess.webp";
 import emerald from "../../assets/cut-emerald.webp";
@@ -9,7 +10,6 @@ import cushion from "../../assets/cut-cushion.webp";
 import round from "../../assets/cut-round.webp";
 import marquise from "../../assets/cut-marquise.webp";
 import "./shop-by-cut.scss";
-import { ROUTES } from "../../routes/routes.config";
 
 const cutImages: Record<string, string> = {
   oval,
@@ -21,7 +21,11 @@ const cutImages: Record<string, string> = {
   marquise,
 };
 
-export default function ShopByCut() {
+type ShopByCutProps = {
+  mainRef: React.RefObject<HTMLDivElement | null>;
+};
+
+export default function ShopByCut({ mainRef }: ShopByCutProps) {
   const { products, getUniqueValues } = useProductsContext();
   const cutsList = getUniqueValues("shape");
 
@@ -37,20 +41,20 @@ export default function ShopByCut() {
     <div
       className="pinkpanther-shop-by-cut-wrapper"
       data-testid="shop-by-cut-section"
+      ref={mainRef}
+      id="shop-section"
     >
-      <div
-        className="pinkpanther-shop-by-cut"
-        role="region"
-        aria-label="Shop engagement rings by shape"
-      >
-        <h2>Shop engagement rings by shape</h2>
+      <div className="pinkpanther-shop-by-cut">
+        <h2>Find Your Shape</h2>
         <p>
-          From timeless classics to modern icons, explore diamond cuts that tell
-          your love story. Whether you’re drawn to a dazzling round, a bold
-          emerald, or a romantic princess, find the diamond that cuts straight
-          to your style.
+          Explore our collection through the artistry of diamond cuts: each one
+          a distinct expression of style and character.
         </p>
-
+        <p>
+          Select a shape to begin your journey, from the timeless brilliance of
+          round to the refined elegance of emerald or the romantic allure of
+          princess.
+        </p>
         <ul className="pinkpanther-shop-by-cut-list">
           {cutsList.map((cut) => (
             <li key={cut} className="pinkpanther-shop-by-cut-item">
@@ -63,7 +67,7 @@ export default function ShopByCut() {
                   src={cutImages[cut]}
                   alt=""
                 />
-                <p className="-microcopy">{cut}</p>
+                <h5>{cut}</h5>
               </Link>
             </li>
           ))}
