@@ -1,7 +1,8 @@
 import { useEffect } from "react";
-import { engagementRing } from "../interfaces/engagementRing.interface";
-import { useFilters } from "../hooks/useFilters";
 import { useLocation } from "react-router";
+import { useFilters } from "../hooks/useFilters";
+import { engagementRing } from "../interfaces/engagementRing.interface";
+import { motion } from "framer-motion";
 import ItemsGrid from "../components/items-grid/items-grid";
 import Filters from "../components/filters/filters";
 import Header from "../components/header/header";
@@ -22,7 +23,7 @@ export default function Shop({
   }, []);
 
   return (
-    <div className="-fade-in">
+    <>
       <Header text="The bridal edit" title="Engagement ring collection" />
       <div className="-accent">
         <div className="pinkpanther-shop-content" role="complementary">
@@ -30,6 +31,6 @@ export default function Shop({
           <ItemsGrid rings={filteredProductList} />
         </div>
       </div>
-    </div>
+    </>
   );
 }

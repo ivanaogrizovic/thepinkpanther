@@ -1,6 +1,6 @@
+import { useMemo } from "react";
 import { Link } from "react-router";
 import { ROUTES } from "../../routes/routes.config";
-import { useMemo } from "react";
 import { engagementRing } from "../../interfaces/engagementRing.interface";
 import "./items-grid.scss";
 
