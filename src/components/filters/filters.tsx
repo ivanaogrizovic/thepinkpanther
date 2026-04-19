@@ -56,7 +56,7 @@ export default function Filters({ selectedFilters, onToggle }: FiltersProps) {
   }, [getUniqueValues]);
 
   return (
-    <div className="pinkpanther-filters">
+    <div className="pinkpanther-filters" data-testid="filters">
       <button
         className="pinkpanther-filter-trigger"
         onClick={() => setIsOpen((prev) => !prev)}

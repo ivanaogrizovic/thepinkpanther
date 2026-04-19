@@ -16,7 +16,7 @@ export default function ItemsGrid({ rings }: { rings: engagementRing[] }) {
   }, [rings]);
 
   return (
-    <div className="pinkpanther-product-list -fade-in">
+    <div className="pinkpanther-product-list -fade-in" data-testid="items-grid">
       <ul style={{ display: "contents" }}>
         {rings?.map((ring, index) => (
           <li key={index} style={{ display: "contents" }}>

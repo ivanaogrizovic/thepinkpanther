@@ -23,7 +23,7 @@ export default function Shop({
   }, []);
 
   return (
-    <>
+    <div data-testid="shop-page">
       <Header text="The bridal edit" title="Engagement ring collection" />
       <div className="-accent">
         <div className="pinkpanther-shop-content" role="complementary">
@@ -31,6 +31,6 @@ export default function Shop({
           <ItemsGrid rings={filteredProductList} />
         </div>
       </div>
-    </>
+    </div>
   );
 }
