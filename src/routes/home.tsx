@@ -10,6 +10,7 @@ export default function Home() {
   return (
     <>
       <Hero mainRef={mainContentRef} />
+      {/* TODO: CUSTOMISE LINK IN SPLIT CONTENT */}
       <SplitContent
         title="Customise your dream ring"
         text="Create a ring that is entirely your own. From selecting the perfect diamond to refining every detail of the setting, our bespoke service allows you to shape a piece that reflects your story with precision and elegance."

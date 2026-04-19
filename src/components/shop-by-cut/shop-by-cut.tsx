@@ -2,6 +2,7 @@ import { useMemo } from "react";
 import { useProductsContext } from "../../context/products.context";
 import { Link } from "react-router";
 import { ROUTES } from "../../routes/routes.config";
+import { motion, Variants } from "framer-motion";
 import oval from "../../assets/cut-oval.webp";
 import princess from "../../assets/cut-princess.webp";
 import emerald from "../../assets/cut-emerald.webp";
@@ -51,16 +52,24 @@ export default function ShopByCut() {
           princess.
         </p>
         <ul className="pinkpanther-shop-by-cut-list">
-          {cutsList.map((cut) => (
+          {cutsList.map((cut, index) => (
             <li key={cut} className="pinkpanther-shop-by-cut-item">
               <Link
                 to={`/shop/engagement?shape=${cut}`}
                 state={ringsByCut[cut]}
               >
-                <img
+                <motion.img
                   className="pinkpanther-shop-by-cut-item-image"
                   src={cutImages[cut]}
                   alt=""
+                  initial={{ opacity: 0, scale: 0.6 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true, amount: 0.3 }}
+                  transition={{
+                    duration: 0.7,
+                    delay: index * 0.1, // 👈 subtle stagger
+                    ease: "linear",
+                  }}
                 />
                 <h5>{cut}</h5>
               </Link>
