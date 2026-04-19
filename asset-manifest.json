@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/thepinkpanther/static/css/main.33d8a782.css",
-    "main.js": "/thepinkpanther/static/js/main.46e7afce.js",
+    "main.js": "/thepinkpanther/static/js/main.790d0a29.js",
     "static/js/488.feb95c83.chunk.js": "/thepinkpanther/static/js/488.feb95c83.chunk.js",
     "static/media/hero-ambassador.webp": "/thepinkpanther/static/media/hero-ambassador.fc44218d5780a769a65e.webp",
     "static/media/gold-rings.webp": "/thepinkpanther/static/media/gold-rings.0973d0150df03cb177b1.webp",
@@ -21,11 +21,11 @@
     "static/media/cut-emerald.webp": "/thepinkpanther/static/media/cut-emerald.af242c87d2e190382457.webp",
     "index.html": "/thepinkpanther/index.html",
     "main.33d8a782.css.map": "/thepinkpanther/static/css/main.33d8a782.css.map",
-    "main.46e7afce.js.map": "/thepinkpanther/static/js/main.46e7afce.js.map",
+    "main.790d0a29.js.map": "/thepinkpanther/static/js/main.790d0a29.js.map",
     "488.feb95c83.chunk.js.map": "/thepinkpanther/static/js/488.feb95c83.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.33d8a782.css",
-    "static/js/main.46e7afce.js"
+    "static/js/main.790d0a29.js"
   ]
 }
