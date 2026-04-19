@@ -63,6 +63,7 @@ export default function BookingProcess() {
                   key={src}
                   src={src}
                   className="pinkpanther-stacked-image"
+                  alt=""
                   animate={{
                     opacity: isActive ? 1 : 0,
                   }}

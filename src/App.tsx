@@ -51,7 +51,6 @@ export default function App() {
 
           <Outlet />
         </main>
-
         <Footer />
       </div>
     </motion.section>
