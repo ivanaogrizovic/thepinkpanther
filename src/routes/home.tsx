@@ -8,7 +8,7 @@ import customiseRing from "../assets/temp-11.webp";
 export default function Home() {
   const mainContentRef = useRef<HTMLDivElement | null>(null);
   return (
-    <div className="-fade-in">
+    <>
       <Hero mainRef={mainContentRef} />
       <SplitContent
         title="Customise your dream ring"
@@ -24,6 +24,6 @@ export default function Home() {
         linkText="Learn more"
         link="/about"
       />
-    </div>
+    </>
   );
 }

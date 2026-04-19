@@ -27,7 +27,6 @@ export default function FullWdithCta({
         <p>
           <Link
             to={link}
-            target="_blank"
             rel="noopener noreferrer"
             className="pinkpanther-cta-link"
           >

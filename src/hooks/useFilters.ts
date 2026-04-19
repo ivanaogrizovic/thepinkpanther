@@ -6,7 +6,6 @@ type FilterCategory = "shape" | "style" | "metal";
 export type FiltersState = Record<FilterCategory, Set<string>>;
 
 // Custom hook for managing product filters
-// Handles filter state, URL synchronization, and product filtering
 export function useFilters(productList: engagementRing[]) {
   const location = useLocation();
 

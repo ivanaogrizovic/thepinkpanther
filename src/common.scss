@@ -166,30 +166,3 @@ ul {
     opacity: 1;
   }
 }
-
-@keyframes fadeInUp {
-  from {
-    transform: translate3d(0, 40px, 0);
-  }
-  to {
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadeInUp {
-  from {
-    transform: translate3d(0, 40px, 0);
-  }
-  to {
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
-}
-
-.-fade-in-up {
-  animation-duration: 1s;
-  animation-fill-mode: both;
-  opacity: 0;
-  animation-name: fadeInUp;
-}

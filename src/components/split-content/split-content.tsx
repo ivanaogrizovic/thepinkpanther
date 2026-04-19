@@ -20,7 +20,7 @@ export default function SplitContent({
   return (
     <div className={`-${theme}`}>
       <div className="pinkpanther-split-content" data-testid="hero-section">
-        <div className="pinkpanther-split-content-text -fade-in-up">
+        <div className="pinkpanther-split-content-text">
           <h2>{title}</h2>
           <p>{text}</p>
           {link && (
@@ -34,11 +34,7 @@ export default function SplitContent({
             </p>
           )}
         </div>
-        <img
-          src={image}
-          className="pinkpanther-split-content-image slide-left"
-          alt=""
-        />
+        <img src={image} className="pinkpanther-split-content-image" alt="" />
       </div>
     </div>
   );

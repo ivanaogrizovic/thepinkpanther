@@ -33,30 +33,7 @@
   justify-content: center;
 }
 
-.slide-left {
-  animation: slide-left 1.5s;
-  animation-fill-mode: both;
-}
-
 .pinkpanther-split-content-text {
   animation-delay: 1s;
   animation-fill-mode: forwards;
-}
-
-@keyframes slide-left {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
