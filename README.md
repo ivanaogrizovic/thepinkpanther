@@ -62,6 +62,7 @@ It was created for learning purposes.<br>Here are some features:
 - Made with reusable components
 - Every page is fully accessible (WCAG 2.2 AA)
 - Jest tests (in progress)
+- Cart functionality (in progress)
 - CI pipeline to run tests on every pull request.
 
 ### Component Architecture & Data Flow
