@@ -49,6 +49,7 @@ export default function Navigation() {
         {menuOpen && (
           <motion.ul
             id="main-navigation-list"
+            data-testid="mobile-menu"
             aria-hidden={!menuOpen}
             className="pinkpanther-navigation-list"
             initial={{ x: "-100%", opacity: 0.6, scale: 0.98 }}

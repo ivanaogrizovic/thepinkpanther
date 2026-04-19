@@ -33,7 +33,7 @@ const fadeUp: Variants = {
 
 export default function Hero({ mainRef }: HeroProps) {
   return (
-    <div className="pinkpanther-hero">
+    <div className="pinkpanther-hero" data-testid="hero-section">
       <img className="pinkpanther-hero-image" src={ambassador} alt="" />
 
       <motion.div
