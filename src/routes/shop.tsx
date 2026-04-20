@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router";
 import { useFilters } from "../hooks/useFilters";
-import { engagementRing } from "../interfaces/engagementRing.interface";
+import { EngagementRing } from "../interfaces/engagementRing.interface";
 import { motion } from "framer-motion";
 import ItemsGrid from "../components/items-grid/items-grid";
 import Filters from "../components/filters/filters";
@@ -10,10 +10,10 @@ import Header from "../components/header/header";
 export default function Shop({
   productList,
 }: {
-  productList: engagementRing[];
+  productList: EngagementRing[];
 }) {
   const location = useLocation();
-  const productsFromComponent = location.state as engagementRing[] | undefined;
+  const productsFromComponent = location.state as EngagementRing[] | undefined;
   const baseList = productsFromComponent ?? productList ?? [];
 
   const { filters, toggleFilter, filteredProductList } = useFilters(baseList);

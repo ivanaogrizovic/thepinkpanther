@@ -1,16 +1,16 @@
 import { useState, useEffect, useCallback, memo } from "react";
 import { AnimatePresence } from "framer-motion";
-import { engagementRing } from "../../interfaces/engagementRing.interface";
+import { EngagementRing } from "../../interfaces/engagementRing.interface";
 import Modal from "../modal/modal";
 import "./item-detail.scss";
 
 interface ItemDetailProps {
-  singleProduct: engagementRing;
+  singleProduct: EngagementRing;
 }
 
 const IGNORED_KEYS = ["images", "name", "price", "womens"] as const;
 type ProductDetailKey = Exclude<
-  keyof engagementRing,
+  keyof EngagementRing,
   (typeof IGNORED_KEYS)[number]
 >;
 
