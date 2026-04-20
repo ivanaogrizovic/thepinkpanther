@@ -1,4 +1,5 @@
 export interface EngagementRing {
+  id: number;
   name: string;
   shape: string;
   style: string;

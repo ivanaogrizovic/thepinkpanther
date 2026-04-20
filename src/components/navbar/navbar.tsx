@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router";
 import { ROUTES } from "../../routes/routes.config";
+import { useCart } from "../../context/cart.context";
 import { motion, AnimatePresence } from "framer-motion";
 import useLockBodyScroll from "../../hooks/useLockBodyScroll";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -17,6 +18,7 @@ const NAV_ITEMS = [
 
 export default function Navigation() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const { totalItems } = useCart();
 
   useLockBodyScroll(menuOpen);
 
@@ -43,6 +45,7 @@ export default function Navigation() {
         </Link>
         <button className="pinkpanther-nav-icon">
           <MdOutlineShoppingBag />
+          {totalItems > 0 && <span className="cart-badge">{totalItems}</span>}
         </button>
       </div>
       <AnimatePresence>
@@ -98,6 +101,23 @@ export default function Navigation() {
             <Link to={item.to}>{item.label}</Link>
           </li>
         ))}
+        <button className="pinkpanther-nav-icon">
+          <MdOutlineShoppingBag />
+          <AnimatePresence mode="wait">
+            {totalItems > 0 && (
+              <motion.span
+                key={totalItems}
+                className="cart-badge"
+                initial={{ scale: 0.5, opacity: 0 }}
+                animate={{ scale: 1.2, opacity: 1 }}
+                exit={{ scale: 0.5, opacity: 0 }}
+                transition={{ duration: 0.2 }}
+              >
+                {totalItems}
+              </motion.span>
+            )}
+          </AnimatePresence>
+        </button>
       </ul>
     </nav>
   );
