@@ -4,6 +4,7 @@ import CartItem from "../cart-item/cart-item";
 import CartSummary from "../cart-summary/cart-summary";
 import "./cart-content.scss";
 import CheckedOut from "../checked-out/checked-out";
+import CartEmpty from "../cart-empty/cart-empty";
 
 export default function CartContent() {
   const { state, totalPrice } = useCart();
@@ -12,7 +13,6 @@ export default function CartContent() {
 
   return (
     <div className="pinkpanther-cart-content-wrapper -accent">
-      {items.length === 0 && <p>Cart empty</p>}
       {!checkedOut && items.length > 0 && (
         <>
           <h2>Total: £{totalPrice}</h2>
@@ -30,6 +30,7 @@ export default function CartContent() {
           </div>
         </>
       )}
+      {items.length === 0 && <CartEmpty />}
       {checkedOut && <CheckedOut />}
     </div>
   );
