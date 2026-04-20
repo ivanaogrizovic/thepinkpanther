@@ -1,0 +1,30 @@
+@import "../../variables.scss";
+
+.pinkpanther-cart-list-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  max-width: 1440px;
+  margin: auto;
+  padding: 1rem;
+  align-items: center;
+  max-width: 20rem;
+
+  @media (min-width: $mobile-up) {
+    grid-template-columns: 1fr 1fr;
+    max-width: max-content;
+    gap: 2rem;
+  }
+}
+
+.pinkpanther-cart-item-image {
+  width: 100%;
+  max-width: 20rem;
+}
+
+.pinkpanther-cart-item-text {
+  text-align: left;
+  & > p {
+    margin: 0;
+  }
+}

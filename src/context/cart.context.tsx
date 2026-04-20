@@ -6,11 +6,7 @@ import React, {
   useMemo,
 } from "react";
 import { cartReducer, initialCartState } from "./cart.reducer";
-import {
-  CartAction,
-  CartState,
-  CartItem,
-} from "../interfaces/cartItem.interface";
+import { CartState } from "../interfaces/cartItem.interface";
 import { EngagementRing } from "../interfaces/engagementRing.interface";
 
 type CartContextType = {
