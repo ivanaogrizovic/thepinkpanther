@@ -43,10 +43,10 @@ export default function Navigation() {
         <Link to="/">
           <h5>The Pink Panther</h5>
         </Link>
-        <button className="pinkpanther-nav-icon">
+        <Link to={ROUTES.CART} className="pinkpanther-nav-icon">
           <MdOutlineShoppingBag />
           {totalItems > 0 && <span className="cart-badge">{totalItems}</span>}
-        </button>
+        </Link>
       </div>
       <AnimatePresence>
         {menuOpen && (
@@ -101,7 +101,7 @@ export default function Navigation() {
             <Link to={item.to}>{item.label}</Link>
           </li>
         ))}
-        <button className="pinkpanther-nav-icon">
+        <Link to={ROUTES.CART} className="pinkpanther-nav-icon">
           <MdOutlineShoppingBag />
           <AnimatePresence mode="wait">
             {totalItems > 0 && (
@@ -117,7 +117,7 @@ export default function Navigation() {
               </motion.span>
             )}
           </AnimatePresence>
-        </button>
+        </Link>
       </ul>
     </nav>
   );

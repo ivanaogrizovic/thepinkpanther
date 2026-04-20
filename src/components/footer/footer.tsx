@@ -21,9 +21,6 @@ export default function Footer() {
         <Link to={ROUTES.BOOK} className="microcopy">
           Book an appointment
         </Link>
-        <Link to={ROUTES.CART} className="microcopy">
-          Cart
-        </Link>
       </div>
       <hr />
       <div className="pinkpanther-footer-end">
