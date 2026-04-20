@@ -1,4 +1,15 @@
+@import "../../variables.scss";
+
 .pinkpanther-cart-content {
   display: flex;
   flex-direction: column;
+  padding: 0 1rem;
+  max-width: 1440px;
+  margin: auto;
+
+  @media (min-width: $desktop-up) {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+  }
 }

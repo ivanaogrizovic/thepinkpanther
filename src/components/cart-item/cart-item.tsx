@@ -1,7 +1,12 @@
 import { EngagementRing } from "../../interfaces/engagementRing.interface";
 import "./cart-item.scss";
 
-export default function CartItem({ product, quantity }: any) {
+interface CartItemProps {
+  product: EngagementRing;
+  quantity: number;
+}
+
+export default function CartItem({ product, quantity }: CartItemProps) {
   return (
     <>
       <li key={product.id} className="pinkpanther-cart-list-item">

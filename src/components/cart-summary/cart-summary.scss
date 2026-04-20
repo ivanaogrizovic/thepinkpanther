@@ -1,0 +1,16 @@
+@import "../../variables.scss";
+
+.pinkpanther-cart-summry-total {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.pinkpanther-cart-summary-label {
+  text-align: left;
+}
+
+.pinkpanther-cart-summary-total {
+  text-align: right;
+}
