@@ -3,6 +3,7 @@ import { useCart } from "../../context/cart.context";
 import CartItem from "../cart-item/cart-item";
 import CartSummary from "../cart-summary/cart-summary";
 import "./cart-content.scss";
+import CheckedOut from "../checked-out/checked-out";
 
 export default function CartContent() {
   const { state, totalPrice } = useCart();
@@ -29,7 +30,7 @@ export default function CartContent() {
           </div>
         </>
       )}
-      {checkedOut && <p>Thanks! You checked out</p>}
+      {checkedOut && <CheckedOut />}
     </div>
   );
 }
