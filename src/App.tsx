@@ -13,6 +13,7 @@ import About from "./routes/about";
 import Book from "./routes/book";
 
 import "./App.scss";
+import Cart from "./routes/cart";
 
 export default function App() {
   const { products } = useContext(ProductsContext);
@@ -47,6 +48,7 @@ export default function App() {
 
             <Route path={ROUTES.ABOUT} element={<About />} />
             <Route path={ROUTES.BOOK} element={<Book />} />
+            <Route path={ROUTES.CART} element={<Cart />} />
           </Routes>
 
           <Outlet />

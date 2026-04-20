@@ -8,4 +8,5 @@ export const ROUTES = {
   },
   ABOUT: "/about",
   BOOK: "/book-an-appointment",
+  CART: "/cart",
 };
