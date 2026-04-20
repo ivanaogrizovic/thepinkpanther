@@ -1,16 +1,18 @@
 import { useState, useEffect, useCallback, memo } from "react";
+import { useCart } from "../../context/cart.context";
 import { AnimatePresence } from "framer-motion";
-import { engagementRing } from "../../interfaces/engagementRing.interface";
+import { EngagementRing } from "../../interfaces/engagementRing.interface";
 import Modal from "../modal/modal";
 import "./item-detail.scss";
+import Button from "../button/button";
 
 interface ItemDetailProps {
-  singleProduct: engagementRing;
+  singleProduct: EngagementRing;
 }
 
 const IGNORED_KEYS = ["images", "name", "price", "womens"] as const;
 type ProductDetailKey = Exclude<
-  keyof engagementRing,
+  keyof EngagementRing,
   (typeof IGNORED_KEYS)[number]
 >;
 
@@ -48,6 +50,7 @@ const ProductGallery = memo(
 export default function ItemDetail({ singleProduct }: ItemDetailProps) {
   const [isModalOpen, setModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const { addItem } = useCart();
 
   const openModal = useCallback((image: string) => {
     setSelectedImage(image);
@@ -89,7 +92,9 @@ export default function ItemDetail({ singleProduct }: ItemDetailProps) {
               </li>
             ))}
           </ul>
-          {/* <button className="pinkpanther-button -microcopy">Add to cart</button> */}
+          <Button theme="accent" onClick={() => addItem(singleProduct)}>
+            Add to cart
+          </Button>
         </div>
 
         <AnimatePresence>

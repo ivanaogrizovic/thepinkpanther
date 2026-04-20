@@ -1,12 +1,12 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { useLocation } from "react-router";
-import { engagementRing } from "../interfaces/engagementRing.interface";
+import { EngagementRing } from "../interfaces/engagementRing.interface";
 
 type FilterCategory = "shape" | "style" | "metal";
 export type FiltersState = Record<FilterCategory, Set<string>>;
 
 // Custom hook for managing product filters
-export function useFilters(productList: engagementRing[]) {
+export function useFilters(productList: EngagementRing[]) {
   const location = useLocation();
 
   const [filters, setFilters] = useState<FiltersState>(() => ({
@@ -52,7 +52,7 @@ export function useFilters(productList: engagementRing[]) {
     setFilters(nextFilters);
   }, [location.search]);
 
-  const sortByName = (data: engagementRing[]) =>
+  const sortByName = (data: EngagementRing[]) =>
     [...data].sort((a, b) =>
       a.name.localeCompare(b.name, undefined, { sensitivity: "base" }),
     );

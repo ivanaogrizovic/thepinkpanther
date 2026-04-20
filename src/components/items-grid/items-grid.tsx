@@ -1,14 +1,14 @@
 import { useMemo } from "react";
 import { Link } from "react-router";
 import { ROUTES } from "../../routes/routes.config";
-import { engagementRing } from "../../interfaces/engagementRing.interface";
+import { EngagementRing } from "../../interfaces/engagementRing.interface";
 import "./items-grid.scss";
 
-export default function ItemsGrid({ rings }: { rings: engagementRing[] }) {
+export default function ItemsGrid({ rings }: { rings: EngagementRing[] }) {
   const frontImage = 0;
 
   const ringsByName = useMemo(() => {
-    const map: Record<string, engagementRing[]> = {};
+    const map: Record<string, EngagementRing[]> = {};
     rings.forEach((ring) => {
       map[ring.name] = rings.filter((r) => r.name === ring.name);
     });

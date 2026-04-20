@@ -1,5 +1,5 @@
 import { createContext, useContext, useCallback } from "react";
-import { engagementRing } from "../interfaces/engagementRing.interface";
+import { EngagementRing } from "../interfaces/engagementRing.interface";
 import PRODUCTS from "../engagement-rings.json";
 
 type StringKeys<T> = {
@@ -7,8 +7,8 @@ type StringKeys<T> = {
 }[keyof T];
 
 type ProductsContextInterface = {
-  products: engagementRing[];
-  getUniqueValues: <K extends StringKeys<engagementRing>>(key: K) => string[];
+  products: EngagementRing[];
+  getUniqueValues: <K extends StringKeys<EngagementRing>>(key: K) => string[];
 };
 
 export const ProductsContext = createContext<ProductsContextInterface>({
@@ -22,7 +22,7 @@ export const ProductsProvider = ({
   children?: React.ReactNode;
 }) => {
   const getUniqueValues = useCallback(
-    <K extends StringKeys<engagementRing>>(key: K) => {
+    <K extends StringKeys<EngagementRing>>(key: K) => {
       return [...new Set(PRODUCTS.map((product) => product[key]))];
     },
     [],

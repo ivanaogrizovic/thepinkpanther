@@ -1,13 +1,27 @@
+import { EngagementRing } from "./engagementRing.interface";
+
 export interface CartItem {
-  name: string;
-  shape: string;
-  style: string;
-  metal: string;
-  price: number;
-  carats: number;
-  category: string;
-  womens: boolean;
-  images: string[];
-  origin: string;
+  product: EngagementRing;
   quantity: number;
 }
+
+export interface CartState {
+  items: Record<number, CartItem>;
+}
+
+export type CartAction =
+  | {
+      type: "ADD_ITEM";
+      product: EngagementRing;
+    }
+  | {
+      type: "DECREASE_QUANTITY";
+      productId: number;
+    }
+  | {
+      type: "REMOVE_ITEM";
+      productId: number;
+    }
+  | {
+      type: "CLEAR_CART";
+    };

@@ -4,21 +4,26 @@ import { MemoryRouter, Routes, Route } from "react-router";
 import userEvent from "@testing-library/user-event";
 import { ROUTES } from "../../routes/routes.config";
 import Navigation from "../../components/navbar/navbar";
+import CartContent from "../../components/cart-content/cart-content";
+import { CartProvider } from "../../context/cart.context";
 
 describe("Navigation", () => {
   function setup() {
     const user = userEvent.setup();
 
     render(
-      <MemoryRouter initialEntries={[ROUTES.HOME]}>
-        <Navigation />
-        <Routes>
-          <Route path={ROUTES.HOME} element={<div />} />
-          <Route path={ROUTES.SHOP.ENGAGEMENT} element={<div />} />
-          <Route path={ROUTES.ABOUT} element={<div />} />
-          <Route path={ROUTES.BOOK} element={<div />} />
-        </Routes>
-      </MemoryRouter>,
+      <CartProvider>
+        <MemoryRouter initialEntries={[ROUTES.HOME]}>
+          <Navigation />
+
+          <Routes>
+            <Route path={ROUTES.HOME} element={<div />} />
+            <Route path={ROUTES.SHOP.ENGAGEMENT} element={<div />} />
+            <Route path={ROUTES.ABOUT} element={<div />} />
+            <Route path={ROUTES.BOOK} element={<div />} />
+          </Routes>
+        </MemoryRouter>
+      </CartProvider>,
     );
 
     return { user };

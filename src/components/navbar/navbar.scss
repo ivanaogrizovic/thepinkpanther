@@ -105,5 +105,10 @@ nav > button.pinkpanther-nav-icon {
   @media (min-width: $desktop-up) {
     display: flex;
     gap: 2rem;
+
+    & > .pinkpanther-nav-icon {
+      display: block;
+      margin: auto;
+    }
   }
 }

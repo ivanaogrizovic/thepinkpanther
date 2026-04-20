@@ -11,6 +11,7 @@
   cursor: pointer;
   width: max-content;
   margin: auto;
+  text-transform: capitalize;
 }
 
 .pinkpanther-button.-primary {
@@ -43,6 +44,10 @@
   transform: scale(0.98);
   box-shadow: none;
 }
+
+// .pinkpanther-button.-accent:hover{
+// TODO: ADD STYLES
+// }
 
 .pinkpanther-button:disabled {
   opacity: 0.7;
